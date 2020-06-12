@@ -1,0 +1,124 @@
++++ home-3560-sguilfoil: executing command 'show mac address-table aging-time' +++
+show mac address-table aging-time
+Global Aging Time:  300
+Vlan    Aging Time
+----    ----------
+home-3560-sguilfoil#
++++ home-3560-sguilfoil: executing command 'show mac address-table learning' +++
+show mac address-table learning
+
+VLAN    Learning Status
+----    ---------------
+1             yes   
+2             yes   
+64            yes   
+65            yes   
+1100          yes   
+1101          yes   
+1102          yes   
+1200          yes   
+2013          yes   
+2015          yes   
+2017          yes   
+2021          yes   
+2100          yes   
+2101          yes   
+2102          yes   
+2200          yes   
+
+home-3560-sguilfoil#
++++ home-3560-sguilfoil: executing command 'show mac address-table' +++
+show mac address-table
+          Mac Address Table
+-------------------------------------------
+
+Vlan    Mac Address       Type        Ports
+----    -----------       --------    -----
+ All    0100.0ccc.cccc    STATIC      CPU
+ All    0100.0ccc.cccd    STATIC      CPU
+ All    0180.c200.0000    STATIC      CPU
+ All    0180.c200.0001    STATIC      CPU
+ All    0180.c200.0002    STATIC      CPU
+ All    0180.c200.0003    STATIC      CPU
+ All    0180.c200.0004    STATIC      CPU
+ All    0180.c200.0005    STATIC      CPU
+ All    0180.c200.0006    STATIC      CPU
+ All    0180.c200.0007    STATIC      CPU
+ All    0180.c200.0008    STATIC      CPU
+ All    0180.c200.0009    STATIC      CPU
+ All    0180.c200.000a    STATIC      CPU
+ All    0180.c200.000b    STATIC      CPU
+ All    0180.c200.000c    STATIC      CPU
+ All    0180.c200.000d    STATIC      CPU
+ All    0180.c200.000e    STATIC      CPU
+ All    0180.c200.000f    STATIC      CPU
+ All    0180.c200.0010    STATIC      CPU
+ All    ffff.ffff.ffff    STATIC      CPU
+   2    0017.e049.c8d8    DYNAMIC     Fa0/48
+   2    b4fb.e416.5f6c    DYNAMIC     Fa0/47
+   1    0017.e049.c8d8    DYNAMIC     Fa0/48
+   1    001e.f701.db00    DYNAMIC     Fa0/46
+   1    0025.64f8.ed85    DYNAMIC     Po1
+   1    0025.64f8.ed87    DYNAMIC     Po1
+   1    0025.64f8.ed8b    DYNAMIC     Fa0/1
+   1    0050.5650.5a35    DYNAMIC     Po2
+   1    0050.5658.c27e    DYNAMIC     Po2
+   1    0050.566a.34d3    DYNAMIC     Fa0/1
+   1    0050.5695.0705    DYNAMIC     Po1
+   1    0050.5695.2b98    DYNAMIC     Po1
+   1    0050.5695.48bd    DYNAMIC     Po1
+   1    0050.5695.9dbd    DYNAMIC     Po2
+   1    0050.5695.a427    DYNAMIC     Po1
+   1    0050.5695.aff5    DYNAMIC     Po1
+   1    1c69.7a06.9513    DYNAMIC     Fa0/35
+   1    1c69.7a0d.7048    DYNAMIC     Fa0/22
+   1    68bd.abb7.2f60    DYNAMIC     Fa0/45
+   1    f04d.a23d.886c    DYNAMIC     Po2
+   1    f04d.a23d.886e    DYNAMIC     Po2
+   1    f04d.a23d.8870    DYNAMIC     Po2
+   1    f04d.a23d.8874    DYNAMIC     Fa0/9
+  64    0017.e049.c8d8    DYNAMIC     Fa0/48
+  64    68bd.abb7.2f60    DYNAMIC     Fa0/45
+  65    0017.e049.c8d8    DYNAMIC     Fa0/48
+  65    001e.f701.db00    DYNAMIC     Fa0/46
+1100    0050.5695.1b71    DYNAMIC     Po1
+1100    68bd.abb7.2f60    DYNAMIC     Fa0/45
+1101    0050.5695.9e44    DYNAMIC     Po2
+1101    0050.5695.9f74    DYNAMIC     Po1
+1101    68bd.abb7.2f60    DYNAMIC     Fa0/45
+1102    0242.8e66.4045    DYNAMIC     Fa0/35
+1102    68bd.abb7.2f60    DYNAMIC     Fa0/45
+1102    a8b1.d4fa.0b04    DYNAMIC     Fa0/18
+1200    0050.5695.4251    DYNAMIC     Po1
+1200    0050.5695.5b91    DYNAMIC     Po1
+1200    0050.5695.7574    DYNAMIC     Po1
+1200    1c69.7a06.9513    DYNAMIC     Fa0/35
+1200    68bd.abb7.2f60    DYNAMIC     Fa0/45
+1200    a8b1.d4fa.0b04    DYNAMIC     Fa0/18
+2100    001e.f701.db00    DYNAMIC     Fa0/46
+2100    1c69.7a0d.7048    DYNAMIC     Fa0/22
+2101    001e.f701.db00    DYNAMIC     Fa0/46
+2102    001e.f701.db00    DYNAMIC     Fa0/46
+2102    0021.5503.3dac    DYNAMIC     Fa0/26
+2102    0242.8e66.4145    DYNAMIC     Fa0/22
+2102    1c69.7a0d.7048    DYNAMIC     Fa0/22
+2200    001e.f701.db00    DYNAMIC     Fa0/46
+2200    0021.5503.3dac    DYNAMIC     Fa0/26
+2200    0050.5695.1c0d    DYNAMIC     Po1
+2200    0050.5695.2867    DYNAMIC     Po1
+2200    0050.5695.ff95    DYNAMIC     Po1
+2200    1c69.7a0d.7048    DYNAMIC     Fa0/22
+Total Mac Addresses for this criterion: 74
+home-3560-sguilfoil#
++====================================================================================================================================================+
+| Commands for learning feature 'Fdb'                                                                                                                |
++====================================================================================================================================================+
+| - Parsed commands                                                                                                                                  |
+|----------------------------------------------------------------------------------------------------------------------------------------------------|
+|   cmd: <class 'genie.libs.parser.ios.show_fdb.ShowMacAddressTableAgingTime'>                                                                       |
+|   cmd: <class 'genie.libs.parser.ios.show_fdb.ShowMacAddressTable'>                                                                                |
+|====================================================================================================================================================|
+| - Commands with empty output                                                                                                                       |
+|----------------------------------------------------------------------------------------------------------------------------------------------------|
+|   cmd: <class 'genie.libs.parser.ios.show_fdb.ShowMacAddressTableLearning'>                                                                        |
+|====================================================================================================================================================|

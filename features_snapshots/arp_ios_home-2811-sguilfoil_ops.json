@@ -1,0 +1,191 @@
+{
+  "_exclude": [
+    "in_requests_pkts",
+    "in_replies_pkts",
+    "in_requests_pkts",
+    "out_replies_pkts",
+    "out_requests_pkts",
+    "in_drops",
+    "in_replies_pkts",
+    "out_requests_pkts",
+    "out_total"
+  ],
+  "attributes": null,
+  "commands": null,
+  "connections": null,
+  "context_manager": {},
+  "info": {
+    "interfaces": {
+      "FastEthernet0/0.1": {
+        "ipv4": {
+          "neighbors": {
+            "10.0.1.1": {
+              "ip": "10.0.1.1",
+              "link_layer_address": "1c69.7a06.9513",
+              "origin": "dynamic"
+            },
+            "10.0.1.10": {
+              "ip": "10.0.1.10",
+              "link_layer_address": "0050.5660.5878",
+              "origin": "dynamic"
+            },
+            "10.0.1.100": {
+              "ip": "10.0.1.100",
+              "link_layer_address": "0050.5695.318f",
+              "origin": "dynamic"
+            },
+            "10.0.1.11": {
+              "ip": "10.0.1.11",
+              "link_layer_address": "f04d.a23d.886c",
+              "origin": "dynamic"
+            },
+            "10.0.1.110": {
+              "ip": "10.0.1.110",
+              "link_layer_address": "0050.566a.34d3",
+              "origin": "dynamic"
+            },
+            "10.0.1.12": {
+              "ip": "10.0.1.12",
+              "link_layer_address": "0050.5695.aff5",
+              "origin": "dynamic"
+            },
+            "10.0.1.15": {
+              "ip": "10.0.1.15",
+              "link_layer_address": "0050.5695.a427",
+              "origin": "dynamic"
+            },
+            "10.0.1.2": {
+              "ip": "10.0.1.2",
+              "link_layer_address": "1c69.7a0d.7048",
+              "origin": "dynamic"
+            },
+            "10.0.1.20": {
+              "ip": "10.0.1.20",
+              "link_layer_address": "0050.5695.48bd",
+              "origin": "dynamic"
+            },
+            "10.0.1.253": {
+              "ip": "10.0.1.253",
+              "link_layer_address": "0024.13ad.98c0",
+              "origin": "dynamic"
+            },
+            "10.0.1.254": {
+              "ip": "10.0.1.254",
+              "link_layer_address": "0017.e049.c8d8",
+              "origin": "static"
+            },
+            "10.0.1.30": {
+              "ip": "10.0.1.30",
+              "link_layer_address": "0050.5695.0705",
+              "origin": "dynamic"
+            },
+            "10.0.1.65": {
+              "ip": "10.0.1.65",
+              "link_layer_address": "001e.f701.db00",
+              "origin": "dynamic"
+            },
+            "10.0.1.7": {
+              "ip": "10.0.1.7",
+              "link_layer_address": "0050.5695.2b98",
+              "origin": "dynamic"
+            },
+            "10.0.1.80": {
+              "ip": "10.0.1.80",
+              "link_layer_address": "0050.5695.5fbc",
+              "origin": "dynamic"
+            },
+            "10.0.1.81": {
+              "ip": "10.0.1.81",
+              "link_layer_address": "0050.5695.020f",
+              "origin": "dynamic"
+            },
+            "10.0.1.82": {
+              "ip": "10.0.1.82",
+              "link_layer_address": "0050.5695.aed4",
+              "origin": "dynamic"
+            },
+            "10.0.1.83": {
+              "ip": "10.0.1.83",
+              "link_layer_address": "0050.5695.a422",
+              "origin": "dynamic"
+            },
+            "10.0.1.90": {
+              "ip": "10.0.1.90",
+              "link_layer_address": "0050.5695.2909",
+              "origin": "dynamic"
+            }
+          }
+        }
+      },
+      "FastEthernet0/0.2": {
+        "ipv4": {
+          "neighbors": {
+            "10.0.2.253": {
+              "ip": "10.0.2.253",
+              "link_layer_address": "b4fb.e416.5f6c",
+              "origin": "dynamic"
+            },
+            "10.0.2.254": {
+              "ip": "10.0.2.254",
+              "link_layer_address": "0017.e049.c8d8",
+              "origin": "static"
+            }
+          }
+        }
+      },
+      "FastEthernet0/0.64": {
+        "ipv4": {
+          "neighbors": {
+            "10.0.64.1": {
+              "ip": "10.0.64.1",
+              "link_layer_address": "68bd.abb7.2f60",
+              "origin": "dynamic"
+            },
+            "10.0.64.2": {
+              "ip": "10.0.64.2",
+              "link_layer_address": "0050.5695.5c1e",
+              "origin": "dynamic"
+            },
+            "10.0.64.254": {
+              "ip": "10.0.64.254",
+              "link_layer_address": "0017.e049.c8d8",
+              "origin": "static"
+            }
+          }
+        }
+      },
+      "FastEthernet0/0.65": {
+        "ipv4": {
+          "neighbors": {
+            "10.0.65.1": {
+              "ip": "10.0.65.1",
+              "link_layer_address": "001e.f701.db00",
+              "origin": "dynamic"
+            },
+            "10.0.65.254": {
+              "ip": "10.0.65.254",
+              "link_layer_address": "0017.e049.c8d8",
+              "origin": "static"
+            }
+          }
+        }
+      },
+      "FastEthernet0/1": {
+        "ipv4": {
+          "neighbors": {
+            "74.106.15.1": {
+              "ip": "74.106.15.1",
+              "link_layer_address": "40a6.7735.bfcd",
+              "origin": "dynamic"
+            },
+            "74.106.15.9": {
+              "ip": "74.106.15.9",
+              "link_layer_address": "0017.e049.c8d9",
+              "origin": "static"
+            }
+          }
+        }
+      }
+    }
+  }
+}

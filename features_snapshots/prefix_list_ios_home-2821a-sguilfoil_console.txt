@@ -1,0 +1,16 @@
++++ home-2821a-sguilfoil: executing command 'show ip prefix-list detail' +++
+show ip prefix-list detail
+home-2821a-sguilfoil#
++++ home-2821a-sguilfoil: executing command 'show ipv6 prefix-list detail' +++
+show ipv6 prefix-list detail
+home-2821a-sguilfoil#
+Could not learn <class 'genie.libs.parser.ios.show_prefix_list.ShowIpv6PrefixListDetail'>
+Parser Output is empty
++====================================================================================================================================================+
+| Commands for learning feature 'PrefixList'                                                                                                         |
++====================================================================================================================================================+
+| - Commands with empty output                                                                                                                       |
+|----------------------------------------------------------------------------------------------------------------------------------------------------|
+|   cmd: <class 'genie.libs.parser.ios.show_prefix_list.ShowIpPrefixListDetail'>                                                                     |
+|   cmd: <class 'genie.libs.parser.ios.show_prefix_list.ShowIpv6PrefixListDetail'>                                                                   |
+|====================================================================================================================================================|

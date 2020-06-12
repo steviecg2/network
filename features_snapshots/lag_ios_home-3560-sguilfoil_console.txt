@@ -1,0 +1,102 @@
++++ home-3560-sguilfoil: executing command 'show lacp sys-id' +++
+show lacp sys-id
+32768, 0024.13ad.9880
+home-3560-sguilfoil#
++++ home-3560-sguilfoil: executing command 'show etherchannel summary' +++
+show etherchannel summary
+Flags:  D - down        P - bundled in port-channel
+        I - stand-alone s - suspended
+        H - Hot-standby (LACP only)
+        R - Layer3      S - Layer2
+        U - in use      f - failed to allocate aggregator
+
+        M - not in use, minimum links not met
+        u - unsuitable for bundling
+        w - waiting to be aggregated
+        d - default port
+
+
+Number of channel-groups in use: 2
+Number of aggregators:           2
+
+Group  Port-channel  Protocol    Ports
+------+-------------+-----------+-----------------------------------------------
+1      Po1(SU)         LACP      Fa0/3(P)    Fa0/5(P)    Fa0/7(I)    
+2      Po2(SU)         LACP      Fa0/11(P)   Fa0/13(P)   Fa0/15(I)   
+
+home-3560-sguilfoil#
++++ home-3560-sguilfoil: executing command 'show lacp neighbor' +++
+show lacp neighbor
+Flags:  S - Device is requesting Slow LACPDUs 
+        F - Device is requesting Fast LACPDUs
+        A - Device is in Active mode       P - Device is in Passive mode     
+
+Channel group 1 neighbors
+
+Partner's information:
+
+                  LACP port                        Admin  Oper   Port    Port
+Port      Flags   Priority  Dev ID          Age    key    Key    Number  State
+Fa0/3     SA      255       0025.64f8.ed83  19s    0x0    0x7    0x8001  0x3D  
+Fa0/5     SA      255       0025.64f8.ed83  19s    0x0    0x7    0x8002  0x3D  
+Fa0/7     SP      0         0000.0000.0000 4274832s    0x0    0x0    0x0     0x0   
+
+Channel group 2 neighbors
+
+Partner's information:
+
+                  LACP port                        Admin  Oper   Port    Port
+Port      Flags   Priority  Dev ID          Age    key    Key    Number  State
+Fa0/11    SA      255       f04d.a23d.886c  18s    0x0    0x7    0x8001  0x3D  
+Fa0/13    SA      255       f04d.a23d.886c  17s    0x0    0x7    0x8002  0x3D  
+Fa0/15    SP      0         0000.0000.0000 4274832s    0x0    0x0    0x0     0x0   
+home-3560-sguilfoil#
++++ home-3560-sguilfoil: executing command 'show pagp neighbor' +++
+show pagp neighbor
+
+home-3560-sguilfoil#
++++ home-3560-sguilfoil: executing command 'show pagp internal' +++
+show pagp internal
+
+home-3560-sguilfoil#
++++ home-3560-sguilfoil: executing command 'show lacp counters' +++
+show lacp counters
+             LACPDUs         Marker      Marker Response    LACPDUs
+Port       Sent   Recv     Sent   Recv     Sent   Recv      Pkts Err
+---------------------------------------------------------------------
+Channel group: 1
+Fa0/3       154057 142302   0      0        0      0         0     
+Fa0/5       154041 142303   0      0        0      0         0     
+Fa0/7       154012 0        0      0        0      0         0     
+
+             LACPDUs         Marker      Marker Response    LACPDUs
+Port       Sent   Recv     Sent   Recv     Sent   Recv      Pkts Err
+---------------------------------------------------------------------
+Channel group: 2
+Fa0/11      154012 142288   0      0        0      0         0     
+Fa0/13      154063 142288   0      0        0      0         0     
+Fa0/15      154006 0        0      0        0      0         0     
+
+home-3560-sguilfoil#
++++ home-3560-sguilfoil: executing command 'show pagp counters' +++
+show pagp counters
+
+home-3560-sguilfoil#
+Could not learn <class 'genie.libs.parser.ios.show_lag.ShowPagpCounters'>
+Parser Output is empty
++====================================================================================================================================================+
+| Commands for learning feature 'Lag'                                                                                                                |
++====================================================================================================================================================+
+| - Parsed commands                                                                                                                                  |
+|----------------------------------------------------------------------------------------------------------------------------------------------------|
+|   cmd: <class 'genie.libs.parser.ios.show_lag.ShowLacpSysId'>                                                                                      |
+|   cmd: <class 'genie.libs.parser.ios.show_lag.ShowEtherchannelSummary'>                                                                            |
+|   cmd: <class 'genie.libs.parser.ios.show_lag.ShowLacpNeighbor'>                                                                                   |
+|   cmd: <class 'genie.libs.parser.ios.show_lag.ShowLacpCounters'>                                                                                   |
+|====================================================================================================================================================|
+| - Commands with empty output                                                                                                                       |
+|----------------------------------------------------------------------------------------------------------------------------------------------------|
+|   cmd: <class 'genie.libs.parser.ios.show_lag.ShowPagpNeighbor'>                                                                                   |
+|   cmd: <class 'genie.libs.parser.ios.show_lag.ShowPagpInternal'>                                                                                   |
+|   cmd: <class 'genie.libs.parser.ios.show_lag.ShowPagpCounters'>                                                                                   |
+|====================================================================================================================================================|

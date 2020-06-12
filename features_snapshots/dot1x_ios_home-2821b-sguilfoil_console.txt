@@ -1,0 +1,40 @@
++++ home-2821b-sguilfoil: executing command 'show dot1x all details' +++
+show dot1x all details
+Sysauthcontrol             Disabled
+Dot1x Protocol Version            2
+
+home-2821b-sguilfoil#
++++ home-2821b-sguilfoil: executing command 'show dot1x all count' +++
+show dot1x all count
+show dot1x all count
+               ^
+% Invalid input detected at '^' marker.
+
+home-2821b-sguilfoil#
++++ home-2821b-sguilfoil: executing command 'show dot1x all statistics' +++
+show dot1x all statistics
+
+home-2821b-sguilfoil#
++++ home-2821b-sguilfoil: executing command 'show dot1x all summary' +++
+show dot1x all summary
+Interface       PAE     Client          Status          
+--------------------------------------------------------
+home-2821b-sguilfoil#
+Could not learn <class 'genie.libs.parser.ios.show_dot1x.ShowDot1xAllSummary'>
+Parser Output is empty
++====================================================================================================================================================+
+| Commands for learning feature 'Dot1X'                                                                                                              |
++====================================================================================================================================================+
+| - Parsed commands                                                                                                                                  |
+|----------------------------------------------------------------------------------------------------------------------------------------------------|
+|   cmd: <class 'genie.libs.parser.ios.show_dot1x.ShowDot1xAllDetail'>                                                                               |
+|====================================================================================================================================================|
+| - Commands not accepted on the device                                                                                                              |
+|----------------------------------------------------------------------------------------------------------------------------------------------------|
+|   cmd: <class 'genie.libs.parser.ios.show_dot1x.ShowDot1xAllCount'>                                                                                |
+|====================================================================================================================================================|
+| - Commands with empty output                                                                                                                       |
+|----------------------------------------------------------------------------------------------------------------------------------------------------|
+|   cmd: <class 'genie.libs.parser.ios.show_dot1x.ShowDot1xAllStatistics'>                                                                           |
+|   cmd: <class 'genie.libs.parser.ios.show_dot1x.ShowDot1xAllSummary'>                                                                              |
+|====================================================================================================================================================|

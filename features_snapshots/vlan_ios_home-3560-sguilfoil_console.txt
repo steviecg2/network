@@ -1,0 +1,64 @@
++++ home-3560-sguilfoil: executing command 'show vlan' +++
+show vlan
+
+VLAN Name                             Status    Ports
+---- -------------------------------- --------- -------------------------------
+1    default                          active    Fa0/1, Fa0/2, Fa0/4, Fa0/6, Fa0/8, Fa0/9, Fa0/10, Fa0/12, Fa0/14, Fa0/16, Fa0/19, Fa0/25, Fa0/28, Fa0/29, Fa0/30, Fa0/32, Fa0/33, Fa0/34, Fa0/36, Fa0/37, Fa0/39, Fa0/40, Fa0/41, Fa0/42, Fa0/43, Fa0/44, Gi0/1, Gi0/2, Gi0/3, Gi0/4
+2    home                             active    Fa0/47
+64   HQA_mgmt                         active    
+65   HQB_mgmt                         active    
+1002 fddi-default                     act/unsup 
+1003 token-ring-default               act/unsup 
+1004 fddinet-default                  act/unsup 
+1005 trnet-default                    act/unsup 
+1100 HQA_Server_Public                active    
+1101 HQA_Server_Private               active    
+1102 HQA_Voice                        active    Fa0/18, Fa0/20, Fa0/21
+1200 HQA_Data                         active    Fa0/18, Fa0/20, Fa0/21
+2013 SAPHN3                           active    Fa0/17
+2015 SBPHN3                           active    Fa0/23
+2017 SCPHN3                           active    Fa0/27
+2021 PSTNPHN2                         active    Fa0/31
+2100 HQB_Server_Public                active    
+2101 HQB_Server_Private               active    
+2102 HQB_Voice                        active    Fa0/24, Fa0/26
+2200 HQB_Data                         active    Fa0/24, Fa0/26
+
+VLAN Type  SAID       MTU   Parent RingNo BridgeNo Stp  BrdgMode Trans1 Trans2
+---- ----- ---------- ----- ------ ------ -------- ---- -------- ------ ------
+1    enet  100001     1500  -      -      -        -    -        0      0   
+2    enet  100002     1500  -      -      -        -    -        0      0   
+64   enet  100064     1500  -      -      -        -    -        0      0   
+65   enet  100065     1500  -      -      -        -    -        0      0   
+1002 fddi  101002     1500  -      -      -        -    -        0      0   
+1003 tr    101003     1500  -      -      -        -    -        0      0   
+1004 fdnet 101004     1500  -      -      -        ieee -        0      0   
+1005 trnet 101005     1500  -      -      -        ibm  -        0      0   
+1100 enet  101100     1500  -      -      -        -    -        0      0   
+1101 enet  101101     1500  -      -      -        -    -        0      0   
+1102 enet  101102     1500  -      -      -        -    -        0      0   
+1200 enet  101200     1500  -      -      -        -    -        0      0   
+2013 enet  102013     1500  -      -      -        -    -        0      0   
+2015 enet  102015     1500  -      -      -        -    -        0      0   
+2017 enet  102017     1500  -      -      -        -    -        0      0   
+2021 enet  102021     1500  -      -      -        -    -        0      0   
+2100 enet  102100     1500  -      -      -        -    -        0      0   
+2101 enet  102101     1500  -      -      -        -    -        0      0   
+2102 enet  102102     1500  -      -      -        -    -        0      0   
+2200 enet  102200     1500  -      -      -        -    -        0      0   
+
+Remote SPAN VLANs
+------------------------------------------------------------------------------
+
+
+Primary Secondary Type              Ports
+------- --------- ----------------- ------------------------------------------
+
+home-3560-sguilfoil#
++====================================================================================================================================================+
+| Commands for learning feature 'Vlan'                                                                                                               |
++====================================================================================================================================================+
+| - Parsed commands                                                                                                                                  |
+|----------------------------------------------------------------------------------------------------------------------------------------------------|
+|   cmd: <class 'genie.libs.parser.ios.show_vlan.ShowVlan'>                                                                                          |
+|====================================================================================================================================================|

@@ -1,0 +1,232 @@
+{
+  "_exclude": [
+    "in_discards",
+    "in_octets",
+    "in_pkts",
+    "last_clear",
+    "out_octets",
+    "out_pkts",
+    "in_rate",
+    "out_rate",
+    "in_errors",
+    "in_crc_errors",
+    "in_rate_pkts",
+    "out_rate_pkts",
+    "in_broadcast_pkts",
+    "out_broadcast_pkts",
+    "in_multicast_pkts",
+    "out_multicast_pkts",
+    "in_unicast_pkts",
+    "out_unicast_pkts",
+    "last_change",
+    "mac_address",
+    "phys_address",
+    "((t|T)unnel.*)",
+    "(Null.*)",
+    "chars_out",
+    "chars_in",
+    "pkts_out",
+    "pkts_in",
+    "mgmt0"
+  ],
+  "attributes": null,
+  "commands": null,
+  "connections": null,
+  "context_manager": {},
+  "info": {
+    "FastEthernet0/0": {
+      "bandwidth": 100000,
+      "delay": 100,
+      "enabled": true,
+      "mac_address": "0017.e049.c8d8",
+      "mtu": 1500,
+      "oper_status": "up",
+      "phys_address": "0017.e049.c8d8",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "type": "MV96340 Ethernet"
+    },
+    "FastEthernet0/0.1": {
+      "bandwidth": 100000,
+      "delay": 100,
+      "enabled": true,
+      "mac_address": "0017.e049.c8d8",
+      "mtu": 1500,
+      "oper_status": "up",
+      "phys_address": "0017.e049.c8d8",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "type": "MV96340 Ethernet"
+    },
+    "FastEthernet0/0.10": {
+      "bandwidth": 100000,
+      "delay": 100,
+      "enabled": true,
+      "mac_address": "0017.e049.c8d8",
+      "mtu": 1500,
+      "oper_status": "up",
+      "phys_address": "0017.e049.c8d8",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "type": "MV96340 Ethernet"
+    },
+    "FastEthernet0/0.2": {
+      "bandwidth": 100000,
+      "delay": 100,
+      "enabled": true,
+      "mac_address": "0017.e049.c8d8",
+      "mtu": 1500,
+      "oper_status": "up",
+      "phys_address": "0017.e049.c8d8",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "type": "MV96340 Ethernet"
+    },
+    "FastEthernet0/0.64": {
+      "bandwidth": 100000,
+      "delay": 100,
+      "enabled": true,
+      "mac_address": "0017.e049.c8d8",
+      "mtu": 1500,
+      "oper_status": "up",
+      "phys_address": "0017.e049.c8d8",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "type": "MV96340 Ethernet"
+    },
+    "FastEthernet0/0.65": {
+      "bandwidth": 100000,
+      "delay": 100,
+      "enabled": true,
+      "mac_address": "0017.e049.c8d8",
+      "mtu": 1500,
+      "oper_status": "up",
+      "phys_address": "0017.e049.c8d8",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "type": "MV96340 Ethernet"
+    },
+    "FastEthernet0/1": {
+      "bandwidth": 100000,
+      "delay": 100,
+      "enabled": true,
+      "mac_address": "0017.e049.c8d9",
+      "mtu": 1500,
+      "oper_status": "up",
+      "phys_address": "0017.e049.c8d9",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "type": "MV96340 Ethernet"
+    },
+    "Loopback0": {
+      "bandwidth": 8000000,
+      "delay": 5000,
+      "enabled": true,
+      "mtu": 1514,
+      "oper_status": "up",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "type": "Loopback"
+    },
+    "NVI0": {
+      "bandwidth": 56,
+      "delay": 5000,
+      "enabled": true,
+      "mtu": 1514,
+      "oper_status": "up",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "type": "NVI"
+    },
+    "SSLVPN-VIF0": {
+      "bandwidth": 56,
+      "delay": 5000,
+      "description": "***Internally created by SSLVPN context ssl_context***",
+      "enabled": true,
+      "mac_address": "_VIF",
+      "mtu": 1406,
+      "oper_status": "up",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "type": "SSLVPN"
+    },
+    "Serial0/1/0": {
+      "bandwidth": 8192,
+      "delay": 20000,
+      "description": "Link to 2821a",
+      "enabled": true,
+      "mtu": 1500,
+      "oper_status": "up",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "type": "GT96K Serial"
+    },
+    "Serial0/1/1": {
+      "bandwidth": 64,
+      "delay": 20000,
+      "description": "Link to 2821b",
+      "enabled": true,
+      "mtu": 1500,
+      "oper_status": "up",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "type": "DSX1"
+    },
+    "Tunnel1": {
+      "bandwidth": 100,
+      "delay": 50000,
+      "enabled": true,
+      "mtu": 17859,
+      "oper_status": "up",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "type": "Tunnel"
+    },
+    "Tunnel2": {
+      "bandwidth": 100,
+      "delay": 50000,
+      "enabled": true,
+      "mtu": 17859,
+      "oper_status": "up",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "type": "Tunnel"
+    },
+    "Virtual-Access1": {
+      "bandwidth": 100000,
+      "delay": 100000,
+      "enabled": true,
+      "mtu": 1500,
+      "oper_status": "down",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "type": "Virtual Access interface"
+    },
+    "Virtual-Template1": {
+      "bandwidth": 100000,
+      "delay": 100000,
+      "enabled": true,
+      "mtu": 1500,
+      "oper_status": "down",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "type": "Virtual Template interface"
+    }
+  }
+}

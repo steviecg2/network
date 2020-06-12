@@ -1,0 +1,41 @@
+{
+  "_exclude": [],
+  "attributes": null,
+  "commands": null,
+  "connections": null,
+  "context_manager": {},
+  "info": {
+    "acls": {
+      "AUTOQOS-ACL-DEFAULT": {
+        "aces": {
+          "10": {
+            "actions": {
+              "forwarding": "permit",
+              "logging": "log-none"
+            },
+            "matches": {
+              "l3": {
+                "ipv4": {
+                  "destination_ipv4_network": {
+                    "any": {
+                      "destination_ipv4_network": "any"
+                    }
+                  },
+                  "protocol": "ipv4",
+                  "source_ipv4_network": {
+                    "any": {
+                      "source_ipv4_network": "any"
+                    }
+                  }
+                }
+              }
+            },
+            "name": "10"
+          }
+        },
+        "name": "AUTOQOS-ACL-DEFAULT",
+        "type": "ipv4-acl-type"
+      }
+    }
+  }
+}

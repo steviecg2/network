@@ -1,0 +1,38 @@
++++ home-2811-sguilfoil: executing command 'show ntp associations' +++
+show ntp associations
+
+  address         ref clock       st   when   poll reach  delay  offset   disp
+*~127.127.1.1     .LOCL.           1      4     16   377  0.000   0.000  0.253
+ * sys.peer, # selected, + candidate, - outlyer, x falseticker, ~ configured
+home-2811-sguilfoil#
++++ home-2811-sguilfoil: executing command 'show ntp status' +++
+show ntp status
+Clock is synchronized, stratum 2, reference is 127.127.1.1   
+nominal freq is 250.0000 Hz, actual freq is 249.9977 Hz, precision is 2**24
+reference time is E28D8031.ABE6A398 (00:16:49.671 EST Fri Jun 12 2020)
+clock offset is 0.0000 msec, root delay is 0.00 msec
+root dispersion is 0.00 msec, peer dispersion is 0.00 msec
+loopfilter state is 'CTRL' (Normal Controlled Loop), drift is 0.000009123 s/s
+system poll interval is 16, last update was 5 sec ago.
+home-2811-sguilfoil#
++++ home-2811-sguilfoil: executing command 'show ntp config' +++
+show ntp config
+show ntp config
+         ^
+% Invalid input detected at '^' marker.
+
+home-2811-sguilfoil#
+Could not learn <class 'genie.libs.parser.ios.show_ntp.ShowNtpConfig'>
+Invalid command has been executed
++====================================================================================================================================================+
+| Commands for learning feature 'Ntp'                                                                                                                |
++====================================================================================================================================================+
+| - Parsed commands                                                                                                                                  |
+|----------------------------------------------------------------------------------------------------------------------------------------------------|
+|   cmd: <class 'genie.libs.parser.ios.show_ntp.ShowNtpAssociations'>                                                                                |
+|   cmd: <class 'genie.libs.parser.ios.show_ntp.ShowNtpStatus'>                                                                                      |
+|====================================================================================================================================================|
+| - Commands not accepted on the device                                                                                                              |
+|----------------------------------------------------------------------------------------------------------------------------------------------------|
+|   cmd: <class 'genie.libs.parser.ios.show_ntp.ShowNtpConfig'>                                                                                      |
+|====================================================================================================================================================|

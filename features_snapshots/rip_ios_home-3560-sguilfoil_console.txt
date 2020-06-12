@@ -1,0 +1,36 @@
++++ home-3560-sguilfoil: executing command 'show vrf detail' +++
+show vrf detail
+
+home-3560-sguilfoil#
++++ home-3560-sguilfoil: executing command 'show ip protocols | sec rip' +++
+show ip protocols | sec rip
+show ip protocols | sec rip
+                    ^
+% Invalid input detected at '^' marker.
+
+home-3560-sguilfoil#
++++ home-3560-sguilfoil: executing command 'show ip rip database' +++
+show ip rip database
+home-3560-sguilfoil#
++++ home-3560-sguilfoil: executing command 'show ipv6 protocols | sec rip' +++
+show ipv6 protocols | sec rip
+show ipv6 protocols | sec rip
+                      ^
+% Invalid input detected at '^' marker.
+
+home-3560-sguilfoil#
+Could not learn <class 'genie.libs.parser.iosxe.show_protocols.ShowIpv6ProtocolsSectionRip'>
+Invalid command has been executed
++====================================================================================================================================================+
+| Commands for learning feature 'Rip'                                                                                                                |
++====================================================================================================================================================+
+| - Commands not accepted on the device                                                                                                              |
+|----------------------------------------------------------------------------------------------------------------------------------------------------|
+|   cmd: <class 'genie.libs.parser.iosxe.show_protocols.ShowIpProtocolsSectionRip'>, arguments: {'vrf':''}                                           |
+|   cmd: <class 'genie.libs.parser.iosxe.show_protocols.ShowIpv6ProtocolsSectionRip'>, arguments: {'vrf':''}                                         |
+|====================================================================================================================================================|
+| - Commands with empty output                                                                                                                       |
+|----------------------------------------------------------------------------------------------------------------------------------------------------|
+|   cmd: <class 'genie.libs.parser.iosxe.show_vrf.ShowVrfDetail'>                                                                                    |
+|   cmd: <class 'genie.libs.parser.ios.show_rip.ShowIpRipDatabase'>, arguments: {'vrf':''}                                                           |
+|====================================================================================================================================================|

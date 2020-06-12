@@ -1,0 +1,57 @@
+{
+  "_exclude": [
+    "root_delay",
+    "delay",
+    "root_dispersion",
+    "receive_time"
+  ],
+  "attributes": null,
+  "commands": null,
+  "connections": null,
+  "context_manager": {},
+  "info": {
+    "clock_state": {
+      "system_status": {
+        "associations_address": "127.127.1.1",
+        "associations_local_mode": "client",
+        "clock_offset": 0.0,
+        "clock_precision": "2**24",
+        "clock_refid": ".LOCL.",
+        "clock_state": "synchronized",
+        "clock_stratum": 1,
+        "reference_time": "E28D8031.ABE6A398 (00:16:49.671 EST Fri Jun 12 2020)",
+        "root_delay": 0.0,
+        "root_dispersion": 0.0
+      }
+    },
+    "vrf": {
+      "default": {
+        "associations": {
+          "address": {
+            "127.127.1.1": {
+              "local_mode": {
+                "client": {
+                  "isconfigured": {
+                    "false": {
+                      "address": "127.127.1.1",
+                      "delay": 0.0,
+                      "isconfigured": false,
+                      "local_mode": "client",
+                      "offset": 0.0,
+                      "poll": 16,
+                      "reach": 377,
+                      "receive_time": 4,
+                      "refid": ".LOCL.",
+                      "stratum": 1,
+                      "vrf": "default"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

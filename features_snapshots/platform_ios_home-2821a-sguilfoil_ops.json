@@ -1,0 +1,50 @@
+{
+  "_exclude": [
+    "rp_uptime",
+    "disk_free_space",
+    "uptime",
+    "switchover_reason",
+    "disk_used_space",
+    "total_free_bytes",
+    "disk_total_space",
+    "main_mem",
+    "date",
+    "index",
+    "chassis_sn",
+    "image",
+    "sn",
+    "rp_boot_image",
+    "installed_packages",
+    "version"
+  ],
+  "attributes": null,
+  "chassis_sn": "FTX1442A1WZ",
+  "commands": null,
+  "config_register": "0x2102",
+  "connections": null,
+  "context_manager": {},
+  "dir": "flash:/",
+  "image": "flash:c2800nm-adventerprisek9-mz.151-4.M8.bin",
+  "os": "ios",
+  "slot": {
+    "rp": {
+      "0": {
+        "subslot": {
+          "0": {
+            "name": "VWIC2-1MFT-T1/E1",
+            "sn": "FOC13242JL5"
+          },
+          "1": {
+            "name": "HWIC-2T",
+            "sn": "FOC16252UEQ"
+          },
+          "4": {
+            "name": "PVDM2-64",
+            "sn": "FOC12253SV8"
+          }
+        }
+      }
+    }
+  },
+  "version": "15.1(4)M8"
+}

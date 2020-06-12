@@ -1,0 +1,61 @@
++++ home-2821a-sguilfoil: executing command 'show ip route' +++
+show ip route
+Codes: L - local, C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area 
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route, H - NHRP, l - LISP
+       + - replicated route, % - next hop override
+
+Gateway of last resort is 157.100.101.1 to network 0.0.0.0
+
+O*E2  0.0.0.0/0 [110/1] via 157.100.101.1, 6w2d, Serial0/1/0
+      10.0.0.0/8 is variably subnetted, 2 subnets, 2 masks
+C        10.0.64.0/24 is directly connected, GigabitEthernet0/0.64
+L        10.0.64.1/32 is directly connected, GigabitEthernet0/0.64
+      142.100.0.0/16 is variably subnetted, 3 subnets, 2 masks
+C        142.100.64.0/24 is directly connected, GigabitEthernet0/0.1100
+L        142.100.64.254/32 is directly connected, GigabitEthernet0/0.1100
+O        142.100.65.0/24 [110/25] via 157.100.101.1, 6w2d, Serial0/1/0
+      142.101.0.0/16 is variably subnetted, 3 subnets, 2 masks
+C        142.101.64.0/24 is directly connected, GigabitEthernet0/0.1101
+L        142.101.64.254/32 is directly connected, GigabitEthernet0/0.1101
+S        142.101.65.0/24 [1/0] via 157.100.202.2
+      142.102.0.0/16 is variably subnetted, 3 subnets, 2 masks
+C        142.102.64.0/24 is directly connected, GigabitEthernet0/0.1102
+L        142.102.64.254/32 is directly connected, GigabitEthernet0/0.1102
+O        142.102.65.0/24 [110/25] via 157.100.101.1, 6w2d, Serial0/1/0
+      142.200.0.0/16 is variably subnetted, 3 subnets, 2 masks
+C        142.200.64.0/24 is directly connected, GigabitEthernet0/0.1200
+L        142.200.64.254/32 is directly connected, GigabitEthernet0/0.1200
+O        142.200.65.0/24 [110/25] via 157.100.101.1, 6w2d, Serial0/1/0
+      157.100.0.0/16 is variably subnetted, 6 subnets, 2 masks
+C        157.100.101.0/30 is directly connected, Serial0/1/0
+L        157.100.101.2/32 is directly connected, Serial0/1/0
+O        157.100.101.4/30 [110/24] via 157.100.101.1, 6w2d, Serial0/1/0
+C        157.100.202.0/30 is directly connected, Serial0/1/1
+L        157.100.202.1/32 is directly connected, Serial0/1/1
+C        157.100.202.2/32 is directly connected, Serial0/1/1
+home-2821a-sguilfoil#
++++ home-2821a-sguilfoil: executing command 'show ipv6 route' +++
+show ipv6 route
+IPv6 Routing Table - default - 1 entries
+Codes: C - Connected, L - Local, S - Static, U - Per-user Static route
+       B - BGP, HA - Home Agent, MR - Mobile Router, R - RIP
+       I1 - ISIS L1, I2 - ISIS L2, IA - ISIS interarea, IS - ISIS summary
+       D - EIGRP, EX - EIGRP external, NM - NEMO, l - LISP
+       O - OSPF Intra, OI - OSPF Inter, OE1 - OSPF ext 1, OE2 - OSPF ext 2
+       ON1 - OSPF NSSA ext 1, ON2 - OSPF NSSA ext 2
+L   FF00::/8 [0/0]
+     via Null0, receive
+home-2821a-sguilfoil#
++====================================================================================================================================================+
+| Commands for learning feature 'Routing'                                                                                                            |
++====================================================================================================================================================+
+| - Parsed commands                                                                                                                                  |
+|----------------------------------------------------------------------------------------------------------------------------------------------------|
+|   cmd: <class 'genie.libs.parser.iosxe.show_routing.ShowIpRouteDistributor'>                                                                       |
+|   cmd: <class 'genie.libs.parser.iosxe.show_routing.ShowIpv6RouteDistributor'>                                                                     |
+|====================================================================================================================================================|

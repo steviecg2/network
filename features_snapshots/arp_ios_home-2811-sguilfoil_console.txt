@@ -1,0 +1,583 @@
++++ home-2811-sguilfoil: executing command 'show ip arp' +++
+show ip arp
+Protocol  Address          Age (min)  Hardware Addr   Type   Interface
+Internet  10.0.1.1              105   1c69.7a06.9513  ARPA   FastEthernet0/0.1
+Internet  10.0.1.2               34   1c69.7a0d.7048  ARPA   FastEthernet0/0.1
+Internet  10.0.1.7                7   0050.5695.2b98  ARPA   FastEthernet0/0.1
+Internet  10.0.1.10              22   0050.5660.5878  ARPA   FastEthernet0/0.1
+Internet  10.0.1.11              19   f04d.a23d.886c  ARPA   FastEthernet0/0.1
+Internet  10.0.1.12               1   0050.5695.aff5  ARPA   FastEthernet0/0.1
+Internet  10.0.1.15               0   0050.5695.a427  ARPA   FastEthernet0/0.1
+Internet  10.0.1.20              69   0050.5695.48bd  ARPA   FastEthernet0/0.1
+Internet  10.0.1.30              12   0050.5695.0705  ARPA   FastEthernet0/0.1
+Internet  10.0.1.65              38   001e.f701.db00  ARPA   FastEthernet0/0.1
+Internet  10.0.1.80             237   0050.5695.5fbc  ARPA   FastEthernet0/0.1
+Internet  10.0.1.81             106   0050.5695.020f  ARPA   FastEthernet0/0.1
+Internet  10.0.1.82              66   0050.5695.aed4  ARPA   FastEthernet0/0.1
+Internet  10.0.1.83             173   0050.5695.a422  ARPA   FastEthernet0/0.1
+Internet  10.0.1.90             202   0050.5695.2909  ARPA   FastEthernet0/0.1
+Internet  10.0.1.100             27   0050.5695.318f  ARPA   FastEthernet0/0.1
+Internet  10.0.1.110              9   0050.566a.34d3  ARPA   FastEthernet0/0.1
+Internet  10.0.1.253            120   0024.13ad.98c0  ARPA   FastEthernet0/0.1
+Internet  10.0.1.254              -   0017.e049.c8d8  ARPA   FastEthernet0/0.1
+Internet  10.0.2.253            167   b4fb.e416.5f6c  ARPA   FastEthernet0/0.2
+Internet  10.0.2.254              -   0017.e049.c8d8  ARPA   FastEthernet0/0.2
+Internet  10.0.64.1              31   68bd.abb7.2f60  ARPA   FastEthernet0/0.64
+Internet  10.0.64.2              52   0050.5695.5c1e  ARPA   FastEthernet0/0.64
+Internet  10.0.64.254             -   0017.e049.c8d8  ARPA   FastEthernet0/0.64
+Internet  10.0.65.1              36   001e.f701.db00  ARPA   FastEthernet0/0.65
+Internet  10.0.65.254             -   0017.e049.c8d8  ARPA   FastEthernet0/0.65
+Internet  74.106.15.1           145   40a6.7735.bfcd  ARPA   FastEthernet0/1
+Internet  74.106.15.9             -   0017.e049.c8d9  ARPA   FastEthernet0/1
+home-2811-sguilfoil#
++++ home-2811-sguilfoil: executing command 'show vrf' +++
+show vrf
+
+home-2811-sguilfoil#
++++ home-2811-sguilfoil: executing command 'show ip interface' +++
+show ip interface
+FastEthernet0/0 is up, line protocol is up
+  Internet protocol processing disabled
+FastEthernet0/0.1 is up, line protocol is up
+  Internet address is 10.0.1.254/24
+  Broadcast address is 255.255.255.255
+  Address determined by non-volatile memory
+  MTU is 1500 bytes
+  Helper address is not set
+  Directed broadcast forwarding is disabled
+  Outgoing access list is not set
+  Inbound  access list is not set
+  Proxy ARP is enabled
+  Local Proxy ARP is disabled
+  Security level is default
+  Split horizon is enabled
+  ICMP redirects are always sent
+  ICMP unreachables are always sent
+  ICMP mask replies are never sent
+  IP fast switching is enabled
+  IP fast switching on the same interface is enabled
+  IP Flow switching is disabled
+  IP CEF switching is enabled
+  IP CEF switching turbo vector
+  IP multicast fast switching is enabled
+  IP multicast distributed fast switching is disabled
+  IP route-cache flags are Fast, CEF
+  Router Discovery is disabled
+  IP output packet accounting is disabled
+  IP access violation accounting is disabled
+  TCP/IP header compression is disabled
+  RTP/IP header compression is disabled
+  Policy routing is disabled
+  Network address translation is enabled, interface in domain inside
+  BGP Policy Mapping is disabled
+  Input features: Stateful Inspection, Virtual Fragment Reassembly, Virtual Fragment Reassembly After IPSec Decryption, MCI Check
+  Output features: NAT Inside, Stateful Inspection, Firewall (NAT), Firewall (inspect), Post-Ingress-NetFlow
+  WCCP Redirect outbound is disabled
+  WCCP Redirect inbound is disabled
+  WCCP Redirect exclude is disabled
+  Inbound inspection rule is firewall
+FastEthernet0/0.2 is up, line protocol is up
+  Internet address is 10.0.2.254/30
+  Broadcast address is 255.255.255.255
+  Address determined by non-volatile memory
+  MTU is 1500 bytes
+  Helper address is not set
+  Directed broadcast forwarding is disabled
+  Outgoing access list is not set
+  Inbound  access list is not set
+  Proxy ARP is enabled
+  Local Proxy ARP is disabled
+  Security level is default
+  Split horizon is enabled
+  ICMP redirects are always sent
+  ICMP unreachables are always sent
+  ICMP mask replies are never sent
+  IP fast switching is enabled
+  IP fast switching on the same interface is enabled
+  IP Flow switching is disabled
+  IP CEF switching is enabled
+  IP CEF switching turbo vector
+  IP multicast fast switching is enabled
+  IP multicast distributed fast switching is disabled
+  IP route-cache flags are Fast, CEF
+  Router Discovery is disabled
+  IP output packet accounting is disabled
+  IP access violation accounting is disabled
+  TCP/IP header compression is disabled
+  RTP/IP header compression is disabled
+  Policy routing is disabled
+  Network address translation is enabled, interface in domain inside
+  BGP Policy Mapping is disabled
+  Input features: Stateful Inspection, Virtual Fragment Reassembly, Virtual Fragment Reassembly After IPSec Decryption, MCI Check
+  Output features: NAT Inside, Stateful Inspection, Firewall (NAT), Firewall (inspect), Post-Ingress-NetFlow
+  WCCP Redirect outbound is disabled
+  WCCP Redirect inbound is disabled
+  WCCP Redirect exclude is disabled
+  Inbound inspection rule is firewall
+FastEthernet0/0.10 is up, line protocol is up
+  Internet protocol processing disabled
+FastEthernet0/0.64 is up, line protocol is up
+  Internet address is 10.0.64.254/24
+  Broadcast address is 255.255.255.255
+  Address determined by non-volatile memory
+  MTU is 1500 bytes
+  Helper address is not set
+  Directed broadcast forwarding is disabled
+  Outgoing access list is not set
+  Inbound  access list is not set
+  Proxy ARP is enabled
+  Local Proxy ARP is disabled
+  Security level is default
+  Split horizon is enabled
+  ICMP redirects are always sent
+  ICMP unreachables are always sent
+  ICMP mask replies are never sent
+  IP fast switching is enabled
+  IP fast switching on the same interface is enabled
+  IP Flow switching is disabled
+  IP CEF switching is enabled
+  IP CEF switching turbo vector
+  IP multicast fast switching is enabled
+  IP multicast distributed fast switching is disabled
+  IP route-cache flags are Fast, CEF
+  Router Discovery is disabled
+  IP output packet accounting is disabled
+  IP access violation accounting is disabled
+  TCP/IP header compression is disabled
+  RTP/IP header compression is disabled
+  Policy routing is disabled
+  Network address translation is enabled, interface in domain inside
+  BGP Policy Mapping is disabled
+  Input features: Stateful Inspection, Virtual Fragment Reassembly, Virtual Fragment Reassembly After IPSec Decryption, MCI Check
+  Output features: NAT Inside, Stateful Inspection, Firewall (NAT), Firewall (inspect), Post-Ingress-NetFlow
+  WCCP Redirect outbound is disabled
+  WCCP Redirect inbound is disabled
+  WCCP Redirect exclude is disabled
+  Inbound inspection rule is firewall
+FastEthernet0/0.65 is up, line protocol is up
+  Internet address is 10.0.65.254/24
+  Broadcast address is 255.255.255.255
+  Address determined by non-volatile memory
+  MTU is 1500 bytes
+  Helper address is not set
+  Directed broadcast forwarding is disabled
+  Outgoing access list is not set
+  Inbound  access list is not set
+  Proxy ARP is enabled
+  Local Proxy ARP is disabled
+  Security level is default
+  Split horizon is enabled
+  ICMP redirects are always sent
+  ICMP unreachables are always sent
+  ICMP mask replies are never sent
+  IP fast switching is enabled
+  IP fast switching on the same interface is enabled
+  IP Flow switching is disabled
+  IP CEF switching is enabled
+  IP CEF switching turbo vector
+  IP multicast fast switching is enabled
+  IP multicast distributed fast switching is disabled
+  IP route-cache flags are Fast, CEF
+  Router Discovery is disabled
+  IP output packet accounting is disabled
+  IP access violation accounting is disabled
+  TCP/IP header compression is disabled
+  RTP/IP header compression is disabled
+  Policy routing is disabled
+  Network address translation is enabled, interface in domain inside
+  BGP Policy Mapping is disabled
+  Input features: Stateful Inspection, Virtual Fragment Reassembly, Virtual Fragment Reassembly After IPSec Decryption, MCI Check
+  Output features: NAT Inside, Stateful Inspection, Firewall (NAT), Firewall (inspect), Post-Ingress-NetFlow
+  WCCP Redirect outbound is disabled
+  WCCP Redirect inbound is disabled
+  WCCP Redirect exclude is disabled
+  Inbound inspection rule is firewall
+FastEthernet0/1 is up, line protocol is up
+  Internet address is 74.106.15.9/24
+  Broadcast address is 255.255.255.255
+  Address determined by DHCP
+  MTU is 1500 bytes
+  Helper address is not set
+  Directed broadcast forwarding is disabled
+  Outgoing access list is not set
+  Inbound  access list is outside_acl
+  Proxy ARP is enabled
+  Local Proxy ARP is disabled
+  Security level is default
+  Split horizon is enabled
+  ICMP redirects are always sent
+  ICMP unreachables are always sent
+  ICMP mask replies are never sent
+  IP fast switching is enabled
+  IP fast switching on the same interface is disabled
+  IP Flow switching is disabled
+  IP CEF switching is enabled
+  IP CEF switching turbo vector
+  IP multicast fast switching is enabled
+  IP multicast distributed fast switching is disabled
+  IP route-cache flags are Fast, CEF
+  Router Discovery is disabled
+  IP output packet accounting is disabled
+  IP access violation accounting is disabled
+  TCP/IP header compression is disabled
+  RTP/IP header compression is disabled
+  Policy routing is disabled
+  Network address translation is enabled, interface in domain outside
+  BGP Policy Mapping is disabled
+  Input features: Stateful Inspection, Virtual Fragment Reassembly, Access List, IPSec input classification, Virtual Fragment Reassembly After IPSec Decryption, NAT Outside, MCI Check
+  Output features: CCE Output Classification, Post-routing NAT Outside, Stateful Inspection, IPSec output classification, Firewall (NAT), Firewall (inspect), Post-Ingress-NetFlow, IPSec: to crypto engine, Post-encryption output features
+  WCCP Redirect outbound is disabled
+  WCCP Redirect inbound is disabled
+  WCCP Redirect exclude is disabled
+Serial0/1/0 is up, line protocol is up
+  Internet address is 157.100.101.1/30
+  Broadcast address is 255.255.255.255
+  Address determined by non-volatile memory
+  MTU is 1500 bytes
+  Helper address is not set
+  Directed broadcast forwarding is disabled
+  Multicast reserved groups joined: 224.0.0.5
+  Outgoing access list is not set
+  Inbound  access list is not set
+  Proxy ARP is enabled
+  Local Proxy ARP is disabled
+  Security level is default
+  Split horizon is enabled
+  ICMP redirects are always sent
+  ICMP unreachables are always sent
+  ICMP mask replies are never sent
+  IP fast switching is enabled
+  IP fast switching on the same interface is enabled
+  IP Flow switching is disabled
+  IP CEF switching is enabled
+  IP CEF switching turbo vector
+  IP multicast fast switching is enabled
+  IP multicast distributed fast switching is disabled
+  IP route-cache flags are Fast, CEF
+  Router Discovery is disabled
+  IP output packet accounting is disabled
+  IP access violation accounting is disabled
+  TCP/IP header compression is disabled
+  RTP/IP header compression is disabled
+  Policy routing is disabled
+  Network address translation is enabled, interface in domain inside
+  BGP Policy Mapping is disabled
+  Input features: Stateful Inspection, Ingress-NetFlow, Virtual Fragment Reassembly, Virtual Fragment Reassembly After IPSec Decryption, MCI Check
+  Output features: NAT Inside, Stateful Inspection, Firewall (NAT), Firewall (inspect), Post-Ingress-NetFlow
+  WCCP Redirect outbound is disabled
+  WCCP Redirect inbound is disabled
+  WCCP Redirect exclude is disabled
+  Inbound inspection rule is firewall
+Serial0/1/1 is up, line protocol is up
+  Internet address is 157.100.101.5/30
+  Broadcast address is 255.255.255.255
+  Address determined by non-volatile memory
+  MTU is 1500 bytes
+  Helper address is not set
+  Directed broadcast forwarding is disabled
+  Multicast reserved groups joined: 224.0.0.5
+  Outgoing access list is not set
+  Inbound  access list is not set
+  Proxy ARP is enabled
+  Local Proxy ARP is disabled
+  Security level is default
+  Split horizon is enabled
+  ICMP redirects are always sent
+  ICMP unreachables are always sent
+  ICMP mask replies are never sent
+  IP fast switching is enabled
+  IP fast switching on the same interface is enabled
+  IP Flow switching is disabled
+  IP CEF switching is enabled
+  IP CEF switching turbo vector
+  IP multicast fast switching is enabled
+  IP multicast distributed fast switching is disabled
+  IP route-cache flags are Fast, CEF
+  Router Discovery is disabled
+  IP output packet accounting is disabled
+  IP access violation accounting is disabled
+  TCP/IP header compression is disabled
+  RTP/IP header compression is disabled
+  Policy routing is disabled
+  Network address translation is enabled, interface in domain inside
+  BGP Policy Mapping is disabled
+  Input features: Stateful Inspection, Ingress-NetFlow, Virtual Fragment Reassembly, Virtual Fragment Reassembly After IPSec Decryption, MCI Check
+  Output features: NAT Inside, Stateful Inspection, Firewall (NAT), Firewall (inspect), Post-Ingress-NetFlow
+  WCCP Redirect outbound is disabled
+  WCCP Redirect inbound is disabled
+  WCCP Redirect exclude is disabled
+  Inbound inspection rule is firewall
+Serial0/2/0:0 is down, line protocol is down
+  Internet protocol processing disabled
+Serial0/2/0:1 is down, line protocol is down
+  Internet protocol processing disabled
+Serial0/2/0:2 is down, line protocol is down
+  Internet protocol processing disabled
+Serial0/2/0:3 is down, line protocol is down
+  Internet protocol processing disabled
+Serial0/2/0:4 is down, line protocol is down
+  Internet protocol processing disabled
+Serial0/2/0:5 is down, line protocol is down
+  Internet protocol processing disabled
+Serial0/2/0:6 is down, line protocol is down
+  Internet protocol processing disabled
+Serial0/2/0:7 is down, line protocol is down
+  Internet protocol processing disabled
+Serial0/2/0:8 is down, line protocol is down
+  Internet protocol processing disabled
+Serial0/2/0:9 is down, line protocol is down
+  Internet protocol processing disabled
+Serial0/2/0:23 is up, line protocol is up
+  Internet protocol processing disabled
+Serial0/2/1:0 is down, line protocol is down
+  Internet protocol processing disabled
+Serial0/2/1:1 is down, line protocol is down
+  Internet protocol processing disabled
+Serial0/2/1:2 is down, line protocol is down
+  Internet protocol processing disabled
+Serial0/2/1:3 is down, line protocol is down
+  Internet protocol processing disabled
+Serial0/2/1:4 is down, line protocol is down
+  Internet protocol processing disabled
+Serial0/2/1:5 is down, line protocol is down
+  Internet protocol processing disabled
+Serial0/2/1:6 is down, line protocol is down
+  Internet protocol processing disabled
+Serial0/2/1:7 is down, line protocol is down
+  Internet protocol processing disabled
+Serial0/2/1:8 is down, line protocol is down
+  Internet protocol processing disabled
+Serial0/2/1:9 is down, line protocol is down
+  Internet protocol processing disabled
+Serial0/2/1:23 is up, line protocol is up
+  Internet protocol processing disabled
+NVI0 is up, line protocol is up
+  Interface is unnumbered. Using address of Loopback0 (10.255.255.1)
+  Broadcast address is 255.255.255.255
+  MTU is 1514 bytes
+  Helper address is not set
+  Directed broadcast forwarding is disabled
+  Outgoing access list is not set
+  Inbound  access list is not set
+  Proxy ARP is enabled
+  Local Proxy ARP is disabled
+  Security level is default
+  Split horizon is enabled
+  ICMP redirects are always sent
+  ICMP unreachables are always sent
+  ICMP mask replies are never sent
+  IP fast switching is disabled
+  IP fast switching on the same interface is disabled
+  IP Flow switching is disabled
+  IP CEF switching is disabled
+  IP Null turbo vector
+  IP Null turbo vector
+  IP multicast fast switching is disabled
+  IP multicast distributed fast switching is disabled
+  IP route-cache flags are Fast, CEF
+  Router Discovery is disabled
+  IP output packet accounting is disabled
+  IP access violation accounting is disabled
+  TCP/IP header compression is disabled
+  RTP/IP header compression is disabled
+  Policy routing is disabled
+  Network address translation is disabled
+  BGP Policy Mapping is disabled
+  Input features: MCI Check
+  Output features: Post-routing NAT NVI Output, Firewall (NAT), Firewall (inspect), Post-Ingress-NetFlow
+  WCCP Redirect outbound is disabled
+  WCCP Redirect inbound is disabled
+  WCCP Redirect exclude is disabled
+SSLVPN-VIF0 is up, line protocol is up
+  Interface is unnumbered. Using address of SSLVPN-VIF0 (0.0.0.0)
+  Broadcast address is 255.255.255.255
+  MTU is 1406 bytes
+  Helper address is not set
+  Directed broadcast forwarding is disabled
+  Outgoing access list is not set
+  Inbound  access list is not set
+  Proxy ARP is enabled
+  Local Proxy ARP is disabled
+  Security level is default
+  Split horizon is enabled
+  ICMP redirects are always sent
+  ICMP unreachables are always sent
+  ICMP mask replies are never sent
+  IP fast switching is enabled
+  IP fast switching on the same interface is disabled
+  IP Flow switching is disabled
+  IP CEF switching is enabled
+  IP CEF switching turbo vector
+  IP Null turbo vector
+  IP multicast fast switching is enabled
+  IP multicast distributed fast switching is disabled
+  IP route-cache flags are Fast, CEF
+  Router Discovery is disabled
+  IP output packet accounting is disabled
+  IP access violation accounting is disabled
+  TCP/IP header compression is disabled
+  RTP/IP header compression is disabled
+  Policy routing is disabled
+  Network address translation is disabled
+  BGP Policy Mapping is disabled
+  Input features: MCI Check
+  Output features: Firewall (NAT), Firewall (inspect), Post-Ingress-NetFlow
+  WCCP Redirect outbound is disabled
+  WCCP Redirect inbound is disabled
+  WCCP Redirect exclude is disabled
+Virtual-Access1 is down, line protocol is down
+  Internet protocol processing disabled
+Virtual-Template1 is down, line protocol is down
+  Interface is unnumbered. Using address of Loopback0 (10.255.255.1)
+  Broadcast address is 255.255.255.255
+  MTU is 1500 bytes
+  Helper address is not set
+  Directed broadcast forwarding is disabled
+  Outgoing access list is not set
+  Inbound  access list is not set
+  Proxy ARP is enabled
+  Local Proxy ARP is disabled
+  Security level is default
+  Split horizon is enabled
+  ICMP redirects are always sent
+  ICMP unreachables are always sent
+  ICMP mask replies are never sent
+  IP fast switching is enabled
+  IP fast switching on the same interface is enabled
+  IP Flow switching is disabled
+  IP CEF switching is enabled
+  IP CEF switching turbo vector
+  IP Null turbo vector
+  IP multicast fast switching is enabled
+  IP multicast distributed fast switching is disabled
+  IP route-cache flags are Fast, CEF
+  Router Discovery is disabled
+  IP output packet accounting is disabled
+  IP access violation accounting is disabled
+  TCP/IP header compression is disabled
+  RTP/IP header compression is disabled
+  Policy routing is disabled
+  Network address translation is disabled
+  BGP Policy Mapping is disabled
+  Input features: MCI Check
+  Output features: Firewall (NAT), Firewall (inspect), Post-Ingress-NetFlow
+  WCCP Redirect outbound is disabled
+  WCCP Redirect inbound is disabled
+  WCCP Redirect exclude is disabled
+Loopback0 is up, line protocol is up
+  Internet address is 10.255.255.1/32
+  Broadcast address is 255.255.255.255
+  Address determined by non-volatile memory
+  MTU is 1514 bytes
+  Helper address is not set
+  Directed broadcast forwarding is disabled
+  Outgoing access list is not set
+  Inbound  access list is not set
+  Proxy ARP is enabled
+  Local Proxy ARP is disabled
+  Security level is default
+  Split horizon is enabled
+  ICMP redirects are always sent
+  ICMP unreachables are always sent
+  ICMP mask replies are never sent
+  IP fast switching is enabled
+  IP fast switching on the same interface is disabled
+  IP Flow switching is disabled
+  IP CEF switching is enabled
+  IP CEF switching turbo vector
+  IP Null turbo vector
+  IP multicast fast switching is enabled
+  IP multicast distributed fast switching is disabled
+  IP route-cache flags are Fast, CEF
+  Router Discovery is disabled
+  IP output packet accounting is disabled
+  IP access violation accounting is disabled
+  TCP/IP header compression is disabled
+  RTP/IP header compression is disabled
+  Policy routing is disabled
+  Network address translation is disabled
+  BGP Policy Mapping is disabled
+  Input features: MCI Check
+  Output features: Firewall (NAT), Firewall (inspect), Post-Ingress-NetFlow
+  WCCP Redirect outbound is disabled
+  WCCP Redirect inbound is disabled
+  WCCP Redirect exclude is disabled
+Tunnel1 is up, line protocol is up
+  Internet address is 169.254.162.30/30
+  Broadcast address is 255.255.255.255
+  Address determined by non-volatile memory
+  MTU is 1419 bytes
+  Helper address is not set
+  Directed broadcast forwarding is disabled
+  Outgoing access list is not set
+  Inbound  access list is not set
+  Proxy ARP is enabled
+  Local Proxy ARP is disabled
+  Security level is default
+  Split horizon is enabled
+  ICMP redirects are always sent
+  ICMP unreachables are always sent
+  ICMP mask replies are never sent
+  IP fast switching is enabled
+  IP fast switching on the same interface is disabled
+  IP Flow switching is disabled
+  IP CEF switching is enabled
+  IP CEF switching turbo vector
+  IP Null turbo vector
+  IP multicast fast switching is enabled
+  IP multicast distributed fast switching is disabled
+  IP route-cache flags are Fast, CEF
+  Router Discovery is disabled
+  IP output packet accounting is disabled
+  IP access violation accounting is disabled
+  TCP/IP header compression is disabled
+  RTP/IP header compression is disabled
+  Policy routing is disabled
+  Network address translation is disabled
+  BGP Policy Mapping is disabled
+  Input features: Virtual Fragment Reassembly, Virtual Fragment Reassembly After IPSec Decryption, MCI Check, TCP Adjust MSS
+  Output features: Firewall (NAT), Firewall (inspect), TCP Adjust MSS, Post-Ingress-NetFlow
+  Post encapsulation features: IPSEC Post-encap output classification
+  WCCP Redirect outbound is disabled
+  WCCP Redirect inbound is disabled
+  WCCP Redirect exclude is disabled
+Tunnel2 is up, line protocol is up
+  Internet address is 169.254.75.158/30
+  Broadcast address is 255.255.255.255
+  Address determined by non-volatile memory
+  MTU is 1419 bytes
+  Helper address is not set
+  Directed broadcast forwarding is disabled
+  Outgoing access list is not set
+  Inbound  access list is not set
+  Proxy ARP is enabled
+  Local Proxy ARP is disabled
+  Security level is default
+  Split horizon is enabled
+  ICMP redirects are always sent
+  ICMP unreachables are always sent
+  ICMP mask replies are never sent
+  IP fast switching is enabled
+  IP fast switching on the same interface is disabled
+  IP Flow switching is disabled
+  IP CEF switching is enabled
+  IP CEF switching turbo vector
+  IP Null turbo vector
+  IP multicast fast switching is enabled
+  IP multicast distributed fast switching is disabled
+  IP route-cache flags are Fast, CEF
+  Router Discovery is disabled
+  IP output packet accounting is disabled
+  IP access violation accounting is disabled
+  TCP/IP header compression is disabled
+  RTP/IP header compression is disabled
+  Policy routing is disabled
+  Network address translation is disabled
+  BGP Policy Mapping is disabled
+  Input features: Virtual Fragment Reassembly, Virtual Fragment Reassembly After IPSec Decryption, MCI Check, TCP Adjust MSS
+  Output features: Firewall (NAT), Firewall (inspect), TCP Adjust MSS, Post-Ingress-NetFlow
+  Post encapsulation features: IPSEC Post-encap output classification
+  WCCP Redirect outbound is disabled
+  WCCP Redirect inbound is disabled
+  WCCP Redirect exclude is disabled
+home-2811-sguilfoil#

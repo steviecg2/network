@@ -1,0 +1,374 @@
++++ home-2811-sguilfoil: executing command 'show bgp all summary' +++
+show bgp all summary
+For address family: IPv4 Unicast
+BGP router identifier 10.255.255.1, local AS number 65000
+BGP table version is 25, main routing table version 25
+6 network entries using 792 bytes of memory
+7 path entries using 364 bytes of memory
+3/2 BGP path/bestpath attribute entries using 504 bytes of memory
+1 BGP AS-PATH entries using 24 bytes of memory
+0 BGP route-map cache entries using 0 bytes of memory
+0 BGP filter-list cache entries using 0 bytes of memory
+Bitfield cache entries: current 1 (at peak 2) using 32 bytes of memory
+BGP using 1716 total bytes of memory
+BGP activity 8/2 prefixes, 21/14 paths, scan interval 60 secs
+
+Neighbor        V          AS MsgRcvd MsgSent   TblVer  InQ OutQ Up/Down  State/PfxRcd
+169.254.75.157  4      64512  427362  417290       25    0    0 15:14:32        1
+169.254.162.29  4      64512  427361  417293       25    0    0 15:14:50        1
+home-2811-sguilfoil#
++++ home-2811-sguilfoil: executing command 'show ip bgp template peer-session' +++
+show ip bgp template peer-session
+No templates configured
+
+home-2811-sguilfoil#
++++ home-2811-sguilfoil: executing command 'show ip bgp template peer-policy' +++
+show ip bgp template peer-policy
+No templates configured
+
+home-2811-sguilfoil#
++++ home-2811-sguilfoil: executing command 'show vrf detail | inc \(VRF' +++
+show vrf detail | inc \(VRF
+home-2811-sguilfoil#
++++ home-2811-sguilfoil: executing command 'show bgp all cluster-ids' +++
+show bgp all cluster-ids
+show bgp all cluster-ids
+              ^
+% Invalid input detected at '^' marker.
+
+home-2811-sguilfoil#
++++ home-2811-sguilfoil: executing command 'show ip bgp all dampening parameters' +++
+show ip bgp all dampening parameters
+For address family: IPv4 Unicast
+% dampening not enabled for IPv4 Unicast
+home-2811-sguilfoil#
++++ home-2811-sguilfoil: executing command 'show bgp all neighbors' +++
+show bgp all neighbors
+For address family: IPv4 Unicast
+BGP neighbor is 169.254.75.157,  remote AS 64512, external link
+  BGP version 4, remote router ID 169.254.75.157
+  BGP state = Established, up for 15:14:36
+  Last read 00:00:03, last write 00:00:00, hold time is 30, keepalive interval is 10 seconds
+  Configured hold time is 30, keepalive interval is 10 seconds
+  Minimum holdtime from neighbor is 30 seconds
+  Neighbor capabilities:
+    Route refresh: advertised and received(new)
+    New ASN Capability: advertised and received
+    Address family IPv4 Unicast: advertised and received
+  Message statistics:
+    InQ depth is 0
+    OutQ depth is 0
+    
+                         Sent       Rcvd
+    Opens:                  4          4
+    Notifications:          2          0
+    Updates:               18          9
+    Keepalives:        417267     427350
+    Route Refresh:          0          0
+    Total:             417291     427363
+  Default minimum time between advertisement runs is 30 seconds
+
+  Address tracking is enabled, the RIB does have a route to 169.254.75.157
+  Connections established 4; dropped 3
+  Last reset 15:15:32, due to BGP Notification sent, hold time expired
+  Transport(tcp) path-mtu-discovery is enabled
+Connection state is ESTAB, I/O status: 1, unread input bytes: 0            
+Connection is ECN Disabled, Mininum incoming TTL 0, Outgoing TTL 1
+Local host: 169.254.75.158, Local port: 27353
+Foreign host: 169.254.75.157, Foreign port: 179
+Connection tableid (VRF): 0
+
+Enqueued packets for retransmit: 0, input: 0  mis-ordered: 0 (0 bytes)
+
+Event Timers (current time is 0xFECBA6FC):
+Timer          Starts    Wakeups            Next
+Retrans          5373         14             0x0
+TimeWait            0          0             0x0
+AckHold          5489       5295             0x0
+SendWnd             0          0             0x0
+KeepAlive           0          0             0x0
+GiveUp              0          0             0x0
+PmtuAger            1          1             0x0
+DeadWait            0          0             0x0
+Linger              0          0             0x0
+ProcessQ            0          0             0x0
+
+iss: 1358549073  snduna: 1358651040  sndnxt: 1358651040     sndwnd:  26880
+irs: 2432355148  rcvnxt: 2432459529  rcvwnd:      16023  delrcvwnd:    361
+
+SRTT: 300 ms, RTTO: 303 ms, RTV: 3 ms, KRTT: 0 ms
+minRTT: 24 ms, maxRTT: 464 ms, ACK hold: 200 ms
+Status Flags: active open
+Option Flags: nagle, path mtu capable
+IP Precedence value : 6
+
+Datagrams (max data segment is 1375 bytes):
+Rcvd: 10897 (out of order: 0), with data: 5489, total data bytes: 104380
+Sent: 10770 (retransmit: 14, fastretransmit: 0, partialack: 0, Second Congestion: 0), with data: 5358, total data bytes: 101966
+ Packets received in fast path: 0, fast processed: 0, slow path: 0
+ fast lock acquisition failures: 0, slow path: 0
+
+BGP neighbor is 169.254.162.29,  remote AS 64512, external link
+  BGP version 4, remote router ID 169.254.162.29
+  BGP state = Established, up for 15:14:53
+  Last read 00:00:00, last write 00:00:00, hold time is 30, keepalive interval is 10 seconds
+  Configured hold time is 30, keepalive interval is 10 seconds
+  Minimum holdtime from neighbor is 30 seconds
+  Neighbor capabilities:
+    Route refresh: advertised and received(new)
+    New ASN Capability: advertised and received
+    Address family IPv4 Unicast: advertised and received
+  Message statistics:
+    InQ depth is 0
+    OutQ depth is 0
+    
+                         Sent       Rcvd
+    Opens:                  4          4
+    Notifications:          3          0
+    Updates:               18          9
+    Keepalives:        417269     427349
+    Route Refresh:          0          0
+    Total:             417294     427362
+  Default minimum time between advertisement runs is 30 seconds
+
+  Address tracking is enabled, the RIB does have a route to 169.254.162.29
+  Connections established 4; dropped 3
+  Last reset 15:15:33, due to BGP Notification sent, hold time expired
+  Transport(tcp) path-mtu-discovery is enabled
+Connection state is ESTAB, I/O status: 1, unread input bytes: 0            
+Connection is ECN Disabled, Mininum incoming TTL 0, Outgoing TTL 1
+Local host: 169.254.162.30, Local port: 62006
+Foreign host: 169.254.162.29, Foreign port: 179
+Connection tableid (VRF): 0
+
+Enqueued packets for retransmit: 0, input: 0  mis-ordered: 0 (0 bytes)
+
+Event Timers (current time is 0xFECBA70C):
+Timer          Starts    Wakeups            Next
+Retrans          5372         12             0x0
+TimeWait            0          0             0x0
+AckHold          5491       5295             0x0
+SendWnd             0          0             0x0
+KeepAlive           0          0             0x0
+GiveUp              0          0             0x0
+PmtuAger            1          1             0x0
+DeadWait            0          0             0x0
+Linger              0          0             0x0
+ProcessQ            0          0             0x0
+
+iss: 3947774873  snduna: 3947876873  sndnxt: 3947876873     sndwnd:  27872
+irs: 3933394636  rcvnxt: 3933499055  rcvwnd:      15985  delrcvwnd:    399
+
+SRTT: 300 ms, RTTO: 303 ms, RTV: 3 ms, KRTT: 0 ms
+minRTT: 24 ms, maxRTT: 996 ms, ACK hold: 200 ms
+Status Flags: active open
+Option Flags: nagle, path mtu capable
+IP Precedence value : 6
+
+Datagrams (max data segment is 1375 bytes):
+Rcvd: 10901 (out of order: 0), with data: 5491, total data bytes: 104418
+Sent: 10772 (retransmit: 12, fastretransmit: 0, partialack: 0, Second Congestion: 0), with data: 5360, total data bytes: 101999
+ Packets received in fast path: 0, fast processed: 0, slow path: 0
+ fast lock acquisition failures: 0, slow path: 0
+
+
+For address family: IPv6 Unicast
+
+For address family: IPv4 MDT
+
+For address family: VPNv4 Unicast
+
+For address family: VPNv6 Unicast
+
+For address family: IPv4 Multicast
+
+For address family: IPv6 Multicast
+
+For address family: NSAP Unicast
+home-2811-sguilfoil#
++++ home-2811-sguilfoil: executing command 'show bgp all neighbors 169.254.162.29 policy' +++
+show bgp all neighbors 169.254.162.29 policy
+ Neighbor: 169.254.162.29, Address-Family: IPv4 Unicast
+ Locally configured policies:
+  default-originate
+  soft-reconfiguration inbound
+home-2811-sguilfoil#
++++ home-2811-sguilfoil: executing command 'show bgp all neighbors 169.254.75.157 policy' +++
+show bgp all neighbors 169.254.75.157 policy
+ Neighbor: 169.254.75.157, Address-Family: IPv4 Unicast
+ Locally configured policies:
+  default-originate
+  soft-reconfiguration inbound
+home-2811-sguilfoil#
++++ home-2811-sguilfoil: executing command 'show bgp all' +++
+show bgp all
+For address family: IPv4 Unicast
+BGP table version is 25, local router ID is 10.255.255.1
+Status codes: s suppressed, d damped, h history, * valid, > best, i - internal,
+              r RIB-failure, S Stale
+Origin codes: i - IGP, e - EGP, ? - incomplete
+
+   Network          Next Hop            Metric LocPrf Weight Path
+*> 0.0.0.0          74.106.15.1              0         32768 i
+*> 10.0.1.0/24      0.0.0.0                  0         32768 i
+*  10.0.3.0/24      169.254.75.157         100             0 64512 i
+*>                  169.254.162.29         100             0 64512 i
+*> 10.0.64.0/24     0.0.0.0                  0         32768 i
+*> 10.0.65.0/24     0.0.0.0                  0         32768 i
+*> 192.168.124.0    10.0.2.253               0         32768 i
+home-2811-sguilfoil#
++++ home-2811-sguilfoil: executing command 'show bgp all detail' +++
+show bgp all detail
+show bgp all detail
+              ^
+% Invalid input detected at '^' marker.
+
+home-2811-sguilfoil#
++++ home-2811-sguilfoil: executing command 'show bgp all neighbors 169.254.162.29 advertised-routes' +++
+show bgp all neighbors 169.254.162.29 advertised-routes
+For address family: IPv4 Unicast
+BGP table version is 25, local router ID is 10.255.255.1
+Status codes: s suppressed, d damped, h history, * valid, > best, i - internal,
+              r RIB-failure, S Stale
+Origin codes: i - IGP, e - EGP, ? - incomplete
+
+Originating default network 0.0.0.0
+
+   Network          Next Hop            Metric LocPrf Weight Path
+*> 10.0.1.0/24      0.0.0.0                  0         32768 i
+*> 10.0.3.0/24      169.254.162.29         100             0 64512 i
+*> 10.0.64.0/24     0.0.0.0                  0         32768 i
+*> 10.0.65.0/24     0.0.0.0                  0         32768 i
+*> 192.168.124.0    10.0.2.253               0         32768 i
+
+Total number of prefixes 5 
+home-2811-sguilfoil#
++++ home-2811-sguilfoil: executing command 'show bgp all neighbors | i BGP neighbor' +++
+show bgp all neighbors | i BGP neighbor
+BGP neighbor is 169.254.75.157,  remote AS 64512, external link
+BGP neighbor is 169.254.162.29,  remote AS 64512, external link
+home-2811-sguilfoil#
++++ home-2811-sguilfoil: executing command 'show bgp all neighbors 169.254.75.157 advertised-routes' +++
+show bgp all neighbors 169.254.75.157 advertised-routes
+For address family: IPv4 Unicast
+BGP table version is 25, local router ID is 10.255.255.1
+Status codes: s suppressed, d damped, h history, * valid, > best, i - internal,
+              r RIB-failure, S Stale
+Origin codes: i - IGP, e - EGP, ? - incomplete
+
+Originating default network 0.0.0.0
+
+   Network          Next Hop            Metric LocPrf Weight Path
+*> 10.0.1.0/24      0.0.0.0                  0         32768 i
+*> 10.0.3.0/24      169.254.162.29         100             0 64512 i
+*> 10.0.64.0/24     0.0.0.0                  0         32768 i
+*> 10.0.65.0/24     0.0.0.0                  0         32768 i
+*> 192.168.124.0    10.0.2.253               0         32768 i
+
+Total number of prefixes 5 
+home-2811-sguilfoil#
++++ home-2811-sguilfoil: executing command 'show bgp all neighbors | i BGP neighbor' +++
+show bgp all neighbors | i BGP neighbor
+BGP neighbor is 169.254.75.157,  remote AS 64512, external link
+BGP neighbor is 169.254.162.29,  remote AS 64512, external link
+home-2811-sguilfoil#
++++ home-2811-sguilfoil: executing command 'show bgp all neighbors 169.254.162.29 routes' +++
+show bgp all neighbors 169.254.162.29 routes
+For address family: IPv4 Unicast
+BGP table version is 25, local router ID is 10.255.255.1
+Status codes: s suppressed, d damped, h history, * valid, > best, i - internal,
+              r RIB-failure, S Stale
+Origin codes: i - IGP, e - EGP, ? - incomplete
+
+   Network          Next Hop            Metric LocPrf Weight Path
+*> 10.0.3.0/24      169.254.162.29         100             0 64512 i
+
+Total number of prefixes 1 
+home-2811-sguilfoil#
++++ home-2811-sguilfoil: executing command 'show bgp all neighbors | i BGP neighbor' +++
+show bgp all neighbors | i BGP neighbor
+BGP neighbor is 169.254.75.157,  remote AS 64512, external link
+BGP neighbor is 169.254.162.29,  remote AS 64512, external link
+home-2811-sguilfoil#
++++ home-2811-sguilfoil: executing command 'show bgp all neighbors 169.254.75.157 routes' +++
+show bgp all neighbors 169.254.75.157 routes
+For address family: IPv4 Unicast
+BGP table version is 25, local router ID is 10.255.255.1
+Status codes: s suppressed, d damped, h history, * valid, > best, i - internal,
+              r RIB-failure, S Stale
+Origin codes: i - IGP, e - EGP, ? - incomplete
+
+   Network          Next Hop            Metric LocPrf Weight Path
+*  10.0.3.0/24      169.254.75.157         100             0 64512 i
+
+Total number of prefixes 1 
+home-2811-sguilfoil#
++++ home-2811-sguilfoil: executing command 'show bgp all neighbors | i BGP neighbor' +++
+show bgp all neighbors | i BGP neighbor
+BGP neighbor is 169.254.75.157,  remote AS 64512, external link
+BGP neighbor is 169.254.162.29,  remote AS 64512, external link
+home-2811-sguilfoil#
++++ home-2811-sguilfoil: executing command 'show bgp all neighbors 169.254.162.29 received-routes' +++
+show bgp all neighbors 169.254.162.29 received-routes
+For address family: IPv4 Unicast
+BGP table version is 25, local router ID is 10.255.255.1
+Status codes: s suppressed, d damped, h history, * valid, > best, i - internal,
+              r RIB-failure, S Stale
+Origin codes: i - IGP, e - EGP, ? - incomplete
+
+   Network          Next Hop            Metric LocPrf Weight Path
+*> 10.0.3.0/24      169.254.162.29         100             0 64512 i
+
+Total number of prefixes 1 
+home-2811-sguilfoil#
++++ home-2811-sguilfoil: executing command 'show bgp all neighbors | i BGP neighbor' +++
+show bgp all neighbors | i BGP neighbor
+BGP neighbor is 169.254.75.157,  remote AS 64512, external link
+BGP neighbor is 169.254.162.29,  remote AS 64512, external link
+home-2811-sguilfoil#
++++ home-2811-sguilfoil: executing command 'show bgp all neighbors 169.254.75.157 received-routes' +++
+show bgp all neighbors 169.254.75.157 received-routes
+For address family: IPv4 Unicast
+BGP table version is 25, local router ID is 10.255.255.1
+Status codes: s suppressed, d damped, h history, * valid, > best, i - internal,
+              r RIB-failure, S Stale
+Origin codes: i - IGP, e - EGP, ? - incomplete
+
+   Network          Next Hop            Metric LocPrf Weight Path
+*  10.0.3.0/24      169.254.75.157         100             0 64512 i
+
+Total number of prefixes 1 
+home-2811-sguilfoil#
++++ home-2811-sguilfoil: executing command 'show bgp all neighbors | i BGP neighbor' +++
+show bgp all neighbors | i BGP neighbor
+BGP neighbor is 169.254.75.157,  remote AS 64512, external link
+BGP neighbor is 169.254.162.29,  remote AS 64512, external link
+home-2811-sguilfoil#
++====================================================================================================================================================+
+| Commands for learning feature 'Bgp'                                                                                                                |
++====================================================================================================================================================+
+| - Parsed commands                                                                                                                                  |
+|----------------------------------------------------------------------------------------------------------------------------------------------------|
+|   cmd: <class 'genie.libs.parser.ios.show_bgp.ShowBgpAllSummary'>, arguments: {'address_family':'','vrf':''}                                       |
+|   cmd: <class 'genie.libs.parser.ios.show_bgp.ShowBgpAllNeighbors'>, arguments: {'address_family':'','neighbor':''}                                |
+|   cmd: <class 'genie.libs.parser.ios.show_bgp.ShowBgpAll'>, arguments: {'address_family':''}                                                       |
+|   cmd: <class 'genie.libs.parser.ios.show_bgp.ShowBgpAllNeighborsAdvertisedRoutes'>, arguments: {'address_family':'','neighbor':'169.254.162.29'}  |
+|   cmd: <class 'genie.libs.parser.ios.show_bgp.ShowBgpAllNeighborsAdvertisedRoutes'>, arguments: {'address_family':'','neighbor':'169.254.75.157'}  |
+|   cmd: <class 'genie.libs.parser.ios.show_bgp.ShowBgpAllNeighborsRoutes'>, arguments: {'address_family':'','neighbor':'169.254.162.29'}            |
+|   cmd: <class 'genie.libs.parser.ios.show_bgp.ShowBgpAllNeighborsRoutes'>, arguments: {'address_family':'','neighbor':'169.254.75.157'}            |
+|   cmd: <class 'genie.libs.parser.ios.show_bgp.ShowBgpAllNeighborsReceivedRoutes'>, arguments: {'address_family':'','neighbor':'169.254.162.29'}    |
+|   cmd: <class 'genie.libs.parser.ios.show_bgp.ShowBgpAllNeighborsReceivedRoutes'>, arguments: {'address_family':'','neighbor':'169.254.75.157'}    |
+|====================================================================================================================================================|
+| - Commands not accepted on the device                                                                                                              |
+|----------------------------------------------------------------------------------------------------------------------------------------------------|
+|   cmd: <class 'genie.libs.parser.ios.show_bgp.ShowBgpAllClusterIds'>                                                                               |
+|   cmd: <class 'genie.libs.parser.ios.show_bgp.ShowBgpAllDetail'>, arguments: {'address_family':'','vrf':''}                                        |
+|====================================================================================================================================================|
+| - Commands with empty output                                                                                                                       |
+|----------------------------------------------------------------------------------------------------------------------------------------------------|
+|   cmd: <class 'genie.libs.parser.ios.show_bgp.ShowIpBgpTemplatePeerSession'>                                                                       |
+|   cmd: <class 'genie.libs.parser.ios.show_bgp.ShowIpBgpTemplatePeerPolicy'>                                                                        |
+|   cmd: <class 'genie.libs.parser.ios.show_bgp.ShowIpBgpAllDampeningParameters'>                                                                    |
+|   cmd: <class 'genie.libs.parser.ios.show_bgp.ShowBgpAllNeighborsPolicy'>, arguments: {'neighbor':'169.254.162.29'}                                |
+|   cmd: <class 'genie.libs.parser.ios.show_bgp.ShowBgpAllNeighborsPolicy'>, arguments: {'neighbor':'169.254.75.157'}                                |
+|====================================================================================================================================================|

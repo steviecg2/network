@@ -1,0 +1,82 @@
+{
+  "_exclude": [
+    "updated"
+  ],
+  "attributes": null,
+  "commands": null,
+  "connections": null,
+  "context_manager": {},
+  "info": {
+    "vrf": {
+      "default": {
+        "address_family": {
+          "ipv4": {
+            "routes": {
+              "0.0.0.0/0": {
+                "active": true,
+                "metric": 0,
+                "next_hop": {
+                  "next_hop_list": {
+                    "1": {
+                      "index": 1,
+                      "next_hop": "10.0.1.254"
+                    }
+                  }
+                },
+                "route": "0.0.0.0/0",
+                "route_preference": 1,
+                "source_protocol": "static",
+                "source_protocol_codes": "S*"
+              },
+              "10.0.1.0/24": {
+                "active": true,
+                "next_hop": {
+                  "outgoing_interface": {
+                    "Vlan1": {
+                      "outgoing_interface": "Vlan1"
+                    }
+                  }
+                },
+                "route": "10.0.1.0/24",
+                "source_protocol": "connected",
+                "source_protocol_codes": "C"
+              },
+              "142.100.64.0/24": {
+                "active": true,
+                "metric": 0,
+                "next_hop": {
+                  "next_hop_list": {
+                    "1": {
+                      "index": 1,
+                      "next_hop": "10.0.1.64"
+                    }
+                  }
+                },
+                "route": "142.100.64.0/24",
+                "route_preference": 1,
+                "source_protocol": "static",
+                "source_protocol_codes": "S"
+              },
+              "142.100.65.0/24": {
+                "active": true,
+                "metric": 0,
+                "next_hop": {
+                  "next_hop_list": {
+                    "1": {
+                      "index": 1,
+                      "next_hop": "10.0.1.65"
+                    }
+                  }
+                },
+                "route": "142.100.65.0/24",
+                "route_preference": 1,
+                "source_protocol": "static",
+                "source_protocol_codes": "S"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
++++ home-3560-sguilfoil: executing command 'show run | sec isis' +++
+show run | sec isis
+show run | sec isis
+           ^
+% Invalid input detected at '^' marker.
+
+home-3560-sguilfoil#
+Could not learn <class 'genie.libs.parser.iosxe.show_isis.ShowRunSectionIsis'>
+Invalid command has been executed

@@ -1,0 +1,51 @@
+{
+  "_exclude": [
+    "root_delay",
+    "delay",
+    "root_dispersion",
+    "receive_time"
+  ],
+  "attributes": null,
+  "commands": null,
+  "connections": null,
+  "context_manager": {},
+  "info": {
+    "clock_state": {
+      "system_status": {
+        "clock_precision": "2**24",
+        "clock_state": "unsynchronized",
+        "reference_time": "00000000.00000000 (19:00:00.000 EST Thu Dec 31 1899)",
+        "root_dispersion": 57630.49
+      }
+    },
+    "vrf": {
+      "default": {
+        "associations": {
+          "address": {
+            "10.0.1.254": {
+              "local_mode": {
+                "client": {
+                  "isconfigured": {
+                    "false": {
+                      "address": "10.0.1.254",
+                      "delay": 0.0,
+                      "isconfigured": false,
+                      "local_mode": "client",
+                      "offset": 0.0,
+                      "poll": 1024,
+                      "reach": 0,
+                      "receive_time": "-",
+                      "refid": ".INIT.",
+                      "stratum": 16,
+                      "vrf": "default"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "_exclude": [
+    "root_delay",
+    "delay",
+    "root_dispersion",
+    "receive_time"
+  ],
+  "attributes": null,
+  "commands": null,
+  "connections": null,
+  "context_manager": {},
+  "info": {
+    "clock_state": {
+      "system_status": {
+        "associations_address": "10.0.1.254",
+        "associations_local_mode": "client",
+        "clock_offset": -0.36,
+        "clock_precision": "2**18",
+        "clock_refid": "127.127.1.1",
+        "clock_state": "synchronized",
+        "clock_stratum": 2,
+        "reference_time": "E28D7D41.6D1E8557 (00:04:17.426 EST Fri Jun 12 2020)",
+        "root_delay": 2.7,
+        "root_dispersion": 1.07
+      }
+    },
+    "vrf": {
+      "default": {
+        "associations": {
+          "address": {
+            "10.0.1.254": {
+              "local_mode": {
+                "client": {
+                  "isconfigured": {
+                    "false": {
+                      "address": "10.0.1.254",
+                      "delay": 2.7,
+                      "isconfigured": false,
+                      "local_mode": "client",
+                      "offset": -0.36,
+                      "poll": 1024,
+                      "reach": 377,
+                      "receive_time": 757,
+                      "refid": "127.127.1.1",
+                      "stratum": 2,
+                      "vrf": "default"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

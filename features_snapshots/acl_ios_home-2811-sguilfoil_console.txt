@@ -1,0 +1,65 @@
++++ home-2811-sguilfoil: executing command 'show access-lists' +++
+show access-lists
+Standard IP access list 1
+    10 permit 0.0.0.0, wildcard bits 255.0.0.0
+Standard IP access list 10
+    10 permit 10.0.0.0, wildcard bits 0.255.255.255
+    20 permit 172.16.0.0, wildcard bits 0.15.255.255
+    30 permit 198.168.0.0, wildcard bits 0.0.255.255
+    40 permit 142.100.64.0, wildcard bits 0.0.1.255
+    50 permit 142.101.64.0, wildcard bits 0.0.1.255
+    60 permit 142.102.64.0, wildcard bits 0.0.1.255
+    70 permit 142.200.64.0, wildcard bits 0.0.1.255
+Extended IP access list 101
+    10 permit icmp any any
+    20 permit udp any eq domain any
+    30 permit tcp any eq domain any
+    40 permit udp any eq bootps any
+    50 permit esp any any
+    60 permit udp any any eq isakmp
+    70 permit udp any any eq non500-isakmp
+    80 permit udp any eq isakmp any
+    90 permit udp any eq non500-isakmp any
+    100 permit tcp any any established
+    110 permit tcp any any eq 8000
+    120 permit tcp any any range 8001 8002
+Extended IP access list LabVPN
+Extended IP access list labvpn_acl
+    10 permit ip 10.0.0.0 0.0.255.255 10.0.0.0 0.0.255.255
+    20 permit ip 142.100.64.0 0.0.1.255 10.0.0.0 0.0.255.255
+    30 permit ip 142.200.64.0 0.0.1.255 10.0.0.0 0.0.255.255
+    40 permit ip 142.101.64.0 0.0.1.255 10.0.0.0 0.0.255.255
+    50 permit ip 142.102.64.0 0.0.1.255 10.0.0.0 0.0.255.255
+Extended IP access list nat_acl
+    10 deny ip any 10.0.0.0 0.255.255.255 (277718 matches)
+    20 deny ip any 172.16.0.0 0.15.255.255 (73 matches)
+    30 deny ip any 192.168.0.0 0.0.255.255 (88688 matches)
+    40 permit ip 10.0.0.0 0.255.255.255 any (8270042 matches)
+    50 permit ip 172.16.0.0 0.15.255.255 any (384 matches)
+    60 permit ip 198.168.0.0 0.0.255.255 any
+    70 permit ip 142.100.64.0 0.0.1.255 any
+    80 permit ip 142.101.64.0 0.0.1.255 any (5343 matches)
+    90 permit ip 142.102.64.0 0.0.1.255 any (152 matches)
+    100 permit ip 142.200.64.0 0.0.1.255 any (29845 matches)
+Extended IP access list outside_acl
+    10 permit icmp any any (2437757 matches)
+    20 permit udp any eq domain any (83 matches)
+    30 permit tcp any eq domain any (1445 matches)
+    40 permit udp any eq bootps any (1207 matches)
+    50 permit udp any any eq isakmp (4899 matches)
+    60 permit udp any any eq non500-isakmp (5778018 matches)
+    70 permit udp any eq non500-isakmp any
+    80 permit tcp any any eq 8443 (862 matches)
+    90 permit tcp any any eq 443 (266717 matches)
+    100 permit udp any any eq 443 (136 matches)
+    110 permit udp any any eq 8443
+    120 permit tcp any any range 8000 8020 (1022856 matches)
+    130 permit tcp any any established (22512 matches)
+home-2811-sguilfoil#
++====================================================================================================================================================+
+| Commands for learning feature 'Acl'                                                                                                                |
++====================================================================================================================================================+
+| - Parsed commands                                                                                                                                  |
+|----------------------------------------------------------------------------------------------------------------------------------------------------|
+|   cmd: <class 'genie.libs.parser.ios.show_acl.ShowAccessLists'>                                                                                    |
+|====================================================================================================================================================|

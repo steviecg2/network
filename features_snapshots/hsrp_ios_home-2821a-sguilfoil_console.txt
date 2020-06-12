@@ -1,0 +1,17 @@
++++ home-2821a-sguilfoil: executing command 'show standby all' +++
+show standby all
+home-2821a-sguilfoil#
++++ home-2821a-sguilfoil: executing command 'show standby delay' +++
+show standby delay
+Interface          Minimum Reload 
+home-2821a-sguilfoil#
+Could not learn <class 'genie.libs.parser.iosxe.show_standby.ShowStandbyDelay'>
+Parser Output is empty
++====================================================================================================================================================+
+| Commands for learning feature 'Hsrp'                                                                                                               |
++====================================================================================================================================================+
+| - Commands with empty output                                                                                                                       |
+|----------------------------------------------------------------------------------------------------------------------------------------------------|
+|   cmd: <class 'genie.libs.parser.iosxe.show_standby.ShowStandbyAll'>                                                                               |
+|   cmd: <class 'genie.libs.parser.iosxe.show_standby.ShowStandbyDelay'>                                                                             |
+|====================================================================================================================================================|

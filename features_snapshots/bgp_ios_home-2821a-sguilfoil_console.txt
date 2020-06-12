@@ -1,0 +1,66 @@
++++ home-2821a-sguilfoil: executing command 'show bgp all summary' +++
+show bgp all summary
+% BGP not active
+
+home-2821a-sguilfoil#
++++ home-2821a-sguilfoil: executing command 'show ip bgp template peer-session' +++
+show ip bgp template peer-session
+No templates configured
+
+home-2821a-sguilfoil#
++++ home-2821a-sguilfoil: executing command 'show ip bgp template peer-policy' +++
+show ip bgp template peer-policy
+No templates configured
+
+home-2821a-sguilfoil#
++++ home-2821a-sguilfoil: executing command 'show vrf detail | inc \(VRF' +++
+show vrf detail | inc \(VRF
+home-2821a-sguilfoil#
++++ home-2821a-sguilfoil: executing command 'show bgp all cluster-ids' +++
+show bgp all cluster-ids
+show bgp all cluster-ids
+              ^
+% Invalid input detected at '^' marker.
+
+home-2821a-sguilfoil#
++++ home-2821a-sguilfoil: executing command 'show ip bgp all dampening parameters' +++
+show ip bgp all dampening parameters
+% BGP not active
+
+home-2821a-sguilfoil#
++++ home-2821a-sguilfoil: executing command 'show bgp all neighbors' +++
+show bgp all neighbors
+% BGP not active
+
+home-2821a-sguilfoil#
++++ home-2821a-sguilfoil: executing command 'show bgp all' +++
+show bgp all
+% BGP not active
+
+home-2821a-sguilfoil#
++++ home-2821a-sguilfoil: executing command 'show bgp all detail' +++
+show bgp all detail
+show bgp all detail
+              ^
+% Invalid input detected at '^' marker.
+
+home-2821a-sguilfoil#
+Could not learn <class 'genie.libs.parser.ios.show_bgp.ShowBgpAllDetail'>
+Invalid command has been executed
++====================================================================================================================================================+
+| Commands for learning feature 'Bgp'                                                                                                                |
++====================================================================================================================================================+
+| - Commands not accepted on the device                                                                                                              |
+|----------------------------------------------------------------------------------------------------------------------------------------------------|
+|   cmd: <class 'genie.libs.parser.ios.show_bgp.ShowBgpAllClusterIds'>                                                                               |
+|   cmd: <class 'genie.libs.parser.ios.show_bgp.ShowBgpAllDetail'>, arguments: {'address_family':'','vrf':''}                                        |
+|====================================================================================================================================================|
+| - Commands with empty output                                                                                                                       |
+|----------------------------------------------------------------------------------------------------------------------------------------------------|
+|   cmd: <class 'genie.libs.parser.ios.show_bgp.ShowBgpAllSummary'>, arguments: {'address_family':'','vrf':''}                                       |
+|   cmd: <class 'genie.libs.parser.ios.show_bgp.ShowIpBgpTemplatePeerSession'>                                                                       |
+|   cmd: <class 'genie.libs.parser.ios.show_bgp.ShowIpBgpTemplatePeerPolicy'>                                                                        |
+|   cmd: <class 'genie.libs.parser.ios.show_bgp.ShowIpBgpAllDampeningParameters'>                                                                    |
+|   cmd: <class 'genie.libs.parser.ios.show_bgp.ShowBgpAllNeighbors'>, arguments: {'address_family':'','neighbor':''}                                |
+|   cmd: <class 'genie.libs.parser.ios.show_bgp.ShowBgpAll'>, arguments: {'address_family':''}                                                       |
+|====================================================================================================================================================|

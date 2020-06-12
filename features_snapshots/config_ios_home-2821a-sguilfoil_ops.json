@@ -1,0 +1,387 @@
+{
+  "Building configuration...": {},
+  "Current configuration : 10110 bytes": {},
+  "aaa authentication enable default none": {},
+  "aaa authentication login default local": {},
+  "aaa new-model": {},
+  "aaa session-id common": {},
+  "boot-end-marker": {},
+  "boot-start-marker": {},
+  "card type t1 0 0": {},
+  "class-map match-any AutoQoS-VoIP-Control-Trust": {
+    "match ip dscp af31": {},
+    "match ip dscp cs3": {}
+  },
+  "class-map match-any AutoQoS-VoIP-RTP-Trust": {
+    "match ip dscp ef": {}
+  },
+  "clock summer-time EDT recurring": {},
+  "clock timezone EST -5 0": {},
+  "control-plane": {},
+  "controller T1 0/0/0": {
+    "cablelength long 0db": {},
+    "pri-group timeslots 1-10,24": {}
+  },
+  "crypto pki token default removal timeout 0": {},
+  "dial-peer voice 100 pots": {
+    "direct-inward-dial": {},
+    "incoming called-number .": {}
+  },
+  "dial-peer voice 2323 voip": {
+    "codec g711ulaw": {},
+    "destination-pattern +14082022...": {},
+    "dtmf-relay h245-signal h245-alphanumeric": {},
+    "ip qos dscp cs3 signaling": {},
+    "no vad": {},
+    "preference 1": {},
+    "session target ipv4:142.100.64.11": {},
+    "shutdown": {}
+  },
+  "dial-peer voice 2727 voip": {
+    "codec g711ulaw": {},
+    "destination-pattern +14082022...": {},
+    "dtmf-relay rtp-nte": {},
+    "ip qos dscp cs3 signaling": {},
+    "no vad": {},
+    "session protocol sipv2": {},
+    "session target ipv4:142.100.64.11": {}
+  },
+  "dial-peer voice 323 voip": {
+    "codec g711ulaw": {},
+    "dtmf-relay h245-signal": {},
+    "incoming called-number .": {},
+    "ip qos dscp cs3 signaling": {},
+    "no vad": {},
+    "preference 1": {},
+    "shutdown": {},
+    "translation-profile incoming H323": {}
+  },
+  "dial-peer voice 727 voip": {
+    "codec g711ulaw": {},
+    "dtmf-relay rtp-nte": {},
+    "incoming called-number .": {},
+    "ip qos dscp cs3 signaling": {},
+    "no vad": {},
+    "session protocol sipv2": {}
+  },
+  "dial-peer voice 911 voip": {
+    "codec g711ulaw": {},
+    "destination-pattern 911": {},
+    "dtmf-relay rtp-nte": {},
+    "ip qos dscp cs3 signaling": {},
+    "no vad": {},
+    "session protocol sipv2": {},
+    "session target ipv4:10.18.62.140": {},
+    "voice-class sip options-keepalive up-interval 12 down-interval 65 retry 3": {}
+  },
+  "dial-peer voice 9111 pots": {
+    "destination-pattern 911": {},
+    "forward-digits all": {},
+    "port 0/0/0:23": {},
+    "preference 1": {},
+    "shutdown": {}
+  },
+  "dial-peer voice 97 voip": {
+    "codec g711ulaw": {},
+    "destination-pattern 9[2-9]......": {},
+    "dtmf-relay rtp-nte": {},
+    "ip qos dscp cs3 signaling": {},
+    "no vad": {},
+    "session protocol sipv2": {},
+    "session target ipv4:10.18.62.140": {},
+    "voice-class sip options-keepalive up-interval 12 down-interval 65 retry 3": {}
+  },
+  "dot11 syslog": {},
+  "dspfarm profile 1 mtp": {
+    "associate application SCCP": {},
+    "codec g711ulaw": {},
+    "maximum sessions software 10": {}
+  },
+  "dspfarm profile 2 mtp": {
+    "associate application SCCP": {},
+    "codec g711ulaw": {},
+    "maximum sessions hardware 10": {}
+  },
+  "dspfarm profile 3 transcode": {
+    "associate application SCCP": {},
+    "codec g711alaw": {},
+    "codec g711ulaw": {},
+    "codec g729abr8": {},
+    "codec g729ar8": {},
+    "codec g729r8": {},
+    "maximum sessions 5": {}
+  },
+  "dspfarm profile 4 conference": {
+    "associate application SCCP": {},
+    "codec g711alaw": {},
+    "codec g711ulaw": {},
+    "codec g729abr8": {},
+    "codec g729ar8": {},
+    "codec g729br8": {},
+    "codec g729r8": {},
+    "maximum sessions 1": {}
+  },
+  "end": {},
+  "event manager directory user policy \"flash:/\"": {},
+  "event manager environment SIP_BUSYOUT_INTERVAL 30": {},
+  "event manager policy SIP_BUSYOUT.tcl": {},
+  "gateway": {
+    "timer receive-rtp 1200": {}
+  },
+  "hostname home-2821a-sguilfoil": {},
+  "interface GigabitEthernet0/0": {
+    "duplex auto": {},
+    "no ip address": {},
+    "speed auto": {}
+  },
+  "interface GigabitEthernet0/0.1": {
+    "encapsulation dot1Q 1 native": {},
+    "ip address 10.0.1.64 255.255.255.0": {},
+    "shutdown": {}
+  },
+  "interface GigabitEthernet0/0.1100": {
+    "encapsulation dot1Q 1100": {},
+    "ip address 142.100.64.254 255.255.255.0": {},
+    "ip helper-address 10.0.1.211": {}
+  },
+  "interface GigabitEthernet0/0.1101": {
+    "encapsulation dot1Q 1101": {},
+    "ip address 142.101.64.254 255.255.255.0": {},
+    "ip helper-address 10.0.1.211": {}
+  },
+  "interface GigabitEthernet0/0.1102": {
+    "encapsulation dot1Q 1102": {},
+    "h323-gateway voip bind srcaddr 142.102.64.254": {},
+    "h323-gateway voip interface": {},
+    "ip address 142.102.64.254 255.255.255.0": {}
+  },
+  "interface GigabitEthernet0/0.1200": {
+    "encapsulation dot1Q 1200": {},
+    "ip address 142.200.64.254 255.255.255.0": {}
+  },
+  "interface GigabitEthernet0/0.64": {
+    "encapsulation dot1Q 64": {},
+    "ip address 10.0.64.1 255.255.255.0": {}
+  },
+  "interface GigabitEthernet0/1": {
+    "duplex auto": {},
+    "no ip address": {},
+    "shutdown": {},
+    "speed auto": {}
+  },
+  "interface Serial0/0/0:23": {
+    "encapsulation hdlc": {},
+    "isdn incoming-voice voice": {},
+    "isdn outgoing display-ie": {},
+    "isdn switch-type primary-ni": {},
+    "no cdp enable": {},
+    "no ip address": {}
+  },
+  "interface Serial0/1/0": {
+    "bandwidth 8192": {},
+    "ip address 157.100.101.2 255.255.255.252": {},
+    "no fair-queue": {}
+  },
+  "interface Serial0/1/1": {
+    "bandwidth 8192": {},
+    "clock rate 2000000": {},
+    "encapsulation ppp": {},
+    "ip address 157.100.202.1 255.255.255.252": {}
+  },
+  "ip cef": {},
+  "ip dhcp excluded-address 142.102.64.0 142.102.64.9": {},
+  "ip dhcp excluded-address 142.102.64.20 142.102.64.255": {},
+  "ip dhcp pool HQA_Voice": {
+    "default-router 142.102.64.254": {},
+    "network 142.102.64.0 255.255.255.0": {},
+    "option 150 ip 142.100.64.11": {}
+  },
+  "ip domain name guilfoillab.com": {},
+  "ip forward-protocol nd": {},
+  "ip route 142.101.65.0 255.255.255.0 157.100.202.2": {},
+  "ip source-route": {},
+  "ip ssh version 2": {},
+  "isdn switch-type primary-ni": {},
+  "license udi pid CISCO2821 sn FTX1442A1WZ": {},
+  "line aux 0": {
+    "exec-timeout 0 0": {}
+  },
+  "line con 0": {
+    "exec-timeout 0 0": {}
+  },
+  "line vty 0 4": {
+    "exec-timeout 0 0": {},
+    "transport input all": {}
+  },
+  "line vty 5 15": {
+    "exec-timeout 0 0": {},
+    "transport input all": {}
+  },
+  "logging 10.18.62.204": {},
+  "logging buffered 4096 informational": {},
+  "logging history size 500": {},
+  "logging source-interface GigabitEthernet0/0.1": {},
+  "logging trap warnings": {},
+  "map-class frame-relay AutoQoS-FR-Se0/1/0-201": {
+    "frame-relay bc 81920": {},
+    "frame-relay be 0": {},
+    "frame-relay cir 8192000": {},
+    "frame-relay mincir 8192000": {},
+    "service-policy output AutoQoS-Policy-Trust": {}
+  },
+  "mgcp profile default": {},
+  "multilink bundle-name authenticated": {},
+  "network-clock-participate wic 0": {},
+  "network-clock-select 1 T1 0/0/0": {},
+  "no ip domain lookup": {},
+  "no ip http secure-server": {},
+  "no ip http server": {},
+  "no ipv6 cef": {},
+  "ntp server 10.0.1.254": {},
+  "ntp server 5": {},
+  "ntp source GigabitEthernet0/0.1": {},
+  "ntp update-calendar": {},
+  "policy-map AutoQoS-Policy-Trust": {
+    "class AutoQoS-VoIP-Control-Trust": {
+      "bandwidth percent 5": {}
+    },
+    "class AutoQoS-VoIP-RTP-Trust": {
+      "priority percent 70": {}
+    },
+    "class class-default": {
+      "fair-queue": {}
+    }
+  },
+  "redundancy": {},
+  "rmon event 33333 log trap AutoQoS description \"AutoQoS SNMP traps for Voice Drops\" owner AutoQoS": {},
+  "router ospf 1": {
+    "network 142.100.64.0 0.0.0.255 area 0": {},
+    "network 142.101.64.0 0.0.0.255 area 0": {},
+    "network 142.102.64.0 0.0.0.255 area 0": {},
+    "network 142.200.64.0 0.0.0.255 area 0": {},
+    "network 157.100.101.0 0.0.0.3 area 0": {},
+    "router-id 10.0.1.64": {}
+  },
+  "sccp": {},
+  "sccp ccm 142.100.64.11 identifier 1 priority 1 version 7.0": {},
+  "sccp ccm group 1": {
+    "associate ccm 1 priority 1": {},
+    "associate profile 1 register HQA_SWMTP_711": {},
+    "associate profile 2 register HQA_HWMTP_711": {},
+    "associate profile 3 register HQA_XCODE": {},
+    "associate profile 4 register HQA_CFB": {}
+  },
+  "sccp local GigabitEthernet0/0.1102": {},
+  "scheduler allocate 20000 1000": {},
+  "service password-encryption": {},
+  "service timestamps debug datetime msec": {},
+  "service timestamps log datetime msec": {},
+  "sip-ua": {
+    "retry invite 2": {},
+    "timers trying 300": {}
+  },
+  "snmp-server community guilfoillab RO": {},
+  "snmp-server enable traps aaa_server": {},
+  "snmp-server enable traps adslline": {},
+  "snmp-server enable traps atm subif": {},
+  "snmp-server enable traps bgp": {},
+  "snmp-server enable traps c3g": {},
+  "snmp-server enable traps cef resource-failure peer-state-change peer-fib-state-change inconsistency": {},
+  "snmp-server enable traps cnpd": {},
+  "snmp-server enable traps config": {},
+  "snmp-server enable traps config-copy": {},
+  "snmp-server enable traps config-ctid": {},
+  "snmp-server enable traps cpu threshold": {},
+  "snmp-server enable traps ds0-busyout": {},
+  "snmp-server enable traps ds1": {},
+  "snmp-server enable traps ds1-loopback": {},
+  "snmp-server enable traps ds3": {},
+  "snmp-server enable traps eigrp": {},
+  "snmp-server enable traps entity": {},
+  "snmp-server enable traps envmon": {},
+  "snmp-server enable traps ethernet cfm cc mep-up mep-down cross-connect loop config": {},
+  "snmp-server enable traps ethernet cfm crosscheck mep-missing mep-unknown service-up": {},
+  "snmp-server enable traps event-manager": {},
+  "snmp-server enable traps flash insertion removal": {},
+  "snmp-server enable traps frame-relay": {},
+  "snmp-server enable traps frame-relay multilink bundle-mismatch": {},
+  "snmp-server enable traps frame-relay subif": {},
+  "snmp-server enable traps fru-ctrl": {},
+  "snmp-server enable traps hsrp": {},
+  "snmp-server enable traps icsudsu": {},
+  "snmp-server enable traps ipmulticast": {},
+  "snmp-server enable traps isdn call-information": {},
+  "snmp-server enable traps isdn chan-not-avail": {},
+  "snmp-server enable traps isdn ietf": {},
+  "snmp-server enable traps isdn layer2": {},
+  "snmp-server enable traps isis": {},
+  "snmp-server enable traps l2tun pseudowire status": {},
+  "snmp-server enable traps l2tun session": {},
+  "snmp-server enable traps license": {},
+  "snmp-server enable traps memory bufferpeak": {},
+  "snmp-server enable traps msdp": {},
+  "snmp-server enable traps mvpn": {},
+  "snmp-server enable traps nhrp nhc": {},
+  "snmp-server enable traps nhrp nhp": {},
+  "snmp-server enable traps nhrp nhs": {},
+  "snmp-server enable traps nhrp quota-exceeded": {},
+  "snmp-server enable traps ospf cisco-specific errors": {},
+  "snmp-server enable traps ospf cisco-specific lsa": {},
+  "snmp-server enable traps ospf cisco-specific retransmit": {},
+  "snmp-server enable traps ospf cisco-specific state-change nssa-trans-change": {},
+  "snmp-server enable traps ospf cisco-specific state-change shamlink interface-old": {},
+  "snmp-server enable traps ospf cisco-specific state-change shamlink neighbor": {},
+  "snmp-server enable traps ospf errors": {},
+  "snmp-server enable traps ospf lsa": {},
+  "snmp-server enable traps ospf retransmit": {},
+  "snmp-server enable traps ospf state-change": {},
+  "snmp-server enable traps pim neighbor-change rp-mapping-change invalid-pim-message": {},
+  "snmp-server enable traps pppoe": {},
+  "snmp-server enable traps resource-policy": {},
+  "snmp-server enable traps rsvp": {},
+  "snmp-server enable traps snmp authentication linkdown linkup coldstart warmstart": {},
+  "snmp-server enable traps tty": {},
+  "snmp-server enable traps vrrp": {},
+  "snmp-server enable traps vtp": {},
+  "snmp-server host 10.18.62.204 guilffoillab": {},
+  "snmp-server trap-source GigabitEthernet0/0.1": {},
+  "username mkline privilege 15 secret 5 $1$d7md$eYaxJ5wJMdlCqishS0ZYP0": {},
+  "username sguilfoil privilege 15 secret 5 $1$.Pr4$PEYuv6CPyEDVgxA4YTrH5.": {},
+  "version 15.1": {},
+  "voice class h323 1": {
+    "call preserve limit-media-detection": {},
+    "h225 timeout setup 1": {},
+    "h225 timeout tcp establish 1": {}
+  },
+  "voice service voip": {
+    "allow-connections h323 to h323": {},
+    "allow-connections h323 to sip": {},
+    "allow-connections sip to h323": {},
+    "allow-connections sip to sip": {},
+    "h323": {
+      "call preserve limit-media-detection": {},
+      "no h225 timeout keepalive": {}
+    },
+    "ip address trusted list": {
+      "ipv4 10.18.62.140": {},
+      "ipv4 142.100.64.11": {}
+    },
+    "signaling forward unconditional": {},
+    "sip": {
+      "bind control source-interface GigabitEthernet0/0.1102": {},
+      "bind media source-interface GigabitEthernet0/0.1102": {},
+      "session transport tcp": {}
+    }
+  },
+  "voice translation-profile H323": {
+    "translate called 323": {}
+  },
+  "voice translation-rule 323": {
+    "rule 1 /^\\(.*\\)$/ /+\\1/": {}
+  },
+  "voice-card 0": {
+    "dsp services dspfarm": {},
+    "dspfarm": {}
+  },
+  "voice-port 0/0/0:23": {}
+}

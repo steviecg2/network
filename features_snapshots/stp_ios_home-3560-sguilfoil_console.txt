@@ -1,0 +1,1408 @@
++++ home-3560-sguilfoil: executing command 'show spanning-tree summary' +++
+show spanning-tree summary
+Switch is in pvst mode
+Root bridge for: VLAN0001-VLAN0002, VLAN0064-VLAN0065, VLAN1100-VLAN1102
+  VLAN1200, VLAN2100-VLAN2102, VLAN2200
+Extended system ID           is enabled
+Portfast Default             is disabled
+PortFast BPDU Guard Default  is disabled
+Portfast BPDU Filter Default is disabled
+Loopguard Default            is disabled
+EtherChannel misconfig guard is enabled
+UplinkFast                   is disabled
+BackboneFast                 is disabled
+Configured Pathcost method used is short
+
+Name                   Blocking Listening Learning Forwarding STP Active
+---------------------- -------- --------- -------- ---------- ----------
+VLAN0001                     0         0        0         11         11
+VLAN0002                     0         0        0          2          2
+VLAN0064                     0         0        0          6          6
+VLAN0065                     0         0        0          6          6
+VLAN1100                     0         0        0          7          7
+VLAN1101                     0         0        0          7          7
+VLAN1102                     0         0        0          8          8
+VLAN1200                     0         0        0          8          8
+VLAN2100                     0         0        0          7          7
+VLAN2101                     0         0        0          7          7
+VLAN2102                     0         0        0          8          8
+VLAN2200                     0         0        0          8          8
+---------------------- -------- --------- -------- ---------- ----------
+12 vlans                     0         0        0         85         85
+home-3560-sguilfoil#
++++ home-3560-sguilfoil: executing command 'show errdisable recovery' +++
+show errdisable recovery
+ErrDisable Reason            Timer Status
+-----------------            --------------
+arp-inspection               Disabled
+bpduguard                    Disabled
+channel-misconfig (STP)      Disabled
+dhcp-rate-limit              Disabled
+dtp-flap                     Disabled
+gbic-invalid                 Disabled
+inline-power                 Disabled
+l2ptguard                    Disabled
+link-flap                    Disabled
+mac-limit                    Disabled
+loopback                     Disabled
+pagp-flap                    Disabled
+port-mode-failure            Disabled
+pppoe-ia-rate-limit          Disabled
+psecure-violation            Disabled
+security-violation           Disabled
+sfp-config-mismatch          Disabled
+small-frame                  Disabled
+storm-control                Disabled
+udld                         Disabled
+vmps                         Disabled
+
+Timer interval: 300 seconds
+
+Interfaces that will be enabled at the next timeout:
+
+home-3560-sguilfoil#
++++ home-3560-sguilfoil: executing command 'show spanning-tree mst detail' +++
+show spanning-tree mst detail
+% Switch is not in mst mode
+
+home-3560-sguilfoil#
++++ home-3560-sguilfoil: executing command 'show spanning-tree mst configuration' +++
+show spanning-tree mst configuration
+% Switch is not in mst mode
+Name      []
+Revision  0     Instances configured 1
+
+Instance  Vlans mapped
+--------  ---------------------------------------------------------------------
+0         1-4094
+-------------------------------------------------------------------------------
+home-3560-sguilfoil#
++++ home-3560-sguilfoil: executing command 'show spanning-tree detail' +++
+show spanning-tree detail
+
+ VLAN0001 is executing the ieee compatible Spanning Tree protocol
+  Bridge Identifier has priority 32768, sysid 1, address 0024.13ad.9880
+  Configured hello time 2, max age 20, forward delay 15
+  We are the root of the spanning tree
+  Topology change flag not set, detected flag not set
+  Number of topology changes 2 last change occurred 7w0d ago
+          from FastEthernet0/7
+  Times:  hold 1, topology change 35, notification 2
+          hello 2, max age 20, forward delay 15 
+  Timers: hello 1, topology change 0, notification 0, aging 300
+
+ Port 3 (FastEthernet0/1) of VLAN0001 is designated forwarding 
+   Port path cost 19, Port priority 128, Port Identifier 128.3.
+   Designated root has priority 32769, address 0024.13ad.9880
+   Designated bridge has priority 32769, address 0024.13ad.9880
+   Designated port id is 128.3, designated path cost 0
+   Timers: message age 0, forward delay 0, hold 0
+   Number of transitions to forwarding state: 1
+   The port is in the portfast mode
+   Link type is point-to-point by default
+   BPDU: sent 2129415, received 0
+
+ Port 9 (FastEthernet0/7) of VLAN0001 is designated forwarding 
+   Port path cost 19, Port priority 128, Port Identifier 128.9.
+   Designated root has priority 32769, address 0024.13ad.9880
+   Designated bridge has priority 32769, address 0024.13ad.9880
+   Designated port id is 128.9, designated path cost 0
+   Timers: message age 0, forward delay 0, hold 0
+   Number of transitions to forwarding state: 1
+   Link type is point-to-point by default
+   BPDU: sent 2129385, received 0
+
+ Port 11 (FastEthernet0/9) of VLAN0001 is designated forwarding 
+   Port path cost 19, Port priority 128, Port Identifier 128.11.
+   Designated root has priority 32769, address 0024.13ad.9880
+   Designated bridge has priority 32769, address 0024.13ad.9880
+   Designated port id is 128.11, designated path cost 0
+   Timers: message age 0, forward delay 0, hold 0
+   Number of transitions to forwarding state: 1
+   The port is in the portfast mode
+   Link type is point-to-point by default
+   BPDU: sent 2129408, received 0
+
+ Port 17 (FastEthernet0/15) of VLAN0001 is designated forwarding 
+   Port path cost 19, Port priority 128, Port Identifier 128.17.
+   Designated root has priority 32769, address 0024.13ad.9880
+   Designated bridge has priority 32769, address 0024.13ad.9880
+   Designated port id is 128.17, designated path cost 0
+   Timers: message age 0, forward delay 0, hold 0
+   Number of transitions to forwarding state: 1
+   Link type is point-to-point by default
+   BPDU: sent 2129377, received 0
+
+ Port 24 (FastEthernet0/22) of VLAN0001 is designated forwarding 
+   Port path cost 19, Port priority 128, Port Identifier 128.24.
+   Designated root has priority 32769, address 0024.13ad.9880
+   Designated bridge has priority 32769, address 0024.13ad.9880
+   Designated port id is 128.24, designated path cost 0
+   Timers: message age 0, forward delay 0, hold 0
+   Number of transitions to forwarding state: 1
+   The port is in the portfast mode by portfast trunk configuration
+   Link type is point-to-point by default
+   BPDU: sent 111986, received 0
+
+ Port 39 (FastEthernet0/35) of VLAN0001 is designated forwarding 
+   Port path cost 19, Port priority 128, Port Identifier 128.39.
+   Designated root has priority 32769, address 0024.13ad.9880
+   Designated bridge has priority 32769, address 0024.13ad.9880
+   Designated port id is 128.39, designated path cost 0
+   Timers: message age 0, forward delay 0, hold 0
+   Number of transitions to forwarding state: 1
+   The port is in the portfast mode by portfast trunk configuration
+   Link type is point-to-point by default
+   BPDU: sent 111819, received 0
+
+ Port 49 (FastEthernet0/45) of VLAN0001 is designated forwarding 
+   Port path cost 19, Port priority 128, Port Identifier 128.49.
+   Designated root has priority 32769, address 0024.13ad.9880
+   Designated bridge has priority 32769, address 0024.13ad.9880
+   Designated port id is 128.49, designated path cost 0
+   Timers: message age 0, forward delay 0, hold 0
+   Number of transitions to forwarding state: 1
+   The port is in the portfast mode by portfast trunk configuration
+   Link type is point-to-point by default
+   BPDU: sent 1913928, received 0
+
+ Port 50 (FastEthernet0/46) of VLAN0001 is designated forwarding 
+   Port path cost 19, Port priority 128, Port Identifier 128.50.
+   Designated root has priority 32769, address 0024.13ad.9880
+   Designated bridge has priority 32769, address 0024.13ad.9880
+   Designated port id is 128.50, designated path cost 0
+   Timers: message age 0, forward delay 0, hold 0
+   Number of transitions to forwarding state: 1
+   The port is in the portfast mode by portfast trunk configuration
+   Link type is point-to-point by default
+   BPDU: sent 1913928, received 0
+
+ Port 52 (FastEthernet0/48) of VLAN0001 is designated forwarding 
+   Port path cost 19, Port priority 128, Port Identifier 128.52.
+   Designated root has priority 32769, address 0024.13ad.9880
+   Designated bridge has priority 32769, address 0024.13ad.9880
+   Designated port id is 128.52, designated path cost 0
+   Timers: message age 0, forward delay 0, hold 0
+   Number of transitions to forwarding state: 1
+   The port is in the portfast mode by portfast trunk configuration
+   Link type is point-to-point by default
+   BPDU: sent 2129446, received 0
+
+ Port 56 (Port-channel1) of VLAN0001 is designated forwarding 
+   Port path cost 12, Port priority 128, Port Identifier 128.56.
+   Designated root has priority 32769, address 0024.13ad.9880
+   Designated bridge has priority 32769, address 0024.13ad.9880
+   Designated port id is 128.56, designated path cost 0
+   Timers: message age 0, forward delay 0, hold 0
+   Number of transitions to forwarding state: 1
+   Link type is point-to-point by default
+   BPDU: sent 2129412, received 0
+
+ Port 64 (Port-channel2) of VLAN0001 is designated forwarding 
+   Port path cost 12, Port priority 128, Port Identifier 128.64.
+   Designated root has priority 32769, address 0024.13ad.9880
+   Designated bridge has priority 32769, address 0024.13ad.9880
+   Designated port id is 128.64, designated path cost 0
+   Timers: message age 0, forward delay 0, hold 0
+   Number of transitions to forwarding state: 1
+   Link type is point-to-point by default
+   BPDU: sent 2129404, received 0
+
+
+ VLAN0002 is executing the ieee compatible Spanning Tree protocol
+  Bridge Identifier has priority 32768, sysid 2, address 0024.13ad.9880
+  Configured hello time 2, max age 20, forward delay 15
+  We are the root of the spanning tree
+  Topology change flag not set, detected flag not set
+  Number of topology changes 0 last change occurred 7w0d ago
+  Times:  hold 1, topology change 35, notification 2
+          hello 2, max age 20, forward delay 15 
+  Timers: hello 1, topology change 0, notification 0, aging 300
+
+ Port 51 (FastEthernet0/47) of VLAN0002 is designated forwarding 
+   Port path cost 19, Port priority 128, Port Identifier 128.51.
+   Designated root has priority 32770, address 0024.13ad.9880
+   Designated bridge has priority 32770, address 0024.13ad.9880
+   Designated port id is 128.51, designated path cost 0
+   Timers: message age 0, forward delay 0, hold 0
+   Number of transitions to forwarding state: 1
+   The port is in the portfast mode by portfast trunk configuration
+   Link type is point-to-point by default
+   BPDU: sent 27408, received 0
+
+ Port 52 (FastEthernet0/48) of VLAN0002 is designated forwarding 
+   Port path cost 19, Port priority 128, Port Identifier 128.52.
+   Designated root has priority 32770, address 0024.13ad.9880
+   Designated bridge has priority 32770, address 0024.13ad.9880
+   Designated port id is 128.52, designated path cost 0
+   Timers: message age 0, forward delay 0, hold 0
+   Number of transitions to forwarding state: 1
+   The port is in the portfast mode by portfast trunk configuration
+   Link type is point-to-point by default
+   BPDU: sent 2129447, received 0
+
+
+ VLAN0064 is executing the ieee compatible Spanning Tree protocol
+  Bridge Identifier has priority 32768, sysid 64, address 0024.13ad.9880
+  Configured hello time 2, max age 20, forward delay 15
+  We are the root of the spanning tree
+  Topology change flag not set, detected flag not set
+  Number of topology changes 2 last change occurred 7w0d ago
+          from FastEthernet0/7
+  Times:  hold 1, topology change 35, notification 2
+          hello 2, max age 20, forward delay 15 
+  Timers: hello 1, topology change 0, notification 0, aging 300
+
+ Port 9 (FastEthernet0/7) of VLAN0064 is designated forwarding 
+   Port path cost 19, Port priority 128, Port Identifier 128.9.
+   Designated root has priority 32832, address 0024.13ad.9880
+   Designated bridge has priority 32832, address 0024.13ad.9880
+   Designated port id is 128.9, designated path cost 0
+   Timers: message age 0, forward delay 0, hold 0
+   Number of transitions to forwarding state: 1
+   Link type is point-to-point by default
+   BPDU: sent 2129385, received 0
+
+ Port 17 (FastEthernet0/15) of VLAN0064 is designated forwarding 
+   Port path cost 19, Port priority 128, Port Identifier 128.17.
+   Designated root has priority 32832, address 0024.13ad.9880
+   Designated bridge has priority 32832, address 0024.13ad.9880
+   Designated port id is 128.17, designated path cost 0
+   Timers: message age 0, forward delay 0, hold 0
+   Number of transitions to forwarding state: 1
+   Link type is point-to-point by default
+   BPDU: sent 2129377, received 0
+
+ Port 49 (FastEthernet0/45) of VLAN0064 is designated forwarding 
+   Port path cost 19, Port priority 128, Port Identifier 128.49.
+   Designated root has priority 32832, address 0024.13ad.9880
+   Designated bridge has priority 32832, address 0024.13ad.9880
+   Designated port id is 128.49, designated path cost 0
+   Timers: message age 0, forward delay 0, hold 0
+   Number of transitions to forwarding state: 1
+   The port is in the portfast mode by portfast trunk configuration
+   Link type is point-to-point by default
+   BPDU: sent 1913928, received 0
+
+ Port 52 (FastEthernet0/48) of VLAN0064 is designated forwarding 
+   Port path cost 19, Port priority 128, Port Identifier 128.52.
+   Designated root has priority 32832, address 0024.13ad.9880
+   Designated bridge has priority 32832, address 0024.13ad.9880
+   Designated port id is 128.52, designated path cost 0
+   Timers: message age 0, forward delay 0, hold 0
+   Number of transitions to forwarding state: 1
+   The port is in the portfast mode by portfast trunk configuration
+   Link type is point-to-point by default
+   BPDU: sent 2129446, received 0
+
+ Port 56 (Port-channel1) of VLAN0064 is designated forwarding 
+   Port path cost 12, Port priority 128, Port Identifier 128.56.
+   Designated root has priority 32832, address 0024.13ad.9880
+   Designated bridge has priority 32832, address 0024.13ad.9880
+   Designated port id is 128.56, designated path cost 0
+   Timers: message age 0, forward delay 0, hold 0
+   Number of transitions to forwarding state: 1
+   Link type is point-to-point by default
+   BPDU: sent 2129412, received 0
+
+ Port 64 (Port-channel2) of VLAN0064 is designated forwarding 
+   Port path cost 12, Port priority 128, Port Identifier 128.64.
+   Designated root has priority 32832, address 0024.13ad.9880
+   Designated bridge has priority 32832, address 0024.13ad.9880
+   Designated port id is 128.64, designated path cost 0
+   Timers: message age 0, forward delay 0, hold 0
+   Number of transitions to forwarding state: 1
+   Link type is point-to-point by default
+   BPDU: sent 2129404, received 0
+
+
+ VLAN0065 is executing the ieee compatible Spanning Tree protocol
+  Bridge Identifier has priority 32768, sysid 65, address 0024.13ad.9880
+  Configured hello time 2, max age 20, forward delay 15
+  We are the root of the spanning tree
+  Topology change flag not set, detected flag not set
+  Number of topology changes 2 last change occurred 7w0d ago
+          from FastEthernet0/7
+  Times:  hold 1, topology change 35, notification 2
+          hello 2, max age 20, forward delay 15 
+  Timers: hello 1, topology change 0, notification 0, aging 300
+
+ Port 9 (FastEthernet0/7) of VLAN0065 is designated forwarding 
+   Port path cost 19, Port priority 128, Port Identifier 128.9.
+   Designated root has priority 32833, address 0024.13ad.9880
+   Designated bridge has priority 32833, address 0024.13ad.9880
+   Designated port id is 128.9, designated path cost 0
+   Timers: message age 0, forward delay 0, hold 0
+   Number of transitions to forwarding state: 1
+   Link type is point-to-point by default
+   BPDU: sent 2129385, received 0
+
+ Port 17 (FastEthernet0/15) of VLAN0065 is designated forwarding 
+   Port path cost 19, Port priority 128, Port Identifier 128.17.
+   Designated root has priority 32833, address 0024.13ad.9880
+   Designated bridge has priority 32833, address 0024.13ad.9880
+   Designated port id is 128.17, designated path cost 0
+   Timers: message age 0, forward delay 0, hold 0
+   Number of transitions to forwarding state: 1
+   Link type is point-to-point by default
+   BPDU: sent 2129377, received 0
+
+ Port 50 (FastEthernet0/46) of VLAN0065 is designated forwarding 
+   Port path cost 19, Port priority 128, Port Identifier 128.50.
+   Designated root has priority 32833, address 0024.13ad.9880
+   Designated bridge has priority 32833, address 0024.13ad.9880
+   Designated port id is 128.50, designated path cost 0
+   Timers: message age 0, forward delay 0, hold 0
+   Number of transitions to forwarding state: 1
+   The port is in the portfast mode by portfast trunk configuration
+   Link type is point-to-point by default
+   BPDU: sent 1913928, received 0
+
+ Port 52 (FastEthernet0/48) of VLAN0065 is designated forwarding 
+   Port path cost 19, Port priority 128, Port Identifier 128.52.
+   Designated root has priority 32833, address 0024.13ad.9880
+   Designated bridge has priority 32833, address 0024.13ad.9880
+   Designated port id is 128.52, designated path cost 0
+   Timers: message age 0, forward delay 0, hold 0
+   Number of transitions to forwarding state: 1
+   The port is in the portfast mode by portfast trunk configuration
+   Link type is point-to-point by default
+   BPDU: sent 2129446, received 0
+
+ Port 56 (Port-channel1) of VLAN0065 is designated forwarding 
+   Port path cost 12, Port priority 128, Port Identifier 128.56.
+   Designated root has priority 32833, address 0024.13ad.9880
+   Designated bridge has priority 32833, address 0024.13ad.9880
+   Designated port id is 128.56, designated path cost 0
+   Timers: message age 0, forward delay 0, hold 0
+   Number of transitions to forwarding state: 1
+   Link type is point-to-point by default
+   BPDU: sent 2129412, received 0
+
+ Port 64 (Port-channel2) of VLAN0065 is designated forwarding 
+   Port path cost 12, Port priority 128, Port Identifier 128.64.
+   Designated root has priority 32833, address 0024.13ad.9880
+   Designated bridge has priority 32833, address 0024.13ad.9880
+   Designated port id is 128.64, designated path cost 0
+   Timers: message age 0, forward delay 0, hold 0
+   Number of transitions to forwarding state: 1
+   Link type is point-to-point by default
+   BPDU: sent 2129404, received 0
+
+
+ VLAN1100 is executing the ieee compatible Spanning Tree protocol
+  Bridge Identifier has priority 32768, sysid 1100, address 0024.13ad.9880
+  Configured hello time 2, max age 20, forward delay 15
+  We are the root of the spanning tree
+  Topology change flag not set, detected flag not set
+  Number of topology changes 2 last change occurred 7w0d ago
+          from FastEthernet0/7
+  Times:  hold 1, topology change 35, notification 2
+          hello 2, max age 20, forward delay 15 
+  Timers: hello 1, topology change 0, notification 0, aging 300
+
+ Port 9 (FastEthernet0/7) of VLAN1100 is designated forwarding 
+   Port path cost 19, Port priority 128, Port Identifier 128.9.
+   Designated root has priority 33868, address 0024.13ad.9880
+   Designated bridge has priority 33868, address 0024.13ad.9880
+   Designated port id is 128.9, designated path cost 0
+   Timers: message age 0, forward delay 0, hold 0
+   Number of transitions to forwarding state: 1
+   Link type is point-to-point by default
+   BPDU: sent 2129385, received 0
+
+ Port 17 (FastEthernet0/15) of VLAN1100 is designated forwarding 
+   Port path cost 19, Port priority 128, Port Identifier 128.17.
+   Designated root has priority 33868, address 0024.13ad.9880
+   Designated bridge has priority 33868, address 0024.13ad.9880
+   Designated port id is 128.17, designated path cost 0
+   Timers: message age 0, forward delay 0, hold 0
+   Number of transitions to forwarding state: 1
+   Link type is point-to-point by default
+   BPDU: sent 2129378, received 0
+
+ Port 24 (FastEthernet0/22) of VLAN1100 is designated forwarding 
+   Port path cost 19, Port priority 128, Port Identifier 128.24.
+   Designated root has priority 33868, address 0024.13ad.9880
+   Designated bridge has priority 33868, address 0024.13ad.9880
+   Designated port id is 128.24, designated path cost 0
+   Timers: message age 0, forward delay 0, hold 0
+   Number of transitions to forwarding state: 1
+   The port is in the portfast mode by portfast trunk configuration
+   Link type is point-to-point by default
+   BPDU: sent 111986, received 0
+
+ Port 39 (FastEthernet0/35) of VLAN1100 is designated forwarding 
+   Port path cost 19, Port priority 128, Port Identifier 128.39.
+   Designated root has priority 33868, address 0024.13ad.9880
+   Designated bridge has priority 33868, address 0024.13ad.9880
+   Designated port id is 128.39, designated path cost 0
+   Timers: message age 0, forward delay 0, hold 0
+   Number of transitions to forwarding state: 1
+   The port is in the portfast mode by portfast trunk configuration
+   Link type is point-to-point by default
+   BPDU: sent 111819, received 0
+
+ Port 49 (FastEthernet0/45) of VLAN1100 is designated forwarding 
+   Port path cost 19, Port priority 128, Port Identifier 128.49.
+   Designated root has priority 33868, address 0024.13ad.9880
+   Designated bridge has priority 33868, address 0024.13ad.9880
+   Designated port id is 128.49, designated path cost 0
+   Timers: message age 0, forward delay 0, hold 0
+   Number of transitions to forwarding state: 1
+   The port is in the portfast mode by portfast trunk configuration
+   Link type is point-to-point by default
+   BPDU: sent 1913928, received 0
+
+ Port 56 (Port-channel1) of VLAN1100 is designated forwarding 
+   Port path cost 12, Port priority 128, Port Identifier 128.56.
+   Designated root has priority 33868, address 0024.13ad.9880
+   Designated bridge has priority 33868, address 0024.13ad.9880
+   Designated port id is 128.56, designated path cost 0
+   Timers: message age 0, forward delay 0, hold 0
+   Number of transitions to forwarding state: 1
+   Link type is point-to-point by default
+   BPDU: sent 2129412, received 0
+
+ Port 64 (Port-channel2) of VLAN1100 is designated forwarding 
+   Port path cost 12, Port priority 128, Port Identifier 128.64.
+   Designated root has priority 33868, address 0024.13ad.9880
+   Designated bridge has priority 33868, address 0024.13ad.9880
+   Designated port id is 128.64, designated path cost 0
+   Timers: message age 0, forward delay 0, hold 0
+   Number of transitions to forwarding state: 1
+   Link type is point-to-point by default
+   BPDU: sent 2129405, received 0
+
+
+ VLAN1101 is executing the ieee compatible Spanning Tree protocol
+  Bridge Identifier has priority 32768, sysid 1101, address 0024.13ad.9880
+  Configured hello time 2, max age 20, forward delay 15
+  We are the root of the spanning tree
+  Topology change flag not set, detected flag not set
+  Number of topology changes 2 last change occurred 7w0d ago
+          from FastEthernet0/7
+  Times:  hold 1, topology change 35, notification 2
+          hello 2, max age 20, forward delay 15 
+  Timers: hello 1, topology change 0, notification 0, aging 300
+
+ Port 9 (FastEthernet0/7) of VLAN1101 is designated forwarding 
+   Port path cost 19, Port priority 128, Port Identifier 128.9.
+   Designated root has priority 33869, address 0024.13ad.9880
+   Designated bridge has priority 33869, address 0024.13ad.9880
+   Designated port id is 128.9, designated path cost 0
+   Timers: message age 0, forward delay 0, hold 0
+   Number of transitions to forwarding state: 1
+   Link type is point-to-point by default
+   BPDU: sent 2129385, received 0
+
+ Port 17 (FastEthernet0/15) of VLAN1101 is designated forwarding 
+   Port path cost 19, Port priority 128, Port Identifier 128.17.
+   Designated root has priority 33869, address 0024.13ad.9880
+   Designated bridge has priority 33869, address 0024.13ad.9880
+   Designated port id is 128.17, designated path cost 0
+   Timers: message age 0, forward delay 0, hold 0
+   Number of transitions to forwarding state: 1
+   Link type is point-to-point by default
+   BPDU: sent 2129378, received 0
+
+ Port 24 (FastEthernet0/22) of VLAN1101 is designated forwarding 
+   Port path cost 19, Port priority 128, Port Identifier 128.24.
+   Designated root has priority 33869, address 0024.13ad.9880
+   Designated bridge has priority 33869, address 0024.13ad.9880
+   Designated port id is 128.24, designated path cost 0
+   Timers: message age 0, forward delay 0, hold 0
+   Number of transitions to forwarding state: 1
+   The port is in the portfast mode by portfast trunk configuration
+   Link type is point-to-point by default
+   BPDU: sent 111986, received 0
+
+ Port 39 (FastEthernet0/35) of VLAN1101 is designated forwarding 
+   Port path cost 19, Port priority 128, Port Identifier 128.39.
+   Designated root has priority 33869, address 0024.13ad.9880
+   Designated bridge has priority 33869, address 0024.13ad.9880
+   Designated port id is 128.39, designated path cost 0
+   Timers: message age 0, forward delay 0, hold 0
+   Number of transitions to forwarding state: 1
+   The port is in the portfast mode by portfast trunk configuration
+   Link type is point-to-point by default
+   BPDU: sent 111819, received 0
+
+ Port 49 (FastEthernet0/45) of VLAN1101 is designated forwarding 
+   Port path cost 19, Port priority 128, Port Identifier 128.49.
+   Designated root has priority 33869, address 0024.13ad.9880
+   Designated bridge has priority 33869, address 0024.13ad.9880
+   Designated port id is 128.49, designated path cost 0
+   Timers: message age 0, forward delay 0, hold 0
+   Number of transitions to forwarding state: 1
+   The port is in the portfast mode by portfast trunk configuration
+   Link type is point-to-point by default
+   BPDU: sent 1913928, received 0
+
+ Port 56 (Port-channel1) of VLAN1101 is designated forwarding 
+   Port path cost 12, Port priority 128, Port Identifier 128.56.
+   Designated root has priority 33869, address 0024.13ad.9880
+   Designated bridge has priority 33869, address 0024.13ad.9880
+   Designated port id is 128.56, designated path cost 0
+   Timers: message age 0, forward delay 0, hold 0
+   Number of transitions to forwarding state: 1
+   Link type is point-to-point by default
+   BPDU: sent 2129412, received 0
+
+ Port 64 (Port-channel2) of VLAN1101 is designated forwarding 
+   Port path cost 12, Port priority 128, Port Identifier 128.64.
+   Designated root has priority 33869, address 0024.13ad.9880
+   Designated bridge has priority 33869, address 0024.13ad.9880
+   Designated port id is 128.64, designated path cost 0
+   Timers: message age 0, forward delay 0, hold 0
+   Number of transitions to forwarding state: 1
+   Link type is point-to-point by default
+   BPDU: sent 2129405, received 0
+
+
+ VLAN1102 is executing the ieee compatible Spanning Tree protocol
+  Bridge Identifier has priority 32768, sysid 1102, address 0024.13ad.9880
+  Configured hello time 2, max age 20, forward delay 15
+  We are the root of the spanning tree
+  Topology change flag not set, detected flag not set
+  Number of topology changes 2 last change occurred 7w0d ago
+          from FastEthernet0/7
+  Times:  hold 1, topology change 35, notification 2
+          hello 2, max age 20, forward delay 15 
+  Timers: hello 1, topology change 0, notification 0, aging 300
+
+ Port 9 (FastEthernet0/7) of VLAN1102 is designated forwarding 
+   Port path cost 19, Port priority 128, Port Identifier 128.9.
+   Designated root has priority 33870, address 0024.13ad.9880
+   Designated bridge has priority 33870, address 0024.13ad.9880
+   Designated port id is 128.9, designated path cost 0
+   Timers: message age 0, forward delay 0, hold 0
+   Number of transitions to forwarding state: 1
+   Link type is point-to-point by default
+   BPDU: sent 2129385, received 0
+
+ Port 17 (FastEthernet0/15) of VLAN1102 is designated forwarding 
+   Port path cost 19, Port priority 128, Port Identifier 128.17.
+   Designated root has priority 33870, address 0024.13ad.9880
+   Designated bridge has priority 33870, address 0024.13ad.9880
+   Designated port id is 128.17, designated path cost 0
+   Timers: message age 0, forward delay 0, hold 0
+   Number of transitions to forwarding state: 1
+   Link type is point-to-point by default
+   BPDU: sent 2129378, received 0
+
+ Port 20 (FastEthernet0/18) of VLAN1102 is designated forwarding 
+   Port path cost 19, Port priority 128, Port Identifier 128.20.
+   Designated root has priority 33870, address 0024.13ad.9880
+   Designated bridge has priority 33870, address 0024.13ad.9880
+   Designated port id is 128.20, designated path cost 0
+   Timers: message age 0, forward delay 0, hold 0
+   Number of transitions to forwarding state: 1
+   The port is in the portfast mode
+   Link type is point-to-point by default
+   BPDU: sent 1477340, received 0
+
+ Port 24 (FastEthernet0/22) of VLAN1102 is designated forwarding 
+   Port path cost 19, Port priority 128, Port Identifier 128.24.
+   Designated root has priority 33870, address 0024.13ad.9880
+   Designated bridge has priority 33870, address 0024.13ad.9880
+   Designated port id is 128.24, designated path cost 0
+   Timers: message age 0, forward delay 0, hold 0
+   Number of transitions to forwarding state: 1
+   The port is in the portfast mode by portfast trunk configuration
+   Link type is point-to-point by default
+   BPDU: sent 111986, received 0
+
+ Port 39 (FastEthernet0/35) of VLAN1102 is designated forwarding 
+   Port path cost 19, Port priority 128, Port Identifier 128.39.
+   Designated root has priority 33870, address 0024.13ad.9880
+   Designated bridge has priority 33870, address 0024.13ad.9880
+   Designated port id is 128.39, designated path cost 0
+   Timers: message age 0, forward delay 0, hold 0
+   Number of transitions to forwarding state: 1
+   The port is in the portfast mode by portfast trunk configuration
+   Link type is point-to-point by default
+   BPDU: sent 111819, received 0
+
+ Port 49 (FastEthernet0/45) of VLAN1102 is designated forwarding 
+   Port path cost 19, Port priority 128, Port Identifier 128.49.
+   Designated root has priority 33870, address 0024.13ad.9880
+   Designated bridge has priority 33870, address 0024.13ad.9880
+   Designated port id is 128.49, designated path cost 0
+   Timers: message age 0, forward delay 0, hold 0
+   Number of transitions to forwarding state: 1
+   The port is in the portfast mode by portfast trunk configuration
+   Link type is point-to-point by default
+   BPDU: sent 1913928, received 0
+
+ Port 56 (Port-channel1) of VLAN1102 is designated forwarding 
+   Port path cost 12, Port priority 128, Port Identifier 128.56.
+   Designated root has priority 33870, address 0024.13ad.9880
+   Designated bridge has priority 33870, address 0024.13ad.9880
+   Designated port id is 128.56, designated path cost 0
+   Timers: message age 0, forward delay 0, hold 0
+   Number of transitions to forwarding state: 1
+   Link type is point-to-point by default
+   BPDU: sent 2129412, received 0
+
+ Port 64 (Port-channel2) of VLAN1102 is designated forwarding 
+   Port path cost 12, Port priority 128, Port Identifier 128.64.
+   Designated root has priority 33870, address 0024.13ad.9880
+   Designated bridge has priority 33870, address 0024.13ad.9880
+   Designated port id is 128.64, designated path cost 0
+   Timers: message age 0, forward delay 0, hold 0
+   Number of transitions to forwarding state: 1
+   Link type is point-to-point by default
+   BPDU: sent 2129405, received 0
+
+
+ VLAN1200 is executing the ieee compatible Spanning Tree protocol
+  Bridge Identifier has priority 32768, sysid 1200, address 0024.13ad.9880
+  Configured hello time 2, max age 20, forward delay 15
+  We are the root of the spanning tree
+  Topology change flag not set, detected flag not set
+  Number of topology changes 2 last change occurred 7w0d ago
+          from FastEthernet0/7
+  Times:  hold 1, topology change 35, notification 2
+          hello 2, max age 20, forward delay 15 
+  Timers: hello 1, topology change 0, notification 0, aging 300
+
+ Port 9 (FastEthernet0/7) of VLAN1200 is designated forwarding 
+   Port path cost 19, Port priority 128, Port Identifier 128.9.
+   Designated root has priority 33968, address 0024.13ad.9880
+   Designated bridge has priority 33968, address 0024.13ad.9880
+   Designated port id is 128.9, designated path cost 0
+   Timers: message age 0, forward delay 0, hold 0
+   Number of transitions to forwarding state: 1
+   Link type is point-to-point by default
+   BPDU: sent 2129385, received 0
+
+ Port 17 (FastEthernet0/15) of VLAN1200 is designated forwarding 
+   Port path cost 19, Port priority 128, Port Identifier 128.17.
+   Designated root has priority 33968, address 0024.13ad.9880
+   Designated bridge has priority 33968, address 0024.13ad.9880
+   Designated port id is 128.17, designated path cost 0
+   Timers: message age 0, forward delay 0, hold 0
+   Number of transitions to forwarding state: 1
+   Link type is point-to-point by default
+   BPDU: sent 2129378, received 0
+
+ Port 20 (FastEthernet0/18) of VLAN1200 is designated forwarding 
+   Port path cost 19, Port priority 128, Port Identifier 128.20.
+   Designated root has priority 33968, address 0024.13ad.9880
+   Designated bridge has priority 33968, address 0024.13ad.9880
+   Designated port id is 128.20, designated path cost 0
+   Timers: message age 0, forward delay 0, hold 0
+   Number of transitions to forwarding state: 1
+   The port is in the portfast mode
+   Link type is point-to-point by default
+   BPDU: sent 1477340, received 0
+
+ Port 24 (FastEthernet0/22) of VLAN1200 is designated forwarding 
+   Port path cost 19, Port priority 128, Port Identifier 128.24.
+   Designated root has priority 33968, address 0024.13ad.9880
+   Designated bridge has priority 33968, address 0024.13ad.9880
+   Designated port id is 128.24, designated path cost 0
+   Timers: message age 0, forward delay 0, hold 0
+   Number of transitions to forwarding state: 1
+   The port is in the portfast mode by portfast trunk configuration
+   Link type is point-to-point by default
+   BPDU: sent 111986, received 0
+
+ Port 39 (FastEthernet0/35) of VLAN1200 is designated forwarding 
+   Port path cost 19, Port priority 128, Port Identifier 128.39.
+   Designated root has priority 33968, address 0024.13ad.9880
+   Designated bridge has priority 33968, address 0024.13ad.9880
+   Designated port id is 128.39, designated path cost 0
+   Timers: message age 0, forward delay 0, hold 0
+   Number of transitions to forwarding state: 1
+   The port is in the portfast mode by portfast trunk configuration
+   Link type is point-to-point by default
+   BPDU: sent 111819, received 0
+
+ Port 49 (FastEthernet0/45) of VLAN1200 is designated forwarding 
+   Port path cost 19, Port priority 128, Port Identifier 128.49.
+   Designated root has priority 33968, address 0024.13ad.9880
+   Designated bridge has priority 33968, address 0024.13ad.9880
+   Designated port id is 128.49, designated path cost 0
+   Timers: message age 0, forward delay 0, hold 0
+   Number of transitions to forwarding state: 1
+   The port is in the portfast mode by portfast trunk configuration
+   Link type is point-to-point by default
+   BPDU: sent 1913928, received 0
+
+ Port 56 (Port-channel1) of VLAN1200 is designated forwarding 
+   Port path cost 12, Port priority 128, Port Identifier 128.56.
+   Designated root has priority 33968, address 0024.13ad.9880
+   Designated bridge has priority 33968, address 0024.13ad.9880
+   Designated port id is 128.56, designated path cost 0
+   Timers: message age 0, forward delay 0, hold 0
+   Number of transitions to forwarding state: 1
+   Link type is point-to-point by default
+   BPDU: sent 2129412, received 0
+
+ Port 64 (Port-channel2) of VLAN1200 is designated forwarding 
+   Port path cost 12, Port priority 128, Port Identifier 128.64.
+   Designated root has priority 33968, address 0024.13ad.9880
+   Designated bridge has priority 33968, address 0024.13ad.9880
+   Designated port id is 128.64, designated path cost 0
+   Timers: message age 0, forward delay 0, hold 0
+   Number of transitions to forwarding state: 1
+   Link type is point-to-point by default
+   BPDU: sent 2129405, received 0
+
+
+ VLAN2100 is executing the ieee compatible Spanning Tree protocol
+  Bridge Identifier has priority 32768, sysid 2100, address 0024.13ad.9880
+  Configured hello time 2, max age 20, forward delay 15
+  We are the root of the spanning tree
+  Topology change flag not set, detected flag not set
+  Number of topology changes 2 last change occurred 7w0d ago
+          from FastEthernet0/7
+  Times:  hold 1, topology change 35, notification 2
+          hello 2, max age 20, forward delay 15 
+  Timers: hello 1, topology change 0, notification 0, aging 300
+
+ Port 9 (FastEthernet0/7) of VLAN2100 is designated forwarding 
+   Port path cost 19, Port priority 128, Port Identifier 128.9.
+   Designated root has priority 34868, address 0024.13ad.9880
+   Designated bridge has priority 34868, address 0024.13ad.9880
+   Designated port id is 128.9, designated path cost 0
+   Timers: message age 0, forward delay 0, hold 0
+   Number of transitions to forwarding state: 1
+   Link type is point-to-point by default
+   BPDU: sent 2129385, received 0
+
+ Port 17 (FastEthernet0/15) of VLAN2100 is designated forwarding 
+   Port path cost 19, Port priority 128, Port Identifier 128.17.
+   Designated root has priority 34868, address 0024.13ad.9880
+   Designated bridge has priority 34868, address 0024.13ad.9880
+   Designated port id is 128.17, designated path cost 0
+   Timers: message age 0, forward delay 0, hold 0
+   Number of transitions to forwarding state: 1
+   Link type is point-to-point by default
+   BPDU: sent 2129378, received 0
+
+ Port 24 (FastEthernet0/22) of VLAN2100 is designated forwarding 
+   Port path cost 19, Port priority 128, Port Identifier 128.24.
+   Designated root has priority 34868, address 0024.13ad.9880
+   Designated bridge has priority 34868, address 0024.13ad.9880
+   Designated port id is 128.24, designated path cost 0
+   Timers: message age 0, forward delay 0, hold 0
+   Number of transitions to forwarding state: 1
+   The port is in the portfast mode by portfast trunk configuration
+   Link type is point-to-point by default
+   BPDU: sent 111986, received 0
+
+ Port 39 (FastEthernet0/35) of VLAN2100 is designated forwarding 
+   Port path cost 19, Port priority 128, Port Identifier 128.39.
+   Designated root has priority 34868, address 0024.13ad.9880
+   Designated bridge has priority 34868, address 0024.13ad.9880
+   Designated port id is 128.39, designated path cost 0
+   Timers: message age 0, forward delay 0, hold 0
+   Number of transitions to forwarding state: 1
+   The port is in the portfast mode by portfast trunk configuration
+   Link type is point-to-point by default
+   BPDU: sent 111819, received 0
+
+ Port 50 (FastEthernet0/46) of VLAN2100 is designated forwarding 
+   Port path cost 19, Port priority 128, Port Identifier 128.50.
+   Designated root has priority 34868, address 0024.13ad.9880
+   Designated bridge has priority 34868, address 0024.13ad.9880
+   Designated port id is 128.50, designated path cost 0
+   Timers: message age 0, forward delay 0, hold 0
+   Number of transitions to forwarding state: 1
+   The port is in the portfast mode by portfast trunk configuration
+   Link type is point-to-point by default
+   BPDU: sent 1913928, received 0
+
+ Port 56 (Port-channel1) of VLAN2100 is designated forwarding 
+   Port path cost 12, Port priority 128, Port Identifier 128.56.
+   Designated root has priority 34868, address 0024.13ad.9880
+   Designated bridge has priority 34868, address 0024.13ad.9880
+   Designated port id is 128.56, designated path cost 0
+   Timers: message age 0, forward delay 0, hold 0
+   Number of transitions to forwarding state: 1
+   Link type is point-to-point by default
+   BPDU: sent 2129412, received 0
+
+ Port 64 (Port-channel2) of VLAN2100 is designated forwarding 
+   Port path cost 12, Port priority 128, Port Identifier 128.64.
+   Designated root has priority 34868, address 0024.13ad.9880
+   Designated bridge has priority 34868, address 0024.13ad.9880
+   Designated port id is 128.64, designated path cost 0
+   Timers: message age 0, forward delay 0, hold 0
+   Number of transitions to forwarding state: 1
+   Link type is point-to-point by default
+   BPDU: sent 2129405, received 0
+
+
+ VLAN2101 is executing the ieee compatible Spanning Tree protocol
+  Bridge Identifier has priority 32768, sysid 2101, address 0024.13ad.9880
+  Configured hello time 2, max age 20, forward delay 15
+  We are the root of the spanning tree
+  Topology change flag not set, detected flag not set
+  Number of topology changes 2 last change occurred 7w0d ago
+          from FastEthernet0/7
+  Times:  hold 1, topology change 35, notification 2
+          hello 2, max age 20, forward delay 15 
+  Timers: hello 1, topology change 0, notification 0, aging 300
+
+ Port 9 (FastEthernet0/7) of VLAN2101 is designated forwarding 
+   Port path cost 19, Port priority 128, Port Identifier 128.9.
+   Designated root has priority 34869, address 0024.13ad.9880
+   Designated bridge has priority 34869, address 0024.13ad.9880
+   Designated port id is 128.9, designated path cost 0
+   Timers: message age 0, forward delay 0, hold 0
+   Number of transitions to forwarding state: 1
+   Link type is point-to-point by default
+   BPDU: sent 2129385, received 0
+
+ Port 17 (FastEthernet0/15) of VLAN2101 is designated forwarding 
+   Port path cost 19, Port priority 128, Port Identifier 128.17.
+   Designated root has priority 34869, address 0024.13ad.9880
+   Designated bridge has priority 34869, address 0024.13ad.9880
+   Designated port id is 128.17, designated path cost 0
+   Timers: message age 0, forward delay 0, hold 0
+   Number of transitions to forwarding state: 1
+   Link type is point-to-point by default
+   BPDU: sent 2129378, received 0
+
+ Port 24 (FastEthernet0/22) of VLAN2101 is designated forwarding 
+   Port path cost 19, Port priority 128, Port Identifier 128.24.
+   Designated root has priority 34869, address 0024.13ad.9880
+   Designated bridge has priority 34869, address 0024.13ad.9880
+   Designated port id is 128.24, designated path cost 0
+   Timers: message age 0, forward delay 0, hold 0
+   Number of transitions to forwarding state: 1
+   The port is in the portfast mode by portfast trunk configuration
+   Link type is point-to-point by default
+   BPDU: sent 111986, received 0
+
+ Port 39 (FastEthernet0/35) of VLAN2101 is designated forwarding 
+   Port path cost 19, Port priority 128, Port Identifier 128.39.
+   Designated root has priority 34869, address 0024.13ad.9880
+   Designated bridge has priority 34869, address 0024.13ad.9880
+   Designated port id is 128.39, designated path cost 0
+   Timers: message age 0, forward delay 0, hold 0
+   Number of transitions to forwarding state: 1
+   The port is in the portfast mode by portfast trunk configuration
+   Link type is point-to-point by default
+   BPDU: sent 111819, received 0
+
+ Port 50 (FastEthernet0/46) of VLAN2101 is designated forwarding 
+   Port path cost 19, Port priority 128, Port Identifier 128.50.
+   Designated root has priority 34869, address 0024.13ad.9880
+   Designated bridge has priority 34869, address 0024.13ad.9880
+   Designated port id is 128.50, designated path cost 0
+   Timers: message age 0, forward delay 0, hold 0
+   Number of transitions to forwarding state: 1
+   The port is in the portfast mode by portfast trunk configuration
+   Link type is point-to-point by default
+   BPDU: sent 1913928, received 0
+
+ Port 56 (Port-channel1) of VLAN2101 is designated forwarding 
+   Port path cost 12, Port priority 128, Port Identifier 128.56.
+   Designated root has priority 34869, address 0024.13ad.9880
+   Designated bridge has priority 34869, address 0024.13ad.9880
+   Designated port id is 128.56, designated path cost 0
+   Timers: message age 0, forward delay 0, hold 0
+   Number of transitions to forwarding state: 1
+   Link type is point-to-point by default
+   BPDU: sent 2129412, received 0
+
+ Port 64 (Port-channel2) of VLAN2101 is designated forwarding 
+   Port path cost 12, Port priority 128, Port Identifier 128.64.
+   Designated root has priority 34869, address 0024.13ad.9880
+   Designated bridge has priority 34869, address 0024.13ad.9880
+   Designated port id is 128.64, designated path cost 0
+   Timers: message age 0, forward delay 0, hold 0
+   Number of transitions to forwarding state: 1
+   Link type is point-to-point by default
+   BPDU: sent 2129405, received 0
+
+
+ VLAN2102 is executing the ieee compatible Spanning Tree protocol
+  Bridge Identifier has priority 32768, sysid 2102, address 0024.13ad.9880
+  Configured hello time 2, max age 20, forward delay 15
+  We are the root of the spanning tree
+  Topology change flag not set, detected flag not set
+  Number of topology changes 2 last change occurred 7w0d ago
+          from FastEthernet0/7
+  Times:  hold 1, topology change 35, notification 2
+          hello 2, max age 20, forward delay 15 
+  Timers: hello 1, topology change 0, notification 0, aging 300
+
+ Port 9 (FastEthernet0/7) of VLAN2102 is designated forwarding 
+   Port path cost 19, Port priority 128, Port Identifier 128.9.
+   Designated root has priority 34870, address 0024.13ad.9880
+   Designated bridge has priority 34870, address 0024.13ad.9880
+   Designated port id is 128.9, designated path cost 0
+   Timers: message age 0, forward delay 0, hold 0
+   Number of transitions to forwarding state: 1
+   Link type is point-to-point by default
+   BPDU: sent 2129385, received 0
+
+ Port 17 (FastEthernet0/15) of VLAN2102 is designated forwarding 
+   Port path cost 19, Port priority 128, Port Identifier 128.17.
+   Designated root has priority 34870, address 0024.13ad.9880
+   Designated bridge has priority 34870, address 0024.13ad.9880
+   Designated port id is 128.17, designated path cost 0
+   Timers: message age 0, forward delay 0, hold 0
+   Number of transitions to forwarding state: 1
+   Link type is point-to-point by default
+   BPDU: sent 2129378, received 0
+
+ Port 24 (FastEthernet0/22) of VLAN2102 is designated forwarding 
+   Port path cost 19, Port priority 128, Port Identifier 128.24.
+   Designated root has priority 34870, address 0024.13ad.9880
+   Designated bridge has priority 34870, address 0024.13ad.9880
+   Designated port id is 128.24, designated path cost 0
+   Timers: message age 0, forward delay 0, hold 0
+   Number of transitions to forwarding state: 1
+   The port is in the portfast mode by portfast trunk configuration
+   Link type is point-to-point by default
+   BPDU: sent 111986, received 0
+
+ Port 30 (FastEthernet0/26) of VLAN2102 is designated forwarding 
+   Port path cost 19, Port priority 128, Port Identifier 128.30.
+   Designated root has priority 34870, address 0024.13ad.9880
+   Designated bridge has priority 34870, address 0024.13ad.9880
+   Designated port id is 128.30, designated path cost 0
+   Timers: message age 0, forward delay 0, hold 0
+   Number of transitions to forwarding state: 1
+   The port is in the portfast mode
+   Link type is point-to-point by default
+   BPDU: sent 1476953, received 0
+
+ Port 39 (FastEthernet0/35) of VLAN2102 is designated forwarding 
+   Port path cost 19, Port priority 128, Port Identifier 128.39.
+   Designated root has priority 34870, address 0024.13ad.9880
+   Designated bridge has priority 34870, address 0024.13ad.9880
+   Designated port id is 128.39, designated path cost 0
+   Timers: message age 0, forward delay 0, hold 0
+   Number of transitions to forwarding state: 1
+   The port is in the portfast mode by portfast trunk configuration
+   Link type is point-to-point by default
+   BPDU: sent 111819, received 0
+
+ Port 50 (FastEthernet0/46) of VLAN2102 is designated forwarding 
+   Port path cost 19, Port priority 128, Port Identifier 128.50.
+   Designated root has priority 34870, address 0024.13ad.9880
+   Designated bridge has priority 34870, address 0024.13ad.9880
+   Designated port id is 128.50, designated path cost 0
+   Timers: message age 0, forward delay 0, hold 0
+   Number of transitions to forwarding state: 1
+   The port is in the portfast mode by portfast trunk configuration
+   Link type is point-to-point by default
+   BPDU: sent 1913928, received 0
+
+ Port 56 (Port-channel1) of VLAN2102 is designated forwarding 
+   Port path cost 12, Port priority 128, Port Identifier 128.56.
+   Designated root has priority 34870, address 0024.13ad.9880
+   Designated bridge has priority 34870, address 0024.13ad.9880
+   Designated port id is 128.56, designated path cost 0
+   Timers: message age 0, forward delay 0, hold 0
+   Number of transitions to forwarding state: 1
+   Link type is point-to-point by default
+   BPDU: sent 2129412, received 0
+
+ Port 64 (Port-channel2) of VLAN2102 is designated forwarding 
+   Port path cost 12, Port priority 128, Port Identifier 128.64.
+   Designated root has priority 34870, address 0024.13ad.9880
+   Designated bridge has priority 34870, address 0024.13ad.9880
+   Designated port id is 128.64, designated path cost 0
+   Timers: message age 0, forward delay 0, hold 0
+   Number of transitions to forwarding state: 1
+   Link type is point-to-point by default
+   BPDU: sent 2129405, received 0
+
+
+ VLAN2200 is executing the ieee compatible Spanning Tree protocol
+  Bridge Identifier has priority 32768, sysid 2200, address 0024.13ad.9880
+  Configured hello time 2, max age 20, forward delay 15
+  We are the root of the spanning tree
+  Topology change flag not set, detected flag not set
+  Number of topology changes 2 last change occurred 7w0d ago
+          from FastEthernet0/7
+  Times:  hold 1, topology change 35, notification 2
+          hello 2, max age 20, forward delay 15 
+  Timers: hello 1, topology change 0, notification 0, aging 300
+
+ Port 9 (FastEthernet0/7) of VLAN2200 is designated forwarding 
+   Port path cost 19, Port priority 128, Port Identifier 128.9.
+   Designated root has priority 34968, address 0024.13ad.9880
+   Designated bridge has priority 34968, address 0024.13ad.9880
+   Designated port id is 128.9, designated path cost 0
+   Timers: message age 0, forward delay 0, hold 0
+   Number of transitions to forwarding state: 1
+   Link type is point-to-point by default
+   BPDU: sent 2129385, received 0
+
+ Port 17 (FastEthernet0/15) of VLAN2200 is designated forwarding 
+   Port path cost 19, Port priority 128, Port Identifier 128.17.
+   Designated root has priority 34968, address 0024.13ad.9880
+   Designated bridge has priority 34968, address 0024.13ad.9880
+   Designated port id is 128.17, designated path cost 0
+   Timers: message age 0, forward delay 0, hold 0
+   Number of transitions to forwarding state: 1
+   Link type is point-to-point by default
+   BPDU: sent 2129378, received 0
+
+ Port 24 (FastEthernet0/22) of VLAN2200 is designated forwarding 
+   Port path cost 19, Port priority 128, Port Identifier 128.24.
+   Designated root has priority 34968, address 0024.13ad.9880
+   Designated bridge has priority 34968, address 0024.13ad.9880
+   Designated port id is 128.24, designated path cost 0
+   Timers: message age 0, forward delay 0, hold 0
+   Number of transitions to forwarding state: 1
+   The port is in the portfast mode by portfast trunk configuration
+   Link type is point-to-point by default
+   BPDU: sent 111986, received 0
+
+ Port 30 (FastEthernet0/26) of VLAN2200 is designated forwarding 
+   Port path cost 19, Port priority 128, Port Identifier 128.30.
+   Designated root has priority 34968, address 0024.13ad.9880
+   Designated bridge has priority 34968, address 0024.13ad.9880
+   Designated port id is 128.30, designated path cost 0
+   Timers: message age 0, forward delay 0, hold 0
+   Number of transitions to forwarding state: 1
+   The port is in the portfast mode
+   Link type is point-to-point by default
+   BPDU: sent 1476953, received 0
+
+ Port 39 (FastEthernet0/35) of VLAN2200 is designated forwarding 
+   Port path cost 19, Port priority 128, Port Identifier 128.39.
+   Designated root has priority 34968, address 0024.13ad.9880
+   Designated bridge has priority 34968, address 0024.13ad.9880
+   Designated port id is 128.39, designated path cost 0
+   Timers: message age 0, forward delay 0, hold 0
+   Number of transitions to forwarding state: 1
+   The port is in the portfast mode by portfast trunk configuration
+   Link type is point-to-point by default
+   BPDU: sent 111819, received 0
+
+ Port 50 (FastEthernet0/46) of VLAN2200 is designated forwarding 
+   Port path cost 19, Port priority 128, Port Identifier 128.50.
+   Designated root has priority 34968, address 0024.13ad.9880
+   Designated bridge has priority 34968, address 0024.13ad.9880
+   Designated port id is 128.50, designated path cost 0
+   Timers: message age 0, forward delay 0, hold 0
+   Number of transitions to forwarding state: 1
+   The port is in the portfast mode by portfast trunk configuration
+   Link type is point-to-point by default
+   BPDU: sent 1913928, received 0
+
+ Port 56 (Port-channel1) of VLAN2200 is designated forwarding 
+   Port path cost 12, Port priority 128, Port Identifier 128.56.
+   Designated root has priority 34968, address 0024.13ad.9880
+   Designated bridge has priority 34968, address 0024.13ad.9880
+   Designated port id is 128.56, designated path cost 0
+   Timers: message age 0, forward delay 0, hold 0
+   Number of transitions to forwarding state: 1
+   Link type is point-to-point by default
+   BPDU: sent 2129412, received 0
+
+ Port 64 (Port-channel2) of VLAN2200 is designated forwarding 
+   Port path cost 12, Port priority 128, Port Identifier 128.64.
+   Designated root has priority 34968, address 0024.13ad.9880
+   Designated bridge has priority 34968, address 0024.13ad.9880
+   Designated port id is 128.64, designated path cost 0
+   Timers: message age 0, forward delay 0, hold 0
+   Number of transitions to forwarding state: 1
+   Link type is point-to-point by default
+   BPDU: sent 2129405, received 0
+
+home-3560-sguilfoil#
++++ home-3560-sguilfoil: executing command 'show spanning-tree' +++
+show spanning-tree
+
+VLAN0001
+  Spanning tree enabled protocol ieee
+  Root ID    Priority    32769
+             Address     0024.13ad.9880
+             This bridge is the root
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+
+  Bridge ID  Priority    32769  (priority 32768 sys-id-ext 1)
+             Address     0024.13ad.9880
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+             Aging Time  300 sec
+
+Interface           Role Sts Cost      Prio.Nbr Type
+------------------- ---- --- --------- -------- --------------------------------
+Fa0/1               Desg FWD 19        128.3    P2p Edge 
+Fa0/7               Desg FWD 19        128.9    P2p 
+Fa0/9               Desg FWD 19        128.11   P2p Edge 
+Fa0/15              Desg FWD 19        128.17   P2p 
+Fa0/22              Desg FWD 19        128.24   P2p Edge 
+Fa0/35              Desg FWD 19        128.39   P2p Edge 
+Fa0/45              Desg FWD 19        128.49   P2p Edge 
+Fa0/46              Desg FWD 19        128.50   P2p Edge 
+Fa0/48              Desg FWD 19        128.52   P2p Edge 
+Po1                 Desg FWD 12        128.56   P2p 
+Po2                 Desg FWD 12        128.64   P2p 
+
+
+
+VLAN0002
+  Spanning tree enabled protocol ieee
+  Root ID    Priority    32770
+             Address     0024.13ad.9880
+             This bridge is the root
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+
+  Bridge ID  Priority    32770  (priority 32768 sys-id-ext 2)
+             Address     0024.13ad.9880
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+             Aging Time  300 sec
+
+Interface           Role Sts Cost      Prio.Nbr Type
+------------------- ---- --- --------- -------- --------------------------------
+Fa0/47              Desg FWD 19        128.51   P2p Edge 
+Fa0/48              Desg FWD 19        128.52   P2p Edge 
+
+
+
+VLAN0064
+  Spanning tree enabled protocol ieee
+  Root ID    Priority    32832
+             Address     0024.13ad.9880
+             This bridge is the root
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+
+  Bridge ID  Priority    32832  (priority 32768 sys-id-ext 64)
+             Address     0024.13ad.9880
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+             Aging Time  300 sec
+
+Interface           Role Sts Cost      Prio.Nbr Type
+------------------- ---- --- --------- -------- --------------------------------
+Fa0/7               Desg FWD 19        128.9    P2p 
+Fa0/15              Desg FWD 19        128.17   P2p 
+Fa0/45              Desg FWD 19        128.49   P2p Edge 
+Fa0/48              Desg FWD 19        128.52   P2p Edge 
+Po1                 Desg FWD 12        128.56   P2p 
+Po2                 Desg FWD 12        128.64   P2p 
+
+
+
+VLAN0065
+  Spanning tree enabled protocol ieee
+  Root ID    Priority    32833
+             Address     0024.13ad.9880
+             This bridge is the root
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+
+  Bridge ID  Priority    32833  (priority 32768 sys-id-ext 65)
+             Address     0024.13ad.9880
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+             Aging Time  300 sec
+
+Interface           Role Sts Cost      Prio.Nbr Type
+------------------- ---- --- --------- -------- --------------------------------
+Fa0/7               Desg FWD 19        128.9    P2p 
+Fa0/15              Desg FWD 19        128.17   P2p 
+Fa0/46              Desg FWD 19        128.50   P2p Edge 
+Fa0/48              Desg FWD 19        128.52   P2p Edge 
+Po1                 Desg FWD 12        128.56   P2p 
+Po2                 Desg FWD 12        128.64   P2p 
+
+
+
+VLAN1100
+  Spanning tree enabled protocol ieee
+  Root ID    Priority    33868
+             Address     0024.13ad.9880
+             This bridge is the root
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+
+  Bridge ID  Priority    33868  (priority 32768 sys-id-ext 1100)
+             Address     0024.13ad.9880
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+             Aging Time  300 sec
+
+Interface           Role Sts Cost      Prio.Nbr Type
+------------------- ---- --- --------- -------- --------------------------------
+Fa0/7               Desg FWD 19        128.9    P2p 
+Fa0/15              Desg FWD 19        128.17   P2p 
+Fa0/22              Desg FWD 19        128.24   P2p Edge 
+Fa0/35              Desg FWD 19        128.39   P2p Edge 
+Fa0/45              Desg FWD 19        128.49   P2p Edge 
+Po1                 Desg FWD 12        128.56   P2p 
+Po2                 Desg FWD 12        128.64   P2p 
+
+
+
+VLAN1101
+  Spanning tree enabled protocol ieee
+  Root ID    Priority    33869
+             Address     0024.13ad.9880
+             This bridge is the root
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+
+  Bridge ID  Priority    33869  (priority 32768 sys-id-ext 1101)
+             Address     0024.13ad.9880
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+             Aging Time  300 sec
+
+Interface           Role Sts Cost      Prio.Nbr Type
+------------------- ---- --- --------- -------- --------------------------------
+Fa0/7               Desg FWD 19        128.9    P2p 
+Fa0/15              Desg FWD 19        128.17   P2p 
+Fa0/22              Desg FWD 19        128.24   P2p Edge 
+Fa0/35              Desg FWD 19        128.39   P2p Edge 
+Fa0/45              Desg FWD 19        128.49   P2p Edge 
+Po1                 Desg FWD 12        128.56   P2p 
+Po2                 Desg FWD 12        128.64   P2p 
+
+
+
+VLAN1102
+  Spanning tree enabled protocol ieee
+  Root ID    Priority    33870
+             Address     0024.13ad.9880
+             This bridge is the root
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+
+  Bridge ID  Priority    33870  (priority 32768 sys-id-ext 1102)
+             Address     0024.13ad.9880
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+             Aging Time  300 sec
+
+Interface           Role Sts Cost      Prio.Nbr Type
+------------------- ---- --- --------- -------- --------------------------------
+Fa0/7               Desg FWD 19        128.9    P2p 
+Fa0/15              Desg FWD 19        128.17   P2p 
+Fa0/18              Desg FWD 19        128.20   P2p Edge 
+Fa0/22              Desg FWD 19        128.24   P2p Edge 
+Fa0/35              Desg FWD 19        128.39   P2p Edge 
+Fa0/45              Desg FWD 19        128.49   P2p Edge 
+Po1                 Desg FWD 12        128.56   P2p 
+Po2                 Desg FWD 12        128.64   P2p 
+
+
+
+VLAN1200
+  Spanning tree enabled protocol ieee
+  Root ID    Priority    33968
+             Address     0024.13ad.9880
+             This bridge is the root
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+
+  Bridge ID  Priority    33968  (priority 32768 sys-id-ext 1200)
+             Address     0024.13ad.9880
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+             Aging Time  300 sec
+
+Interface           Role Sts Cost      Prio.Nbr Type
+------------------- ---- --- --------- -------- --------------------------------
+Fa0/7               Desg FWD 19        128.9    P2p 
+Fa0/15              Desg FWD 19        128.17   P2p 
+Fa0/18              Desg FWD 19        128.20   P2p Edge 
+Fa0/22              Desg FWD 19        128.24   P2p Edge 
+Fa0/35              Desg FWD 19        128.39   P2p Edge 
+Fa0/45              Desg FWD 19        128.49   P2p Edge 
+Po1                 Desg FWD 12        128.56   P2p 
+Po2                 Desg FWD 12        128.64   P2p 
+
+
+
+VLAN2100
+  Spanning tree enabled protocol ieee
+  Root ID    Priority    34868
+             Address     0024.13ad.9880
+             This bridge is the root
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+
+  Bridge ID  Priority    34868  (priority 32768 sys-id-ext 2100)
+             Address     0024.13ad.9880
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+             Aging Time  300 sec
+
+Interface           Role Sts Cost      Prio.Nbr Type
+------------------- ---- --- --------- -------- --------------------------------
+Fa0/7               Desg FWD 19        128.9    P2p 
+Fa0/15              Desg FWD 19        128.17   P2p 
+Fa0/22              Desg FWD 19        128.24   P2p Edge 
+Fa0/35              Desg FWD 19        128.39   P2p Edge 
+Fa0/46              Desg FWD 19        128.50   P2p Edge 
+Po1                 Desg FWD 12        128.56   P2p 
+Po2                 Desg FWD 12        128.64   P2p 
+
+
+
+VLAN2101
+  Spanning tree enabled protocol ieee
+  Root ID    Priority    34869
+             Address     0024.13ad.9880
+             This bridge is the root
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+
+  Bridge ID  Priority    34869  (priority 32768 sys-id-ext 2101)
+             Address     0024.13ad.9880
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+             Aging Time  300 sec
+
+Interface           Role Sts Cost      Prio.Nbr Type
+------------------- ---- --- --------- -------- --------------------------------
+Fa0/7               Desg FWD 19        128.9    P2p 
+Fa0/15              Desg FWD 19        128.17   P2p 
+Fa0/22              Desg FWD 19        128.24   P2p Edge 
+Fa0/35              Desg FWD 19        128.39   P2p Edge 
+Fa0/46              Desg FWD 19        128.50   P2p Edge 
+Po1                 Desg FWD 12        128.56   P2p 
+Po2                 Desg FWD 12        128.64   P2p 
+
+
+
+VLAN2102
+  Spanning tree enabled protocol ieee
+  Root ID    Priority    34870
+             Address     0024.13ad.9880
+             This bridge is the root
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+
+  Bridge ID  Priority    34870  (priority 32768 sys-id-ext 2102)
+             Address     0024.13ad.9880
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+             Aging Time  300 sec
+
+Interface           Role Sts Cost      Prio.Nbr Type
+------------------- ---- --- --------- -------- --------------------------------
+Fa0/7               Desg FWD 19        128.9    P2p 
+Fa0/15              Desg FWD 19        128.17   P2p 
+Fa0/22              Desg FWD 19        128.24   P2p Edge 
+Fa0/26              Desg FWD 19        128.30   P2p Edge 
+Fa0/35              Desg FWD 19        128.39   P2p Edge 
+Fa0/46              Desg FWD 19        128.50   P2p Edge 
+Po1                 Desg FWD 12        128.56   P2p 
+Po2                 Desg FWD 12        128.64   P2p 
+
+
+
+VLAN2200
+  Spanning tree enabled protocol ieee
+  Root ID    Priority    34968
+             Address     0024.13ad.9880
+             This bridge is the root
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+
+  Bridge ID  Priority    34968  (priority 32768 sys-id-ext 2200)
+             Address     0024.13ad.9880
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+             Aging Time  300 sec
+
+Interface           Role Sts Cost      Prio.Nbr Type
+------------------- ---- --- --------- -------- --------------------------------
+Fa0/7               Desg FWD 19        128.9    P2p 
+Fa0/15              Desg FWD 19        128.17   P2p 
+Fa0/22              Desg FWD 19        128.24   P2p Edge 
+Fa0/26              Desg FWD 19        128.30   P2p Edge 
+Fa0/35              Desg FWD 19        128.39   P2p Edge 
+Fa0/46              Desg FWD 19        128.50   P2p Edge 
+Po1                 Desg FWD 12        128.56   P2p 
+Po2                 Desg FWD 12        128.64   P2p 
+
+
+home-3560-sguilfoil#

@@ -1,0 +1,30 @@
+{
+  "_exclude": [
+    "rp_uptime",
+    "disk_free_space",
+    "uptime",
+    "switchover_reason",
+    "disk_used_space",
+    "total_free_bytes",
+    "disk_total_space",
+    "main_mem",
+    "date",
+    "index",
+    "chassis_sn",
+    "image",
+    "sn",
+    "rp_boot_image",
+    "installed_packages",
+    "version"
+  ],
+  "attributes": null,
+  "chassis_sn": "FTX1024A00X",
+  "commands": null,
+  "config_register": "0x2102",
+  "connections": null,
+  "context_manager": {},
+  "dir": "flash:/",
+  "image": "flash:c2800nm-adventerprisek9_ivs-mz.124-24.T3.bin",
+  "os": "ios",
+  "version": "12.4(24)T3"
+}

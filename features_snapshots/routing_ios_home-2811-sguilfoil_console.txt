@@ -1,0 +1,62 @@
++++ home-2811-sguilfoil: executing command 'show ip route' +++
+show ip route
+Codes: C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area 
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route
+
+Gateway of last resort is 74.106.15.1 to network 0.0.0.0
+
+     169.254.0.0/30 is subnetted, 2 subnets
+C       169.254.75.156 is directly connected, Tunnel2
+C       169.254.162.28 is directly connected, Tunnel1
+     157.100.0.0/30 is subnetted, 2 subnets
+C       157.100.101.4 is directly connected, Serial0/1/1
+C       157.100.101.0 is directly connected, Serial0/1/0
+     142.200.0.0/24 is subnetted, 2 subnets
+O       142.200.64.0 [110/13] via 157.100.101.2, 6w2d, Serial0/1/0
+O       142.200.65.0 [110/13] via 157.100.101.6, 6w2d, Serial0/1/1
+     142.102.0.0/24 is subnetted, 2 subnets
+O       142.102.64.0 [110/13] via 157.100.101.2, 6w2d, Serial0/1/0
+O       142.102.65.0 [110/13] via 157.100.101.6, 6w2d, Serial0/1/1
+     142.100.0.0/24 is subnetted, 2 subnets
+O       142.100.64.0 [110/13] via 157.100.101.2, 6w2d, Serial0/1/0
+O       142.100.65.0 [110/13] via 157.100.101.6, 6w2d, Serial0/1/1
+     142.101.0.0/24 is subnetted, 2 subnets
+O       142.101.65.0 [110/13] via 157.100.101.6, 6w2d, Serial0/1/1
+O       142.101.64.0 [110/13] via 157.100.101.2, 6w2d, Serial0/1/0
+S    192.168.124.0/24 [1/0] via 10.0.2.253
+     10.0.0.0/8 is variably subnetted, 6 subnets, 3 masks
+B       10.0.3.0/24 [20/100] via 169.254.162.29, 15:16:16
+C       10.255.255.1/32 is directly connected, Loopback0
+C       10.0.1.0/24 is directly connected, FastEthernet0/0.1
+C       10.0.64.0/24 is directly connected, FastEthernet0/0.64
+C       10.0.65.0/24 is directly connected, FastEthernet0/0.65
+C       10.0.2.252/30 is directly connected, FastEthernet0/0.2
+     74.0.0.0/24 is subnetted, 1 subnets
+C       74.106.15.0 is directly connected, FastEthernet0/1
+S*   0.0.0.0/0 [254/0] via 74.106.15.1
+home-2811-sguilfoil#
++++ home-2811-sguilfoil: executing command 'show ipv6 route' +++
+show ipv6 route
+IPv6 Routing Table - Default - 1 entries
+Codes: C - Connected, L - Local, S - Static, U - Per-user Static route
+       B - BGP, M - MIPv6, R - RIP, I1 - ISIS L1
+       I2 - ISIS L2, IA - ISIS interarea, IS - ISIS summary, D - EIGRP
+       EX - EIGRP external
+       O - OSPF Intra, OI - OSPF Inter, OE1 - OSPF ext 1, OE2 - OSPF ext 2
+       ON1 - OSPF NSSA ext 1, ON2 - OSPF NSSA ext 2
+L   FF00::/8 [0/0]
+     via Null0, receive
+home-2811-sguilfoil#
++====================================================================================================================================================+
+| Commands for learning feature 'Routing'                                                                                                            |
++====================================================================================================================================================+
+| - Parsed commands                                                                                                                                  |
+|----------------------------------------------------------------------------------------------------------------------------------------------------|
+|   cmd: <class 'genie.libs.parser.iosxe.show_routing.ShowIpRouteDistributor'>                                                                       |
+|   cmd: <class 'genie.libs.parser.iosxe.show_routing.ShowIpv6RouteDistributor'>                                                                     |
+|====================================================================================================================================================|

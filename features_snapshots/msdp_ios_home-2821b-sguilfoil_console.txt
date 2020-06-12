@@ -1,0 +1,17 @@
++++ home-2821b-sguilfoil: executing command 'show ip msdp peer' +++
+show ip msdp peer
+home-2821b-sguilfoil#
++++ home-2821b-sguilfoil: executing command 'show ip msdp sa-cache' +++
+show ip msdp sa-cache
+MSDP Source-Active Cache - 0 entries
+home-2821b-sguilfoil#
+Could not learn <class 'genie.libs.parser.iosxe.show_msdp.ShowIpMsdpSaCache'>
+Parser Output is empty
++====================================================================================================================================================+
+| Commands for learning feature 'Msdp'                                                                                                               |
++====================================================================================================================================================+
+| - Commands with empty output                                                                                                                       |
+|----------------------------------------------------------------------------------------------------------------------------------------------------|
+|   cmd: <class 'genie.libs.parser.iosxe.show_msdp.ShowIpMsdpPeer'>                                                                                  |
+|   cmd: <class 'genie.libs.parser.iosxe.show_msdp.ShowIpMsdpSaCache'>                                                                               |
+|====================================================================================================================================================|

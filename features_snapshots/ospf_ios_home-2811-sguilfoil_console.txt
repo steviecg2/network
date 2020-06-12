@@ -1,0 +1,286 @@
++++ home-2811-sguilfoil: executing command 'show ip ospf' +++
+show ip ospf
+ Routing Process "ospf 1" with ID 10.0.1.254
+ Start time: 00:01:05.460, Time elapsed: 7w0d
+ Supports only single TOS(TOS0) routes
+ Supports opaque LSA
+ Supports Link-local Signaling (LLS)
+ Supports area transit capability
+ It is an autonomous system boundary router
+ Redistributing External Routes from,
+ Router is not originating router-LSAs with maximum metric
+ Initial SPF schedule delay 5000 msecs
+ Minimum hold time between two consecutive SPFs 10000 msecs
+ Maximum wait time between two consecutive SPFs 10000 msecs
+ Incremental-SPF disabled
+ Minimum LSA interval 5 secs
+ Minimum LSA arrival 1000 msecs
+ LSA group pacing timer 240 secs
+ Interface flood pacing timer 33 msecs
+ Retransmission pacing timer 66 msecs
+ Number of external LSA 1. Checksum Sum 0x002D26
+ Number of opaque AS LSA 0. Checksum Sum 0x000000
+ Number of DCbitless external and opaque AS LSA 0
+ Number of DoNotAge external and opaque AS LSA 0
+ Number of areas in this router is 1. 1 normal 0 stub 0 nssa
+ Number of areas transit capable is 0
+ External flood list length 0
+ IETF NSF helper support enabled
+ Cisco NSF helper support enabled
+    Area BACKBONE(0)
+	Number of interfaces in this area is 2
+	Area has no authentication
+	SPF algorithm last executed 6w2d ago
+	SPF algorithm executed 6 times
+	Area ranges are
+	Number of LSA 3. Checksum Sum 0x012E21
+	Number of opaque link LSA 0. Checksum Sum 0x000000
+	Number of DCbitless LSA 0
+	Number of indication LSA 0
+	Number of DoNotAge LSA 0
+	Flood list length 0
+
+home-2811-sguilfoil#
++++ home-2811-sguilfoil: executing command 'show ip protocols' +++
+show ip protocols
+Routing Protocol is "ospf 1"
+  Outgoing update filter list for all interfaces is not set
+  Incoming update filter list for all interfaces is not set
+  Router ID 10.0.1.254
+  It is an autonomous system boundary router
+  Redistributing External Routes from,
+  Number of areas in this router is 1. 1 normal 0 stub 0 nssa
+  Maximum path: 4
+  Routing for Networks:
+    157.100.101.0 0.0.0.3 area 0
+    157.100.101.4 0.0.0.3 area 0
+ Reference bandwidth unit is 100 mbps
+  Routing Information Sources:
+    Gateway         Distance      Last Update
+    10.0.1.65            110      6w2d
+    10.0.1.64            110      6w2d
+  Distance: (default is 110)
+
+Routing Protocol is "bgp 65000"
+  Outgoing update filter list for all interfaces is not set
+  Incoming update filter list for all interfaces is not set
+  IGP synchronization is disabled
+  Automatic route summarization is disabled
+  Neighbor(s):
+    Address          FiltIn FiltOut DistIn DistOut Weight RouteMap
+    169.254.75.157                                       
+    169.254.162.29                                       
+  Maximum path: 1
+  Routing Information Sources:
+    Gateway         Distance      Last Update
+    169.254.75.157        20      1w0d
+    169.254.162.29        20      15:15:47
+  Distance: external 20 internal 200 local 200
+
+home-2811-sguilfoil#
++++ home-2811-sguilfoil: executing command 'show running-config | section router ospf 1' +++
+show running-config | section router ospf 1
+router ospf 1
+ router-id 10.0.1.254
+ log-adjacency-changes
+ network 157.100.101.0 0.0.0.3 area 0
+ network 157.100.101.4 0.0.0.3 area 0
+ default-information originate always
+home-2811-sguilfoil#
++++ home-2811-sguilfoil: executing command 'show ip ospf mpls ldp interface' +++
+show ip ospf mpls ldp interface
+Serial0/1/1
+  Process ID 1, Area 0
+  LDP is not configured through LDP autoconfig
+  LDP-IGP Synchronization : Not required
+  Holddown timer is disabled
+  Interface is up 
+Serial0/1/0
+  Process ID 1, Area 0
+  LDP is not configured through LDP autoconfig
+  LDP-IGP Synchronization : Not required
+  Holddown timer is disabled
+  Interface is up 
+home-2811-sguilfoil#
++++ home-2811-sguilfoil: executing command 'show ip ospf mpls traffic-eng link' +++
+show ip ospf mpls traffic-eng link
+
+            OSPF Router with ID (10.0.1.254) (Process ID 1)
+
+  Area 0 MPLS TE not initialized
+home-2811-sguilfoil#
++++ home-2811-sguilfoil: executing command 'show running-config | section router ospf 1' +++
+show running-config | section router ospf 1
+router ospf 1
+ router-id 10.0.1.254
+ log-adjacency-changes
+ network 157.100.101.0 0.0.0.3 area 0
+ network 157.100.101.4 0.0.0.3 area 0
+ default-information originate always
+home-2811-sguilfoil#
++++ home-2811-sguilfoil: executing command 'show ip ospf database router' +++
+show ip ospf database router
+
+            OSPF Router with ID (10.0.1.254) (Process ID 1)
+
+		Router Link States (Area 0)
+
+  LS age: 1376
+  Options: (No TOS-capability, DC)
+  LS Type: Router Links
+  Link State ID: 10.0.1.64
+  Advertising Router: 10.0.1.64
+  LS Seq Number: 80000852
+  Checksum: 0x5A72
+  Length: 96
+  Number of Links: 6
+
+    Link connected to: another Router (point-to-point)
+     (Link ID) Neighboring Router ID: 10.0.1.254
+     (Link Data) Router Interface address: 157.100.101.2
+      Number of TOS metrics: 0
+       TOS 0 Metrics: 12
+
+    Link connected to: a Stub Network
+     (Link ID) Network/subnet number: 157.100.101.0
+     (Link Data) Network Mask: 255.255.255.252
+      Number of TOS metrics: 0
+       TOS 0 Metrics: 12
+
+    Link connected to: a Stub Network
+     (Link ID) Network/subnet number: 142.200.64.0
+     (Link Data) Network Mask: 255.255.255.0
+      Number of TOS metrics: 0
+       TOS 0 Metrics: 1
+
+    Link connected to: a Stub Network
+     (Link ID) Network/subnet number: 142.102.64.0
+     (Link Data) Network Mask: 255.255.255.0
+      Number of TOS metrics: 0
+       TOS 0 Metrics: 1
+
+    Link connected to: a Stub Network
+     (Link ID) Network/subnet number: 142.101.64.0
+     (Link Data) Network Mask: 255.255.255.0
+      Number of TOS metrics: 0
+       TOS 0 Metrics: 1
+
+    Link connected to: a Stub Network
+     (Link ID) Network/subnet number: 142.100.64.0
+     (Link Data) Network Mask: 255.255.255.0
+      Number of TOS metrics: 0
+       TOS 0 Metrics: 1
+
+
+  LS age: 1230
+  Options: (No TOS-capability, DC)
+  LS Type: Router Links
+  Link State ID: 10.0.1.65
+  Advertising Router: 10.0.1.65
+  LS Seq Number: 80000852
+  Checksum: 0x71E4
+  Length: 96
+  Number of Links: 6
+
+    Link connected to: another Router (point-to-point)
+     (Link ID) Neighboring Router ID: 10.0.1.254
+     (Link Data) Router Interface address: 157.100.101.6
+      Number of TOS metrics: 0
+       TOS 0 Metrics: 64
+
+    Link connected to: a Stub Network
+     (Link ID) Network/subnet number: 157.100.101.4
+     (Link Data) Network Mask: 255.255.255.252
+      Number of TOS metrics: 0
+       TOS 0 Metrics: 64
+
+    Link connected to: a Stub Network
+     (Link ID) Network/subnet number: 142.200.65.0
+     (Link Data) Network Mask: 255.255.255.0
+      Number of TOS metrics: 0
+       TOS 0 Metrics: 1
+
+    Link connected to: a Stub Network
+     (Link ID) Network/subnet number: 142.102.65.0
+     (Link Data) Network Mask: 255.255.255.0
+      Number of TOS metrics: 0
+       TOS 0 Metrics: 1
+
+    Link connected to: a Stub Network
+     (Link ID) Network/subnet number: 142.101.65.0
+     (Link Data) Network Mask: 255.255.255.0
+      Number of TOS metrics: 0
+       TOS 0 Metrics: 1
+
+    Link connected to: a Stub Network
+     (Link ID) Network/subnet number: 142.100.65.0
+     (Link Data) Network Mask: 255.255.255.0
+      Number of TOS metrics: 0
+       TOS 0 Metrics: 1
+
+
+  LS age: 39
+  Options: (No TOS-capability, DC)
+  LS Type: Router Links
+  Link State ID: 10.0.1.254
+  Advertising Router: 10.0.1.254
+  LS Seq Number: 80000853
+  Checksum: 0x61CB
+  Length: 72
+  AS Boundary Router
+  Number of Links: 4
+
+    Link connected to: another Router (point-to-point)
+     (Link ID) Neighboring Router ID: 10.0.1.65
+     (Link Data) Router Interface address: 157.100.101.5
+      Number of TOS metrics: 0
+       TOS 0 Metrics: 12
+
+    Link connected to: a Stub Network
+     (Link ID) Network/subnet number: 157.100.101.4
+     (Link Data) Network Mask: 255.255.255.252
+      Number of TOS metrics: 0
+       TOS 0 Metrics: 12
+
+    Link connected to: another Router (point-to-point)
+     (Link ID) Neighboring Router ID: 10.0.1.64
+     (Link Data) Router Interface address: 157.100.101.1
+      Number of TOS metrics: 0
+       TOS 0 Metrics: 12
+
+    Link connected to: a Stub Network
+     (Link ID) Network/subnet number: 157.100.101.0
+     (Link Data) Network Mask: 255.255.255.252
+      Number of TOS metrics: 0
+       TOS 0 Metrics: 12
+
+
+home-2811-sguilfoil#
++++ home-2811-sguilfoil: executing command 'show ip ospf database network' +++
+show ip ospf database network
+
+            OSPF Router with ID (10.0.1.254) (Process ID 1)
+home-2811-sguilfoil#
++++ home-2811-sguilfoil: executing command 'show ip ospf database external' +++
+show ip ospf database external
+
+            OSPF Router with ID (10.0.1.254) (Process ID 1)
+
+		Type-5 AS External Link States
+
+  LS age: 40
+  Options: (No TOS-capability, DC)
+  LS Type: AS External Link
+  Link State ID: 0.0.0.0 (External Network Number )
+  Advertising Router: 10.0.1.254
+  LS Seq Number: 8000084E
+  Checksum: 0x2D26
+  Length: 36
+  Network Mask: /0
+	Metric Type: 2 (Larger than any link state path)
+	TOS: 0 
+	Metric: 1 
+	Forward Address: 0.0.0.0
+	External Route Tag: 1
+
+home-2811-sguilfoil#

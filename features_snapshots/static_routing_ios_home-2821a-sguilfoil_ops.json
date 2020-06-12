@@ -1,0 +1,32 @@
+{
+  "_exclude": [],
+  "attributes": null,
+  "commands": null,
+  "connections": null,
+  "context_manager": {},
+  "info": {
+    "vrf": {
+      "default": {
+        "address_family": {
+          "ipv4": {
+            "routes": {
+              "142.101.65.0/24": {
+                "next_hop": {
+                  "next_hop_list": {
+                    "1": {
+                      "active": true,
+                      "index": 1,
+                      "next_hop": "157.100.202.2",
+                      "preference": 1
+                    }
+                  }
+                },
+                "route": "142.101.65.0/24"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

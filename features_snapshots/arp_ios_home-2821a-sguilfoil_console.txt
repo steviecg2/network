@@ -1,0 +1,457 @@
++++ home-2821a-sguilfoil: executing command 'show ip arp' +++
+show ip arp
+Protocol  Address          Age (min)  Hardware Addr   Type   Interface
+Internet  10.0.64.1               -   68bd.abb7.2f60  ARPA   GigabitEthernet0/0.64
+Internet  10.0.64.2             234   0050.5695.5c1e  ARPA   GigabitEthernet0/0.64
+Internet  10.0.64.254            31   0017.e049.c8d8  ARPA   GigabitEthernet0/0.64
+Internet  142.100.64.11         193   0050.5695.1b71  ARPA   GigabitEthernet0/0.1100
+Internet  142.100.64.254          -   68bd.abb7.2f60  ARPA   GigabitEthernet0/0.1100
+Internet  142.101.64.4           27   0050.5695.9e44  ARPA   GigabitEthernet0/0.1101
+Internet  142.101.64.12           3   0050.5695.9f74  ARPA   GigabitEthernet0/0.1101
+Internet  142.101.64.254          -   68bd.abb7.2f60  ARPA   GigabitEthernet0/0.1101
+Internet  142.102.64.2           10   0050.5695.6920  ARPA   GigabitEthernet0/0.1102
+Internet  142.102.64.11          34   a8b1.d4fa.0b04  ARPA   GigabitEthernet0/0.1102
+Internet  142.102.64.15         139   1c69.7a06.9513  ARPA   GigabitEthernet0/0.1102
+Internet  142.102.64.69           4   0242.8e66.4045  ARPA   GigabitEthernet0/0.1102
+Internet  142.102.64.254          -   68bd.abb7.2f60  ARPA   GigabitEthernet0/0.1102
+Internet  142.200.64.15           1   0050.5695.4251  ARPA   GigabitEthernet0/0.1200
+Internet  142.200.64.52          12   0050.5695.7574  ARPA   GigabitEthernet0/0.1200
+Internet  142.200.64.61         226   1c69.7a06.9513  ARPA   GigabitEthernet0/0.1200
+Internet  142.200.64.169         12   0050.5695.da41  ARPA   GigabitEthernet0/0.1200
+Internet  142.200.64.254          -   68bd.abb7.2f60  ARPA   GigabitEthernet0/0.1200
+home-2821a-sguilfoil#
++++ home-2821a-sguilfoil: executing command 'show vrf' +++
+show vrf
+home-2821a-sguilfoil#
++++ home-2821a-sguilfoil: executing command 'show ip interface' +++
+show ip interface
+GigabitEthernet0/0 is up, line protocol is up
+  Internet protocol processing disabled
+GigabitEthernet0/0.1 is administratively down, line protocol is down
+  Internet address is 10.0.1.64/24
+  Broadcast address is 255.255.255.255
+  Address determined by non-volatile memory
+  MTU is 1500 bytes
+  Helper address is not set
+  Directed broadcast forwarding is disabled
+  Outgoing access list is not set
+  Inbound  access list is not set
+  Proxy ARP is enabled
+  Local Proxy ARP is disabled
+  Security level is default
+  Split horizon is enabled
+  ICMP redirects are always sent
+  ICMP unreachables are always sent
+  ICMP mask replies are never sent
+  IP fast switching is enabled
+  IP fast switching on the same interface is enabled
+  IP Flow switching is disabled
+  IP CEF switching is enabled
+  IP CEF switching turbo vector
+  IP multicast fast switching is enabled
+  IP multicast distributed fast switching is disabled
+  IP route-cache flags are Fast, CEF
+  Router Discovery is disabled
+  IP output packet accounting is disabled
+  IP access violation accounting is disabled
+  TCP/IP header compression is disabled
+  RTP/IP header compression is disabled
+  Policy routing is disabled
+  Network address translation is disabled
+  BGP Policy Mapping is disabled
+  Input features: MCI Check
+  WCCP Redirect outbound is disabled
+  WCCP Redirect inbound is disabled
+  WCCP Redirect exclude is disabled
+GigabitEthernet0/0.64 is up, line protocol is up
+  Internet address is 10.0.64.1/24
+  Broadcast address is 255.255.255.255
+  Address determined by non-volatile memory
+  MTU is 1500 bytes
+  Helper address is not set
+  Directed broadcast forwarding is disabled
+  Outgoing access list is not set
+  Inbound  access list is not set
+  Proxy ARP is enabled
+  Local Proxy ARP is disabled
+  Security level is default
+  Split horizon is enabled
+  ICMP redirects are always sent
+  ICMP unreachables are always sent
+  ICMP mask replies are never sent
+  IP fast switching is enabled
+  IP fast switching on the same interface is enabled
+  IP Flow switching is disabled
+  IP CEF switching is enabled
+  IP CEF switching turbo vector
+  IP multicast fast switching is enabled
+  IP multicast distributed fast switching is disabled
+  IP route-cache flags are Fast, CEF
+  Router Discovery is disabled
+  IP output packet accounting is disabled
+  IP access violation accounting is disabled
+  TCP/IP header compression is disabled
+  RTP/IP header compression is disabled
+  Policy routing is disabled
+  Network address translation is disabled
+  BGP Policy Mapping is disabled
+  Input features: MCI Check
+  WCCP Redirect outbound is disabled
+  WCCP Redirect inbound is disabled
+  WCCP Redirect exclude is disabled
+GigabitEthernet0/0.1100 is up, line protocol is up
+  Internet address is 142.100.64.254/24
+  Broadcast address is 255.255.255.255
+  Address determined by non-volatile memory
+  MTU is 1500 bytes
+  Helper address is 10.0.1.211
+  Directed broadcast forwarding is disabled
+  Multicast reserved groups joined: 224.0.0.5 224.0.0.6
+  Outgoing access list is not set
+  Inbound  access list is not set
+  Proxy ARP is enabled
+  Local Proxy ARP is disabled
+  Security level is default
+  Split horizon is enabled
+  ICMP redirects are always sent
+  ICMP unreachables are always sent
+  ICMP mask replies are never sent
+  IP fast switching is enabled
+  IP fast switching on the same interface is enabled
+  IP Flow switching is disabled
+  IP CEF switching is enabled
+  IP CEF switching turbo vector
+  IP multicast fast switching is enabled
+  IP multicast distributed fast switching is disabled
+  IP route-cache flags are Fast, CEF
+  Router Discovery is disabled
+  IP output packet accounting is disabled
+  IP access violation accounting is disabled
+  TCP/IP header compression is disabled
+  RTP/IP header compression is disabled
+  Policy routing is disabled
+  Network address translation is disabled
+  BGP Policy Mapping is disabled
+  Input features: MCI Check
+  WCCP Redirect outbound is disabled
+  WCCP Redirect inbound is disabled
+  WCCP Redirect exclude is disabled
+GigabitEthernet0/0.1101 is up, line protocol is up
+  Internet address is 142.101.64.254/24
+  Broadcast address is 255.255.255.255
+  Address determined by non-volatile memory
+  MTU is 1500 bytes
+  Helper address is 10.0.1.211
+  Directed broadcast forwarding is disabled
+  Multicast reserved groups joined: 224.0.0.5 224.0.0.6
+  Outgoing access list is not set
+  Inbound  access list is not set
+  Proxy ARP is enabled
+  Local Proxy ARP is disabled
+  Security level is default
+  Split horizon is enabled
+  ICMP redirects are always sent
+  ICMP unreachables are always sent
+  ICMP mask replies are never sent
+  IP fast switching is enabled
+  IP fast switching on the same interface is enabled
+  IP Flow switching is disabled
+  IP CEF switching is enabled
+  IP CEF switching turbo vector
+  IP multicast fast switching is enabled
+  IP multicast distributed fast switching is disabled
+  IP route-cache flags are Fast, CEF
+  Router Discovery is disabled
+  IP output packet accounting is disabled
+  IP access violation accounting is disabled
+  TCP/IP header compression is disabled
+  RTP/IP header compression is disabled
+  Policy routing is disabled
+  Network address translation is disabled
+  BGP Policy Mapping is disabled
+  Input features: MCI Check
+  WCCP Redirect outbound is disabled
+  WCCP Redirect inbound is disabled
+  WCCP Redirect exclude is disabled
+GigabitEthernet0/0.1102 is up, line protocol is up
+  Internet address is 142.102.64.254/24
+  Broadcast address is 255.255.255.255
+  Address determined by non-volatile memory
+  MTU is 1500 bytes
+  Helper address is not set
+  Directed broadcast forwarding is disabled
+  Multicast reserved groups joined: 224.0.0.5 224.0.0.6
+  Outgoing access list is not set
+  Inbound  access list is not set
+  Proxy ARP is enabled
+  Local Proxy ARP is disabled
+  Security level is default
+  Split horizon is enabled
+  ICMP redirects are always sent
+  ICMP unreachables are always sent
+  ICMP mask replies are never sent
+  IP fast switching is enabled
+  IP fast switching on the same interface is enabled
+  IP Flow switching is disabled
+  IP CEF switching is enabled
+  IP CEF switching turbo vector
+  IP multicast fast switching is enabled
+  IP multicast distributed fast switching is disabled
+  IP route-cache flags are Fast, CEF
+  Router Discovery is disabled
+  IP output packet accounting is disabled
+  IP access violation accounting is disabled
+  TCP/IP header compression is disabled
+  RTP/IP header compression is disabled
+  Policy routing is disabled
+  Network address translation is disabled
+  BGP Policy Mapping is disabled
+  Input features: MCI Check
+  WCCP Redirect outbound is disabled
+  WCCP Redirect inbound is disabled
+  WCCP Redirect exclude is disabled
+GigabitEthernet0/0.1200 is up, line protocol is up
+  Internet address is 142.200.64.254/24
+  Broadcast address is 255.255.255.255
+  Address determined by non-volatile memory
+  MTU is 1500 bytes
+  Helper address is not set
+  Directed broadcast forwarding is disabled
+  Multicast reserved groups joined: 224.0.0.5 224.0.0.6
+  Outgoing access list is not set
+  Inbound  access list is not set
+  Proxy ARP is enabled
+  Local Proxy ARP is disabled
+  Security level is default
+  Split horizon is enabled
+  ICMP redirects are always sent
+  ICMP unreachables are always sent
+  ICMP mask replies are never sent
+  IP fast switching is enabled
+  IP fast switching on the same interface is enabled
+  IP Flow switching is disabled
+  IP CEF switching is enabled
+  IP CEF switching turbo vector
+  IP multicast fast switching is enabled
+  IP multicast distributed fast switching is disabled
+  IP route-cache flags are Fast, CEF
+  Router Discovery is disabled
+  IP output packet accounting is disabled
+  IP access violation accounting is disabled
+  TCP/IP header compression is disabled
+  RTP/IP header compression is disabled
+  Policy routing is disabled
+  Network address translation is disabled
+  BGP Policy Mapping is disabled
+  Input features: MCI Check
+  WCCP Redirect outbound is disabled
+  WCCP Redirect inbound is disabled
+  WCCP Redirect exclude is disabled
+GigabitEthernet0/1 is administratively down, line protocol is down
+  Internet protocol processing disabled
+Serial0/0/0:0 is down, line protocol is down
+  Internet protocol processing disabled
+Serial0/0/0:1 is down, line protocol is down
+  Internet protocol processing disabled
+Serial0/0/0:2 is down, line protocol is down
+  Internet protocol processing disabled
+Serial0/0/0:3 is down, line protocol is down
+  Internet protocol processing disabled
+Serial0/0/0:4 is down, line protocol is down
+  Internet protocol processing disabled
+Serial0/0/0:5 is down, line protocol is down
+  Internet protocol processing disabled
+Serial0/0/0:6 is down, line protocol is down
+  Internet protocol processing disabled
+Serial0/0/0:7 is down, line protocol is down
+  Internet protocol processing disabled
+Serial0/0/0:8 is down, line protocol is down
+  Internet protocol processing disabled
+Serial0/0/0:9 is down, line protocol is down
+  Internet protocol processing disabled
+Serial0/0/0:23 is up, line protocol is up
+  Internet protocol processing disabled
+Serial0/1/0 is up, line protocol is up
+  Internet address is 157.100.101.2/30
+  Broadcast address is 255.255.255.255
+  Address determined by non-volatile memory
+  MTU is 1500 bytes
+  Helper address is not set
+  Directed broadcast forwarding is disabled
+  Multicast reserved groups joined: 224.0.0.5
+  Outgoing access list is not set
+  Inbound  access list is not set
+  Proxy ARP is enabled
+  Local Proxy ARP is disabled
+  Security level is default
+  Split horizon is enabled
+  ICMP redirects are always sent
+  ICMP unreachables are always sent
+  ICMP mask replies are never sent
+  IP fast switching is enabled
+  IP fast switching on the same interface is enabled
+  IP Flow switching is disabled
+  IP CEF switching is enabled
+  IP CEF switching turbo vector
+  IP multicast fast switching is enabled
+  IP multicast distributed fast switching is disabled
+  IP route-cache flags are Fast, CEF
+  Router Discovery is disabled
+  IP output packet accounting is disabled
+  IP access violation accounting is disabled
+  TCP/IP header compression is disabled
+  RTP/IP header compression is disabled
+  Policy routing is disabled
+  Network address translation is disabled
+  BGP Policy Mapping is disabled
+  Input features: MCI Check
+  WCCP Redirect outbound is disabled
+  WCCP Redirect inbound is disabled
+  WCCP Redirect exclude is disabled
+Serial0/1/1 is up, line protocol is up
+  Internet address is 157.100.202.1/30
+  Broadcast address is 255.255.255.255
+  Address determined by non-volatile memory
+  Peer address is 157.100.202.2
+  MTU is 1500 bytes
+  Helper address is not set
+  Directed broadcast forwarding is disabled
+  Outgoing access list is not set
+  Inbound  access list is not set
+  Proxy ARP is enabled
+  Local Proxy ARP is disabled
+  Security level is default
+  Split horizon is enabled
+  ICMP redirects are always sent
+  ICMP unreachables are always sent
+  ICMP mask replies are never sent
+  IP fast switching is enabled
+  IP fast switching on the same interface is enabled
+  IP Flow switching is disabled
+  IP CEF switching is enabled
+  IP CEF switching turbo vector
+  IP multicast fast switching is enabled
+  IP multicast distributed fast switching is disabled
+  IP route-cache flags are Fast, CEF
+  Router Discovery is disabled
+  IP output packet accounting is disabled
+  IP access violation accounting is disabled
+  TCP/IP header compression is disabled
+  RTP/IP header compression is disabled
+  Policy routing is disabled
+  Network address translation is disabled
+  BGP Policy Mapping is disabled
+  Input features: MCI Check
+  WCCP Redirect outbound is disabled
+  WCCP Redirect inbound is disabled
+  WCCP Redirect exclude is disabled
+home-2821a-sguilfoil#
++++ home-2821a-sguilfoil: executing command 'show ip arp summary' +++
+show ip arp summary
+Translating "summary"
+
+show ip arp summary
+             ^
+% Invalid input detected at '^' marker.
+
+home-2821a-sguilfoil#
++++ home-2821a-sguilfoil: executing command 'show ip traffic' +++
+show ip traffic
+IP statistics:
+  Rcvd:  7753255 total, 7697814 local destination
+         0 format errors, 0 checksum errors, 0 bad hop count
+         0 unknown protocol, 3 not a gateway
+         0 security failures, 0 bad options, 0 with options
+  Opts:  0 end, 0 nop, 0 basic security, 0 loose source route
+         0 timestamp, 0 extended security, 0 record route
+         0 stream ID, 0 strict source route, 0 alert, 0 cipso, 0 ump
+         0 other
+  Frags: 0 reassembled, 0 timeouts, 0 couldn't reassemble
+         0 fragmented, 0 fragments, 0 couldn't fragment
+  Bcast: 129269 received, 72289 sent
+  Mcast: 411870 received, 3657828 sent
+  Sent:  10905331 generated, 23945530 forwarded
+  Drop:  347259 encapsulation failed, 0 unresolved, 0 no adjacency
+         0 no route, 0 unicast RPF, 0 forced drop
+         0 options denied
+  Drop:  0 packets with source IP address zero
+  Drop:  0 packets with internal loop back IP address
+         0 physical broadcast
+  Reinj: 0 in input feature path, 0 in output feature path
+
+ICMP statistics:
+  Rcvd: 0 format errors, 0 checksum errors, 5 redirects, 14 unreachable
+        2 echo, 5 echo reply, 0 mask requests, 0 mask replies, 0 quench
+        0 parameter, 0 timestamp, 0 timestamp replies, 0 info request, 0 other
+        0 irdp solicitations, 0 irdp advertisements
+        0 time exceeded, 0 info replies
+  Sent: 0 redirects, 2199 unreachable, 31 echo, 2 echo reply
+        0 mask requests, 0 mask replies, 0 quench, 0 timestamp, 0 timestamp replies
+        0 info reply, 0 time exceeded, 0 parameter problem
+        0 irdp solicitations, 0 irdp advertisements
+
+UDP statistics:
+  Rcvd: 344500 total, 0 checksum errors, 116 no port
+  Sent: 2045474 total, 0 forwarded broadcasts
+
+TCP statistics:
+  Rcvd: 6941418 total, 0 checksum errors, 9417 no port
+  Sent: 6829486 total
+
+BGP statistics:
+  Rcvd: 0 total, 0 opens, 0 notifications, 0 updates
+        0 keepalives, 0 route-refresh, 0 unrecognized
+  Sent: 0 total, 0 opens, 0 notifications, 0 updates
+        0 keepalives, 0 route-refresh
+
+EIGRP-IPv4 statistics:
+  Rcvd: 0 total
+  Sent: 0 total
+
+PIMv2 statistics: Sent/Received
+  Total: 0/0, 0 checksum errors, 0 format errors
+  Registers: 0/0 (0 non-rp, 0 non-sm-group), Register Stops: 0/0,  Hellos: 0/0
+  Join/Prunes: 0/0, Asserts: 0/0, grafts: 0/0
+  Bootstraps: 0/0, Candidate_RP_Advertisements: 0/0
+  Queue drops: 0
+  State-Refresh: 0/0
+
+IGMP statistics: Sent/Received
+  Total: 0/0, Format errors: 0/0, Checksum errors: 0/0
+  Host Queries: 0/0, Host Reports: 0/0, Host Leaves: 0/0 
+  DVMRP: 0/0, PIM: 0/0
+  Queue drops: 0
+
+OSPF statistics:
+  Last clearing of OSPF traffic counters never
+
+  Rcvd: 411870 total, 0 checksum errors
+  	404220 hello, 2 database desc, 0 link state req
+  	5736 link state updates, 1912 link state acks
+
+  Sent: 2028165 total
+  	2021630 hello, 3 database desc, 1 link state req
+  	1914 link state updates, 4617 link state acks
+
+ARP statistics:
+  Rcvd: 92929 requests, 1020 replies, 94 reverse, 0 other
+  Sent: 139081 requests, 57055 replies (0 proxy), 0 reverse
+  Drop due to input queue full: 0
+home-2821a-sguilfoil#
++====================================================================================================================================================+
+| Commands for learning feature 'Arp'                                                                                                                |
++====================================================================================================================================================+
+| - Parsed commands                                                                                                                                  |
+|----------------------------------------------------------------------------------------------------------------------------------------------------|
+|   cmd: <class 'genie.libs.parser.ios.show_arp.ShowIpArp'>                                                                                          |
+|   cmd: <class 'genie.libs.parser.ios.show_interface.ShowIpInterface'>                                                                              |
+|   cmd: <class 'genie.libs.parser.ios.show_arp.ShowIpTraffic'>                                                                                      |
+|====================================================================================================================================================|
+| - Commands not accepted on the device                                                                                                              |
+|----------------------------------------------------------------------------------------------------------------------------------------------------|
+|   cmd: <class 'genie.libs.parser.ios.show_arp.ShowIpArpSummary'>                                                                                   |
+|====================================================================================================================================================|
+| - Commands with empty output                                                                                                                       |
+|----------------------------------------------------------------------------------------------------------------------------------------------------|
+|   cmd: <class 'genie.libs.parser.ios.show_vrf.ShowVrf'>                                                                                            |
+|====================================================================================================================================================|

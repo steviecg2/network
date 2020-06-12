@@ -1,0 +1,382 @@
+{
+  "_exclude": [
+    "if_handle",
+    "keepalives",
+    "last_reset",
+    "reset_reason",
+    "foreign_port",
+    "local_port",
+    "msg_rcvd",
+    "msg_sent",
+    "up_down",
+    "bgp_table_version",
+    "routing_table_version",
+    "tbl_ver",
+    "table_version",
+    "memory_usage",
+    "updates",
+    "mss",
+    "total",
+    "total_bytes",
+    "up_time",
+    "bgp_negotiated_keepalive_timers",
+    "hold_time",
+    "keepalive_interval",
+    "sent",
+    "received",
+    "status_codes",
+    "holdtime",
+    "router_id",
+    "connections_dropped",
+    "connections_established",
+    "advertised",
+    "prefixes",
+    "routes",
+    "state_pfxrcd"
+  ],
+  "attributes": null,
+  "commands": null,
+  "connections": null,
+  "context_manager": {},
+  "info": {
+    "instance": {
+      "default": {
+        "bgp_id": 65000,
+        "vrf": {
+          "default": {
+            "neighbor": {
+              "169.254.162.29": {
+                "address_family": {
+                  "ipv4 unicast": {
+                    "bgp_table_version": 25,
+                    "path": {
+                      "memory_usage": 364,
+                      "total_entries": 7
+                    },
+                    "prefixes": {
+                      "memory_usage": 792,
+                      "total_entries": 6
+                    },
+                    "routing_table_version": 25,
+                    "total_memory": 1716
+                  }
+                },
+                "bgp_negotiated_capabilities": {
+                  "route_refresh": "advertised and received(new)"
+                },
+                "bgp_negotiated_keepalive_timers": {
+                  "hold_time": 30,
+                  "keepalive_interval": 10
+                },
+                "bgp_neighbor_counters": {
+                  "messages": {
+                    "received": {
+                      "keepalives": 427349,
+                      "notifications": 0,
+                      "opens": 4,
+                      "updates": 9
+                    },
+                    "sent": {
+                      "keepalives": 417269,
+                      "notifications": 3,
+                      "opens": 4,
+                      "updates": 18
+                    }
+                  }
+                },
+                "bgp_session_transport": {
+                  "connection": {
+                    "last_reset": "15:15:33",
+                    "reset_reason": "BGP Notification sent, hold time expired",
+                    "state": "Established"
+                  },
+                  "transport": {
+                    "foreign_host": "169.254.162.29",
+                    "foreign_port": "179",
+                    "local_host": "169.254.162.30",
+                    "local_port": "62006",
+                    "mss": 1375
+                  }
+                },
+                "bgp_version": 4,
+                "remote_as": 64512,
+                "session_state": "Established",
+                "shutdown": false
+              },
+              "169.254.75.157": {
+                "address_family": {
+                  "ipv4 unicast": {
+                    "bgp_table_version": 25,
+                    "path": {
+                      "memory_usage": 364,
+                      "total_entries": 7
+                    },
+                    "prefixes": {
+                      "memory_usage": 792,
+                      "total_entries": 6
+                    },
+                    "routing_table_version": 25,
+                    "total_memory": 1716
+                  }
+                },
+                "bgp_negotiated_capabilities": {
+                  "route_refresh": "advertised and received(new)"
+                },
+                "bgp_negotiated_keepalive_timers": {
+                  "hold_time": 30,
+                  "keepalive_interval": 10
+                },
+                "bgp_neighbor_counters": {
+                  "messages": {
+                    "received": {
+                      "keepalives": 427350,
+                      "notifications": 0,
+                      "opens": 4,
+                      "updates": 9
+                    },
+                    "sent": {
+                      "keepalives": 417267,
+                      "notifications": 2,
+                      "opens": 4,
+                      "updates": 18
+                    }
+                  }
+                },
+                "bgp_session_transport": {
+                  "connection": {
+                    "last_reset": "15:15:32",
+                    "reset_reason": "BGP Notification sent, hold time expired",
+                    "state": "Established"
+                  },
+                  "transport": {
+                    "foreign_host": "169.254.75.157",
+                    "foreign_port": "179",
+                    "local_host": "169.254.75.158",
+                    "local_port": "27353",
+                    "mss": 1375
+                  }
+                },
+                "bgp_version": 4,
+                "remote_as": 64512,
+                "session_state": "Established",
+                "shutdown": false
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "routes_per_peer": {
+    "instance": {
+      "default": {
+        "vrf": {
+          "default": {
+            "neighbor": {
+              "169.254.162.29": {
+                "address_family": {
+                  "ipv4 unicast": {
+                    "advertised": {
+                      "10.0.1.0/24": {
+                        "index": {
+                          "1": {
+                            "localprf": 0,
+                            "next_hop": "0.0.0.0",
+                            "origin_codes": "i",
+                            "status_codes": "*>",
+                            "weight": 32768
+                          }
+                        }
+                      },
+                      "10.0.3.0/24": {
+                        "index": {
+                          "1": {
+                            "metric": 100,
+                            "next_hop": "169.254.162.29",
+                            "origin_codes": "i",
+                            "path": "64512",
+                            "status_codes": "*>",
+                            "weight": 0
+                          }
+                        }
+                      },
+                      "10.0.64.0/24": {
+                        "index": {
+                          "1": {
+                            "localprf": 0,
+                            "next_hop": "0.0.0.0",
+                            "origin_codes": "i",
+                            "status_codes": "*>",
+                            "weight": 32768
+                          }
+                        }
+                      },
+                      "10.0.65.0/24": {
+                        "index": {
+                          "1": {
+                            "localprf": 0,
+                            "next_hop": "0.0.0.0",
+                            "origin_codes": "i",
+                            "status_codes": "*>",
+                            "weight": 32768
+                          }
+                        }
+                      },
+                      "192.168.124.0": {
+                        "index": {
+                          "1": {
+                            "localprf": 0,
+                            "next_hop": "10.0.2.253",
+                            "origin_codes": "i",
+                            "status_codes": "*>",
+                            "weight": 32768
+                          }
+                        }
+                      }
+                    },
+                    "input_queue": 0,
+                    "msg_rcvd": 427361,
+                    "msg_sent": 417293,
+                    "output_queue": 0,
+                    "received_routes": {
+                      "10.0.3.0/24": {
+                        "index": {
+                          "1": {
+                            "metric": 100,
+                            "next_hop": "169.254.162.29",
+                            "origin_codes": "i",
+                            "path": "64512",
+                            "status_codes": "*>",
+                            "weight": 0
+                          }
+                        }
+                      }
+                    },
+                    "routes": {
+                      "10.0.3.0/24": {
+                        "index": {
+                          "1": {
+                            "metric": 100,
+                            "next_hop": "169.254.162.29",
+                            "origin_codes": "i",
+                            "path": "64512",
+                            "status_codes": "*>",
+                            "weight": 0
+                          }
+                        }
+                      }
+                    },
+                    "state_pfxrcd": "1",
+                    "tbl_ver": 25,
+                    "up_down": "15:14:50"
+                  }
+                },
+                "remote_as": 64512
+              },
+              "169.254.75.157": {
+                "address_family": {
+                  "ipv4 unicast": {
+                    "advertised": {
+                      "10.0.1.0/24": {
+                        "index": {
+                          "1": {
+                            "localprf": 0,
+                            "next_hop": "0.0.0.0",
+                            "origin_codes": "i",
+                            "status_codes": "*>",
+                            "weight": 32768
+                          }
+                        }
+                      },
+                      "10.0.3.0/24": {
+                        "index": {
+                          "1": {
+                            "metric": 100,
+                            "next_hop": "169.254.162.29",
+                            "origin_codes": "i",
+                            "path": "64512",
+                            "status_codes": "*>",
+                            "weight": 0
+                          }
+                        }
+                      },
+                      "10.0.64.0/24": {
+                        "index": {
+                          "1": {
+                            "localprf": 0,
+                            "next_hop": "0.0.0.0",
+                            "origin_codes": "i",
+                            "status_codes": "*>",
+                            "weight": 32768
+                          }
+                        }
+                      },
+                      "10.0.65.0/24": {
+                        "index": {
+                          "1": {
+                            "localprf": 0,
+                            "next_hop": "0.0.0.0",
+                            "origin_codes": "i",
+                            "status_codes": "*>",
+                            "weight": 32768
+                          }
+                        }
+                      },
+                      "192.168.124.0": {
+                        "index": {
+                          "1": {
+                            "localprf": 0,
+                            "next_hop": "10.0.2.253",
+                            "origin_codes": "i",
+                            "status_codes": "*>",
+                            "weight": 32768
+                          }
+                        }
+                      }
+                    },
+                    "input_queue": 0,
+                    "msg_rcvd": 427362,
+                    "msg_sent": 417290,
+                    "output_queue": 0,
+                    "received_routes": {
+                      "10.0.3.0/24": {
+                        "index": {
+                          "1": {
+                            "metric": 100,
+                            "next_hop": "169.254.75.157",
+                            "origin_codes": "i",
+                            "path": "64512",
+                            "status_codes": "*",
+                            "weight": 0
+                          }
+                        }
+                      }
+                    },
+                    "routes": {
+                      "10.0.3.0/24": {
+                        "index": {
+                          "1": {
+                            "metric": 100,
+                            "next_hop": "169.254.75.157",
+                            "origin_codes": "i",
+                            "path": "64512",
+                            "status_codes": "*",
+                            "weight": 0
+                          }
+                        }
+                      }
+                    },
+                    "state_pfxrcd": "1",
+                    "tbl_ver": 25,
+                    "up_down": "15:14:32"
+                  }
+                },
+                "remote_as": 64512
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

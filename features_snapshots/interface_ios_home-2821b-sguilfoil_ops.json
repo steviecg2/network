@@ -1,0 +1,451 @@
+{
+  "_exclude": [
+    "in_discards",
+    "in_octets",
+    "in_pkts",
+    "last_clear",
+    "out_octets",
+    "out_pkts",
+    "in_rate",
+    "out_rate",
+    "in_errors",
+    "in_crc_errors",
+    "in_rate_pkts",
+    "out_rate_pkts",
+    "in_broadcast_pkts",
+    "out_broadcast_pkts",
+    "in_multicast_pkts",
+    "out_multicast_pkts",
+    "in_unicast_pkts",
+    "out_unicast_pkts",
+    "last_change",
+    "mac_address",
+    "phys_address",
+    "((t|T)unnel.*)",
+    "(Null.*)",
+    "chars_out",
+    "chars_in",
+    "pkts_out",
+    "pkts_in",
+    "mgmt0"
+  ],
+  "attributes": null,
+  "commands": null,
+  "connections": null,
+  "context_manager": {},
+  "info": {
+    "GigabitEthernet0/0": {
+      "accounting": {
+        "arp": {
+          "chars_in": 33867060,
+          "chars_out": 28578688,
+          "pkts_in": 564451,
+          "pkts_out": 446606
+        },
+        "cdp": {
+          "chars_in": 30340266,
+          "chars_out": 27827861,
+          "pkts_in": 64009,
+          "pkts_out": 71171
+        },
+        "dec mop": {
+          "chars_in": 0,
+          "chars_out": 492877,
+          "pkts_in": 0,
+          "pkts_out": 6401
+        },
+        "ip": {
+          "chars_in": 2275720497,
+          "chars_out": 3281788901,
+          "pkts_in": 11871790,
+          "pkts_out": 19065246
+        },
+        "other": {
+          "chars_in": 6157956,
+          "chars_out": 23050440,
+          "pkts_in": 128236,
+          "pkts_out": 384174
+        }
+      },
+      "bandwidth": 100000,
+      "counters": {
+        "in_broadcast_pkts": 0,
+        "in_crc_errors": 0,
+        "in_errors": 0,
+        "in_mac_pause_frames": 0,
+        "in_multicast_pkts": 0,
+        "in_octets": 2346820981,
+        "in_pkts": 12628222,
+        "last_clear": "never",
+        "out_errors": 0,
+        "out_mac_pause_frames": 0,
+        "out_octets": 3361738767,
+        "out_pkts": 19973598,
+        "rate": {
+          "in_rate": 8000,
+          "in_rate_pkts": 10,
+          "load_interval": 300,
+          "out_rate": 0,
+          "out_rate_pkts": 0
+        }
+      },
+      "delay": 100,
+      "duplex_mode": "full",
+      "enabled": true,
+      "encapsulation": {
+        "encapsulation": "arpa"
+      },
+      "flow_control": {
+        "receive": true,
+        "send": true
+      },
+      "mac_address": "001e.f701.db00",
+      "mtu": 1500,
+      "oper_status": "up",
+      "phys_address": "001e.f701.db00",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "port_speed": "100mbps",
+      "switchport_enable": false,
+      "type": "MV96340 Ethernet"
+    },
+    "GigabitEthernet0/0.1": {
+      "bandwidth": 100000,
+      "delay": 100,
+      "enabled": true,
+      "encapsulation": {
+        "encapsulation": "dot1q",
+        "first_dot1q": "1"
+      },
+      "ipv4": {
+        "10.0.1.65/24": {
+          "ip": "10.0.1.65",
+          "prefix_length": "24",
+          "secondary": false
+        }
+      },
+      "mac_address": "001e.f701.db00",
+      "mtu": 1500,
+      "oper_status": "up",
+      "phys_address": "001e.f701.db00",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "switchport_enable": false,
+      "type": "MV96340 Ethernet"
+    },
+    "GigabitEthernet0/0.2100": {
+      "bandwidth": 100000,
+      "delay": 100,
+      "enabled": true,
+      "encapsulation": {
+        "encapsulation": "dot1q",
+        "first_dot1q": "2100"
+      },
+      "ipv4": {
+        "142.100.65.254/24": {
+          "ip": "142.100.65.254",
+          "prefix_length": "24",
+          "secondary": false
+        }
+      },
+      "mac_address": "001e.f701.db00",
+      "mtu": 1500,
+      "oper_status": "up",
+      "phys_address": "001e.f701.db00",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "switchport_enable": false,
+      "type": "MV96340 Ethernet"
+    },
+    "GigabitEthernet0/0.2101": {
+      "bandwidth": 100000,
+      "delay": 100,
+      "enabled": true,
+      "encapsulation": {
+        "encapsulation": "dot1q",
+        "first_dot1q": "2101"
+      },
+      "ipv4": {
+        "142.101.65.254/24": {
+          "ip": "142.101.65.254",
+          "prefix_length": "24",
+          "secondary": false
+        }
+      },
+      "mac_address": "001e.f701.db00",
+      "mtu": 1500,
+      "oper_status": "up",
+      "phys_address": "001e.f701.db00",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "switchport_enable": false,
+      "type": "MV96340 Ethernet"
+    },
+    "GigabitEthernet0/0.2102": {
+      "bandwidth": 100000,
+      "delay": 100,
+      "enabled": true,
+      "encapsulation": {
+        "encapsulation": "dot1q",
+        "first_dot1q": "2102"
+      },
+      "ipv4": {
+        "142.102.65.254/24": {
+          "ip": "142.102.65.254",
+          "prefix_length": "24",
+          "secondary": false
+        }
+      },
+      "mac_address": "001e.f701.db00",
+      "mtu": 1500,
+      "oper_status": "up",
+      "phys_address": "001e.f701.db00",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "switchport_enable": false,
+      "type": "MV96340 Ethernet"
+    },
+    "GigabitEthernet0/0.2200": {
+      "bandwidth": 100000,
+      "delay": 100,
+      "enabled": true,
+      "encapsulation": {
+        "encapsulation": "dot1q",
+        "first_dot1q": "2200"
+      },
+      "ipv4": {
+        "142.200.65.254/24": {
+          "ip": "142.200.65.254",
+          "prefix_length": "24",
+          "secondary": false
+        }
+      },
+      "mac_address": "001e.f701.db00",
+      "mtu": 1500,
+      "oper_status": "up",
+      "phys_address": "001e.f701.db00",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "switchport_enable": false,
+      "type": "MV96340 Ethernet"
+    },
+    "GigabitEthernet0/0.65": {
+      "bandwidth": 100000,
+      "delay": 100,
+      "enabled": true,
+      "encapsulation": {
+        "encapsulation": "dot1q",
+        "first_dot1q": "65"
+      },
+      "ipv4": {
+        "10.0.65.1/24": {
+          "ip": "10.0.65.1",
+          "prefix_length": "24",
+          "secondary": false
+        }
+      },
+      "mac_address": "001e.f701.db00",
+      "mtu": 1500,
+      "oper_status": "up",
+      "phys_address": "001e.f701.db00",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "switchport_enable": false,
+      "type": "MV96340 Ethernet"
+    },
+    "GigabitEthernet0/1": {
+      "bandwidth": 64,
+      "counters": {
+        "in_broadcast_pkts": 0,
+        "in_crc_errors": 0,
+        "in_errors": 0,
+        "in_mac_pause_frames": 0,
+        "in_multicast_pkts": 0,
+        "in_octets": 0,
+        "in_pkts": 0,
+        "last_clear": "never",
+        "out_errors": 0,
+        "out_mac_pause_frames": 0,
+        "out_octets": 5122404,
+        "out_pkts": 1707468,
+        "rate": {
+          "in_rate": 0,
+          "in_rate_pkts": 0,
+          "load_interval": 300,
+          "out_rate": 0,
+          "out_rate_pkts": 0
+        }
+      },
+      "delay": 20000,
+      "duplex_mode": "auto",
+      "enabled": false,
+      "encapsulation": {
+        "encapsulation": "hdlc"
+      },
+      "flow_control": {
+        "receive": true,
+        "send": true
+      },
+      "mac_address": "001e.f701.db01",
+      "mtu": 1500,
+      "oper_status": "down",
+      "phys_address": "001e.f701.db01",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "port_speed": "auto speed",
+      "switchport_enable": false,
+      "type": "DSX1"
+    },
+    "Interface": {
+      "accounting": {
+        "other": {
+          "chars_in": 0,
+          "chars_out": 5122404,
+          "pkts_in": 0,
+          "pkts_out": 1707468
+        }
+      },
+      "switchport_enable": false
+    },
+    "Serial0/1/0": {
+      "accounting": {
+        "cdp": {
+          "chars_in": 22731005,
+          "chars_out": 25550389,
+          "pkts_in": 64031,
+          "pkts_out": 71171
+        },
+        "ip": {
+          "chars_in": 1986584101,
+          "chars_out": 1331201457,
+          "pkts_in": 10839966,
+          "pkts_out": 7051061
+        },
+        "other": {
+          "chars_in": 1065,
+          "chars_out": 9220200,
+          "pkts_in": 3,
+          "pkts_out": 384175
+        }
+      },
+      "bandwidth": 1544,
+      "counters": {
+        "in_broadcast_pkts": 0,
+        "in_crc_errors": 0,
+        "in_errors": 0,
+        "in_multicast_pkts": 448160,
+        "in_octets": 2018535195,
+        "in_pkts": 11288126,
+        "last_clear": "never",
+        "out_errors": 0,
+        "out_octets": 1365964414,
+        "out_pkts": 7506371,
+        "rate": {
+          "in_rate": 0,
+          "in_rate_pkts": 0,
+          "load_interval": 300,
+          "out_rate": 9000,
+          "out_rate_pkts": 9
+        }
+      },
+      "delay": 20000,
+      "enabled": true,
+      "encapsulation": {
+        "encapsulation": "hdlc"
+      },
+      "ipv4": {
+        "157.100.101.6/30": {
+          "ip": "157.100.101.6",
+          "prefix_length": "30",
+          "secondary": false
+        }
+      },
+      "mtu": 1500,
+      "oper_status": "up",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "switchport_enable": false,
+      "type": "GT96K Serial"
+    },
+    "Serial0/1/1": {
+      "accounting": {
+        "cdp": {
+          "chars_in": 25538183,
+          "chars_out": 25537824,
+          "pkts_in": 71137,
+          "pkts_out": 71136
+        },
+        "ip": {
+          "chars_in": 26527072,
+          "chars_out": 19393996,
+          "pkts_in": 291179,
+          "pkts_out": 528357
+        },
+        "other": {
+          "chars_in": 12274720,
+          "chars_out": 7545462,
+          "pkts_in": 767170,
+          "pkts_out": 471594
+        }
+      },
+      "bandwidth": 8192,
+      "counters": {
+        "in_broadcast_pkts": 0,
+        "in_crc_errors": 0,
+        "in_errors": 0,
+        "in_multicast_pkts": 0,
+        "in_octets": 64340055,
+        "in_pkts": 1129493,
+        "last_clear": "6w2d",
+        "out_errors": 0,
+        "out_octets": 52477282,
+        "out_pkts": 1071087,
+        "rate": {
+          "in_rate": 0,
+          "in_rate_pkts": 0,
+          "load_interval": 300,
+          "out_rate": 0,
+          "out_rate_pkts": 0
+        }
+      },
+      "delay": 20000,
+      "enabled": true,
+      "encapsulation": {
+        "encapsulation": "ppp"
+      },
+      "ipv4": {
+        "157.100.202.2/30": {
+          "ip": "157.100.202.2",
+          "prefix_length": "30",
+          "secondary": false
+        }
+      },
+      "mtu": 1500,
+      "oper_status": "up",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "switchport_enable": false,
+      "type": "GT96K Serial"
+    },
+    "VoIP-Null0": {
+      "ipv6": {
+        "FE80::21E:F7FF:FE01:DB00": {
+          "ip": "FE80::21E:F7FF:FE01:DB00",
+          "origin": "link_layer",
+          "status": "valid"
+        }
+      },
+      "switchport_enable": false
+    }
+  }
+}

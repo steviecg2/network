@@ -1,0 +1,186 @@
+{
+  "_exclude": [
+    "in_requests_pkts",
+    "in_replies_pkts",
+    "in_requests_pkts",
+    "out_replies_pkts",
+    "out_requests_pkts",
+    "in_drops",
+    "in_replies_pkts",
+    "out_requests_pkts",
+    "out_total"
+  ],
+  "attributes": null,
+  "commands": null,
+  "connections": null,
+  "context_manager": {},
+  "info": {
+    "interfaces": {
+      "GigabitEthernet0/0.1": {
+        "arp_dynamic_learning": {
+          "local_proxy_enable": false,
+          "proxy_enable": true
+        }
+      },
+      "GigabitEthernet0/0.1100": {
+        "arp_dynamic_learning": {
+          "local_proxy_enable": false,
+          "proxy_enable": true
+        },
+        "ipv4": {
+          "neighbors": {
+            "142.100.64.11": {
+              "ip": "142.100.64.11",
+              "link_layer_address": "0050.5695.1b71",
+              "origin": "dynamic"
+            },
+            "142.100.64.254": {
+              "ip": "142.100.64.254",
+              "link_layer_address": "68bd.abb7.2f60",
+              "origin": "static"
+            }
+          }
+        }
+      },
+      "GigabitEthernet0/0.1101": {
+        "arp_dynamic_learning": {
+          "local_proxy_enable": false,
+          "proxy_enable": true
+        },
+        "ipv4": {
+          "neighbors": {
+            "142.101.64.12": {
+              "ip": "142.101.64.12",
+              "link_layer_address": "0050.5695.9f74",
+              "origin": "dynamic"
+            },
+            "142.101.64.254": {
+              "ip": "142.101.64.254",
+              "link_layer_address": "68bd.abb7.2f60",
+              "origin": "static"
+            },
+            "142.101.64.4": {
+              "ip": "142.101.64.4",
+              "link_layer_address": "0050.5695.9e44",
+              "origin": "dynamic"
+            }
+          }
+        }
+      },
+      "GigabitEthernet0/0.1102": {
+        "arp_dynamic_learning": {
+          "local_proxy_enable": false,
+          "proxy_enable": true
+        },
+        "ipv4": {
+          "neighbors": {
+            "142.102.64.11": {
+              "ip": "142.102.64.11",
+              "link_layer_address": "a8b1.d4fa.0b04",
+              "origin": "dynamic"
+            },
+            "142.102.64.15": {
+              "ip": "142.102.64.15",
+              "link_layer_address": "1c69.7a06.9513",
+              "origin": "dynamic"
+            },
+            "142.102.64.2": {
+              "ip": "142.102.64.2",
+              "link_layer_address": "0050.5695.6920",
+              "origin": "dynamic"
+            },
+            "142.102.64.254": {
+              "ip": "142.102.64.254",
+              "link_layer_address": "68bd.abb7.2f60",
+              "origin": "static"
+            },
+            "142.102.64.69": {
+              "ip": "142.102.64.69",
+              "link_layer_address": "0242.8e66.4045",
+              "origin": "dynamic"
+            }
+          }
+        }
+      },
+      "GigabitEthernet0/0.1200": {
+        "arp_dynamic_learning": {
+          "local_proxy_enable": false,
+          "proxy_enable": true
+        },
+        "ipv4": {
+          "neighbors": {
+            "142.200.64.15": {
+              "ip": "142.200.64.15",
+              "link_layer_address": "0050.5695.4251",
+              "origin": "dynamic"
+            },
+            "142.200.64.169": {
+              "ip": "142.200.64.169",
+              "link_layer_address": "0050.5695.da41",
+              "origin": "dynamic"
+            },
+            "142.200.64.254": {
+              "ip": "142.200.64.254",
+              "link_layer_address": "68bd.abb7.2f60",
+              "origin": "static"
+            },
+            "142.200.64.52": {
+              "ip": "142.200.64.52",
+              "link_layer_address": "0050.5695.7574",
+              "origin": "dynamic"
+            },
+            "142.200.64.61": {
+              "ip": "142.200.64.61",
+              "link_layer_address": "1c69.7a06.9513",
+              "origin": "dynamic"
+            }
+          }
+        }
+      },
+      "GigabitEthernet0/0.64": {
+        "arp_dynamic_learning": {
+          "local_proxy_enable": false,
+          "proxy_enable": true
+        },
+        "ipv4": {
+          "neighbors": {
+            "10.0.64.1": {
+              "ip": "10.0.64.1",
+              "link_layer_address": "68bd.abb7.2f60",
+              "origin": "static"
+            },
+            "10.0.64.2": {
+              "ip": "10.0.64.2",
+              "link_layer_address": "0050.5695.5c1e",
+              "origin": "dynamic"
+            },
+            "10.0.64.254": {
+              "ip": "10.0.64.254",
+              "link_layer_address": "0017.e049.c8d8",
+              "origin": "dynamic"
+            }
+          }
+        }
+      },
+      "Serial0/1/0": {
+        "arp_dynamic_learning": {
+          "local_proxy_enable": false,
+          "proxy_enable": true
+        }
+      },
+      "Serial0/1/1": {
+        "arp_dynamic_learning": {
+          "local_proxy_enable": false,
+          "proxy_enable": true
+        }
+      }
+    },
+    "statistics": {
+      "in_drops": 0,
+      "in_replies_pkts": 1020,
+      "in_requests_pkts": 92929,
+      "out_replies_pkts": 57055,
+      "out_requests_pkts": 139081
+    }
+  }
+}

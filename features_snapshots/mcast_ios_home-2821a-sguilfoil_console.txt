@@ -1,0 +1,58 @@
++++ home-2821a-sguilfoil: executing command 'show vrf detail' +++
+show vrf detail
+home-2821a-sguilfoil#
++++ home-2821a-sguilfoil: executing command 'show ip multicast' +++
+show ip multicast
+  Multicast Routing: disabled
+  Multicast Multipath: disabled
+  Multicast Route limit: No limit
+  Multicast Fallback group mode: Sparse
+  Number of multicast boundaries configured with filter-autorp option: 0
+home-2821a-sguilfoil#
++++ home-2821a-sguilfoil: executing command 'show ipv6 pim interface' +++
+show ipv6 pim interface
+No interfaces found.
+
+home-2821a-sguilfoil#
++++ home-2821a-sguilfoil: executing command 'show ip mroute static' +++
+show ip mroute static
+home-2821a-sguilfoil#
++++ home-2821a-sguilfoil: executing command 'show ip mroute' +++
+show ip mroute
+IP Multicast Forwarding is not enabled.
+IP Multicast Routing Table
+Flags: D - Dense, S - Sparse, B - Bidir Group, s - SSM Group, C - Connected,
+       L - Local, P - Pruned, R - RP-bit set, F - Register flag,
+       T - SPT-bit set, J - Join SPT, M - MSDP created entry, E - Extranet,
+       X - Proxy Join Timer Running, A - Candidate for MSDP Advertisement,
+       U - URD, I - Received Source Specific Host Report, 
+       Z - Multicast Tunnel, z - MDT-data group sender, 
+       Y - Joined MDT-data group, y - Sending to MDT-data group, 
+       V - RD & Vector, v - Vector
+Outgoing interface flags: H - Hardware switched, A - Assert winner
+ Timers: Uptime/Expires
+ Interface state: Interface, Next-Hop or VCD, State/Mode
+
+home-2821a-sguilfoil#
++++ home-2821a-sguilfoil: executing command 'show ipv6 mroute' +++
+show ipv6 mroute
+No mroute entries found.
+
+home-2821a-sguilfoil#
+Could not learn <class 'genie.libs.parser.ios.show_mcast.ShowIpv6Mroute'>
+Parser Output is empty
++====================================================================================================================================================+
+| Commands for learning feature 'Mcast'                                                                                                              |
++====================================================================================================================================================+
+| - Parsed commands                                                                                                                                  |
+|----------------------------------------------------------------------------------------------------------------------------------------------------|
+|   cmd: <class 'genie.libs.parser.ios.show_mcast.ShowIpMulticast'>, arguments: {'vrf':''}                                                           |
+|   cmd: <class 'genie.libs.parser.ios.show_mcast.ShowIpMroute'>, arguments: {'vrf':''}                                                              |
+|====================================================================================================================================================|
+| - Commands with empty output                                                                                                                       |
+|----------------------------------------------------------------------------------------------------------------------------------------------------|
+|   cmd: <class 'genie.libs.parser.iosxe.show_vrf.ShowVrfDetail'>                                                                                    |
+|   cmd: <class 'genie.libs.parser.iosxe.show_pim.ShowIpv6PimInterface'>, arguments: {'vrf':''}                                                      |
+|   cmd: <class 'genie.libs.parser.ios.show_mcast.ShowIpMrouteStatic'>, arguments: {'vrf':''}                                                        |
+|   cmd: <class 'genie.libs.parser.ios.show_mcast.ShowIpv6Mroute'>, arguments: {'vrf':''}                                                            |
+|====================================================================================================================================================|

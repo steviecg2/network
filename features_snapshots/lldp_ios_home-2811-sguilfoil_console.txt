@@ -1,0 +1,48 @@
++++ home-2811-sguilfoil: executing command 'show lldp' +++
+show lldp
+show lldp
+       ^
+% Invalid input detected at '^' marker.
+
+home-2811-sguilfoil#
++++ home-2811-sguilfoil: executing command 'show lldp traffic' +++
+show lldp traffic
+show lldp traffic
+       ^
+% Invalid input detected at '^' marker.
+
+home-2811-sguilfoil#
++++ home-2811-sguilfoil: executing command 'show lldp entry *' +++
+show lldp entry *
+show lldp entry *
+       ^
+% Invalid input detected at '^' marker.
+
+home-2811-sguilfoil#
++++ home-2811-sguilfoil: executing command 'show lldp neighbors detail' +++
+show lldp neighbors detail
+show lldp neighbors detail
+       ^
+% Invalid input detected at '^' marker.
+
+home-2811-sguilfoil#
++++ home-2811-sguilfoil: executing command 'show lldp interface' +++
+show lldp interface
+show lldp interface
+       ^
+% Invalid input detected at '^' marker.
+
+home-2811-sguilfoil#
+Could not learn <class 'genie.libs.parser.ios.show_lldp.ShowLldpInterface'>
+Invalid command has been executed
++====================================================================================================================================================+
+| Commands for learning feature 'Lldp'                                                                                                               |
++====================================================================================================================================================+
+| - Commands not accepted on the device                                                                                                              |
+|----------------------------------------------------------------------------------------------------------------------------------------------------|
+|   cmd: <class 'genie.libs.parser.ios.show_lldp.ShowLldp'>                                                                                          |
+|   cmd: <class 'genie.libs.parser.ios.show_lldp.ShowLldpTraffic'>                                                                                   |
+|   cmd: <class 'genie.libs.parser.ios.show_lldp.ShowLldpEntry'>                                                                                     |
+|   cmd: <class 'genie.libs.parser.ios.show_lldp.ShowLldpNeighborsDetail'>                                                                           |
+|   cmd: <class 'genie.libs.parser.ios.show_lldp.ShowLldpInterface'>                                                                                 |
+|====================================================================================================================================================|

@@ -1,0 +1,1429 @@
+{
+  "_exclude": [],
+  "attributes": null,
+  "commands": null,
+  "connections": null,
+  "context_manager": {},
+  "info": {
+    "acls": {
+      "1": {
+        "aces": {
+          "10": {
+            "actions": {
+              "forwarding": "permit"
+            },
+            "matches": {
+              "l3": {
+                "ipv4": {
+                  "protocol": "ipv4",
+                  "source_ipv4_network": {
+                    "0.0.0.0 255.0.0.0": {
+                      "source_ipv4_network": "0.0.0.0 255.0.0.0"
+                    }
+                  }
+                }
+              }
+            },
+            "name": "10"
+          }
+        },
+        "name": "1",
+        "type": "ipv4-acl-type"
+      },
+      "10": {
+        "aces": {
+          "10": {
+            "actions": {
+              "forwarding": "permit"
+            },
+            "matches": {
+              "l3": {
+                "ipv4": {
+                  "protocol": "ipv4",
+                  "source_ipv4_network": {
+                    "10.0.0.0 0.255.255.255": {
+                      "source_ipv4_network": "10.0.0.0 0.255.255.255"
+                    }
+                  }
+                }
+              }
+            },
+            "name": "10"
+          },
+          "20": {
+            "actions": {
+              "forwarding": "permit"
+            },
+            "matches": {
+              "l3": {
+                "ipv4": {
+                  "protocol": "ipv4",
+                  "source_ipv4_network": {
+                    "172.16.0.0 0.15.255.255": {
+                      "source_ipv4_network": "172.16.0.0 0.15.255.255"
+                    }
+                  }
+                }
+              }
+            },
+            "name": "20"
+          },
+          "30": {
+            "actions": {
+              "forwarding": "permit"
+            },
+            "matches": {
+              "l3": {
+                "ipv4": {
+                  "protocol": "ipv4",
+                  "source_ipv4_network": {
+                    "198.168.0.0 0.0.255.255": {
+                      "source_ipv4_network": "198.168.0.0 0.0.255.255"
+                    }
+                  }
+                }
+              }
+            },
+            "name": "30"
+          },
+          "40": {
+            "actions": {
+              "forwarding": "permit"
+            },
+            "matches": {
+              "l3": {
+                "ipv4": {
+                  "protocol": "ipv4",
+                  "source_ipv4_network": {
+                    "142.100.64.0 0.0.1.255": {
+                      "source_ipv4_network": "142.100.64.0 0.0.1.255"
+                    }
+                  }
+                }
+              }
+            },
+            "name": "40"
+          },
+          "50": {
+            "actions": {
+              "forwarding": "permit"
+            },
+            "matches": {
+              "l3": {
+                "ipv4": {
+                  "protocol": "ipv4",
+                  "source_ipv4_network": {
+                    "142.101.64.0 0.0.1.255": {
+                      "source_ipv4_network": "142.101.64.0 0.0.1.255"
+                    }
+                  }
+                }
+              }
+            },
+            "name": "50"
+          },
+          "60": {
+            "actions": {
+              "forwarding": "permit"
+            },
+            "matches": {
+              "l3": {
+                "ipv4": {
+                  "protocol": "ipv4",
+                  "source_ipv4_network": {
+                    "142.102.64.0 0.0.1.255": {
+                      "source_ipv4_network": "142.102.64.0 0.0.1.255"
+                    }
+                  }
+                }
+              }
+            },
+            "name": "60"
+          },
+          "70": {
+            "actions": {
+              "forwarding": "permit"
+            },
+            "matches": {
+              "l3": {
+                "ipv4": {
+                  "protocol": "ipv4",
+                  "source_ipv4_network": {
+                    "142.200.64.0 0.0.1.255": {
+                      "source_ipv4_network": "142.200.64.0 0.0.1.255"
+                    }
+                  }
+                }
+              }
+            },
+            "name": "70"
+          }
+        },
+        "name": "10",
+        "type": "ipv4-acl-type"
+      },
+      "101": {
+        "aces": {
+          "10": {
+            "actions": {
+              "forwarding": "permit",
+              "logging": "log-none"
+            },
+            "matches": {
+              "l3": {
+                "ipv4": {
+                  "destination_ipv4_network": {
+                    "any": {
+                      "destination_ipv4_network": "any"
+                    }
+                  },
+                  "protocol": "icmp",
+                  "source_ipv4_network": {
+                    "any": {
+                      "source_ipv4_network": "any"
+                    }
+                  }
+                }
+              }
+            },
+            "name": "10"
+          },
+          "100": {
+            "actions": {
+              "forwarding": "permit",
+              "logging": "log-none"
+            },
+            "matches": {
+              "l3": {
+                "ipv4": {
+                  "destination_ipv4_network": {
+                    "any": {
+                      "destination_ipv4_network": "any"
+                    }
+                  },
+                  "protocol": "tcp",
+                  "source_ipv4_network": {
+                    "any": {
+                      "source_ipv4_network": "any"
+                    }
+                  }
+                }
+              },
+              "l4": {
+                "tcp": {
+                  "established": true
+                }
+              }
+            },
+            "name": "100"
+          },
+          "110": {
+            "actions": {
+              "forwarding": "permit",
+              "logging": "log-none"
+            },
+            "matches": {
+              "l3": {
+                "ipv4": {
+                  "destination_ipv4_network": {
+                    "any": {
+                      "destination_ipv4_network": "any"
+                    }
+                  },
+                  "protocol": "tcp",
+                  "source_ipv4_network": {
+                    "any": {
+                      "source_ipv4_network": "any"
+                    }
+                  }
+                }
+              },
+              "l4": {
+                "tcp": {
+                  "destination_port": {
+                    "operator": {
+                      "operator": "eq",
+                      "port": 8000
+                    }
+                  },
+                  "established": false
+                }
+              }
+            },
+            "name": "110"
+          },
+          "120": {
+            "actions": {
+              "forwarding": "permit",
+              "logging": "log-none"
+            },
+            "matches": {
+              "l3": {
+                "ipv4": {
+                  "destination_ipv4_network": {
+                    "any": {
+                      "destination_ipv4_network": "any"
+                    }
+                  },
+                  "protocol": "tcp",
+                  "source_ipv4_network": {
+                    "any": {
+                      "source_ipv4_network": "any"
+                    }
+                  }
+                }
+              },
+              "l4": {
+                "tcp": {
+                  "destination_port": {
+                    "operator": {
+                      "operator": "range",
+                      "port": 8001
+                    }
+                  },
+                  "established": false
+                }
+              }
+            },
+            "name": "120"
+          },
+          "20": {
+            "actions": {
+              "forwarding": "permit",
+              "logging": "log-none"
+            },
+            "matches": {
+              "l3": {
+                "ipv4": {
+                  "destination_ipv4_network": {
+                    "any": {
+                      "destination_ipv4_network": "any"
+                    }
+                  },
+                  "protocol": "udp",
+                  "source_ipv4_network": {
+                    "any": {
+                      "source_ipv4_network": "any"
+                    }
+                  }
+                }
+              },
+              "l4": {
+                "udp": {
+                  "source_port": {
+                    "operator": {
+                      "operator": "eq",
+                      "port": "domain"
+                    }
+                  }
+                }
+              }
+            },
+            "name": "20"
+          },
+          "30": {
+            "actions": {
+              "forwarding": "permit",
+              "logging": "log-none"
+            },
+            "matches": {
+              "l3": {
+                "ipv4": {
+                  "destination_ipv4_network": {
+                    "any": {
+                      "destination_ipv4_network": "any"
+                    }
+                  },
+                  "protocol": "tcp",
+                  "source_ipv4_network": {
+                    "any": {
+                      "source_ipv4_network": "any"
+                    }
+                  }
+                }
+              },
+              "l4": {
+                "tcp": {
+                  "established": false,
+                  "source_port": {
+                    "operator": {
+                      "operator": "eq",
+                      "port": "domain"
+                    }
+                  }
+                }
+              }
+            },
+            "name": "30"
+          },
+          "40": {
+            "actions": {
+              "forwarding": "permit",
+              "logging": "log-none"
+            },
+            "matches": {
+              "l3": {
+                "ipv4": {
+                  "destination_ipv4_network": {
+                    "any": {
+                      "destination_ipv4_network": "any"
+                    }
+                  },
+                  "protocol": "udp",
+                  "source_ipv4_network": {
+                    "any": {
+                      "source_ipv4_network": "any"
+                    }
+                  }
+                }
+              },
+              "l4": {
+                "udp": {
+                  "source_port": {
+                    "operator": {
+                      "operator": "eq",
+                      "port": "bootps"
+                    }
+                  }
+                }
+              }
+            },
+            "name": "40"
+          },
+          "50": {
+            "actions": {
+              "forwarding": "permit",
+              "logging": "log-none"
+            },
+            "matches": {
+              "l3": {
+                "ipv4": {
+                  "destination_ipv4_network": {
+                    "any": {
+                      "destination_ipv4_network": "any"
+                    }
+                  },
+                  "protocol": "esp",
+                  "source_ipv4_network": {
+                    "any": {
+                      "source_ipv4_network": "any"
+                    }
+                  }
+                }
+              }
+            },
+            "name": "50"
+          },
+          "60": {
+            "actions": {
+              "forwarding": "permit",
+              "logging": "log-none"
+            },
+            "matches": {
+              "l3": {
+                "ipv4": {
+                  "destination_ipv4_network": {
+                    "any": {
+                      "destination_ipv4_network": "any"
+                    }
+                  },
+                  "protocol": "udp",
+                  "source_ipv4_network": {
+                    "any": {
+                      "source_ipv4_network": "any"
+                    }
+                  }
+                }
+              },
+              "l4": {
+                "udp": {
+                  "destination_port": {
+                    "operator": {
+                      "operator": "eq",
+                      "port": 500
+                    }
+                  }
+                }
+              }
+            },
+            "name": "60"
+          },
+          "70": {
+            "actions": {
+              "forwarding": "permit",
+              "logging": "log-none"
+            },
+            "matches": {
+              "l3": {
+                "ipv4": {
+                  "destination_ipv4_network": {
+                    "any": {
+                      "destination_ipv4_network": "any"
+                    }
+                  },
+                  "protocol": "udp",
+                  "source_ipv4_network": {
+                    "any": {
+                      "source_ipv4_network": "any"
+                    }
+                  }
+                }
+              },
+              "l4": {
+                "udp": {
+                  "destination_port": {
+                    "operator": {
+                      "operator": "eq",
+                      "port": 4500
+                    }
+                  }
+                }
+              }
+            },
+            "name": "70"
+          },
+          "80": {
+            "actions": {
+              "forwarding": "permit",
+              "logging": "log-none"
+            },
+            "matches": {
+              "l3": {
+                "ipv4": {
+                  "destination_ipv4_network": {
+                    "any": {
+                      "destination_ipv4_network": "any"
+                    }
+                  },
+                  "protocol": "udp",
+                  "source_ipv4_network": {
+                    "any": {
+                      "source_ipv4_network": "any"
+                    }
+                  }
+                }
+              },
+              "l4": {
+                "udp": {
+                  "source_port": {
+                    "operator": {
+                      "operator": "eq",
+                      "port": "isakmp"
+                    }
+                  }
+                }
+              }
+            },
+            "name": "80"
+          },
+          "90": {
+            "actions": {
+              "forwarding": "permit",
+              "logging": "log-none"
+            },
+            "matches": {
+              "l3": {
+                "ipv4": {
+                  "destination_ipv4_network": {
+                    "any": {
+                      "destination_ipv4_network": "any"
+                    }
+                  },
+                  "protocol": "udp",
+                  "source_ipv4_network": {
+                    "any": {
+                      "source_ipv4_network": "any"
+                    }
+                  }
+                }
+              },
+              "l4": {
+                "udp": {
+                  "source_port": {
+                    "operator": {
+                      "operator": "eq",
+                      "port": "non500-isakmp"
+                    }
+                  }
+                }
+              }
+            },
+            "name": "90"
+          }
+        },
+        "name": "101",
+        "type": "ipv4-acl-type"
+      },
+      "LabVPN": {
+        "name": "LabVPN",
+        "type": "ipv4-acl-type"
+      },
+      "labvpn_acl": {
+        "aces": {
+          "10": {
+            "actions": {
+              "forwarding": "permit",
+              "logging": "log-none"
+            },
+            "matches": {
+              "l3": {
+                "ipv4": {
+                  "destination_ipv4_network": {
+                    "10.0.0.0 0.0.255.255": {
+                      "destination_ipv4_network": "10.0.0.0 0.0.255.255"
+                    }
+                  },
+                  "protocol": "ipv4",
+                  "source_ipv4_network": {
+                    "10.0.0.0 0.0.255.255": {
+                      "source_ipv4_network": "10.0.0.0 0.0.255.255"
+                    }
+                  }
+                }
+              }
+            },
+            "name": "10"
+          },
+          "20": {
+            "actions": {
+              "forwarding": "permit",
+              "logging": "log-none"
+            },
+            "matches": {
+              "l3": {
+                "ipv4": {
+                  "destination_ipv4_network": {
+                    "10.0.0.0 0.0.255.255": {
+                      "destination_ipv4_network": "10.0.0.0 0.0.255.255"
+                    }
+                  },
+                  "protocol": "ipv4",
+                  "source_ipv4_network": {
+                    "142.100.64.0 0.0.1.255": {
+                      "source_ipv4_network": "142.100.64.0 0.0.1.255"
+                    }
+                  }
+                }
+              }
+            },
+            "name": "20"
+          },
+          "30": {
+            "actions": {
+              "forwarding": "permit",
+              "logging": "log-none"
+            },
+            "matches": {
+              "l3": {
+                "ipv4": {
+                  "destination_ipv4_network": {
+                    "10.0.0.0 0.0.255.255": {
+                      "destination_ipv4_network": "10.0.0.0 0.0.255.255"
+                    }
+                  },
+                  "protocol": "ipv4",
+                  "source_ipv4_network": {
+                    "142.200.64.0 0.0.1.255": {
+                      "source_ipv4_network": "142.200.64.0 0.0.1.255"
+                    }
+                  }
+                }
+              }
+            },
+            "name": "30"
+          },
+          "40": {
+            "actions": {
+              "forwarding": "permit",
+              "logging": "log-none"
+            },
+            "matches": {
+              "l3": {
+                "ipv4": {
+                  "destination_ipv4_network": {
+                    "10.0.0.0 0.0.255.255": {
+                      "destination_ipv4_network": "10.0.0.0 0.0.255.255"
+                    }
+                  },
+                  "protocol": "ipv4",
+                  "source_ipv4_network": {
+                    "142.101.64.0 0.0.1.255": {
+                      "source_ipv4_network": "142.101.64.0 0.0.1.255"
+                    }
+                  }
+                }
+              }
+            },
+            "name": "40"
+          },
+          "50": {
+            "actions": {
+              "forwarding": "permit",
+              "logging": "log-none"
+            },
+            "matches": {
+              "l3": {
+                "ipv4": {
+                  "destination_ipv4_network": {
+                    "10.0.0.0 0.0.255.255": {
+                      "destination_ipv4_network": "10.0.0.0 0.0.255.255"
+                    }
+                  },
+                  "protocol": "ipv4",
+                  "source_ipv4_network": {
+                    "142.102.64.0 0.0.1.255": {
+                      "source_ipv4_network": "142.102.64.0 0.0.1.255"
+                    }
+                  }
+                }
+              }
+            },
+            "name": "50"
+          }
+        },
+        "name": "labvpn_acl",
+        "type": "ipv4-acl-type"
+      },
+      "nat_acl": {
+        "aces": {
+          "10": {
+            "actions": {
+              "forwarding": "deny",
+              "logging": "log-none"
+            },
+            "matches": {
+              "l3": {
+                "ipv4": {
+                  "destination_ipv4_network": {
+                    "0.255.255.255": {
+                      "destination_ipv4_network": "0.255.255.255"
+                    }
+                  },
+                  "protocol": "ipv4",
+                  "source_ipv4_network": {
+                    "any 10.0.0.0": {
+                      "source_ipv4_network": "any 10.0.0.0"
+                    }
+                  }
+                }
+              }
+            },
+            "name": "10",
+            "statistics": {
+              "matched_packets": 277718
+            }
+          },
+          "100": {
+            "actions": {
+              "forwarding": "permit",
+              "logging": "log-none"
+            },
+            "matches": {
+              "l3": {
+                "ipv4": {
+                  "destination_ipv4_network": {
+                    "any": {
+                      "destination_ipv4_network": "any"
+                    }
+                  },
+                  "protocol": "ipv4",
+                  "source_ipv4_network": {
+                    "142.200.64.0 0.0.1.255": {
+                      "source_ipv4_network": "142.200.64.0 0.0.1.255"
+                    }
+                  }
+                }
+              }
+            },
+            "name": "100",
+            "statistics": {
+              "matched_packets": 29845
+            }
+          },
+          "20": {
+            "actions": {
+              "forwarding": "deny",
+              "logging": "log-none"
+            },
+            "matches": {
+              "l3": {
+                "ipv4": {
+                  "destination_ipv4_network": {
+                    "0.15.255.255": {
+                      "destination_ipv4_network": "0.15.255.255"
+                    }
+                  },
+                  "protocol": "ipv4",
+                  "source_ipv4_network": {
+                    "any 172.16.0.0": {
+                      "source_ipv4_network": "any 172.16.0.0"
+                    }
+                  }
+                }
+              }
+            },
+            "name": "20",
+            "statistics": {
+              "matched_packets": 73
+            }
+          },
+          "30": {
+            "actions": {
+              "forwarding": "deny",
+              "logging": "log-none"
+            },
+            "matches": {
+              "l3": {
+                "ipv4": {
+                  "destination_ipv4_network": {
+                    "0.0.255.255": {
+                      "destination_ipv4_network": "0.0.255.255"
+                    }
+                  },
+                  "protocol": "ipv4",
+                  "source_ipv4_network": {
+                    "any 192.168.0.0": {
+                      "source_ipv4_network": "any 192.168.0.0"
+                    }
+                  }
+                }
+              }
+            },
+            "name": "30",
+            "statistics": {
+              "matched_packets": 88688
+            }
+          },
+          "40": {
+            "actions": {
+              "forwarding": "permit",
+              "logging": "log-none"
+            },
+            "matches": {
+              "l3": {
+                "ipv4": {
+                  "destination_ipv4_network": {
+                    "any": {
+                      "destination_ipv4_network": "any"
+                    }
+                  },
+                  "protocol": "ipv4",
+                  "source_ipv4_network": {
+                    "10.0.0.0 0.255.255.255": {
+                      "source_ipv4_network": "10.0.0.0 0.255.255.255"
+                    }
+                  }
+                }
+              }
+            },
+            "name": "40",
+            "statistics": {
+              "matched_packets": 8270042
+            }
+          },
+          "50": {
+            "actions": {
+              "forwarding": "permit",
+              "logging": "log-none"
+            },
+            "matches": {
+              "l3": {
+                "ipv4": {
+                  "destination_ipv4_network": {
+                    "any": {
+                      "destination_ipv4_network": "any"
+                    }
+                  },
+                  "protocol": "ipv4",
+                  "source_ipv4_network": {
+                    "172.16.0.0 0.15.255.255": {
+                      "source_ipv4_network": "172.16.0.0 0.15.255.255"
+                    }
+                  }
+                }
+              }
+            },
+            "name": "50",
+            "statistics": {
+              "matched_packets": 384
+            }
+          },
+          "60": {
+            "actions": {
+              "forwarding": "permit",
+              "logging": "log-none"
+            },
+            "matches": {
+              "l3": {
+                "ipv4": {
+                  "destination_ipv4_network": {
+                    "any": {
+                      "destination_ipv4_network": "any"
+                    }
+                  },
+                  "protocol": "ipv4",
+                  "source_ipv4_network": {
+                    "198.168.0.0 0.0.255.255": {
+                      "source_ipv4_network": "198.168.0.0 0.0.255.255"
+                    }
+                  }
+                }
+              }
+            },
+            "name": "60"
+          },
+          "70": {
+            "actions": {
+              "forwarding": "permit",
+              "logging": "log-none"
+            },
+            "matches": {
+              "l3": {
+                "ipv4": {
+                  "destination_ipv4_network": {
+                    "any": {
+                      "destination_ipv4_network": "any"
+                    }
+                  },
+                  "protocol": "ipv4",
+                  "source_ipv4_network": {
+                    "142.100.64.0 0.0.1.255": {
+                      "source_ipv4_network": "142.100.64.0 0.0.1.255"
+                    }
+                  }
+                }
+              }
+            },
+            "name": "70"
+          },
+          "80": {
+            "actions": {
+              "forwarding": "permit",
+              "logging": "log-none"
+            },
+            "matches": {
+              "l3": {
+                "ipv4": {
+                  "destination_ipv4_network": {
+                    "any": {
+                      "destination_ipv4_network": "any"
+                    }
+                  },
+                  "protocol": "ipv4",
+                  "source_ipv4_network": {
+                    "142.101.64.0 0.0.1.255": {
+                      "source_ipv4_network": "142.101.64.0 0.0.1.255"
+                    }
+                  }
+                }
+              }
+            },
+            "name": "80",
+            "statistics": {
+              "matched_packets": 5343
+            }
+          },
+          "90": {
+            "actions": {
+              "forwarding": "permit",
+              "logging": "log-none"
+            },
+            "matches": {
+              "l3": {
+                "ipv4": {
+                  "destination_ipv4_network": {
+                    "any": {
+                      "destination_ipv4_network": "any"
+                    }
+                  },
+                  "protocol": "ipv4",
+                  "source_ipv4_network": {
+                    "142.102.64.0 0.0.1.255": {
+                      "source_ipv4_network": "142.102.64.0 0.0.1.255"
+                    }
+                  }
+                }
+              }
+            },
+            "name": "90",
+            "statistics": {
+              "matched_packets": 152
+            }
+          }
+        },
+        "name": "nat_acl",
+        "type": "ipv4-acl-type"
+      },
+      "outside_acl": {
+        "aces": {
+          "10": {
+            "actions": {
+              "forwarding": "permit",
+              "logging": "log-none"
+            },
+            "matches": {
+              "l3": {
+                "ipv4": {
+                  "destination_ipv4_network": {
+                    "any": {
+                      "destination_ipv4_network": "any"
+                    }
+                  },
+                  "protocol": "icmp",
+                  "source_ipv4_network": {
+                    "any": {
+                      "source_ipv4_network": "any"
+                    }
+                  }
+                }
+              }
+            },
+            "name": "10",
+            "statistics": {
+              "matched_packets": 2437757
+            }
+          },
+          "100": {
+            "actions": {
+              "forwarding": "permit",
+              "logging": "log-none"
+            },
+            "matches": {
+              "l3": {
+                "ipv4": {
+                  "destination_ipv4_network": {
+                    "any": {
+                      "destination_ipv4_network": "any"
+                    }
+                  },
+                  "protocol": "udp",
+                  "source_ipv4_network": {
+                    "any": {
+                      "source_ipv4_network": "any"
+                    }
+                  }
+                }
+              },
+              "l4": {
+                "udp": {
+                  "destination_port": {
+                    "operator": {
+                      "operator": "eq",
+                      "port": 443
+                    }
+                  }
+                }
+              }
+            },
+            "name": "100",
+            "statistics": {
+              "matched_packets": 136
+            }
+          },
+          "110": {
+            "actions": {
+              "forwarding": "permit",
+              "logging": "log-none"
+            },
+            "matches": {
+              "l3": {
+                "ipv4": {
+                  "destination_ipv4_network": {
+                    "any": {
+                      "destination_ipv4_network": "any"
+                    }
+                  },
+                  "protocol": "udp",
+                  "source_ipv4_network": {
+                    "any": {
+                      "source_ipv4_network": "any"
+                    }
+                  }
+                }
+              },
+              "l4": {
+                "udp": {
+                  "destination_port": {
+                    "operator": {
+                      "operator": "eq",
+                      "port": 8443
+                    }
+                  }
+                }
+              }
+            },
+            "name": "110"
+          },
+          "120": {
+            "actions": {
+              "forwarding": "permit",
+              "logging": "log-none"
+            },
+            "matches": {
+              "l3": {
+                "ipv4": {
+                  "destination_ipv4_network": {
+                    "any": {
+                      "destination_ipv4_network": "any"
+                    }
+                  },
+                  "protocol": "tcp",
+                  "source_ipv4_network": {
+                    "any": {
+                      "source_ipv4_network": "any"
+                    }
+                  }
+                }
+              },
+              "l4": {
+                "tcp": {
+                  "destination_port": {
+                    "operator": {
+                      "operator": "range",
+                      "port": 8000
+                    }
+                  },
+                  "established": false
+                }
+              }
+            },
+            "name": "120",
+            "statistics": {
+              "matched_packets": 1022856
+            }
+          },
+          "130": {
+            "actions": {
+              "forwarding": "permit",
+              "logging": "log-none"
+            },
+            "matches": {
+              "l3": {
+                "ipv4": {
+                  "destination_ipv4_network": {
+                    "any": {
+                      "destination_ipv4_network": "any"
+                    }
+                  },
+                  "protocol": "tcp",
+                  "source_ipv4_network": {
+                    "any": {
+                      "source_ipv4_network": "any"
+                    }
+                  }
+                }
+              },
+              "l4": {
+                "tcp": {
+                  "established": true
+                }
+              }
+            },
+            "name": "130",
+            "statistics": {
+              "matched_packets": 22512
+            }
+          },
+          "20": {
+            "actions": {
+              "forwarding": "permit",
+              "logging": "log-none"
+            },
+            "matches": {
+              "l3": {
+                "ipv4": {
+                  "destination_ipv4_network": {
+                    "any": {
+                      "destination_ipv4_network": "any"
+                    }
+                  },
+                  "protocol": "udp",
+                  "source_ipv4_network": {
+                    "any": {
+                      "source_ipv4_network": "any"
+                    }
+                  }
+                }
+              },
+              "l4": {
+                "udp": {
+                  "source_port": {
+                    "operator": {
+                      "operator": "eq",
+                      "port": "domain"
+                    }
+                  }
+                }
+              }
+            },
+            "name": "20",
+            "statistics": {
+              "matched_packets": 83
+            }
+          },
+          "30": {
+            "actions": {
+              "forwarding": "permit",
+              "logging": "log-none"
+            },
+            "matches": {
+              "l3": {
+                "ipv4": {
+                  "destination_ipv4_network": {
+                    "any": {
+                      "destination_ipv4_network": "any"
+                    }
+                  },
+                  "protocol": "tcp",
+                  "source_ipv4_network": {
+                    "any": {
+                      "source_ipv4_network": "any"
+                    }
+                  }
+                }
+              },
+              "l4": {
+                "tcp": {
+                  "established": false,
+                  "source_port": {
+                    "operator": {
+                      "operator": "eq",
+                      "port": "domain"
+                    }
+                  }
+                }
+              }
+            },
+            "name": "30",
+            "statistics": {
+              "matched_packets": 1445
+            }
+          },
+          "40": {
+            "actions": {
+              "forwarding": "permit",
+              "logging": "log-none"
+            },
+            "matches": {
+              "l3": {
+                "ipv4": {
+                  "destination_ipv4_network": {
+                    "any": {
+                      "destination_ipv4_network": "any"
+                    }
+                  },
+                  "protocol": "udp",
+                  "source_ipv4_network": {
+                    "any": {
+                      "source_ipv4_network": "any"
+                    }
+                  }
+                }
+              },
+              "l4": {
+                "udp": {
+                  "source_port": {
+                    "operator": {
+                      "operator": "eq",
+                      "port": "bootps"
+                    }
+                  }
+                }
+              }
+            },
+            "name": "40",
+            "statistics": {
+              "matched_packets": 1207
+            }
+          },
+          "50": {
+            "actions": {
+              "forwarding": "permit",
+              "logging": "log-none"
+            },
+            "matches": {
+              "l3": {
+                "ipv4": {
+                  "destination_ipv4_network": {
+                    "any": {
+                      "destination_ipv4_network": "any"
+                    }
+                  },
+                  "protocol": "udp",
+                  "source_ipv4_network": {
+                    "any": {
+                      "source_ipv4_network": "any"
+                    }
+                  }
+                }
+              },
+              "l4": {
+                "udp": {
+                  "destination_port": {
+                    "operator": {
+                      "operator": "eq",
+                      "port": 500
+                    }
+                  }
+                }
+              }
+            },
+            "name": "50",
+            "statistics": {
+              "matched_packets": 4899
+            }
+          },
+          "60": {
+            "actions": {
+              "forwarding": "permit",
+              "logging": "log-none"
+            },
+            "matches": {
+              "l3": {
+                "ipv4": {
+                  "destination_ipv4_network": {
+                    "any": {
+                      "destination_ipv4_network": "any"
+                    }
+                  },
+                  "protocol": "udp",
+                  "source_ipv4_network": {
+                    "any": {
+                      "source_ipv4_network": "any"
+                    }
+                  }
+                }
+              },
+              "l4": {
+                "udp": {
+                  "destination_port": {
+                    "operator": {
+                      "operator": "eq",
+                      "port": 4500
+                    }
+                  }
+                }
+              }
+            },
+            "name": "60",
+            "statistics": {
+              "matched_packets": 5778018
+            }
+          },
+          "70": {
+            "actions": {
+              "forwarding": "permit",
+              "logging": "log-none"
+            },
+            "matches": {
+              "l3": {
+                "ipv4": {
+                  "destination_ipv4_network": {
+                    "any": {
+                      "destination_ipv4_network": "any"
+                    }
+                  },
+                  "protocol": "udp",
+                  "source_ipv4_network": {
+                    "any": {
+                      "source_ipv4_network": "any"
+                    }
+                  }
+                }
+              },
+              "l4": {
+                "udp": {
+                  "source_port": {
+                    "operator": {
+                      "operator": "eq",
+                      "port": "non500-isakmp"
+                    }
+                  }
+                }
+              }
+            },
+            "name": "70"
+          },
+          "80": {
+            "actions": {
+              "forwarding": "permit",
+              "logging": "log-none"
+            },
+            "matches": {
+              "l3": {
+                "ipv4": {
+                  "destination_ipv4_network": {
+                    "any": {
+                      "destination_ipv4_network": "any"
+                    }
+                  },
+                  "protocol": "tcp",
+                  "source_ipv4_network": {
+                    "any": {
+                      "source_ipv4_network": "any"
+                    }
+                  }
+                }
+              },
+              "l4": {
+                "tcp": {
+                  "destination_port": {
+                    "operator": {
+                      "operator": "eq",
+                      "port": 8443
+                    }
+                  },
+                  "established": false
+                }
+              }
+            },
+            "name": "80",
+            "statistics": {
+              "matched_packets": 862
+            }
+          },
+          "90": {
+            "actions": {
+              "forwarding": "permit",
+              "logging": "log-none"
+            },
+            "matches": {
+              "l3": {
+                "ipv4": {
+                  "destination_ipv4_network": {
+                    "any": {
+                      "destination_ipv4_network": "any"
+                    }
+                  },
+                  "protocol": "tcp",
+                  "source_ipv4_network": {
+                    "any": {
+                      "source_ipv4_network": "any"
+                    }
+                  }
+                }
+              },
+              "l4": {
+                "tcp": {
+                  "destination_port": {
+                    "operator": {
+                      "operator": "eq",
+                      "port": 443
+                    }
+                  },
+                  "established": false
+                }
+              }
+            },
+            "name": "90",
+            "statistics": {
+              "matched_packets": 266717
+            }
+          }
+        },
+        "name": "outside_acl",
+        "type": "ipv4-acl-type"
+      }
+    }
+  }
+}

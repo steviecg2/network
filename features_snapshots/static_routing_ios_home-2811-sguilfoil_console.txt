@@ -1,0 +1,33 @@
++++ home-2811-sguilfoil: executing command 'show vrf detail' +++
+show vrf detail
+
+home-2811-sguilfoil#
++++ home-2811-sguilfoil: executing command 'show ip static route' +++
+show ip static route
+show ip static route
+         ^
+% Invalid input detected at '^' marker.
+
+home-2811-sguilfoil#
++++ home-2811-sguilfoil: executing command 'show ipv6 static detail' +++
+show ipv6 static detail
+IPv6 Static routes Table - Default
+Codes: * - installed in RIB, u/m - Unicast/Multicast only
+       U - Per-user Static route, N - ND Static route
+       P - DHCP-PD Static route
+home-2811-sguilfoil#
++====================================================================================================================================================+
+| Commands for learning feature 'StaticRouting'                                                                                                      |
++====================================================================================================================================================+
+| - Parsed commands                                                                                                                                  |
+|----------------------------------------------------------------------------------------------------------------------------------------------------|
+|   cmd: <class 'genie.libs.parser.ios.show_static_routing.ShowIpv6StaticDetail'>, arguments: {'vrf':''}                                             |
+|====================================================================================================================================================|
+| - Commands not accepted on the device                                                                                                              |
+|----------------------------------------------------------------------------------------------------------------------------------------------------|
+|   cmd: <class 'genie.libs.parser.ios.show_static_routing.ShowIpStaticRoute'>, arguments: {'vrf':''}                                                |
+|====================================================================================================================================================|
+| - Commands with empty output                                                                                                                       |
+|----------------------------------------------------------------------------------------------------------------------------------------------------|
+|   cmd: <class 'genie.libs.parser.iosxe.show_vrf.ShowVrfDetail'>                                                                                    |
+|====================================================================================================================================================|

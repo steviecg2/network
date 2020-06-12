@@ -1,0 +1,15 @@
++++ home-2821a-sguilfoil: executing command 'show route-map all' +++
+show route-map all
+STATIC routemaps
+DYNAMIC routemaps
+Current active dynamic routemaps = 0
+home-2821a-sguilfoil#
+Could not learn <class 'genie.libs.parser.ios.show_route_map.ShowRouteMapAll'>
+Parser Output is empty
++====================================================================================================================================================+
+| Commands for learning feature 'RoutePolicy'                                                                                                        |
++====================================================================================================================================================+
+| - Commands with empty output                                                                                                                       |
+|----------------------------------------------------------------------------------------------------------------------------------------------------|
+|   cmd: <class 'genie.libs.parser.ios.show_route_map.ShowRouteMapAll'>                                                                              |
+|====================================================================================================================================================|

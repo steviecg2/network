@@ -1,0 +1,455 @@
++++ home-2821a-sguilfoil: executing command 'show running-config' +++
+show running-config
+Building configuration...
+
+
+Current configuration : 10110 bytes
+!
+! Last configuration change at 18:38:06 EDT Fri May 8 2020 by sguilfoil
+version 15.1
+service timestamps debug datetime msec
+service timestamps log datetime msec
+service password-encryption
+!
+hostname home-2821a-sguilfoil
+!
+boot-start-marker
+boot-end-marker
+!
+!
+card type t1 0 0
+logging buffered 4096 informational
+!
+aaa new-model
+!
+!
+aaa authentication login default local
+aaa authentication enable default none
+!
+!
+!
+!
+!
+aaa session-id common
+!
+clock timezone EST -5 0
+clock summer-time EDT recurring
+network-clock-participate wic 0 
+network-clock-select 1 T1 0/0/0
+!
+dot11 syslog
+ip source-route
+!
+!
+ip cef
+!
+ip dhcp excluded-address 142.102.64.0 142.102.64.9
+ip dhcp excluded-address 142.102.64.20 142.102.64.255
+!
+ip dhcp pool HQA_Voice
+ network 142.102.64.0 255.255.255.0
+ default-router 142.102.64.254 
+ option 150 ip 142.100.64.11 
+!
+!
+no ip domain lookup
+ip domain name guilfoillab.com
+no ipv6 cef
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+isdn switch-type primary-ni
+!
+!
+!
+voice service voip
+ ip address trusted list
+  ipv4 10.18.62.140
+  ipv4 142.100.64.11
+ allow-connections h323 to h323
+ allow-connections h323 to sip
+ allow-connections sip to h323
+ allow-connections sip to sip
+ signaling forward unconditional
+ h323
+  no h225 timeout keepalive
+  call preserve limit-media-detection
+ sip
+  bind control source-interface GigabitEthernet0/0.1102
+  bind media source-interface GigabitEthernet0/0.1102
+  session transport tcp
+!
+voice class h323 1
+  h225 timeout tcp establish 1
+  h225 timeout setup 1
+  call preserve limit-media-detection
+!
+!
+!
+!
+voice translation-rule 323
+ rule 1 /^\(.*\)$/ /+\1/
+!
+!
+voice translation-profile H323
+ translate called 323
+!
+!
+voice-card 0
+ dspfarm
+ dsp services dspfarm
+!
+crypto pki token default removal timeout 0
+!
+!
+!
+!
+license udi pid CISCO2821 sn FTX1442A1WZ
+username sguilfoil privilege 15 secret 5 $1$.Pr4$PEYuv6CPyEDVgxA4YTrH5.
+username mkline privilege 15 secret 5 $1$d7md$eYaxJ5wJMdlCqishS0ZYP0
+!
+redundancy
+!
+!
+controller T1 0/0/0
+ cablelength long 0db
+ pri-group timeslots 1-10,24
+!
+ip ssh version 2
+!
+class-map match-any AutoQoS-VoIP-RTP-Trust
+ match ip dscp ef 
+class-map match-any AutoQoS-VoIP-Control-Trust
+ match ip dscp cs3 
+ match ip dscp af31 
+!
+!
+policy-map AutoQoS-Policy-Trust
+ class AutoQoS-VoIP-RTP-Trust
+  priority percent 70
+ class AutoQoS-VoIP-Control-Trust
+  bandwidth percent 5
+ class class-default
+  fair-queue
+!
+! 
+!
+!
+!
+!
+!
+!
+!
+interface GigabitEthernet0/0
+ no ip address
+ duplex auto
+ speed auto
+!
+interface GigabitEthernet0/0.1
+ encapsulation dot1Q 1 native
+ ip address 10.0.1.64 255.255.255.0
+ shutdown
+!
+interface GigabitEthernet0/0.64
+ encapsulation dot1Q 64
+ ip address 10.0.64.1 255.255.255.0
+!
+interface GigabitEthernet0/0.1100
+ encapsulation dot1Q 1100
+ ip address 142.100.64.254 255.255.255.0
+ ip helper-address 10.0.1.211
+!
+interface GigabitEthernet0/0.1101
+ encapsulation dot1Q 1101
+ ip address 142.101.64.254 255.255.255.0
+ ip helper-address 10.0.1.211
+!
+interface GigabitEthernet0/0.1102
+ encapsulation dot1Q 1102
+ ip address 142.102.64.254 255.255.255.0
+ h323-gateway voip interface
+ h323-gateway voip bind srcaddr 142.102.64.254
+!
+interface GigabitEthernet0/0.1200
+ encapsulation dot1Q 1200
+ ip address 142.200.64.254 255.255.255.0
+!
+interface GigabitEthernet0/1
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+!
+interface Serial0/0/0:23
+ no ip address
+ encapsulation hdlc
+ isdn switch-type primary-ni
+ isdn incoming-voice voice
+ isdn outgoing display-ie
+ no cdp enable
+!
+interface Serial0/1/0
+ bandwidth 8192
+ ip address 157.100.101.2 255.255.255.252
+ no fair-queue
+!
+interface Serial0/1/1
+ bandwidth 8192
+ ip address 157.100.202.1 255.255.255.252
+ encapsulation ppp
+ clock rate 2000000
+!
+router ospf 1
+ router-id 10.0.1.64
+ network 142.100.64.0 0.0.0.255 area 0
+ network 142.101.64.0 0.0.0.255 area 0
+ network 142.102.64.0 0.0.0.255 area 0
+ network 142.200.64.0 0.0.0.255 area 0
+ network 157.100.101.0 0.0.0.3 area 0
+!
+ip forward-protocol nd
+no ip http server
+no ip http secure-server
+!
+!
+ip route 142.101.65.0 255.255.255.0 157.100.202.2
+!
+!
+map-class frame-relay AutoQoS-FR-Se0/1/0-201
+ frame-relay cir 8192000
+ frame-relay bc 81920
+ frame-relay be 0
+ frame-relay mincir 8192000
+ service-policy output AutoQoS-Policy-Trust
+logging history size 500
+logging trap warnings
+logging source-interface GigabitEthernet0/0.1
+logging 10.18.62.204
+!
+!
+!
+!
+snmp-server community guilfoillab RO
+snmp-server trap-source GigabitEthernet0/0.1
+snmp-server enable traps snmp authentication linkdown linkup coldstart warmstart
+snmp-server enable traps vrrp
+snmp-server enable traps ds1
+snmp-server enable traps tty
+snmp-server enable traps eigrp
+snmp-server enable traps ospf state-change
+snmp-server enable traps ospf errors
+snmp-server enable traps ospf retransmit
+snmp-server enable traps ospf lsa
+snmp-server enable traps ospf cisco-specific state-change nssa-trans-change
+snmp-server enable traps ospf cisco-specific state-change shamlink interface-old
+snmp-server enable traps ospf cisco-specific state-change shamlink neighbor
+snmp-server enable traps ospf cisco-specific errors
+snmp-server enable traps ospf cisco-specific retransmit
+snmp-server enable traps ospf cisco-specific lsa
+snmp-server enable traps flash insertion removal
+snmp-server enable traps c3g
+snmp-server enable traps adslline
+snmp-server enable traps ds3
+snmp-server enable traps envmon
+snmp-server enable traps icsudsu
+snmp-server enable traps isdn call-information
+snmp-server enable traps isdn layer2
+snmp-server enable traps isdn chan-not-avail
+snmp-server enable traps isdn ietf
+snmp-server enable traps ds0-busyout
+snmp-server enable traps ds1-loopback
+snmp-server enable traps ethernet cfm cc mep-up mep-down cross-connect loop config
+snmp-server enable traps ethernet cfm crosscheck mep-missing mep-unknown service-up
+snmp-server enable traps license
+snmp-server enable traps aaa_server
+snmp-server enable traps atm subif
+snmp-server enable traps bgp
+snmp-server enable traps cef resource-failure peer-state-change peer-fib-state-change inconsistency
+snmp-server enable traps memory bufferpeak
+snmp-server enable traps cnpd
+snmp-server enable traps config-copy
+snmp-server enable traps config
+snmp-server enable traps config-ctid
+snmp-server enable traps entity
+snmp-server enable traps fru-ctrl
+snmp-server enable traps resource-policy
+snmp-server enable traps frame-relay multilink bundle-mismatch
+snmp-server enable traps frame-relay
+snmp-server enable traps frame-relay subif
+snmp-server enable traps hsrp
+snmp-server enable traps ipmulticast
+snmp-server enable traps isis
+snmp-server enable traps msdp
+snmp-server enable traps mvpn
+snmp-server enable traps pim neighbor-change rp-mapping-change invalid-pim-message
+snmp-server enable traps pppoe
+snmp-server enable traps cpu threshold
+snmp-server enable traps nhrp nhs
+snmp-server enable traps nhrp nhc
+snmp-server enable traps nhrp nhp
+snmp-server enable traps nhrp quota-exceeded
+snmp-server enable traps rsvp
+snmp-server enable traps l2tun session
+snmp-server enable traps l2tun pseudowire status
+snmp-server enable traps vtp
+snmp-server enable traps event-manager
+snmp-server host 10.18.62.204 guilffoillab 
+!
+!
+!
+!
+control-plane
+!
+rmon event 33333 log trap AutoQoS description "AutoQoS SNMP traps for Voice Drops" owner AutoQoS
+!
+voice-port 0/0/0:23
+!
+!
+!
+mgcp profile default
+!
+sccp local GigabitEthernet0/0.1102
+sccp ccm 142.100.64.11 identifier 1 priority 1 version 7.0 
+sccp
+!
+sccp ccm group 1
+ associate ccm 1 priority 1
+ associate profile 1 register HQA_SWMTP_711
+ associate profile 2 register HQA_HWMTP_711
+ associate profile 4 register HQA_CFB
+ associate profile 3 register HQA_XCODE
+!
+dspfarm profile 3 transcode  
+ codec g729abr8
+ codec g729ar8
+ codec g711alaw
+ codec g711ulaw
+ codec g729r8
+ maximum sessions 5
+ associate application SCCP
+!
+dspfarm profile 4 conference  
+ codec g729br8
+ codec g729r8
+ codec g729abr8
+ codec g729ar8
+ codec g711alaw
+ codec g711ulaw
+ maximum sessions 1
+ associate application SCCP
+!
+dspfarm profile 1 mtp  
+ codec g711ulaw
+ maximum sessions software 10
+ associate application SCCP
+!
+dspfarm profile 2 mtp  
+ codec g711ulaw
+ maximum sessions hardware 10
+ associate application SCCP
+!
+dial-peer voice 100 pots
+ incoming called-number .
+ direct-inward-dial
+!
+dial-peer voice 323 voip
+ translation-profile incoming H323
+ preference 1
+ shutdown
+ incoming called-number .
+ dtmf-relay h245-signal
+ codec g711ulaw
+ ip qos dscp cs3 signaling
+ no vad
+!
+dial-peer voice 727 voip
+ session protocol sipv2
+ incoming called-number .
+ dtmf-relay rtp-nte
+ codec g711ulaw
+ ip qos dscp cs3 signaling
+ no vad
+!
+dial-peer voice 2323 voip
+ preference 1
+ shutdown
+ destination-pattern +14082022...
+ session target ipv4:142.100.64.11
+ dtmf-relay h245-signal h245-alphanumeric
+ codec g711ulaw
+ ip qos dscp cs3 signaling
+ no vad
+!
+dial-peer voice 2727 voip
+ destination-pattern +14082022...
+ session protocol sipv2
+ session target ipv4:142.100.64.11
+ dtmf-relay rtp-nte
+ codec g711ulaw
+ ip qos dscp cs3 signaling
+ no vad
+!
+dial-peer voice 911 voip
+ destination-pattern 911
+ session protocol sipv2
+ session target ipv4:10.18.62.140
+ voice-class sip options-keepalive up-interval 12 down-interval 65 retry 3
+ dtmf-relay rtp-nte
+ codec g711ulaw
+ ip qos dscp cs3 signaling
+ no vad
+!
+dial-peer voice 9111 pots
+ preference 1
+ shutdown
+ destination-pattern 911
+ port 0/0/0:23
+ forward-digits all
+!
+dial-peer voice 97 voip
+ destination-pattern 9[2-9]......
+ session protocol sipv2
+ session target ipv4:10.18.62.140
+ voice-class sip options-keepalive up-interval 12 down-interval 65 retry 3
+ dtmf-relay rtp-nte
+ codec g711ulaw
+ ip qos dscp cs3 signaling
+ no vad
+!
+!
+gateway 
+ timer receive-rtp 1200
+!
+sip-ua 
+ retry invite 2
+ timers trying 300
+!
+!
+!
+!
+line con 0
+ exec-timeout 0 0
+line aux 0
+ exec-timeout 0 0
+line vty 0 4
+ exec-timeout 0 0
+ transport input all
+line vty 5 15
+ exec-timeout 0 0
+ transport input all
+!
+scheduler allocate 20000 1000
+ntp source GigabitEthernet0/0.1
+ntp update-calendar
+ntp server 10.0.1.254
+ntp server 5
+event manager environment SIP_BUSYOUT_INTERVAL 30
+event manager directory user policy "flash:/"
+event manager policy SIP_BUSYOUT.tcl
+!
+end
+
+home-2821a-sguilfoil#

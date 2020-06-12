@@ -1,0 +1,2859 @@
+{
+  "_exclude": [
+    "in_discards",
+    "in_octets",
+    "in_pkts",
+    "last_clear",
+    "out_octets",
+    "out_pkts",
+    "in_rate",
+    "out_rate",
+    "in_errors",
+    "in_crc_errors",
+    "in_rate_pkts",
+    "out_rate_pkts",
+    "in_broadcast_pkts",
+    "out_broadcast_pkts",
+    "in_multicast_pkts",
+    "out_multicast_pkts",
+    "in_unicast_pkts",
+    "out_unicast_pkts",
+    "last_change",
+    "mac_address",
+    "phys_address",
+    "((t|T)unnel.*)",
+    "(Null.*)",
+    "chars_out",
+    "chars_in",
+    "pkts_out",
+    "pkts_in",
+    "mgmt0"
+  ],
+  "attributes": null,
+  "commands": null,
+  "connections": null,
+  "context_manager": {},
+  "info": {
+    "FastEthernet0/1": {
+      "accounting": {
+        "cdp": {
+          "chars_in": 0,
+          "chars_out": 33702669,
+          "pkts_in": 0,
+          "pkts_out": 71253
+        },
+        "other": {
+          "chars_in": 0,
+          "chars_out": 25622940,
+          "pkts_in": 0,
+          "pkts_out": 427049
+        },
+        "spanning tree": {
+          "chars_in": 0,
+          "chars_out": 127766040,
+          "pkts_in": 0,
+          "pkts_out": 2129434
+        }
+      },
+      "bandwidth": 100000,
+      "counters": {
+        "in_broadcast_pkts": 15,
+        "in_crc_errors": 0,
+        "in_errors": 0,
+        "in_mac_pause_frames": 0,
+        "in_multicast_pkts": 15,
+        "in_octets": 6777384772,
+        "in_pkts": 6610061,
+        "last_clear": "never",
+        "out_errors": 0,
+        "out_octets": 525034184,
+        "out_pkts": 4795403,
+        "rate": {
+          "in_rate": 0,
+          "in_rate_pkts": 0,
+          "load_interval": 300,
+          "out_rate": 0,
+          "out_rate_pkts": 0
+        }
+      },
+      "delay": 100,
+      "description": "ESXI01 - vmnic0",
+      "duplex_mode": "full",
+      "enabled": true,
+      "encapsulation": {
+        "encapsulation": "arpa"
+      },
+      "flow_control": {
+        "receive": false,
+        "send": false
+      },
+      "mac_address": "0024.13ad.9883",
+      "mtu": 1500,
+      "oper_status": "up",
+      "phys_address": "0024.13ad.9883",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "port_speed": "100mb/s",
+      "switchport_enable": false,
+      "type": "Fast Ethernet"
+    },
+    "FastEthernet0/10": {
+      "bandwidth": 10000,
+      "counters": {
+        "in_broadcast_pkts": 0,
+        "in_crc_errors": 0,
+        "in_errors": 0,
+        "in_mac_pause_frames": 0,
+        "in_multicast_pkts": 0,
+        "in_octets": 0,
+        "in_pkts": 0,
+        "last_clear": "never",
+        "out_errors": 0,
+        "out_octets": 0,
+        "out_pkts": 0,
+        "rate": {
+          "in_rate": 0,
+          "in_rate_pkts": 0,
+          "load_interval": 300,
+          "out_rate": 0,
+          "out_rate_pkts": 0
+        }
+      },
+      "delay": 1000,
+      "duplex_mode": "auto",
+      "enabled": true,
+      "encapsulation": {
+        "encapsulation": "arpa"
+      },
+      "flow_control": {
+        "receive": false,
+        "send": false
+      },
+      "mac_address": "0024.13ad.988c",
+      "mtu": 1500,
+      "oper_status": "down",
+      "phys_address": "0024.13ad.988c",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "port_speed": "auto",
+      "switchport_enable": false,
+      "type": "Fast Ethernet"
+    },
+    "FastEthernet0/11": {
+      "accounting": {
+        "cdp": {
+          "chars_in": 13037286,
+          "chars_out": 33052666,
+          "pkts_in": 71242,
+          "pkts_out": 71234
+        },
+        "lacp": {
+          "chars_in": 17643712,
+          "chars_out": 19097364,
+          "pkts_in": 142288,
+          "pkts_out": 154011
+        },
+        "other": {
+          "chars_in": 0,
+          "chars_out": 34169100,
+          "pkts_in": 0,
+          "pkts_out": 569485
+        },
+        "spanning tree": {
+          "chars_in": 0,
+          "chars_out": 23936,
+          "pkts_in": 0,
+          "pkts_out": 376
+        }
+      },
+      "bandwidth": 100000,
+      "counters": {
+        "in_broadcast_pkts": 313126,
+        "in_crc_errors": 0,
+        "in_errors": 0,
+        "in_mac_pause_frames": 0,
+        "in_multicast_pkts": 313126,
+        "in_octets": 1914175633,
+        "in_pkts": 2766101,
+        "last_clear": "never",
+        "out_errors": 0,
+        "out_octets": 5754341578,
+        "out_pkts": 36022131,
+        "rate": {
+          "in_rate": 0,
+          "in_rate_pkts": 0,
+          "load_interval": 300,
+          "out_rate": 3000,
+          "out_rate_pkts": 6
+        }
+      },
+      "delay": 100,
+      "description": "ESXI02 - vmnic1",
+      "duplex_mode": "full",
+      "enabled": true,
+      "encapsulation": {
+        "encapsulation": "arpa"
+      },
+      "flow_control": {
+        "receive": false,
+        "send": false
+      },
+      "mac_address": "0024.13ad.988d",
+      "mtu": 1500,
+      "oper_status": "up",
+      "phys_address": "0024.13ad.988d",
+      "port_channel": {
+        "port_channel_int": "Port-channel2",
+        "port_channel_member": true
+      },
+      "port_speed": "100mb/s",
+      "switchport_enable": false,
+      "type": "Fast Ethernet"
+    },
+    "FastEthernet0/12": {
+      "bandwidth": 10000,
+      "counters": {
+        "in_broadcast_pkts": 0,
+        "in_crc_errors": 0,
+        "in_errors": 0,
+        "in_mac_pause_frames": 0,
+        "in_multicast_pkts": 0,
+        "in_octets": 0,
+        "in_pkts": 0,
+        "last_clear": "never",
+        "out_errors": 0,
+        "out_octets": 0,
+        "out_pkts": 0,
+        "rate": {
+          "in_rate": 0,
+          "in_rate_pkts": 0,
+          "load_interval": 300,
+          "out_rate": 0,
+          "out_rate_pkts": 0
+        }
+      },
+      "delay": 1000,
+      "duplex_mode": "auto",
+      "enabled": true,
+      "encapsulation": {
+        "encapsulation": "arpa"
+      },
+      "flow_control": {
+        "receive": false,
+        "send": false
+      },
+      "mac_address": "0024.13ad.988e",
+      "mtu": 1500,
+      "oper_status": "down",
+      "phys_address": "0024.13ad.988e",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "port_speed": "auto",
+      "switchport_enable": false,
+      "type": "Fast Ethernet"
+    },
+    "FastEthernet0/13": {
+      "accounting": {
+        "cdp": {
+          "chars_in": 13037286,
+          "chars_out": 33052666,
+          "pkts_in": 71242,
+          "pkts_out": 71234
+        },
+        "lacp": {
+          "chars_in": 17643712,
+          "chars_out": 19103688,
+          "pkts_in": 142288,
+          "pkts_out": 154062
+        },
+        "other": {
+          "chars_in": 0,
+          "chars_out": 34169100,
+          "pkts_in": 0,
+          "pkts_out": 569485
+        },
+        "spanning tree": {
+          "chars_in": 0,
+          "chars_out": 24448,
+          "pkts_in": 0,
+          "pkts_out": 384
+        }
+      },
+      "bandwidth": 100000,
+      "counters": {
+        "in_broadcast_pkts": 246377,
+        "in_crc_errors": 0,
+        "in_errors": 0,
+        "in_mac_pause_frames": 0,
+        "in_multicast_pkts": 246377,
+        "in_octets": 736831025,
+        "in_pkts": 3906396,
+        "last_clear": "never",
+        "out_errors": 0,
+        "out_octets": 868334133,
+        "out_pkts": 5893403,
+        "rate": {
+          "in_rate": 0,
+          "in_rate_pkts": 0,
+          "load_interval": 300,
+          "out_rate": 1000,
+          "out_rate_pkts": 1
+        }
+      },
+      "delay": 100,
+      "description": "ESXI02 - vmnic2",
+      "duplex_mode": "full",
+      "enabled": true,
+      "encapsulation": {
+        "encapsulation": "arpa"
+      },
+      "flow_control": {
+        "receive": false,
+        "send": false
+      },
+      "mac_address": "0024.13ad.988f",
+      "mtu": 1500,
+      "oper_status": "up",
+      "phys_address": "0024.13ad.988f",
+      "port_channel": {
+        "port_channel_int": "Port-channel2",
+        "port_channel_member": true
+      },
+      "port_speed": "100mb/s",
+      "switchport_enable": false,
+      "type": "Fast Ethernet"
+    },
+    "FastEthernet0/14": {
+      "bandwidth": 10000,
+      "counters": {
+        "in_broadcast_pkts": 0,
+        "in_crc_errors": 0,
+        "in_errors": 0,
+        "in_mac_pause_frames": 0,
+        "in_multicast_pkts": 0,
+        "in_octets": 0,
+        "in_pkts": 0,
+        "last_clear": "never",
+        "out_errors": 0,
+        "out_octets": 0,
+        "out_pkts": 0,
+        "rate": {
+          "in_rate": 0,
+          "in_rate_pkts": 0,
+          "load_interval": 300,
+          "out_rate": 0,
+          "out_rate_pkts": 0
+        }
+      },
+      "delay": 1000,
+      "duplex_mode": "auto",
+      "enabled": true,
+      "encapsulation": {
+        "encapsulation": "arpa"
+      },
+      "flow_control": {
+        "receive": false,
+        "send": false
+      },
+      "mac_address": "0024.13ad.9890",
+      "mtu": 1500,
+      "oper_status": "down",
+      "phys_address": "0024.13ad.9890",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "port_speed": "auto",
+      "switchport_enable": false,
+      "type": "Fast Ethernet"
+    },
+    "FastEthernet0/15": {
+      "accounting": {
+        "cdp": {
+          "chars_in": 0,
+          "chars_out": 33764442,
+          "pkts_in": 0,
+          "pkts_out": 71233
+        },
+        "lacp": {
+          "chars_in": 0,
+          "chars_out": 19096744,
+          "pkts_in": 0,
+          "pkts_out": 154006
+        },
+        "other": {
+          "chars_in": 0,
+          "chars_out": 34168800,
+          "pkts_in": 0,
+          "pkts_out": 569480
+        },
+        "spanning tree": {
+          "chars_in": 0,
+          "chars_out": 1626844028,
+          "pkts_in": 0,
+          "pkts_out": 25552524
+        }
+      },
+      "bandwidth": 100000,
+      "counters": {
+        "in_broadcast_pkts": 0,
+        "in_crc_errors": 0,
+        "in_errors": 0,
+        "in_mac_pause_frames": 0,
+        "in_multicast_pkts": 0,
+        "in_octets": 0,
+        "in_pkts": 0,
+        "last_clear": "never",
+        "out_errors": 0,
+        "out_octets": 3778189172,
+        "out_pkts": 39369181,
+        "rate": {
+          "in_rate": 0,
+          "in_rate_pkts": 0,
+          "load_interval": 300,
+          "out_rate": 5000,
+          "out_rate_pkts": 8
+        }
+      },
+      "delay": 100,
+      "description": "ESXI02 - vmnic3",
+      "duplex_mode": "full",
+      "enabled": true,
+      "encapsulation": {
+        "encapsulation": "arpa"
+      },
+      "flow_control": {
+        "receive": false,
+        "send": false
+      },
+      "mac_address": "0024.13ad.9891",
+      "mtu": 1500,
+      "oper_status": "up",
+      "phys_address": "0024.13ad.9891",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "port_speed": "100mb/s",
+      "switchport_enable": false,
+      "type": "Fast Ethernet"
+    },
+    "FastEthernet0/16": {
+      "bandwidth": 10000,
+      "counters": {
+        "in_broadcast_pkts": 0,
+        "in_crc_errors": 0,
+        "in_errors": 0,
+        "in_mac_pause_frames": 0,
+        "in_multicast_pkts": 0,
+        "in_octets": 0,
+        "in_pkts": 0,
+        "last_clear": "never",
+        "out_errors": 0,
+        "out_octets": 0,
+        "out_pkts": 0,
+        "rate": {
+          "in_rate": 0,
+          "in_rate_pkts": 0,
+          "load_interval": 300,
+          "out_rate": 0,
+          "out_rate_pkts": 0
+        }
+      },
+      "delay": 1000,
+      "duplex_mode": "auto",
+      "enabled": true,
+      "encapsulation": {
+        "encapsulation": "arpa"
+      },
+      "flow_control": {
+        "receive": false,
+        "send": false
+      },
+      "mac_address": "0024.13ad.9892",
+      "mtu": 1500,
+      "oper_status": "down",
+      "phys_address": "0024.13ad.9892",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "port_speed": "auto",
+      "switchport_enable": false,
+      "type": "Fast Ethernet"
+    },
+    "FastEthernet0/17": {
+      "bandwidth": 10000,
+      "counters": {
+        "in_broadcast_pkts": 0,
+        "in_crc_errors": 0,
+        "in_errors": 0,
+        "in_mac_pause_frames": 0,
+        "in_multicast_pkts": 0,
+        "in_octets": 0,
+        "in_pkts": 0,
+        "last_clear": "never",
+        "out_errors": 0,
+        "out_octets": 0,
+        "out_pkts": 0,
+        "rate": {
+          "in_rate": 0,
+          "in_rate_pkts": 0,
+          "load_interval": 300,
+          "out_rate": 0,
+          "out_rate_pkts": 0
+        }
+      },
+      "delay": 1000,
+      "description": "Link to SA-PHN1",
+      "duplex_mode": "auto",
+      "enabled": true,
+      "encapsulation": {
+        "encapsulation": "arpa"
+      },
+      "flow_control": {
+        "receive": false,
+        "send": false
+      },
+      "mac_address": "0024.13ad.9893",
+      "mtu": 1500,
+      "oper_status": "down",
+      "phys_address": "0024.13ad.9893",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "port_speed": "auto",
+      "switchport_enable": false,
+      "type": "Fast Ethernet"
+    },
+    "FastEthernet0/18": {
+      "accounting": {
+        "cdp": {
+          "chars_in": 7665628,
+          "chars_out": 23814395,
+          "pkts_in": 49457,
+          "pkts_out": 49511
+        },
+        "other": {
+          "chars_in": 0,
+          "chars_out": 17784360,
+          "pkts_in": 0,
+          "pkts_out": 296406
+        },
+        "spanning tree": {
+          "chars_in": 0,
+          "chars_out": 189183232,
+          "pkts_in": 0,
+          "pkts_out": 2955988
+        }
+      },
+      "bandwidth": 100000,
+      "counters": {
+        "in_broadcast_pkts": 49501,
+        "in_crc_errors": 0,
+        "in_errors": 0,
+        "in_mac_pause_frames": 0,
+        "in_multicast_pkts": 49501,
+        "in_octets": 25162261,
+        "in_pkts": 265076,
+        "last_clear": "never",
+        "out_errors": 0,
+        "out_octets": 548723475,
+        "out_pkts": 5040501,
+        "rate": {
+          "in_rate": 0,
+          "in_rate_pkts": 0,
+          "load_interval": 300,
+          "out_rate": 1000,
+          "out_rate_pkts": 1
+        }
+      },
+      "delay": 100,
+      "description": "Link to SA-PHN1",
+      "duplex_mode": "full",
+      "enabled": true,
+      "encapsulation": {
+        "encapsulation": "arpa"
+      },
+      "flow_control": {
+        "receive": false,
+        "send": false
+      },
+      "mac_address": "0024.13ad.9894",
+      "mtu": 1500,
+      "oper_status": "up",
+      "phys_address": "0024.13ad.9894",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "port_speed": "100mb/s",
+      "switchport_enable": false,
+      "type": "Fast Ethernet"
+    },
+    "FastEthernet0/19": {
+      "bandwidth": 10000,
+      "counters": {
+        "in_broadcast_pkts": 0,
+        "in_crc_errors": 0,
+        "in_errors": 0,
+        "in_mac_pause_frames": 0,
+        "in_multicast_pkts": 0,
+        "in_octets": 0,
+        "in_pkts": 0,
+        "last_clear": "never",
+        "out_errors": 0,
+        "out_octets": 0,
+        "out_pkts": 0,
+        "rate": {
+          "in_rate": 0,
+          "in_rate_pkts": 0,
+          "load_interval": 300,
+          "out_rate": 0,
+          "out_rate_pkts": 0
+        }
+      },
+      "delay": 1000,
+      "duplex_mode": "auto",
+      "enabled": true,
+      "encapsulation": {
+        "encapsulation": "arpa"
+      },
+      "flow_control": {
+        "receive": false,
+        "send": false
+      },
+      "mac_address": "0024.13ad.9895",
+      "mtu": 1500,
+      "oper_status": "down",
+      "phys_address": "0024.13ad.9895",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "port_speed": "auto",
+      "switchport_enable": false,
+      "type": "Fast Ethernet"
+    },
+    "FastEthernet0/2": {
+      "bandwidth": 10000,
+      "counters": {
+        "in_broadcast_pkts": 0,
+        "in_crc_errors": 0,
+        "in_errors": 0,
+        "in_mac_pause_frames": 0,
+        "in_multicast_pkts": 0,
+        "in_octets": 0,
+        "in_pkts": 0,
+        "last_clear": "never",
+        "out_errors": 0,
+        "out_octets": 0,
+        "out_pkts": 0,
+        "rate": {
+          "in_rate": 0,
+          "in_rate_pkts": 0,
+          "load_interval": 300,
+          "out_rate": 0,
+          "out_rate_pkts": 0
+        }
+      },
+      "delay": 1000,
+      "duplex_mode": "auto",
+      "enabled": true,
+      "encapsulation": {
+        "encapsulation": "arpa"
+      },
+      "flow_control": {
+        "receive": false,
+        "send": false
+      },
+      "mac_address": "0024.13ad.9884",
+      "mtu": 1500,
+      "oper_status": "down",
+      "phys_address": "0024.13ad.9884",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "port_speed": "auto",
+      "switchport_enable": false,
+      "type": "Fast Ethernet"
+    },
+    "FastEthernet0/20": {
+      "bandwidth": 10000,
+      "counters": {
+        "in_broadcast_pkts": 0,
+        "in_crc_errors": 0,
+        "in_errors": 0,
+        "in_mac_pause_frames": 0,
+        "in_multicast_pkts": 0,
+        "in_octets": 0,
+        "in_pkts": 0,
+        "last_clear": "never",
+        "out_errors": 0,
+        "out_octets": 0,
+        "out_pkts": 0,
+        "rate": {
+          "in_rate": 0,
+          "in_rate_pkts": 0,
+          "load_interval": 300,
+          "out_rate": 0,
+          "out_rate_pkts": 0
+        }
+      },
+      "delay": 1000,
+      "description": "Link to SA-PHN2",
+      "duplex_mode": "auto",
+      "enabled": true,
+      "encapsulation": {
+        "encapsulation": "arpa"
+      },
+      "flow_control": {
+        "receive": false,
+        "send": false
+      },
+      "mac_address": "0024.13ad.9896",
+      "mtu": 1500,
+      "oper_status": "down",
+      "phys_address": "0024.13ad.9896",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "port_speed": "auto",
+      "switchport_enable": false,
+      "type": "Fast Ethernet"
+    },
+    "FastEthernet0/21": {
+      "bandwidth": 10000,
+      "counters": {
+        "in_broadcast_pkts": 0,
+        "in_crc_errors": 0,
+        "in_errors": 0,
+        "in_mac_pause_frames": 0,
+        "in_multicast_pkts": 0,
+        "in_octets": 0,
+        "in_pkts": 0,
+        "last_clear": "never",
+        "out_errors": 0,
+        "out_octets": 0,
+        "out_pkts": 0,
+        "rate": {
+          "in_rate": 0,
+          "in_rate_pkts": 0,
+          "load_interval": 300,
+          "out_rate": 0,
+          "out_rate_pkts": 0
+        }
+      },
+      "delay": 1000,
+      "description": "Link to SA-PHN3",
+      "duplex_mode": "auto",
+      "enabled": true,
+      "encapsulation": {
+        "encapsulation": "arpa"
+      },
+      "flow_control": {
+        "receive": false,
+        "send": false
+      },
+      "mac_address": "0024.13ad.9897",
+      "mtu": 1500,
+      "oper_status": "down",
+      "phys_address": "0024.13ad.9897",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "port_speed": "auto",
+      "switchport_enable": false,
+      "type": "Fast Ethernet"
+    },
+    "FastEthernet0/22": {
+      "accounting": {
+        "cdp": {
+          "chars_in": 0,
+          "chars_out": 33860481,
+          "pkts_in": 0,
+          "pkts_out": 71443
+        },
+        "other": {
+          "chars_in": 0,
+          "chars_out": 34171800,
+          "pkts_in": 0,
+          "pkts_out": 569530
+        },
+        "spanning tree": {
+          "chars_in": 0,
+          "chars_out": 1354061352,
+          "pkts_in": 0,
+          "pkts_out": 21290272
+        }
+      },
+      "bandwidth": 100000,
+      "counters": {
+        "in_broadcast_pkts": 796872,
+        "in_crc_errors": 0,
+        "in_errors": 1,
+        "in_mac_pause_frames": 0,
+        "in_multicast_pkts": 796872,
+        "in_octets": 7116679803,
+        "in_pkts": 53728894,
+        "last_clear": "never",
+        "out_errors": 0,
+        "out_octets": 90758845975,
+        "out_pkts": 113986675,
+        "rate": {
+          "in_rate": 0,
+          "in_rate_pkts": 0,
+          "load_interval": 300,
+          "out_rate": 188000,
+          "out_rate_pkts": 7
+        }
+      },
+      "delay": 100,
+      "description": "### Link to SENSOR ###",
+      "duplex_mode": "full",
+      "enabled": true,
+      "encapsulation": {
+        "encapsulation": "arpa"
+      },
+      "flow_control": {
+        "receive": false,
+        "send": false
+      },
+      "mac_address": "0024.13ad.9898",
+      "mtu": 1500,
+      "oper_status": "up",
+      "phys_address": "0024.13ad.9898",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "port_speed": "100mb/s",
+      "switchport_enable": false,
+      "type": "Fast Ethernet"
+    },
+    "FastEthernet0/23": {
+      "bandwidth": 10000,
+      "counters": {
+        "in_broadcast_pkts": 0,
+        "in_crc_errors": 0,
+        "in_errors": 0,
+        "in_mac_pause_frames": 0,
+        "in_multicast_pkts": 0,
+        "in_octets": 0,
+        "in_pkts": 0,
+        "last_clear": "never",
+        "out_errors": 0,
+        "out_octets": 0,
+        "out_pkts": 0,
+        "rate": {
+          "in_rate": 0,
+          "in_rate_pkts": 0,
+          "load_interval": 300,
+          "out_rate": 0,
+          "out_rate_pkts": 0
+        }
+      },
+      "delay": 1000,
+      "description": "Link to SB-PHN1",
+      "duplex_mode": "auto",
+      "enabled": true,
+      "encapsulation": {
+        "encapsulation": "arpa"
+      },
+      "flow_control": {
+        "receive": false,
+        "send": false
+      },
+      "mac_address": "0024.13ad.9899",
+      "mtu": 1500,
+      "oper_status": "down",
+      "phys_address": "0024.13ad.9899",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "port_speed": "auto",
+      "switchport_enable": false,
+      "type": "Fast Ethernet"
+    },
+    "FastEthernet0/24": {
+      "bandwidth": 10000,
+      "counters": {
+        "in_broadcast_pkts": 0,
+        "in_crc_errors": 0,
+        "in_errors": 0,
+        "in_mac_pause_frames": 0,
+        "in_multicast_pkts": 0,
+        "in_octets": 0,
+        "in_pkts": 0,
+        "last_clear": "never",
+        "out_errors": 0,
+        "out_octets": 0,
+        "out_pkts": 0,
+        "rate": {
+          "in_rate": 0,
+          "in_rate_pkts": 0,
+          "load_interval": 300,
+          "out_rate": 0,
+          "out_rate_pkts": 0
+        }
+      },
+      "delay": 1000,
+      "description": "Link to SB-PHN1",
+      "duplex_mode": "auto",
+      "enabled": true,
+      "encapsulation": {
+        "encapsulation": "arpa"
+      },
+      "flow_control": {
+        "receive": false,
+        "send": false
+      },
+      "mac_address": "0024.13ad.989a",
+      "mtu": 1500,
+      "oper_status": "down",
+      "phys_address": "0024.13ad.989a",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "port_speed": "auto",
+      "switchport_enable": false,
+      "type": "Fast Ethernet"
+    },
+    "FastEthernet0/25": {
+      "bandwidth": 10000,
+      "counters": {
+        "in_broadcast_pkts": 0,
+        "in_crc_errors": 0,
+        "in_errors": 0,
+        "in_mac_pause_frames": 0,
+        "in_multicast_pkts": 0,
+        "in_octets": 0,
+        "in_pkts": 0,
+        "last_clear": "never",
+        "out_errors": 0,
+        "out_octets": 0,
+        "out_pkts": 0,
+        "rate": {
+          "in_rate": 0,
+          "in_rate_pkts": 0,
+          "load_interval": 300,
+          "out_rate": 0,
+          "out_rate_pkts": 0
+        }
+      },
+      "delay": 1000,
+      "duplex_mode": "auto",
+      "enabled": true,
+      "encapsulation": {
+        "encapsulation": "arpa"
+      },
+      "flow_control": {
+        "receive": false,
+        "send": false
+      },
+      "mac_address": "0024.13ad.989d",
+      "mtu": 1500,
+      "oper_status": "down",
+      "phys_address": "0024.13ad.989d",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "port_speed": "auto",
+      "switchport_enable": false,
+      "type": "Fast Ethernet"
+    },
+    "FastEthernet0/26": {
+      "accounting": {
+        "cdp": {
+          "chars_in": 7666144,
+          "chars_out": 23816319,
+          "pkts_in": 49459,
+          "pkts_out": 49515
+        },
+        "other": {
+          "chars_in": 0,
+          "chars_out": 17784000,
+          "pkts_in": 0,
+          "pkts_out": 296400
+        },
+        "spanning tree": {
+          "chars_in": 0,
+          "chars_out": 189179520,
+          "pkts_in": 0,
+          "pkts_out": 2955930
+        }
+      },
+      "bandwidth": 100000,
+      "counters": {
+        "in_broadcast_pkts": 49501,
+        "in_crc_errors": 0,
+        "in_errors": 0,
+        "in_mac_pause_frames": 0,
+        "in_multicast_pkts": 49501,
+        "in_octets": 25334983,
+        "in_pkts": 268167,
+        "last_clear": "never",
+        "out_errors": 0,
+        "out_octets": 582944534,
+        "out_pkts": 5222183,
+        "rate": {
+          "in_rate": 0,
+          "in_rate_pkts": 0,
+          "load_interval": 300,
+          "out_rate": 0,
+          "out_rate_pkts": 0
+        }
+      },
+      "delay": 100,
+      "description": "Link to SB-PHN2",
+      "duplex_mode": "full",
+      "enabled": true,
+      "encapsulation": {
+        "encapsulation": "arpa"
+      },
+      "flow_control": {
+        "receive": false,
+        "send": false
+      },
+      "mac_address": "0024.13ad.989e",
+      "mtu": 1500,
+      "oper_status": "up",
+      "phys_address": "0024.13ad.989e",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "port_speed": "100mb/s",
+      "switchport_enable": false,
+      "type": "Fast Ethernet"
+    },
+    "FastEthernet0/27": {
+      "bandwidth": 10000,
+      "counters": {
+        "in_broadcast_pkts": 0,
+        "in_crc_errors": 0,
+        "in_errors": 0,
+        "in_mac_pause_frames": 0,
+        "in_multicast_pkts": 0,
+        "in_octets": 0,
+        "in_pkts": 0,
+        "last_clear": "never",
+        "out_errors": 0,
+        "out_octets": 0,
+        "out_pkts": 0,
+        "rate": {
+          "in_rate": 0,
+          "in_rate_pkts": 0,
+          "load_interval": 300,
+          "out_rate": 0,
+          "out_rate_pkts": 0
+        }
+      },
+      "delay": 1000,
+      "description": "Link to SC-PHN1",
+      "duplex_mode": "auto",
+      "enabled": true,
+      "encapsulation": {
+        "encapsulation": "arpa"
+      },
+      "flow_control": {
+        "receive": false,
+        "send": false
+      },
+      "mac_address": "0024.13ad.989f",
+      "mtu": 1500,
+      "oper_status": "down",
+      "phys_address": "0024.13ad.989f",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "port_speed": "auto",
+      "switchport_enable": false,
+      "type": "Fast Ethernet"
+    },
+    "FastEthernet0/28": {
+      "bandwidth": 10000,
+      "counters": {
+        "in_broadcast_pkts": 0,
+        "in_crc_errors": 0,
+        "in_errors": 0,
+        "in_mac_pause_frames": 0,
+        "in_multicast_pkts": 0,
+        "in_octets": 0,
+        "in_pkts": 0,
+        "last_clear": "never",
+        "out_errors": 0,
+        "out_octets": 0,
+        "out_pkts": 0,
+        "rate": {
+          "in_rate": 0,
+          "in_rate_pkts": 0,
+          "load_interval": 300,
+          "out_rate": 0,
+          "out_rate_pkts": 0
+        }
+      },
+      "delay": 1000,
+      "duplex_mode": "auto",
+      "enabled": true,
+      "encapsulation": {
+        "encapsulation": "arpa"
+      },
+      "flow_control": {
+        "receive": false,
+        "send": false
+      },
+      "mac_address": "0024.13ad.98a0",
+      "mtu": 1500,
+      "oper_status": "down",
+      "phys_address": "0024.13ad.98a0",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "port_speed": "auto",
+      "switchport_enable": false,
+      "type": "Fast Ethernet"
+    },
+    "FastEthernet0/29": {
+      "bandwidth": 10000,
+      "counters": {
+        "in_broadcast_pkts": 0,
+        "in_crc_errors": 0,
+        "in_errors": 0,
+        "in_mac_pause_frames": 0,
+        "in_multicast_pkts": 0,
+        "in_octets": 0,
+        "in_pkts": 0,
+        "last_clear": "never",
+        "out_errors": 0,
+        "out_octets": 0,
+        "out_pkts": 0,
+        "rate": {
+          "in_rate": 0,
+          "in_rate_pkts": 0,
+          "load_interval": 300,
+          "out_rate": 0,
+          "out_rate_pkts": 0
+        }
+      },
+      "delay": 1000,
+      "duplex_mode": "auto",
+      "enabled": true,
+      "encapsulation": {
+        "encapsulation": "arpa"
+      },
+      "flow_control": {
+        "receive": false,
+        "send": false
+      },
+      "mac_address": "0024.13ad.98a1",
+      "mtu": 1500,
+      "oper_status": "down",
+      "phys_address": "0024.13ad.98a1",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "port_speed": "auto",
+      "switchport_enable": false,
+      "type": "Fast Ethernet"
+    },
+    "FastEthernet0/3": {
+      "accounting": {
+        "cdp": {
+          "chars_in": 22873792,
+          "chars_out": 32981895,
+          "pkts_in": 120672,
+          "pkts_out": 71235
+        },
+        "lacp": {
+          "chars_in": 17645448,
+          "chars_out": 19103068,
+          "pkts_in": 142302,
+          "pkts_out": 154057
+        },
+        "other": {
+          "chars_in": 0,
+          "chars_out": 34169160,
+          "pkts_in": 0,
+          "pkts_out": 569486
+        },
+        "spanning tree": {
+          "chars_in": 0,
+          "chars_out": 21392,
+          "pkts_in": 0,
+          "pkts_out": 336
+        }
+      },
+      "bandwidth": 100000,
+      "counters": {
+        "in_broadcast_pkts": 1451717,
+        "in_crc_errors": 0,
+        "in_errors": 0,
+        "in_mac_pause_frames": 0,
+        "in_multicast_pkts": 1451717,
+        "in_octets": 3913735770,
+        "in_pkts": 23788942,
+        "last_clear": "never",
+        "out_errors": 0,
+        "out_octets": 55256674504,
+        "out_pkts": 85759596,
+        "rate": {
+          "in_rate": 0,
+          "in_rate_pkts": 0,
+          "load_interval": 300,
+          "out_rate": 12000,
+          "out_rate_pkts": 9
+        }
+      },
+      "delay": 100,
+      "description": "ESXI01 - vmnic1",
+      "duplex_mode": "full",
+      "enabled": true,
+      "encapsulation": {
+        "encapsulation": "arpa"
+      },
+      "flow_control": {
+        "receive": false,
+        "send": false
+      },
+      "mac_address": "0024.13ad.9885",
+      "mtu": 1500,
+      "oper_status": "up",
+      "phys_address": "0024.13ad.9885",
+      "port_channel": {
+        "port_channel_int": "Port-channel1",
+        "port_channel_member": true
+      },
+      "port_speed": "100mb/s",
+      "switchport_enable": false,
+      "type": "Fast Ethernet"
+    },
+    "FastEthernet0/30": {
+      "bandwidth": 10000,
+      "counters": {
+        "in_broadcast_pkts": 0,
+        "in_crc_errors": 0,
+        "in_errors": 0,
+        "in_mac_pause_frames": 0,
+        "in_multicast_pkts": 0,
+        "in_octets": 0,
+        "in_pkts": 0,
+        "last_clear": "never",
+        "out_errors": 0,
+        "out_octets": 0,
+        "out_pkts": 0,
+        "rate": {
+          "in_rate": 0,
+          "in_rate_pkts": 0,
+          "load_interval": 300,
+          "out_rate": 0,
+          "out_rate_pkts": 0
+        }
+      },
+      "delay": 1000,
+      "duplex_mode": "auto",
+      "enabled": true,
+      "encapsulation": {
+        "encapsulation": "arpa"
+      },
+      "flow_control": {
+        "receive": false,
+        "send": false
+      },
+      "mac_address": "0024.13ad.98a2",
+      "mtu": 1500,
+      "oper_status": "down",
+      "phys_address": "0024.13ad.98a2",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "port_speed": "auto",
+      "switchport_enable": false,
+      "type": "Fast Ethernet"
+    },
+    "FastEthernet0/31": {
+      "bandwidth": 10000,
+      "counters": {
+        "in_broadcast_pkts": 0,
+        "in_crc_errors": 0,
+        "in_errors": 0,
+        "in_mac_pause_frames": 0,
+        "in_multicast_pkts": 0,
+        "in_octets": 0,
+        "in_pkts": 0,
+        "last_clear": "never",
+        "out_errors": 0,
+        "out_octets": 0,
+        "out_pkts": 0,
+        "rate": {
+          "in_rate": 0,
+          "in_rate_pkts": 0,
+          "load_interval": 300,
+          "out_rate": 0,
+          "out_rate_pkts": 0
+        }
+      },
+      "delay": 1000,
+      "description": "Link to PSTN-PHN1",
+      "duplex_mode": "auto",
+      "enabled": true,
+      "encapsulation": {
+        "encapsulation": "arpa"
+      },
+      "flow_control": {
+        "receive": false,
+        "send": false
+      },
+      "mac_address": "0024.13ad.98a3",
+      "mtu": 1500,
+      "oper_status": "down",
+      "phys_address": "0024.13ad.98a3",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "port_speed": "auto",
+      "switchport_enable": false,
+      "type": "Fast Ethernet"
+    },
+    "FastEthernet0/32": {
+      "bandwidth": 10000,
+      "counters": {
+        "in_broadcast_pkts": 0,
+        "in_crc_errors": 0,
+        "in_errors": 0,
+        "in_mac_pause_frames": 0,
+        "in_multicast_pkts": 0,
+        "in_octets": 0,
+        "in_pkts": 0,
+        "last_clear": "never",
+        "out_errors": 0,
+        "out_octets": 0,
+        "out_pkts": 0,
+        "rate": {
+          "in_rate": 0,
+          "in_rate_pkts": 0,
+          "load_interval": 300,
+          "out_rate": 0,
+          "out_rate_pkts": 0
+        }
+      },
+      "delay": 1000,
+      "duplex_mode": "auto",
+      "enabled": true,
+      "encapsulation": {
+        "encapsulation": "arpa"
+      },
+      "flow_control": {
+        "receive": false,
+        "send": false
+      },
+      "mac_address": "0024.13ad.98a4",
+      "mtu": 1500,
+      "oper_status": "down",
+      "phys_address": "0024.13ad.98a4",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "port_speed": "auto",
+      "switchport_enable": false,
+      "type": "Fast Ethernet"
+    },
+    "FastEthernet0/33": {
+      "bandwidth": 10000,
+      "counters": {
+        "in_broadcast_pkts": 0,
+        "in_crc_errors": 0,
+        "in_errors": 0,
+        "in_mac_pause_frames": 0,
+        "in_multicast_pkts": 0,
+        "in_octets": 0,
+        "in_pkts": 0,
+        "last_clear": "never",
+        "out_errors": 0,
+        "out_octets": 0,
+        "out_pkts": 0,
+        "rate": {
+          "in_rate": 0,
+          "in_rate_pkts": 0,
+          "load_interval": 300,
+          "out_rate": 0,
+          "out_rate_pkts": 0
+        }
+      },
+      "delay": 1000,
+      "description": "Link to UPS",
+      "duplex_mode": "auto",
+      "enabled": true,
+      "encapsulation": {
+        "encapsulation": "arpa"
+      },
+      "flow_control": {
+        "receive": false,
+        "send": false
+      },
+      "mac_address": "0024.13ad.98a5",
+      "mtu": 1500,
+      "oper_status": "down",
+      "phys_address": "0024.13ad.98a5",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "port_speed": "auto",
+      "switchport_enable": false,
+      "type": "Fast Ethernet"
+    },
+    "FastEthernet0/34": {
+      "bandwidth": 10000,
+      "counters": {
+        "in_broadcast_pkts": 0,
+        "in_crc_errors": 0,
+        "in_errors": 0,
+        "in_mac_pause_frames": 0,
+        "in_multicast_pkts": 0,
+        "in_octets": 0,
+        "in_pkts": 0,
+        "last_clear": "never",
+        "out_errors": 0,
+        "out_octets": 0,
+        "out_pkts": 0,
+        "rate": {
+          "in_rate": 0,
+          "in_rate_pkts": 0,
+          "load_interval": 300,
+          "out_rate": 0,
+          "out_rate_pkts": 0
+        }
+      },
+      "delay": 1000,
+      "description": "Link to HOMEPC1",
+      "duplex_mode": "auto",
+      "enabled": true,
+      "encapsulation": {
+        "encapsulation": "arpa"
+      },
+      "flow_control": {
+        "receive": false,
+        "send": false
+      },
+      "mac_address": "0024.13ad.98a6",
+      "mtu": 1500,
+      "oper_status": "down",
+      "phys_address": "0024.13ad.98a6",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "port_speed": "auto",
+      "switchport_enable": false,
+      "type": "Fast Ethernet"
+    },
+    "FastEthernet0/35": {
+      "accounting": {
+        "cdp": {
+          "chars_in": 0,
+          "chars_out": 33798266,
+          "pkts_in": 0,
+          "pkts_out": 71306
+        },
+        "other": {
+          "chars_in": 0,
+          "chars_out": 34171800,
+          "pkts_in": 0,
+          "pkts_out": 569530
+        },
+        "spanning tree": {
+          "chars_in": 0,
+          "chars_out": 1354268836,
+          "pkts_in": 0,
+          "pkts_out": 21293535
+        }
+      },
+      "bandwidth": 100000,
+      "counters": {
+        "in_broadcast_pkts": 4992,
+        "in_crc_errors": 0,
+        "in_errors": 0,
+        "in_mac_pause_frames": 0,
+        "in_multicast_pkts": 4992,
+        "in_octets": 4274767438,
+        "in_pkts": 27039235,
+        "last_clear": "never",
+        "out_errors": 0,
+        "out_octets": 27869189078,
+        "out_pkts": 66908526,
+        "rate": {
+          "in_rate": 0,
+          "in_rate_pkts": 0,
+          "load_interval": 300,
+          "out_rate": 5000,
+          "out_rate_pkts": 7
+        }
+      },
+      "delay": 100,
+      "description": "### Link to SENSOR ###",
+      "duplex_mode": "full",
+      "enabled": true,
+      "encapsulation": {
+        "encapsulation": "arpa"
+      },
+      "flow_control": {
+        "receive": false,
+        "send": false
+      },
+      "mac_address": "0024.13ad.98a7",
+      "mtu": 1500,
+      "oper_status": "up",
+      "phys_address": "0024.13ad.98a7",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "port_speed": "100mb/s",
+      "switchport_enable": false,
+      "type": "Fast Ethernet"
+    },
+    "FastEthernet0/36": {
+      "bandwidth": 10000,
+      "counters": {
+        "in_broadcast_pkts": 0,
+        "in_crc_errors": 0,
+        "in_errors": 0,
+        "in_mac_pause_frames": 0,
+        "in_multicast_pkts": 0,
+        "in_octets": 0,
+        "in_pkts": 0,
+        "last_clear": "never",
+        "out_errors": 0,
+        "out_octets": 0,
+        "out_pkts": 0,
+        "rate": {
+          "in_rate": 0,
+          "in_rate_pkts": 0,
+          "load_interval": 300,
+          "out_rate": 0,
+          "out_rate_pkts": 0
+        }
+      },
+      "delay": 1000,
+      "description": "Link to LR1",
+      "duplex_mode": "auto",
+      "enabled": true,
+      "encapsulation": {
+        "encapsulation": "arpa"
+      },
+      "flow_control": {
+        "receive": false,
+        "send": false
+      },
+      "mac_address": "0024.13ad.98a8",
+      "mtu": 1500,
+      "oper_status": "down",
+      "phys_address": "0024.13ad.98a8",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "port_speed": "auto",
+      "switchport_enable": false,
+      "type": "Fast Ethernet"
+    },
+    "FastEthernet0/37": {
+      "bandwidth": 10000,
+      "counters": {
+        "in_broadcast_pkts": 0,
+        "in_crc_errors": 0,
+        "in_errors": 0,
+        "in_mac_pause_frames": 0,
+        "in_multicast_pkts": 0,
+        "in_octets": 0,
+        "in_pkts": 0,
+        "last_clear": "never",
+        "out_errors": 0,
+        "out_octets": 0,
+        "out_pkts": 0,
+        "rate": {
+          "in_rate": 0,
+          "in_rate_pkts": 0,
+          "load_interval": 300,
+          "out_rate": 0,
+          "out_rate_pkts": 0
+        }
+      },
+      "delay": 1000,
+      "duplex_mode": "auto",
+      "enabled": true,
+      "encapsulation": {
+        "encapsulation": "arpa"
+      },
+      "flow_control": {
+        "receive": false,
+        "send": false
+      },
+      "mac_address": "0024.13ad.98a9",
+      "mtu": 1500,
+      "oper_status": "down",
+      "phys_address": "0024.13ad.98a9",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "port_speed": "auto",
+      "switchport_enable": false,
+      "type": "Fast Ethernet"
+    },
+    "FastEthernet0/38": {
+      "bandwidth": 10000,
+      "counters": {
+        "in_broadcast_pkts": 0,
+        "in_crc_errors": 0,
+        "in_errors": 0,
+        "in_mac_pause_frames": 0,
+        "in_multicast_pkts": 0,
+        "in_octets": 0,
+        "in_pkts": 0,
+        "last_clear": "never",
+        "out_errors": 0,
+        "out_octets": 0,
+        "out_pkts": 0,
+        "rate": {
+          "in_rate": 0,
+          "in_rate_pkts": 0,
+          "load_interval": 300,
+          "out_rate": 0,
+          "out_rate_pkts": 0
+        }
+      },
+      "delay": 1000,
+      "duplex_mode": "auto",
+      "enabled": true,
+      "encapsulation": {
+        "encapsulation": "arpa"
+      },
+      "flow_control": {
+        "receive": false,
+        "send": false
+      },
+      "mac_address": "0024.13ad.98aa",
+      "mtu": 1500,
+      "oper_status": "down",
+      "phys_address": "0024.13ad.98aa",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "port_speed": "auto",
+      "switchport_enable": false,
+      "type": "Fast Ethernet"
+    },
+    "FastEthernet0/39": {
+      "bandwidth": 10000,
+      "counters": {
+        "in_broadcast_pkts": 0,
+        "in_crc_errors": 0,
+        "in_errors": 0,
+        "in_mac_pause_frames": 0,
+        "in_multicast_pkts": 0,
+        "in_octets": 0,
+        "in_pkts": 0,
+        "last_clear": "never",
+        "out_errors": 0,
+        "out_octets": 0,
+        "out_pkts": 0,
+        "rate": {
+          "in_rate": 0,
+          "in_rate_pkts": 0,
+          "load_interval": 300,
+          "out_rate": 0,
+          "out_rate_pkts": 0
+        }
+      },
+      "delay": 1000,
+      "duplex_mode": "auto",
+      "enabled": true,
+      "encapsulation": {
+        "encapsulation": "arpa"
+      },
+      "flow_control": {
+        "receive": false,
+        "send": false
+      },
+      "mac_address": "0024.13ad.98ab",
+      "mtu": 1500,
+      "oper_status": "down",
+      "phys_address": "0024.13ad.98ab",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "port_speed": "auto",
+      "switchport_enable": false,
+      "type": "Fast Ethernet"
+    },
+    "FastEthernet0/4": {
+      "bandwidth": 10000,
+      "counters": {
+        "in_broadcast_pkts": 0,
+        "in_crc_errors": 0,
+        "in_errors": 0,
+        "in_mac_pause_frames": 0,
+        "in_multicast_pkts": 0,
+        "in_octets": 0,
+        "in_pkts": 0,
+        "last_clear": "never",
+        "out_errors": 0,
+        "out_octets": 0,
+        "out_pkts": 0,
+        "rate": {
+          "in_rate": 0,
+          "in_rate_pkts": 0,
+          "load_interval": 300,
+          "out_rate": 0,
+          "out_rate_pkts": 0
+        }
+      },
+      "delay": 1000,
+      "duplex_mode": "auto",
+      "enabled": true,
+      "encapsulation": {
+        "encapsulation": "arpa"
+      },
+      "flow_control": {
+        "receive": false,
+        "send": false
+      },
+      "mac_address": "0024.13ad.9886",
+      "mtu": 1500,
+      "oper_status": "down",
+      "phys_address": "0024.13ad.9886",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "port_speed": "auto",
+      "switchport_enable": false,
+      "type": "Fast Ethernet"
+    },
+    "FastEthernet0/40": {
+      "bandwidth": 10000,
+      "counters": {
+        "in_broadcast_pkts": 0,
+        "in_crc_errors": 0,
+        "in_errors": 0,
+        "in_mac_pause_frames": 0,
+        "in_multicast_pkts": 0,
+        "in_octets": 0,
+        "in_pkts": 0,
+        "last_clear": "never",
+        "out_errors": 0,
+        "out_octets": 0,
+        "out_pkts": 0,
+        "rate": {
+          "in_rate": 0,
+          "in_rate_pkts": 0,
+          "load_interval": 300,
+          "out_rate": 0,
+          "out_rate_pkts": 0
+        }
+      },
+      "delay": 1000,
+      "duplex_mode": "auto",
+      "enabled": true,
+      "encapsulation": {
+        "encapsulation": "arpa"
+      },
+      "flow_control": {
+        "receive": false,
+        "send": false
+      },
+      "mac_address": "0024.13ad.98ac",
+      "mtu": 1500,
+      "oper_status": "down",
+      "phys_address": "0024.13ad.98ac",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "port_speed": "auto",
+      "switchport_enable": false,
+      "type": "Fast Ethernet"
+    },
+    "FastEthernet0/41": {
+      "bandwidth": 10000,
+      "counters": {
+        "in_broadcast_pkts": 0,
+        "in_crc_errors": 0,
+        "in_errors": 0,
+        "in_mac_pause_frames": 0,
+        "in_multicast_pkts": 0,
+        "in_octets": 0,
+        "in_pkts": 0,
+        "last_clear": "never",
+        "out_errors": 0,
+        "out_octets": 0,
+        "out_pkts": 0,
+        "rate": {
+          "in_rate": 0,
+          "in_rate_pkts": 0,
+          "load_interval": 300,
+          "out_rate": 0,
+          "out_rate_pkts": 0
+        }
+      },
+      "delay": 1000,
+      "duplex_mode": "auto",
+      "enabled": true,
+      "encapsulation": {
+        "encapsulation": "arpa"
+      },
+      "flow_control": {
+        "receive": false,
+        "send": false
+      },
+      "mac_address": "0024.13ad.98ad",
+      "mtu": 1500,
+      "oper_status": "down",
+      "phys_address": "0024.13ad.98ad",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "port_speed": "auto",
+      "switchport_enable": false,
+      "type": "Fast Ethernet"
+    },
+    "FastEthernet0/42": {
+      "bandwidth": 10000,
+      "counters": {
+        "in_broadcast_pkts": 0,
+        "in_crc_errors": 0,
+        "in_errors": 0,
+        "in_mac_pause_frames": 0,
+        "in_multicast_pkts": 0,
+        "in_octets": 0,
+        "in_pkts": 0,
+        "last_clear": "never",
+        "out_errors": 0,
+        "out_octets": 0,
+        "out_pkts": 0,
+        "rate": {
+          "in_rate": 0,
+          "in_rate_pkts": 0,
+          "load_interval": 300,
+          "out_rate": 0,
+          "out_rate_pkts": 0
+        }
+      },
+      "delay": 1000,
+      "duplex_mode": "auto",
+      "enabled": true,
+      "encapsulation": {
+        "encapsulation": "arpa"
+      },
+      "flow_control": {
+        "receive": false,
+        "send": false
+      },
+      "mac_address": "0024.13ad.98ae",
+      "mtu": 1500,
+      "oper_status": "down",
+      "phys_address": "0024.13ad.98ae",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "port_speed": "auto",
+      "switchport_enable": false,
+      "type": "Fast Ethernet"
+    },
+    "FastEthernet0/43": {
+      "bandwidth": 100000,
+      "counters": {
+        "in_broadcast_pkts": 0,
+        "in_crc_errors": 0,
+        "in_errors": 0,
+        "in_mac_pause_frames": 0,
+        "in_multicast_pkts": 0,
+        "in_octets": 0,
+        "in_pkts": 0,
+        "last_clear": "never",
+        "out_errors": 0,
+        "out_octets": 0,
+        "out_pkts": 0,
+        "rate": {
+          "in_rate": 0,
+          "in_rate_pkts": 0,
+          "load_interval": 300,
+          "out_rate": 0,
+          "out_rate_pkts": 0
+        }
+      },
+      "delay": 100,
+      "duplex_mode": "full",
+      "enabled": true,
+      "encapsulation": {
+        "encapsulation": "arpa"
+      },
+      "flow_control": {
+        "receive": false,
+        "send": false
+      },
+      "mac_address": "0024.13ad.98af",
+      "mtu": 1500,
+      "oper_status": "down",
+      "phys_address": "0024.13ad.98af",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "port_speed": "100mb/s",
+      "switchport_enable": false,
+      "type": "Fast Ethernet"
+    },
+    "FastEthernet0/44": {
+      "accounting": {
+        "cdp": {
+          "chars_in": 0,
+          "chars_out": 2586144,
+          "pkts_in": 0,
+          "pkts_out": 5456
+        },
+        "other": {
+          "chars_in": 0,
+          "chars_out": 1712460,
+          "pkts_in": 0,
+          "pkts_out": 28541
+        },
+        "spanning tree": {
+          "chars_in": 0,
+          "chars_out": 8540580,
+          "pkts_in": 0,
+          "pkts_out": 142343
+        }
+      },
+      "bandwidth": 100000,
+      "counters": {
+        "in_broadcast_pkts": 18841,
+        "in_crc_errors": 0,
+        "in_errors": 0,
+        "in_mac_pause_frames": 0,
+        "in_multicast_pkts": 18841,
+        "in_octets": 8977444,
+        "in_pkts": 50786,
+        "last_clear": "never",
+        "out_errors": 0,
+        "out_octets": 109389518,
+        "out_pkts": 415711,
+        "rate": {
+          "in_rate": 0,
+          "in_rate_pkts": 0,
+          "load_interval": 300,
+          "out_rate": 0,
+          "out_rate_pkts": 0
+        }
+      },
+      "delay": 100,
+      "duplex_mode": "full",
+      "enabled": true,
+      "encapsulation": {
+        "encapsulation": "arpa"
+      },
+      "flow_control": {
+        "receive": false,
+        "send": false
+      },
+      "mac_address": "0024.13ad.98b0",
+      "mtu": 1500,
+      "oper_status": "down",
+      "phys_address": "0024.13ad.98b0",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "port_speed": "100mb/s",
+      "switchport_enable": false,
+      "type": "Fast Ethernet"
+    },
+    "FastEthernet0/45": {
+      "accounting": {
+        "cdp": {
+          "chars_in": 31034630,
+          "chars_out": 33769656,
+          "pkts_in": 79170,
+          "pkts_out": 71244
+        },
+        "other": {
+          "chars_in": 0,
+          "chars_out": 34169640,
+          "pkts_in": 0,
+          "pkts_out": 569494
+        },
+        "spanning tree": {
+          "chars_in": 0,
+          "chars_out": 945461476,
+          "pkts_in": 0,
+          "pkts_out": 14905924
+        }
+      },
+      "bandwidth": 100000,
+      "counters": {
+        "in_broadcast_pkts": 3181049,
+        "in_crc_errors": 0,
+        "in_errors": 0,
+        "in_mac_pause_frames": 0,
+        "in_multicast_pkts": 3181049,
+        "in_octets": 3480776881,
+        "in_pkts": 21963066,
+        "last_clear": "never",
+        "out_errors": 0,
+        "out_octets": 5410008358,
+        "out_pkts": 41074955,
+        "rate": {
+          "in_rate": 2000,
+          "in_rate_pkts": 3,
+          "load_interval": 300,
+          "out_rate": 12000,
+          "out_rate_pkts": 14
+        }
+      },
+      "delay": 100,
+      "description": "Link to sguilfoil-2821a-home",
+      "duplex_mode": "full",
+      "enabled": true,
+      "encapsulation": {
+        "encapsulation": "arpa"
+      },
+      "flow_control": {
+        "receive": false,
+        "send": false
+      },
+      "mac_address": "0024.13ad.98b1",
+      "mtu": 1500,
+      "oper_status": "up",
+      "phys_address": "0024.13ad.98b1",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "port_speed": "100mb/s",
+      "switchport_enable": false,
+      "type": "Fast Ethernet"
+    },
+    "FastEthernet0/46": {
+      "accounting": {
+        "cdp": {
+          "chars_in": 30957034,
+          "chars_out": 33769656,
+          "pkts_in": 79174,
+          "pkts_out": 71244
+        },
+        "other": {
+          "chars_in": 0,
+          "chars_out": 34169640,
+          "pkts_in": 0,
+          "pkts_out": 569494
+        },
+        "spanning tree": {
+          "chars_in": 0,
+          "chars_out": 945461860,
+          "pkts_in": 0,
+          "pkts_out": 14905930
+        }
+      },
+      "bandwidth": 100000,
+      "counters": {
+        "in_broadcast_pkts": 3439606,
+        "in_crc_errors": 0,
+        "in_errors": 1,
+        "in_mac_pause_frames": 0,
+        "in_multicast_pkts": 3439606,
+        "in_octets": 3502148171,
+        "in_pkts": 20524805,
+        "last_clear": "never",
+        "out_errors": 0,
+        "out_octets": 4034881550,
+        "out_pkts": 30655248,
+        "rate": {
+          "in_rate": 1000,
+          "in_rate_pkts": 1,
+          "load_interval": 300,
+          "out_rate": 11000,
+          "out_rate_pkts": 12
+        }
+      },
+      "delay": 100,
+      "description": "Link to sguilfoil-2821b-home",
+      "duplex_mode": "full",
+      "enabled": true,
+      "encapsulation": {
+        "encapsulation": "arpa"
+      },
+      "flow_control": {
+        "receive": false,
+        "send": false
+      },
+      "mac_address": "0024.13ad.98b2",
+      "mtu": 1500,
+      "oper_status": "up",
+      "phys_address": "0024.13ad.98b2",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "port_speed": "100mb/s",
+      "switchport_enable": false,
+      "type": "Fast Ethernet"
+    },
+    "FastEthernet0/47": {
+      "accounting": {
+        "cdp": {
+          "chars_in": 0,
+          "chars_out": 33768708,
+          "pkts_in": 0,
+          "pkts_out": 71242
+        },
+        "other": {
+          "chars_in": 0,
+          "chars_out": 25622940,
+          "pkts_in": 0,
+          "pkts_out": 427049
+        },
+        "spanning tree": {
+          "chars_in": 0,
+          "chars_out": 127766100,
+          "pkts_in": 0,
+          "pkts_out": 2129435
+        }
+      },
+      "bandwidth": 100000,
+      "counters": {
+        "in_broadcast_pkts": 3465,
+        "in_crc_errors": 1,
+        "in_errors": 1,
+        "in_mac_pause_frames": 0,
+        "in_multicast_pkts": 3465,
+        "in_octets": 63112439791,
+        "in_pkts": 417429083,
+        "last_clear": "never",
+        "out_errors": 0,
+        "out_octets": 1283205495420,
+        "out_pkts": 1000509245,
+        "rate": {
+          "in_rate": 343000,
+          "in_rate_pkts": 447,
+          "load_interval": 300,
+          "out_rate": 6727000,
+          "out_rate_pkts": 719
+        }
+      },
+      "delay": 100,
+      "description": "### Link to Amplify ###",
+      "duplex_mode": "full",
+      "enabled": true,
+      "encapsulation": {
+        "encapsulation": "arpa"
+      },
+      "flow_control": {
+        "receive": false,
+        "send": false
+      },
+      "mac_address": "0024.13ad.98b3",
+      "mtu": 1500,
+      "oper_status": "up",
+      "phys_address": "0024.13ad.98b3",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "port_speed": "100mb/s",
+      "switchport_enable": false,
+      "type": "Fast Ethernet"
+    },
+    "FastEthernet0/48": {
+      "accounting": {
+        "cdp": {
+          "chars_in": 27357696,
+          "chars_out": 33768878,
+          "pkts_in": 71244,
+          "pkts_out": 71244
+        },
+        "other": {
+          "chars_in": 0,
+          "chars_out": 34169640,
+          "pkts_in": 0,
+          "pkts_out": 569494
+        },
+        "spanning tree": {
+          "chars_in": 0,
+          "chars_out": 672897680,
+          "pkts_in": 0,
+          "pkts_out": 10647115
+        }
+      },
+      "bandwidth": 100000,
+      "counters": {
+        "in_broadcast_pkts": 78357,
+        "in_crc_errors": 0,
+        "in_errors": 0,
+        "in_mac_pause_frames": 0,
+        "in_multicast_pkts": 78357,
+        "in_octets": 1440363326033,
+        "in_pkts": 1114135645,
+        "last_clear": "never",
+        "out_errors": 0,
+        "out_octets": 75572537013,
+        "out_pkts": 515037619,
+        "rate": {
+          "in_rate": 6986000,
+          "in_rate_pkts": 698,
+          "load_interval": 300,
+          "out_rate": 379000,
+          "out_rate_pkts": 471
+        }
+      },
+      "delay": 100,
+      "description": "### Link to PSTNWAN ###",
+      "duplex_mode": "full",
+      "enabled": true,
+      "encapsulation": {
+        "encapsulation": "arpa"
+      },
+      "flow_control": {
+        "receive": false,
+        "send": false
+      },
+      "mac_address": "0024.13ad.98b4",
+      "mtu": 1500,
+      "oper_status": "up",
+      "phys_address": "0024.13ad.98b4",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "port_speed": "100mb/s",
+      "switchport_enable": false,
+      "type": "Fast Ethernet"
+    },
+    "FastEthernet0/5": {
+      "accounting": {
+        "cdp": {
+          "chars_in": 13038018,
+          "chars_out": 32981432,
+          "pkts_in": 71246,
+          "pkts_out": 71234
+        },
+        "lacp": {
+          "chars_in": 17645572,
+          "chars_out": 19101084,
+          "pkts_in": 142303,
+          "pkts_out": 154041
+        },
+        "other": {
+          "chars_in": 0,
+          "chars_out": 34169100,
+          "pkts_in": 0,
+          "pkts_out": 569485
+        },
+        "spanning tree": {
+          "chars_in": 0,
+          "chars_out": 19864,
+          "pkts_in": 0,
+          "pkts_out": 312
+        }
+      },
+      "bandwidth": 100000,
+      "counters": {
+        "in_broadcast_pkts": 797537,
+        "in_crc_errors": 0,
+        "in_errors": 0,
+        "in_mac_pause_frames": 0,
+        "in_multicast_pkts": 797537,
+        "in_octets": 3279510903,
+        "in_pkts": 22915252,
+        "last_clear": "never",
+        "out_errors": 0,
+        "out_octets": 3563845806,
+        "out_pkts": 16825170,
+        "rate": {
+          "in_rate": 1000,
+          "in_rate_pkts": 3,
+          "load_interval": 300,
+          "out_rate": 3000,
+          "out_rate_pkts": 4
+        }
+      },
+      "delay": 100,
+      "description": "ESXI01 - vmnic2",
+      "duplex_mode": "full",
+      "enabled": true,
+      "encapsulation": {
+        "encapsulation": "arpa"
+      },
+      "flow_control": {
+        "receive": false,
+        "send": false
+      },
+      "mac_address": "0024.13ad.9887",
+      "mtu": 1500,
+      "oper_status": "up",
+      "phys_address": "0024.13ad.9887",
+      "port_channel": {
+        "port_channel_int": "Port-channel1",
+        "port_channel_member": true
+      },
+      "port_speed": "100mb/s",
+      "switchport_enable": false,
+      "type": "Fast Ethernet"
+    },
+    "FastEthernet0/6": {
+      "bandwidth": 10000,
+      "counters": {
+        "in_broadcast_pkts": 0,
+        "in_crc_errors": 0,
+        "in_errors": 0,
+        "in_mac_pause_frames": 0,
+        "in_multicast_pkts": 0,
+        "in_octets": 0,
+        "in_pkts": 0,
+        "last_clear": "never",
+        "out_errors": 0,
+        "out_octets": 0,
+        "out_pkts": 0,
+        "rate": {
+          "in_rate": 0,
+          "in_rate_pkts": 0,
+          "load_interval": 300,
+          "out_rate": 0,
+          "out_rate_pkts": 0
+        }
+      },
+      "delay": 1000,
+      "duplex_mode": "auto",
+      "enabled": true,
+      "encapsulation": {
+        "encapsulation": "arpa"
+      },
+      "flow_control": {
+        "receive": false,
+        "send": false
+      },
+      "mac_address": "0024.13ad.9888",
+      "mtu": 1500,
+      "oper_status": "down",
+      "phys_address": "0024.13ad.9888",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "port_speed": "auto",
+      "switchport_enable": false,
+      "type": "Fast Ethernet"
+    },
+    "FastEthernet0/7": {
+      "accounting": {
+        "cdp": {
+          "chars_in": 0,
+          "chars_out": 33693209,
+          "pkts_in": 0,
+          "pkts_out": 71233
+        },
+        "lacp": {
+          "chars_in": 0,
+          "chars_out": 19097364,
+          "pkts_in": 0,
+          "pkts_out": 154011
+        },
+        "other": {
+          "chars_in": 0,
+          "chars_out": 34168740,
+          "pkts_in": 0,
+          "pkts_out": 569479
+        },
+        "spanning tree": {
+          "chars_in": 0,
+          "chars_out": 1626845428,
+          "pkts_in": 0,
+          "pkts_out": 25552546
+        }
+      },
+      "bandwidth": 100000,
+      "counters": {
+        "in_broadcast_pkts": 0,
+        "in_crc_errors": 0,
+        "in_errors": 0,
+        "in_mac_pause_frames": 0,
+        "in_multicast_pkts": 0,
+        "in_octets": 0,
+        "in_pkts": 0,
+        "last_clear": "never",
+        "out_errors": 0,
+        "out_octets": 3778121752,
+        "out_pkts": 39369216,
+        "rate": {
+          "in_rate": 0,
+          "in_rate_pkts": 0,
+          "load_interval": 300,
+          "out_rate": 5000,
+          "out_rate_pkts": 8
+        }
+      },
+      "delay": 100,
+      "description": "ESXI01 - vmnic3",
+      "duplex_mode": "full",
+      "enabled": true,
+      "encapsulation": {
+        "encapsulation": "arpa"
+      },
+      "flow_control": {
+        "receive": false,
+        "send": false
+      },
+      "mac_address": "0024.13ad.9889",
+      "mtu": 1500,
+      "oper_status": "up",
+      "phys_address": "0024.13ad.9889",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "port_speed": "100mb/s",
+      "switchport_enable": false,
+      "type": "Fast Ethernet"
+    },
+    "FastEthernet0/8": {
+      "bandwidth": 10000,
+      "counters": {
+        "in_broadcast_pkts": 0,
+        "in_crc_errors": 0,
+        "in_errors": 0,
+        "in_mac_pause_frames": 0,
+        "in_multicast_pkts": 0,
+        "in_octets": 0,
+        "in_pkts": 0,
+        "last_clear": "never",
+        "out_errors": 0,
+        "out_octets": 0,
+        "out_pkts": 0,
+        "rate": {
+          "in_rate": 0,
+          "in_rate_pkts": 0,
+          "load_interval": 300,
+          "out_rate": 0,
+          "out_rate_pkts": 0
+        }
+      },
+      "delay": 1000,
+      "duplex_mode": "auto",
+      "enabled": true,
+      "encapsulation": {
+        "encapsulation": "arpa"
+      },
+      "flow_control": {
+        "receive": false,
+        "send": false
+      },
+      "mac_address": "0024.13ad.988a",
+      "mtu": 1500,
+      "oper_status": "down",
+      "phys_address": "0024.13ad.988a",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "port_speed": "auto",
+      "switchport_enable": false,
+      "type": "Fast Ethernet"
+    },
+    "FastEthernet0/9": {
+      "accounting": {
+        "cdp": {
+          "chars_in": 0,
+          "chars_out": 33703142,
+          "pkts_in": 0,
+          "pkts_out": 71254
+        },
+        "other": {
+          "chars_in": 0,
+          "chars_out": 25623000,
+          "pkts_in": 0,
+          "pkts_out": 427050
+        },
+        "spanning tree": {
+          "chars_in": 0,
+          "chars_out": 127765260,
+          "pkts_in": 0,
+          "pkts_out": 2129421
+        }
+      },
+      "bandwidth": 100000,
+      "counters": {
+        "in_broadcast_pkts": 16,
+        "in_crc_errors": 0,
+        "in_errors": 0,
+        "in_mac_pause_frames": 0,
+        "in_multicast_pkts": 16,
+        "in_octets": 8902458,
+        "in_pkts": 139053,
+        "last_clear": "never",
+        "out_errors": 0,
+        "out_octets": 523629037,
+        "out_pkts": 4773421,
+        "rate": {
+          "in_rate": 0,
+          "in_rate_pkts": 0,
+          "load_interval": 300,
+          "out_rate": 0,
+          "out_rate_pkts": 0
+        }
+      },
+      "delay": 100,
+      "description": "ESXI02 - vmnic0",
+      "duplex_mode": "full",
+      "enabled": true,
+      "encapsulation": {
+        "encapsulation": "arpa"
+      },
+      "flow_control": {
+        "receive": false,
+        "send": false
+      },
+      "mac_address": "0024.13ad.988b",
+      "mtu": 1500,
+      "oper_status": "up",
+      "phys_address": "0024.13ad.988b",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "port_speed": "100mb/s",
+      "switchport_enable": false,
+      "type": "Fast Ethernet"
+    },
+    "GigabitEthernet0/1": {
+      "auto_negotiate": true,
+      "bandwidth": 10000,
+      "counters": {
+        "in_broadcast_pkts": 0,
+        "in_crc_errors": 0,
+        "in_errors": 0,
+        "in_mac_pause_frames": 0,
+        "in_multicast_pkts": 0,
+        "in_octets": 0,
+        "in_pkts": 0,
+        "last_clear": "never",
+        "out_errors": 0,
+        "out_octets": 0,
+        "out_pkts": 0,
+        "rate": {
+          "in_rate": 0,
+          "in_rate_pkts": 0,
+          "load_interval": 300,
+          "out_rate": 0,
+          "out_rate_pkts": 0
+        }
+      },
+      "delay": 1000,
+      "duplex_mode": "auto",
+      "enabled": true,
+      "encapsulation": {
+        "encapsulation": "arpa"
+      },
+      "flow_control": {
+        "receive": false,
+        "send": false
+      },
+      "mac_address": "0024.13ad.9881",
+      "mtu": 1500,
+      "oper_status": "down",
+      "phys_address": "0024.13ad.9881",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "port_speed": "auto",
+      "switchport_enable": false,
+      "type": "Gigabit Ethernet"
+    },
+    "GigabitEthernet0/2": {
+      "auto_negotiate": true,
+      "bandwidth": 10000,
+      "counters": {
+        "in_broadcast_pkts": 0,
+        "in_crc_errors": 0,
+        "in_errors": 0,
+        "in_mac_pause_frames": 0,
+        "in_multicast_pkts": 0,
+        "in_octets": 0,
+        "in_pkts": 0,
+        "last_clear": "never",
+        "out_errors": 0,
+        "out_octets": 0,
+        "out_pkts": 0,
+        "rate": {
+          "in_rate": 0,
+          "in_rate_pkts": 0,
+          "load_interval": 300,
+          "out_rate": 0,
+          "out_rate_pkts": 0
+        }
+      },
+      "delay": 1000,
+      "duplex_mode": "auto",
+      "enabled": true,
+      "encapsulation": {
+        "encapsulation": "arpa"
+      },
+      "flow_control": {
+        "receive": false,
+        "send": false
+      },
+      "mac_address": "0024.13ad.9882",
+      "mtu": 1500,
+      "oper_status": "down",
+      "phys_address": "0024.13ad.9882",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "port_speed": "auto",
+      "switchport_enable": false,
+      "type": "Gigabit Ethernet"
+    },
+    "GigabitEthernet0/3": {
+      "auto_negotiate": true,
+      "bandwidth": 10000,
+      "counters": {
+        "in_broadcast_pkts": 0,
+        "in_crc_errors": 0,
+        "in_errors": 0,
+        "in_mac_pause_frames": 0,
+        "in_multicast_pkts": 0,
+        "in_octets": 0,
+        "in_pkts": 0,
+        "last_clear": "never",
+        "out_errors": 0,
+        "out_octets": 0,
+        "out_pkts": 0,
+        "rate": {
+          "in_rate": 0,
+          "in_rate_pkts": 0,
+          "load_interval": 300,
+          "out_rate": 0,
+          "out_rate_pkts": 0
+        }
+      },
+      "delay": 1000,
+      "duplex_mode": "auto",
+      "enabled": true,
+      "encapsulation": {
+        "encapsulation": "arpa"
+      },
+      "flow_control": {
+        "receive": false,
+        "send": false
+      },
+      "mac_address": "0024.13ad.989b",
+      "mtu": 1500,
+      "oper_status": "down",
+      "phys_address": "0024.13ad.989b",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "port_speed": "auto",
+      "switchport_enable": false,
+      "type": "Gigabit Ethernet"
+    },
+    "GigabitEthernet0/4": {
+      "auto_negotiate": true,
+      "bandwidth": 10000,
+      "counters": {
+        "in_broadcast_pkts": 0,
+        "in_crc_errors": 0,
+        "in_errors": 0,
+        "in_mac_pause_frames": 0,
+        "in_multicast_pkts": 0,
+        "in_octets": 0,
+        "in_pkts": 0,
+        "last_clear": "never",
+        "out_errors": 0,
+        "out_octets": 0,
+        "out_pkts": 0,
+        "rate": {
+          "in_rate": 0,
+          "in_rate_pkts": 0,
+          "load_interval": 300,
+          "out_rate": 0,
+          "out_rate_pkts": 0
+        }
+      },
+      "delay": 1000,
+      "duplex_mode": "auto",
+      "enabled": true,
+      "encapsulation": {
+        "encapsulation": "arpa"
+      },
+      "flow_control": {
+        "receive": false,
+        "send": false
+      },
+      "mac_address": "0024.13ad.989c",
+      "mtu": 1500,
+      "oper_status": "down",
+      "phys_address": "0024.13ad.989c",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "port_speed": "auto",
+      "switchport_enable": false,
+      "type": "Gigabit Ethernet"
+    },
+    "Port-channel1": {
+      "accounting": {
+        "spanning tree": {
+          "chars_in": 0,
+          "chars_out": 1626844792,
+          "pkts_in": 0,
+          "pkts_out": 25552536
+        }
+      },
+      "auto_negotiate": true,
+      "bandwidth": 200000,
+      "counters": {
+        "in_broadcast_pkts": 2249239,
+        "in_crc_errors": 0,
+        "in_errors": 0,
+        "in_mac_pause_frames": 0,
+        "in_multicast_pkts": 2249239,
+        "in_octets": 7193243809,
+        "in_pkts": 46704159,
+        "last_clear": "never",
+        "out_errors": 0,
+        "out_octets": 58820435095,
+        "out_pkts": 102583772,
+        "rate": {
+          "in_rate": 5000,
+          "in_rate_pkts": 6,
+          "load_interval": 300,
+          "out_rate": 21000,
+          "out_rate_pkts": 14
+        }
+      },
+      "delay": 100,
+      "duplex_mode": "full",
+      "enabled": true,
+      "encapsulation": {
+        "encapsulation": "arpa"
+      },
+      "flow_control": {
+        "receive": false,
+        "send": false
+      },
+      "mac_address": "0024.13ad.9885",
+      "mtu": 1500,
+      "oper_status": "up",
+      "phys_address": "0024.13ad.9885",
+      "port_channel": {
+        "port_channel_member": true,
+        "port_channel_member_intfs": [
+          "FastEthernet0/3",
+          "FastEthernet0/5"
+        ]
+      },
+      "port_speed": "100mb/s",
+      "switchport_enable": false,
+      "type": "EtherChannel"
+    },
+    "Port-channel2": {
+      "accounting": {
+        "spanning tree": {
+          "chars_in": 0,
+          "chars_out": 1626839192,
+          "pkts_in": 0,
+          "pkts_out": 25552448
+        }
+      },
+      "auto_negotiate": true,
+      "bandwidth": 200000,
+      "counters": {
+        "in_broadcast_pkts": 559487,
+        "in_crc_errors": 0,
+        "in_errors": 0,
+        "in_mac_pause_frames": 0,
+        "in_multicast_pkts": 559487,
+        "in_octets": 2651004102,
+        "in_pkts": 6672467,
+        "last_clear": "never",
+        "out_errors": 0,
+        "out_octets": 6622584249,
+        "out_pkts": 41914405,
+        "rate": {
+          "in_rate": 0,
+          "in_rate_pkts": 0,
+          "load_interval": 300,
+          "out_rate": 5000,
+          "out_rate_pkts": 8
+        }
+      },
+      "delay": 100,
+      "duplex_mode": "full",
+      "enabled": true,
+      "encapsulation": {
+        "encapsulation": "arpa"
+      },
+      "flow_control": {
+        "receive": false,
+        "send": false
+      },
+      "mac_address": "0024.13ad.988d",
+      "mtu": 1500,
+      "oper_status": "up",
+      "phys_address": "0024.13ad.988d",
+      "port_channel": {
+        "port_channel_member": true,
+        "port_channel_member_intfs": [
+          "FastEthernet0/11",
+          "FastEthernet0/13"
+        ]
+      },
+      "port_speed": "100mb/s",
+      "switchport_enable": false,
+      "type": "EtherChannel"
+    },
+    "Vlan1": {
+      "accounting": {
+        "arp": {
+          "chars_in": 33136740,
+          "chars_out": 36360,
+          "pkts_in": 552279,
+          "pkts_out": 606
+        },
+        "ip": {
+          "chars_in": 115964644,
+          "chars_out": 3532410,
+          "pkts_in": 501248,
+          "pkts_out": 32607
+        },
+        "other": {
+          "chars_in": 21780,
+          "chars_out": 0,
+          "pkts_in": 363,
+          "pkts_out": 0
+        }
+      },
+      "bandwidth": 1000000,
+      "counters": {
+        "in_broadcast_pkts": 11823,
+        "in_crc_errors": 0,
+        "in_errors": 0,
+        "in_multicast_pkts": 0,
+        "in_octets": 145985672,
+        "in_pkts": 1001603,
+        "last_clear": "never",
+        "out_errors": 0,
+        "out_octets": 3616825,
+        "out_pkts": 33051,
+        "rate": {
+          "in_rate": 6000,
+          "in_rate_pkts": 7,
+          "load_interval": 300,
+          "out_rate": 6000,
+          "out_rate_pkts": 7
+        }
+      },
+      "delay": 10,
+      "enabled": true,
+      "encapsulation": {
+        "encapsulation": "arpa"
+      },
+      "ipv4": {
+        "10.0.1.253/24": {
+          "ip": "10.0.1.253",
+          "prefix_length": "24",
+          "secondary": false
+        }
+      },
+      "mac_address": "0024.13ad.98c0",
+      "mtu": 1500,
+      "oper_status": "up",
+      "phys_address": "0024.13ad.98c0",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "switchport_enable": false,
+      "type": "EtherSVI"
+    }
+  }
+}

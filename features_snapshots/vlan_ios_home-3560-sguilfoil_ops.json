@@ -1,0 +1,196 @@
+{
+  "_exclude": [],
+  "attributes": null,
+  "commands": null,
+  "connections": null,
+  "context_manager": {},
+  "info": {
+    "vlans": {
+      "1": {
+        "interfaces": [
+          "FastEthernet0/1",
+          "FastEthernet0/2",
+          "FastEthernet0/4",
+          "FastEthernet0/6",
+          "FastEthernet0/8",
+          "FastEthernet0/9",
+          "FastEthernet0/10",
+          "FastEthernet0/12",
+          "FastEthernet0/14",
+          "FastEthernet0/16",
+          "FastEthernet0/19",
+          "FastEthernet0/25",
+          "FastEthernet0/28",
+          "FastEthernet0/29",
+          "FastEthernet0/30",
+          "FastEthernet0/32",
+          "FastEthernet0/33",
+          "FastEthernet0/34",
+          "FastEthernet0/36",
+          "FastEthernet0/37",
+          "FastEthernet0/39",
+          "FastEthernet0/40",
+          "FastEthernet0/41",
+          "FastEthernet0/42",
+          "FastEthernet0/43",
+          "FastEthernet0/44",
+          "GigabitEthernet0/1",
+          "GigabitEthernet0/2",
+          "GigabitEthernet0/3",
+          "GigabitEthernet0/4"
+        ],
+        "name": "default",
+        "shutdown": false,
+        "state": "active",
+        "vlan_id": "1"
+      },
+      "1002": {
+        "name": "fddi-default",
+        "shutdown": false,
+        "state": "unsupport",
+        "vlan_id": "1002"
+      },
+      "1003": {
+        "name": "token-ring-default",
+        "shutdown": false,
+        "state": "unsupport",
+        "vlan_id": "1003"
+      },
+      "1004": {
+        "name": "fddinet-default",
+        "shutdown": false,
+        "state": "unsupport",
+        "vlan_id": "1004"
+      },
+      "1005": {
+        "name": "trnet-default",
+        "shutdown": false,
+        "state": "unsupport",
+        "vlan_id": "1005"
+      },
+      "1100": {
+        "name": "HQA_Server_Public",
+        "shutdown": false,
+        "state": "active",
+        "vlan_id": "1100"
+      },
+      "1101": {
+        "name": "HQA_Server_Private",
+        "shutdown": false,
+        "state": "active",
+        "vlan_id": "1101"
+      },
+      "1102": {
+        "interfaces": [
+          "FastEthernet0/18",
+          "FastEthernet0/20",
+          "FastEthernet0/21"
+        ],
+        "name": "HQA_Voice",
+        "shutdown": false,
+        "state": "active",
+        "vlan_id": "1102"
+      },
+      "1200": {
+        "interfaces": [
+          "FastEthernet0/18",
+          "FastEthernet0/20",
+          "FastEthernet0/21"
+        ],
+        "name": "HQA_Data",
+        "shutdown": false,
+        "state": "active",
+        "vlan_id": "1200"
+      },
+      "2": {
+        "interfaces": [
+          "FastEthernet0/47"
+        ],
+        "name": "home",
+        "shutdown": false,
+        "state": "active",
+        "vlan_id": "2"
+      },
+      "2013": {
+        "interfaces": [
+          "FastEthernet0/17"
+        ],
+        "name": "SAPHN3",
+        "shutdown": false,
+        "state": "active",
+        "vlan_id": "2013"
+      },
+      "2015": {
+        "interfaces": [
+          "FastEthernet0/23"
+        ],
+        "name": "SBPHN3",
+        "shutdown": false,
+        "state": "active",
+        "vlan_id": "2015"
+      },
+      "2017": {
+        "interfaces": [
+          "FastEthernet0/27"
+        ],
+        "name": "SCPHN3",
+        "shutdown": false,
+        "state": "active",
+        "vlan_id": "2017"
+      },
+      "2021": {
+        "interfaces": [
+          "FastEthernet0/31"
+        ],
+        "name": "PSTNPHN2",
+        "shutdown": false,
+        "state": "active",
+        "vlan_id": "2021"
+      },
+      "2100": {
+        "name": "HQB_Server_Public",
+        "shutdown": false,
+        "state": "active",
+        "vlan_id": "2100"
+      },
+      "2101": {
+        "name": "HQB_Server_Private",
+        "shutdown": false,
+        "state": "active",
+        "vlan_id": "2101"
+      },
+      "2102": {
+        "interfaces": [
+          "FastEthernet0/24",
+          "FastEthernet0/26"
+        ],
+        "name": "HQB_Voice",
+        "shutdown": false,
+        "state": "active",
+        "vlan_id": "2102"
+      },
+      "2200": {
+        "interfaces": [
+          "FastEthernet0/24",
+          "FastEthernet0/26"
+        ],
+        "name": "HQB_Data",
+        "shutdown": false,
+        "state": "active",
+        "vlan_id": "2200"
+      },
+      "64": {
+        "name": "HQA_mgmt",
+        "shutdown": false,
+        "state": "active",
+        "vlan_id": "64"
+      },
+      "65": {
+        "name": "HQB_mgmt",
+        "shutdown": false,
+        "state": "active",
+        "vlan_id": "65"
+      }
+    }
+  }
+}

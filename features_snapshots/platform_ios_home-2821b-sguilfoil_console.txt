@@ -1,0 +1,94 @@
++++ home-2821b-sguilfoil: executing command 'show version' +++
+show version
+Cisco IOS Software, 2800 Software (C2800NM-ADVENTERPRISEK9-M), Version 15.1(4)M8, RELEASE SOFTWARE (fc2)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2014 by Cisco Systems, Inc.
+Compiled Fri 07-Mar-14 08:19 by prod_rel_team
+
+ROM: System Bootstrap, Version 12.4(13r)T11, RELEASE SOFTWARE (fc1)
+
+home-2821b-sguilfoil uptime is 6 weeks, 2 days, 11 hours, 14 minutes
+System returned to ROM by power-on
+System restarted at 13:01:04 EDT Tue Apr 28 2020
+System image file is "flash:c2800nm-adventerprisek9-mz.151-4.M8.bin"
+Last reload type: Normal Reload
+
+
+This product contains cryptographic features and is subject to United
+States and local country laws governing import, export, transfer and
+use. Delivery of Cisco cryptographic products does not imply
+third-party authority to import, export, distribute or use encryption.
+Importers, exporters, distributors and users are responsible for
+compliance with U.S. and local country laws. By using this product you
+agree to comply with applicable laws and regulations. If you are unable
+to comply with U.S. and local laws, return this product immediately.
+
+A summary of U.S. laws governing Cisco cryptographic products may be found at:
+http://www.cisco.com/wwl/export/crypto/tool/stqrg.html
+
+If you require further assistance please contact us by sending email to
+export@cisco.com.
+
+Cisco 2821 (revision 1.0) with 509952K/14336K bytes of memory.
+Processor board ID FCZ120671Q2
+2 Gigabit Ethernet interfaces
+11 Serial interfaces
+2 Serial(sync/async) interfaces
+1 Channelized T1/PRI port
+1 Virtual Private Network (VPN) Module
+DRAM configuration is 64 bits wide with parity enabled.
+239K bytes of non-volatile configuration memory.
+126976K bytes of ATA CompactFlash (Read/Write)
+
+
+License Info:
+
+License UDI:
+
+-------------------------------------------------
+Device#	  PID			SN
+-------------------------------------------------
+*0  	  CISCO2821             FCZ120671Q2     
+
+
+
+Configuration register is 0x2102
+
+home-2821b-sguilfoil#
++++ home-2821b-sguilfoil: executing command 'dir' +++
+dir
+Directory of flash:/
+
+    1  -rw-    67922508   May 2 2014 18:24:06 -04:00  c2800nm-adventerprisek9-mz.151-4.M8.bin
+    2  -rw-        2643  Sep 21 2014 16:35:00 -04:00  SIP_BUSYOUT.tcl
+    3  -rw-        3354  Sep 22 2014 10:51:38 -04:00  dial_peer_busyout.tcl
+    4  -rw-      247276  Jun 13 2016 00:25:36 -04:00  crashinfo_20160613-002537-EDT
+    5  -rw-      197347  Nov 23 2019 09:07:14 -05:00  crashinfo_20191123-090715-EST
+
+129748992 bytes total (61362176 bytes free)
+home-2821b-sguilfoil#
++++ home-2821b-sguilfoil: executing command 'show inventory' +++
+show inventory
+NAME: "2821 chassis", DESCR: "2821 chassis"
+PID: CISCO2821         , VID: V08, SN: FCZ120671Q2
+
+NAME: "VWIC2-1MFT-T1/E1 - 1-Port RJ-48 Multiflex Trunk - T1/E1 on Slot 0 SubSlot 0", DESCR: "VWIC2-1MFT-T1/E1 - 1-Port RJ-48 Multiflex Trunk - T1/E1"
+PID: VWIC2-1MFT-T1/E1  , VID: V01 , SN: FOC13251LVD
+
+NAME: "WAN Interface Card - HWIC Serial 2T on Slot 0 SubSlot 1", DESCR: "WAN Interface Card - HWIC Serial 2T"
+PID: HWIC-2T           , VID: V04 , SN: FOC16183QKG
+
+NAME: "PVDMII DSP SIMM with four DSPs on Slot 0 SubSlot 4", DESCR: "PVDMII DSP SIMM with four DSPs"
+PID: PVDM2-64          , VID: NA  , SN: FOC1002584Y
+
+
+home-2821b-sguilfoil#
++====================================================================================================================================================+
+| Commands for learning feature 'Platform'                                                                                                           |
++====================================================================================================================================================+
+| - Parsed commands                                                                                                                                  |
+|----------------------------------------------------------------------------------------------------------------------------------------------------|
+|   cmd: <class 'genie.libs.parser.ios.show_platform.ShowVersion'>                                                                                   |
+|   cmd: <class 'genie.libs.parser.ios.show_platform.Dir'>                                                                                           |
+|   cmd: <class 'genie.libs.parser.ios.show_platform.ShowInventory'>                                                                                 |
+|====================================================================================================================================================|

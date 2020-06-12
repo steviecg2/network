@@ -1,0 +1,5 @@
++++ home-2821a-sguilfoil: executing command 'show vrf detail' +++
+show vrf detail
+home-2821a-sguilfoil#
+Could not learn <class 'genie.libs.parser.iosxe.show_vrf.ShowVrfDetail'>
+Parser Output is empty

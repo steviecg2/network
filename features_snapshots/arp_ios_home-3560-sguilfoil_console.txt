@@ -1,0 +1,240 @@
++++ home-3560-sguilfoil: executing command 'show ip arp' +++
+show ip arp
+Protocol  Address          Age (min)  Hardware Addr   Type   Interface
+Internet  10.0.1.65             204   001e.f701.db00  ARPA   Vlan1
+Internet  10.0.1.254            120   0017.e049.c8d8  ARPA   Vlan1
+Internet  10.0.1.253              -   0024.13ad.98c0  ARPA   Vlan1
+home-3560-sguilfoil#
++++ home-3560-sguilfoil: executing command 'show vrf' +++
+show vrf
+
+home-3560-sguilfoil#
++++ home-3560-sguilfoil: executing command 'show ip interface' +++
+show ip interface
+Vlan1 is up, line protocol is up
+  Internet address is 10.0.1.253/24
+  Broadcast address is 255.255.255.255
+  Address determined by non-volatile memory
+  MTU is 1500 bytes
+  Helper address is not set
+  Directed broadcast forwarding is disabled
+  Outgoing access list is not set
+  Inbound  access list is not set
+  Proxy ARP is enabled
+  Local Proxy ARP is disabled
+  Security level is default
+  Split horizon is enabled
+  ICMP redirects are always sent
+  ICMP unreachables are always sent
+  ICMP mask replies are never sent
+  IP fast switching is enabled
+  IP CEF switching is enabled
+  IP CEF switching turbo vector
+  IP Null turbo vector
+  IP multicast fast switching is enabled
+  IP multicast distributed fast switching is disabled
+  IP route-cache flags are Fast, CEF
+  Router Discovery is disabled
+  IP output packet accounting is disabled
+  IP access violation accounting is disabled
+  TCP/IP header compression is disabled
+  RTP/IP header compression is disabled
+  Probe proxy name replies are disabled
+  Policy routing is disabled
+  Network address translation is disabled
+  BGP Policy Mapping is disabled
+  Input features: MCI Check
+  Output features: Check hwidb
+FastEthernet0/1 is up, line protocol is up
+  Inbound  access list is not set
+FastEthernet0/2 is down, line protocol is down
+  Inbound  access list is not set
+FastEthernet0/3 is up, line protocol is up
+  Inbound  access list is not set
+FastEthernet0/4 is down, line protocol is down
+  Inbound  access list is not set
+FastEthernet0/5 is up, line protocol is up
+  Inbound  access list is not set
+FastEthernet0/6 is down, line protocol is down
+  Inbound  access list is not set
+FastEthernet0/7 is up, line protocol is up
+  Inbound  access list is not set
+FastEthernet0/8 is down, line protocol is down
+  Inbound  access list is not set
+FastEthernet0/9 is up, line protocol is up
+  Inbound  access list is not set
+FastEthernet0/10 is down, line protocol is down
+  Inbound  access list is not set
+FastEthernet0/11 is up, line protocol is up
+  Inbound  access list is not set
+FastEthernet0/12 is down, line protocol is down
+  Inbound  access list is not set
+FastEthernet0/13 is up, line protocol is up
+  Inbound  access list is not set
+FastEthernet0/14 is down, line protocol is down
+  Inbound  access list is not set
+FastEthernet0/15 is up, line protocol is up
+  Inbound  access list is not set
+FastEthernet0/16 is down, line protocol is down
+  Inbound  access list is not set
+FastEthernet0/17 is down, line protocol is down
+  Inbound  access list is not set
+FastEthernet0/18 is up, line protocol is up
+  Inbound  access list is not set
+FastEthernet0/19 is down, line protocol is down
+  Inbound  access list is not set
+FastEthernet0/20 is down, line protocol is down
+  Inbound  access list is not set
+FastEthernet0/21 is down, line protocol is down
+  Inbound  access list is not set
+FastEthernet0/22 is up, line protocol is up
+  Inbound  access list is not set
+FastEthernet0/23 is down, line protocol is down
+  Inbound  access list is not set
+FastEthernet0/24 is down, line protocol is down
+  Inbound  access list is not set
+FastEthernet0/25 is down, line protocol is down
+  Inbound  access list is not set
+FastEthernet0/26 is up, line protocol is up
+  Inbound  access list is not set
+FastEthernet0/27 is down, line protocol is down
+  Inbound  access list is not set
+FastEthernet0/28 is down, line protocol is down
+  Inbound  access list is not set
+FastEthernet0/29 is down, line protocol is down
+  Inbound  access list is not set
+FastEthernet0/30 is down, line protocol is down
+  Inbound  access list is not set
+FastEthernet0/31 is down, line protocol is down
+  Inbound  access list is not set
+FastEthernet0/32 is down, line protocol is down
+  Inbound  access list is not set
+FastEthernet0/33 is down, line protocol is down
+  Inbound  access list is not set
+FastEthernet0/34 is down, line protocol is down
+  Inbound  access list is not set
+FastEthernet0/35 is up, line protocol is up
+  Inbound  access list is not set
+FastEthernet0/36 is down, line protocol is down
+  Inbound  access list is not set
+FastEthernet0/37 is down, line protocol is down
+  Inbound  access list is not set
+FastEthernet0/38 is down, line protocol is down
+  Inbound  access list is not set
+FastEthernet0/39 is down, line protocol is down
+  Inbound  access list is not set
+FastEthernet0/40 is down, line protocol is down
+  Inbound  access list is not set
+FastEthernet0/41 is down, line protocol is down
+  Inbound  access list is not set
+FastEthernet0/42 is down, line protocol is down
+  Inbound  access list is not set
+FastEthernet0/43 is down, line protocol is down
+  Inbound  access list is not set
+FastEthernet0/44 is down, line protocol is down
+  Inbound  access list is not set
+FastEthernet0/45 is up, line protocol is up
+  Inbound  access list is not set
+FastEthernet0/46 is up, line protocol is up
+  Inbound  access list is not set
+FastEthernet0/47 is up, line protocol is up
+  Inbound  access list is not set
+FastEthernet0/48 is up, line protocol is up
+  Inbound  access list is not set
+GigabitEthernet0/1 is down, line protocol is down
+  Inbound  access list is not set
+GigabitEthernet0/2 is down, line protocol is down
+  Inbound  access list is not set
+GigabitEthernet0/3 is down, line protocol is down
+  Inbound  access list is not set
+GigabitEthernet0/4 is down, line protocol is down
+  Inbound  access list is not set
+Port-channel1 is up, line protocol is up
+Port-channel2 is up, line protocol is up
+home-3560-sguilfoil#
++++ home-3560-sguilfoil: executing command 'show ip arp summary' +++
+show ip arp summary
+3 IP ARP entries, with 0 of them incomplete
+home-3560-sguilfoil#
++++ home-3560-sguilfoil: executing command 'show ip traffic' +++
+show ip traffic
+IP statistics:
+  Rcvd:  500531 total, 124745 local destination
+         0 format errors, 0 checksum errors, 363963 bad hop count
+         0 unknown protocol, 11823 not a gateway
+         0 security failures, 0 bad options, 326203 with options
+  Opts:  0 end, 0 nop, 0 basic security, 0 loose source route
+         0 timestamp, 0 extended security, 0 record route
+         0 stream ID, 0 strict source route, 326203 alert, 0 cipso, 0 ump
+         0 other
+  Frags: 0 reassembled, 0 timeouts, 0 couldn't reassemble
+         0 fragmented, 0 couldn't fragment
+  Bcast: 94289 received, 0 sent
+  Mcast: 0 received, 0 sent
+  Sent:  31803 generated, 0 forwarded
+  Drop:  164 encapsulation failed, 0 unresolved, 0 no adjacency
+         0 no route, 0 unicast RPF, 0 forced drop
+         0 options denied, 0 source IP address zero
+
+ICMP statistics:
+  Rcvd: 0 format errors, 0 checksum errors, 0 redirects, 3 unreachable
+        0 echo, 0 echo reply, 0 mask requests, 0 mask replies, 0 quench
+        0 parameter, 0 timestamp, 0 info request, 0 other
+        0 irdp solicitations, 0 irdp advertisements
+  Sent: 0 redirects, 0 unreachable, 0 echo, 0 echo reply
+        0 mask requests, 0 mask replies, 0 quench, 0 timestamp
+        0 info reply, 0 time exceeded, 0 parameter problem
+        0 irdp solicitations, 0 irdp advertisements
+
+TCP statistics:
+  Rcvd: 12269 total, 0 checksum errors, 0 no port
+  Sent: 12668 total
+
+UDP statistics:
+  Rcvd: 112473 total, 0 checksum errors, 16578 no port
+  Sent: 19136 total, 0 forwarded broadcasts
+
+EIGRP-IPv4 statistics:
+  Rcvd: 0 total
+  Sent: 0 total
+
+PIMv2 statistics: Sent/Received
+  Total: 0/0, 0 checksum errors, 0 format errors
+  Registers: 0/0 (0 non-rp, 0 non-sm-group), Register Stops: 0/0,  Hellos: 0/0
+  Join/Prunes: 0/0, Asserts: 0/0, grafts: 0/0
+  Bootstraps: 0/0, Candidate_RP_Advertisements: 0/0
+  State-Refresh: 0/0
+
+IGMP statistics: Sent/Received
+  Total: 0/0, Format errors: 0/0, Checksum errors: 0/0
+  Host Queries: 0/0, Host Reports: 0/0, Host Leaves: 0/0 
+  DVMRP: 0/0, PIM: 0/0
+
+OSPF statistics:
+  Rcvd: 0 total, 0 checksum errors
+  	0 hello, 0 database desc, 0 link state req
+  	0 link state updates, 0 link state acks
+
+  Sent: 0 total
+  	0 hello, 0 database desc, 0 link state req
+  	0 link state updates, 0 link state acks
+
+ARP statistics:
+  Rcvd: 134384 requests, 278453 replies, 363 reverse, 0 other
+  Sent: 422 requests, 184 replies (0 proxy), 0 reverse
+  Drop due to input queue full: 0
+home-3560-sguilfoil#
++====================================================================================================================================================+
+| Commands for learning feature 'Arp'                                                                                                                |
++====================================================================================================================================================+
+| - Parsed commands                                                                                                                                  |
+|----------------------------------------------------------------------------------------------------------------------------------------------------|
+|   cmd: <class 'genie.libs.parser.ios.show_arp.ShowIpArp'>                                                                                          |
+|   cmd: <class 'genie.libs.parser.ios.show_interface.ShowIpInterface'>                                                                              |
+|   cmd: <class 'genie.libs.parser.ios.show_arp.ShowIpArpSummary'>                                                                                   |
+|   cmd: <class 'genie.libs.parser.ios.show_arp.ShowIpTraffic'>                                                                                      |
+|====================================================================================================================================================|
+| - Commands with empty output                                                                                                                       |
+|----------------------------------------------------------------------------------------------------------------------------------------------------|
+|   cmd: <class 'genie.libs.parser.ios.show_vrf.ShowVrf'>                                                                                            |
+|====================================================================================================================================================|

@@ -1,0 +1,12 @@
++++ home-3560-sguilfoil: executing command 'show vrf detail' +++
+show vrf detail
+
+home-3560-sguilfoil#
++++ home-3560-sguilfoil: executing command 'show ip multicast' +++
+show ip multicast
+  Multicast Routing: disabled
+  Multicast Multipath: disabled
+  Multicast Route limit: No limit
+  Multicast Triggered RPF check: enabled
+  Multicast Fallback group mode: Sparse
+home-3560-sguilfoil#

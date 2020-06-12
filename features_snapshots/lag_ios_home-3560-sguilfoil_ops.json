@@ -1,0 +1,118 @@
+{
+  "_exclude": [],
+  "attributes": null,
+  "commands": null,
+  "connections": null,
+  "context_manager": {},
+  "info": {
+    "interfaces": {
+      "Port-channel1": {
+        "bundle_id": 1,
+        "members": {
+          "FastEthernet0/3": {
+            "activity": "active",
+            "age": 19,
+            "bundle_id": 1,
+            "bundled": true,
+            "counters": {
+              "lacp_in_pkts": 142302,
+              "lacp_out_pkts": 154057
+            },
+            "interface": "FastEthernet0/3",
+            "lacp_port_priority": 255,
+            "oper_key": 7,
+            "partner_id": "0025.64f8.ed83",
+            "port_num": 32769
+          },
+          "FastEthernet0/5": {
+            "activity": "active",
+            "age": 19,
+            "bundle_id": 1,
+            "bundled": true,
+            "counters": {
+              "lacp_in_pkts": 142303,
+              "lacp_out_pkts": 154041
+            },
+            "interface": "FastEthernet0/5",
+            "lacp_port_priority": 255,
+            "oper_key": 7,
+            "partner_id": "0025.64f8.ed83",
+            "port_num": 32770
+          },
+          "FastEthernet0/7": {
+            "activity": "passive",
+            "age": 4274832,
+            "bundle_id": 1,
+            "bundled": false,
+            "counters": {
+              "lacp_in_pkts": 0,
+              "lacp_out_pkts": 154012
+            },
+            "interface": "FastEthernet0/7",
+            "lacp_port_priority": 0,
+            "oper_key": 0,
+            "partner_id": "0000.0000.0000",
+            "port_num": 0
+          }
+        },
+        "name": "Port-channel1",
+        "oper_status": "up",
+        "protocol": "lacp"
+      },
+      "Port-channel2": {
+        "bundle_id": 2,
+        "members": {
+          "FastEthernet0/11": {
+            "activity": "active",
+            "age": 18,
+            "bundle_id": 2,
+            "bundled": true,
+            "counters": {
+              "lacp_in_pkts": 142288,
+              "lacp_out_pkts": 154012
+            },
+            "interface": "FastEthernet0/11",
+            "lacp_port_priority": 255,
+            "oper_key": 7,
+            "partner_id": "f04d.a23d.886c",
+            "port_num": 32769
+          },
+          "FastEthernet0/13": {
+            "activity": "active",
+            "age": 17,
+            "bundle_id": 2,
+            "bundled": true,
+            "counters": {
+              "lacp_in_pkts": 142288,
+              "lacp_out_pkts": 154063
+            },
+            "interface": "FastEthernet0/13",
+            "lacp_port_priority": 255,
+            "oper_key": 7,
+            "partner_id": "f04d.a23d.886c",
+            "port_num": 32770
+          },
+          "FastEthernet0/15": {
+            "activity": "passive",
+            "age": 4274832,
+            "bundle_id": 2,
+            "bundled": false,
+            "counters": {
+              "lacp_in_pkts": 0,
+              "lacp_out_pkts": 154006
+            },
+            "interface": "FastEthernet0/15",
+            "lacp_port_priority": 0,
+            "oper_key": 0,
+            "partner_id": "0000.0000.0000",
+            "port_num": 0
+          }
+        },
+        "name": "Port-channel2",
+        "oper_status": "up",
+        "protocol": "lacp"
+      }
+    },
+    "system_priority": 32768
+  }
+}
