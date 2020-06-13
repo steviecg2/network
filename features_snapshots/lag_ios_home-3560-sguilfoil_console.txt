@@ -37,9 +37,9 @@ Partner's information:
 
                   LACP port                        Admin  Oper   Port    Port
 Port      Flags   Priority  Dev ID          Age    key    Key    Number  State
-Fa0/3     SA      255       0025.64f8.ed83  19s    0x0    0x7    0x8001  0x3D  
-Fa0/5     SA      255       0025.64f8.ed83  19s    0x0    0x7    0x8002  0x3D  
-Fa0/7     SP      0         0000.0000.0000 4274832s    0x0    0x0    0x0     0x0   
+Fa0/3     SA      255       0025.64f8.ed83  15s    0x0    0x7    0x8001  0x3D  
+Fa0/5     SA      255       0025.64f8.ed83  15s    0x0    0x7    0x8002  0x3D  
+Fa0/7     SP      0         0000.0000.0000 4294967s    0x0    0x0    0x0     0x0   
 
 Channel group 2 neighbors
 
@@ -47,9 +47,9 @@ Partner's information:
 
                   LACP port                        Admin  Oper   Port    Port
 Port      Flags   Priority  Dev ID          Age    key    Key    Number  State
-Fa0/11    SA      255       f04d.a23d.886c  18s    0x0    0x7    0x8001  0x3D  
-Fa0/13    SA      255       f04d.a23d.886c  17s    0x0    0x7    0x8002  0x3D  
-Fa0/15    SP      0         0000.0000.0000 4274832s    0x0    0x0    0x0     0x0   
+Fa0/11    SA      255       f04d.a23d.886c  27s    0x0    0x7    0x8001  0x3D  
+Fa0/13    SA      255       f04d.a23d.886c  26s    0x0    0x7    0x8002  0x3D  
+Fa0/15    SP      0         0000.0000.0000 4294967s    0x0    0x0    0x0     0x0   
 home-3560-sguilfoil#
 +++ home-3560-sguilfoil: executing command 'show pagp neighbor' +++
 show pagp neighbor
@@ -65,17 +65,17 @@ show lacp counters
 Port       Sent   Recv     Sent   Recv     Sent   Recv      Pkts Err
 ---------------------------------------------------------------------
 Channel group: 1
-Fa0/3       154057 142302   0      0        0      0         0     
-Fa0/5       154041 142303   0      0        0      0         0     
-Fa0/7       154012 0        0      0        0      0         0     
+Fa0/3       155494 143630   0      0        0      0         0     
+Fa0/5       155478 143631   0      0        0      0         0     
+Fa0/7       155447 0        0      0        0      0         0     
 
              LACPDUs         Marker      Marker Response    LACPDUs
 Port       Sent   Recv     Sent   Recv     Sent   Recv      Pkts Err
 ---------------------------------------------------------------------
 Channel group: 2
-Fa0/11      154012 142288   0      0        0      0         0     
-Fa0/13      154063 142288   0      0        0      0         0     
-Fa0/15      154006 0        0      0        0      0         0     
+Fa0/11      155447 143615   0      0        0      0         0     
+Fa0/13      155503 143615   0      0        0      0         0     
+Fa0/15      155444 0        0      0        0      0         0     
 
 home-3560-sguilfoil#
 +++ home-3560-sguilfoil: executing command 'show pagp counters' +++

@@ -31,30 +31,30 @@ Extended IP access list labvpn_acl
     40 permit ip 142.101.64.0 0.0.1.255 10.0.0.0 0.0.255.255
     50 permit ip 142.102.64.0 0.0.1.255 10.0.0.0 0.0.255.255
 Extended IP access list nat_acl
-    10 deny ip any 10.0.0.0 0.255.255.255 (277718 matches)
+    10 deny ip any 10.0.0.0 0.255.255.255 (283324 matches)
     20 deny ip any 172.16.0.0 0.15.255.255 (73 matches)
-    30 deny ip any 192.168.0.0 0.0.255.255 (88688 matches)
-    40 permit ip 10.0.0.0 0.255.255.255 any (8270042 matches)
+    30 deny ip any 192.168.0.0 0.0.255.255 (89822 matches)
+    40 permit ip 10.0.0.0 0.255.255.255 any (8349515 matches)
     50 permit ip 172.16.0.0 0.15.255.255 any (384 matches)
     60 permit ip 198.168.0.0 0.0.255.255 any
     70 permit ip 142.100.64.0 0.0.1.255 any
-    80 permit ip 142.101.64.0 0.0.1.255 any (5343 matches)
+    80 permit ip 142.101.64.0 0.0.1.255 any (5614 matches)
     90 permit ip 142.102.64.0 0.0.1.255 any (152 matches)
-    100 permit ip 142.200.64.0 0.0.1.255 any (29845 matches)
+    100 permit ip 142.200.64.0 0.0.1.255 any (30527 matches)
 Extended IP access list outside_acl
-    10 permit icmp any any (2437757 matches)
+    10 permit icmp any any (2481642 matches)
     20 permit udp any eq domain any (83 matches)
     30 permit tcp any eq domain any (1445 matches)
-    40 permit udp any eq bootps any (1207 matches)
-    50 permit udp any any eq isakmp (4899 matches)
-    60 permit udp any any eq non500-isakmp (5778018 matches)
+    40 permit udp any eq bootps any (1218 matches)
+    50 permit udp any any eq isakmp (4944 matches)
+    60 permit udp any any eq non500-isakmp (5828287 matches)
     70 permit udp any eq non500-isakmp any
-    80 permit tcp any any eq 8443 (862 matches)
-    90 permit tcp any any eq 443 (266717 matches)
-    100 permit udp any any eq 443 (136 matches)
+    80 permit tcp any any eq 8443 (874 matches)
+    90 permit tcp any any eq 443 (266838 matches)
+    100 permit udp any any eq 443 (139 matches)
     110 permit udp any any eq 8443
-    120 permit tcp any any range 8000 8020 (1022856 matches)
-    130 permit tcp any any established (22512 matches)
+    120 permit tcp any any range 8000 8020 (1022900 matches)
+    130 permit tcp any any established (22618 matches)
 home-2811-sguilfoil#
 +====================================================================================================================================================+
 | Commands for learning feature 'Acl'                                                                                                                |

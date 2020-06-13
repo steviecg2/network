@@ -55,23 +55,23 @@
               },
               "mac_address": "0025.64f8.ed8b"
             },
-            "0050.5650.5a35": {
+            "0050.5650.99e7": {
               "interfaces": {
-                "Port-channel2": {
+                "Port-channel1": {
                   "entry_type": "dynamic",
-                  "interface": "Port-channel2"
+                  "interface": "Port-channel1"
                 }
               },
-              "mac_address": "0050.5650.5a35"
+              "mac_address": "0050.5650.99e7"
             },
-            "0050.5658.c27e": {
+            "0050.5657.e670": {
               "interfaces": {
-                "Port-channel2": {
+                "Port-channel1": {
                   "entry_type": "dynamic",
-                  "interface": "Port-channel2"
+                  "interface": "Port-channel1"
                 }
               },
-              "mac_address": "0050.5658.c27e"
+              "mac_address": "0050.5657.e670"
             },
             "0050.566a.34d3": {
               "interfaces": {
@@ -100,6 +100,15 @@
               },
               "mac_address": "0050.5695.2b98"
             },
+            "0050.5695.318f": {
+              "interfaces": {
+                "Port-channel1": {
+                  "entry_type": "dynamic",
+                  "interface": "Port-channel1"
+                }
+              },
+              "mac_address": "0050.5695.318f"
+            },
             "0050.5695.48bd": {
               "interfaces": {
                 "Port-channel1": {
@@ -108,6 +117,15 @@
                 }
               },
               "mac_address": "0050.5695.48bd"
+            },
+            "0050.5695.5fbc": {
+              "interfaces": {
+                "Port-channel1": {
+                  "entry_type": "dynamic",
+                  "interface": "Port-channel1"
+                }
+              },
+              "mac_address": "0050.5695.5fbc"
             },
             "0050.5695.9dbd": {
               "interfaces": {
@@ -556,6 +574,6 @@
         }
       }
     },
-    "total_mac_addresses": 74
+    "total_mac_addresses": 76
   }
 }

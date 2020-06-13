@@ -14,8 +14,8 @@ BGP using 1716 total bytes of memory
 BGP activity 8/2 prefixes, 21/14 paths, scan interval 60 secs
 
 Neighbor        V          AS MsgRcvd MsgSent   TblVer  InQ OutQ Up/Down  State/PfxRcd
-169.254.75.157  4      64512  427362  417290       25    0    0 15:14:32        1
-169.254.162.29  4      64512  427361  417293       25    0    0 15:14:50        1
+169.254.75.157  4      64512  431349  421184       25    0    0 1d02h           1
+169.254.162.29  4      64512  431347  421187       25    0    0 1d02h           1
 home-2811-sguilfoil#
 +++ home-2811-sguilfoil: executing command 'show ip bgp template peer-session' +++
 show ip bgp template peer-session
@@ -47,8 +47,8 @@ show bgp all neighbors
 For address family: IPv4 Unicast
 BGP neighbor is 169.254.75.157,  remote AS 64512, external link
   BGP version 4, remote router ID 169.254.75.157
-  BGP state = Established, up for 15:14:36
-  Last read 00:00:03, last write 00:00:00, hold time is 30, keepalive interval is 10 seconds
+  BGP state = Established, up for 1d02h
+  Last read 00:00:06, last write 00:00:07, hold time is 30, keepalive interval is 10 seconds
   Configured hold time is 30, keepalive interval is 10 seconds
   Minimum holdtime from neighbor is 30 seconds
   Neighbor capabilities:
@@ -63,14 +63,14 @@ BGP neighbor is 169.254.75.157,  remote AS 64512, external link
     Opens:                  4          4
     Notifications:          2          0
     Updates:               18          9
-    Keepalives:        417267     427350
+    Keepalives:        421160     431336
     Route Refresh:          0          0
-    Total:             417291     427363
+    Total:             421184     431349
   Default minimum time between advertisement runs is 30 seconds
 
   Address tracking is enabled, the RIB does have a route to 169.254.75.157
   Connections established 4; dropped 3
-  Last reset 15:15:32, due to BGP Notification sent, hold time expired
+  Last reset 1d02h, due to BGP Notification sent, hold time expired
   Transport(tcp) path-mtu-discovery is enabled
 Connection state is ESTAB, I/O status: 1, unread input bytes: 0            
 Connection is ECN Disabled, Mininum incoming TTL 0, Outgoing TTL 1
@@ -80,11 +80,11 @@ Connection tableid (VRF): 0
 
 Enqueued packets for retransmit: 0, input: 0  mis-ordered: 0 (0 bytes)
 
-Event Timers (current time is 0xFECBA6FC):
+Event Timers (current time is 0x1012C10A0):
 Timer          Starts    Wakeups            Next
-Retrans          5373         14             0x0
+Retrans          9266         14             0x0
 TimeWait            0          0             0x0
-AckHold          5489       5295             0x0
+AckHold          9475       9154             0x0
 SendWnd             0          0             0x0
 KeepAlive           0          0             0x0
 GiveUp              0          0             0x0
@@ -93,25 +93,25 @@ DeadWait            0          0             0x0
 Linger              0          0             0x0
 ProcessQ            0          0             0x0
 
-iss: 1358549073  snduna: 1358651040  sndnxt: 1358651040     sndwnd:  26880
-irs: 2432355148  rcvnxt: 2432459529  rcvwnd:      16023  delrcvwnd:    361
+iss: 1358549073  snduna: 1358725007  sndnxt: 1358725007     sndwnd:  26880
+irs: 2432355148  rcvnxt: 2432535263  rcvwnd:      15187  delrcvwnd:   1197
 
 SRTT: 300 ms, RTTO: 303 ms, RTV: 3 ms, KRTT: 0 ms
-minRTT: 24 ms, maxRTT: 464 ms, ACK hold: 200 ms
+minRTT: 24 ms, maxRTT: 552 ms, ACK hold: 200 ms
 Status Flags: active open
 Option Flags: nagle, path mtu capable
 IP Precedence value : 6
 
 Datagrams (max data segment is 1375 bytes):
-Rcvd: 10897 (out of order: 0), with data: 5489, total data bytes: 104380
-Sent: 10770 (retransmit: 14, fastretransmit: 0, partialack: 0, Second Congestion: 0), with data: 5358, total data bytes: 101966
+Rcvd: 18783 (out of order: 0), with data: 9475, total data bytes: 180114
+Sent: 18583 (retransmit: 14, fastretransmit: 0, partialack: 0, Second Congestion: 0), with data: 9251, total data bytes: 175933
  Packets received in fast path: 0, fast processed: 0, slow path: 0
  fast lock acquisition failures: 0, slow path: 0
 
 BGP neighbor is 169.254.162.29,  remote AS 64512, external link
   BGP version 4, remote router ID 169.254.162.29
-  BGP state = Established, up for 15:14:53
-  Last read 00:00:00, last write 00:00:00, hold time is 30, keepalive interval is 10 seconds
+  BGP state = Established, up for 1d02h
+  Last read 00:00:02, last write 00:00:07, hold time is 30, keepalive interval is 10 seconds
   Configured hold time is 30, keepalive interval is 10 seconds
   Minimum holdtime from neighbor is 30 seconds
   Neighbor capabilities:
@@ -126,14 +126,14 @@ BGP neighbor is 169.254.162.29,  remote AS 64512, external link
     Opens:                  4          4
     Notifications:          3          0
     Updates:               18          9
-    Keepalives:        417269     427349
+    Keepalives:        421162     431335
     Route Refresh:          0          0
-    Total:             417294     427362
+    Total:             421187     431348
   Default minimum time between advertisement runs is 30 seconds
 
   Address tracking is enabled, the RIB does have a route to 169.254.162.29
   Connections established 4; dropped 3
-  Last reset 15:15:33, due to BGP Notification sent, hold time expired
+  Last reset 1d02h, due to BGP Notification sent, hold time expired
   Transport(tcp) path-mtu-discovery is enabled
 Connection state is ESTAB, I/O status: 1, unread input bytes: 0            
 Connection is ECN Disabled, Mininum incoming TTL 0, Outgoing TTL 1
@@ -143,11 +143,11 @@ Connection tableid (VRF): 0
 
 Enqueued packets for retransmit: 0, input: 0  mis-ordered: 0 (0 bytes)
 
-Event Timers (current time is 0xFECBA70C):
+Event Timers (current time is 0x1012C10AC):
 Timer          Starts    Wakeups            Next
-Retrans          5372         12             0x0
+Retrans          9266         13             0x0
 TimeWait            0          0             0x0
-AckHold          5491       5295             0x0
+AckHold          9477       9143             0x0
 SendWnd             0          0             0x0
 KeepAlive           0          0             0x0
 GiveUp              0          0             0x0
@@ -156,8 +156,8 @@ DeadWait            0          0             0x0
 Linger              0          0             0x0
 ProcessQ            0          0             0x0
 
-iss: 3947774873  snduna: 3947876873  sndnxt: 3947876873     sndwnd:  27872
-irs: 3933394636  rcvnxt: 3933499055  rcvwnd:      15985  delrcvwnd:    399
+iss: 3947774873  snduna: 3947950840  sndnxt: 3947950840     sndwnd:  27872
+irs: 3933394636  rcvnxt: 3933574789  rcvwnd:      15149  delrcvwnd:   1235
 
 SRTT: 300 ms, RTTO: 303 ms, RTV: 3 ms, KRTT: 0 ms
 minRTT: 24 ms, maxRTT: 996 ms, ACK hold: 200 ms
@@ -166,8 +166,8 @@ Option Flags: nagle, path mtu capable
 IP Precedence value : 6
 
 Datagrams (max data segment is 1375 bytes):
-Rcvd: 10901 (out of order: 0), with data: 5491, total data bytes: 104418
-Sent: 10772 (retransmit: 12, fastretransmit: 0, partialack: 0, Second Congestion: 0), with data: 5360, total data bytes: 101999
+Rcvd: 18786 (out of order: 0), with data: 9477, total data bytes: 180152
+Sent: 18573 (retransmit: 13, fastretransmit: 0, partialack: 0, Second Congestion: 0), with data: 9253, total data bytes: 175966
  Packets received in fast path: 0, fast processed: 0, slow path: 0
  fast lock acquisition failures: 0, slow path: 0
 

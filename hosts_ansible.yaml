@@ -1,0 +1,19 @@
+---
+all:
+    hosts:
+        home-2811-sguilfoil:
+            ansible_host: 10.0.1.254
+        home-3560-sguilfoil:
+            ansible_host: 10.0.1.253
+        home-2821a-sguilfoil:
+            ansible_host: 10.0.64.1
+        home-2821b-sguilfoil:
+            ansible_host: 10.0.65.1
+    children:
+        ios:
+            hosts:
+                home-2811-sguilfoil:
+                home-2821a-sguilfoil:
+                home-2821b-sguilfoil:
+            vars:
+                platform: cisco_ios_ssh

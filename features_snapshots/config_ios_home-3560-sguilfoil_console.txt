@@ -639,7 +639,7 @@ line vty 0 4
 line vty 5 15
  exec-timeout 0 0
 !
-ntp clock-period 36029192
+ntp clock-period 36029186
 ntp source Vlan1
 ntp server 10.0.1.254
 end

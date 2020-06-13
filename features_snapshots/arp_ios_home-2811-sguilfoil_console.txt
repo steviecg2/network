@@ -1,33 +1,33 @@
 +++ home-2811-sguilfoil: executing command 'show ip arp' +++
 show ip arp
 Protocol  Address          Age (min)  Hardware Addr   Type   Interface
-Internet  10.0.1.1              105   1c69.7a06.9513  ARPA   FastEthernet0/0.1
-Internet  10.0.1.2               34   1c69.7a0d.7048  ARPA   FastEthernet0/0.1
-Internet  10.0.1.7                7   0050.5695.2b98  ARPA   FastEthernet0/0.1
-Internet  10.0.1.10              22   0050.5660.5878  ARPA   FastEthernet0/0.1
-Internet  10.0.1.11              19   f04d.a23d.886c  ARPA   FastEthernet0/0.1
+Internet  10.0.1.1               11   1c69.7a06.9513  ARPA   FastEthernet0/0.1
+Internet  10.0.1.2              148   1c69.7a0d.7048  ARPA   FastEthernet0/0.1
+Internet  10.0.1.7                1   0050.5695.2b98  ARPA   FastEthernet0/0.1
+Internet  10.0.1.10             194   0050.5660.5878  ARPA   FastEthernet0/0.1
+Internet  10.0.1.11              96   f04d.a23d.886c  ARPA   FastEthernet0/0.1
 Internet  10.0.1.12               1   0050.5695.aff5  ARPA   FastEthernet0/0.1
 Internet  10.0.1.15               0   0050.5695.a427  ARPA   FastEthernet0/0.1
-Internet  10.0.1.20              69   0050.5695.48bd  ARPA   FastEthernet0/0.1
-Internet  10.0.1.30              12   0050.5695.0705  ARPA   FastEthernet0/0.1
-Internet  10.0.1.65              38   001e.f701.db00  ARPA   FastEthernet0/0.1
-Internet  10.0.1.80             237   0050.5695.5fbc  ARPA   FastEthernet0/0.1
-Internet  10.0.1.81             106   0050.5695.020f  ARPA   FastEthernet0/0.1
-Internet  10.0.1.82              66   0050.5695.aed4  ARPA   FastEthernet0/0.1
-Internet  10.0.1.83             173   0050.5695.a422  ARPA   FastEthernet0/0.1
-Internet  10.0.1.90             202   0050.5695.2909  ARPA   FastEthernet0/0.1
-Internet  10.0.1.100             27   0050.5695.318f  ARPA   FastEthernet0/0.1
-Internet  10.0.1.110              9   0050.566a.34d3  ARPA   FastEthernet0/0.1
-Internet  10.0.1.253            120   0024.13ad.98c0  ARPA   FastEthernet0/0.1
+Internet  10.0.1.20             222   0050.5695.48bd  ARPA   FastEthernet0/0.1
+Internet  10.0.1.30              17   0050.5695.0705  ARPA   FastEthernet0/0.1
+Internet  10.0.1.65             210   001e.f701.db00  ARPA   FastEthernet0/0.1
+Internet  10.0.1.80             149   0050.5695.5fbc  ARPA   FastEthernet0/0.1
+Internet  10.0.1.81              20   0050.5695.020f  ARPA   FastEthernet0/0.1
+Internet  10.0.1.82             202   0050.5695.aed4  ARPA   FastEthernet0/0.1
+Internet  10.0.1.83              79   0050.5695.a422  ARPA   FastEthernet0/0.1
+Internet  10.0.1.90             128   0050.5695.2909  ARPA   FastEthernet0/0.1
+Internet  10.0.1.100              3   0050.5695.318f  ARPA   FastEthernet0/0.1
+Internet  10.0.1.110              3   0050.566a.34d3  ARPA   FastEthernet0/0.1
+Internet  10.0.1.253             49   0024.13ad.98c0  ARPA   FastEthernet0/0.1
 Internet  10.0.1.254              -   0017.e049.c8d8  ARPA   FastEthernet0/0.1
-Internet  10.0.2.253            167   b4fb.e416.5f6c  ARPA   FastEthernet0/0.2
+Internet  10.0.2.253             91   b4fb.e416.5f6c  ARPA   FastEthernet0/0.2
 Internet  10.0.2.254              -   0017.e049.c8d8  ARPA   FastEthernet0/0.2
-Internet  10.0.64.1              31   68bd.abb7.2f60  ARPA   FastEthernet0/0.64
-Internet  10.0.64.2              52   0050.5695.5c1e  ARPA   FastEthernet0/0.64
+Internet  10.0.64.1             189   68bd.abb7.2f60  ARPA   FastEthernet0/0.64
+Internet  10.0.64.2             214   0050.5695.5c1e  ARPA   FastEthernet0/0.64
 Internet  10.0.64.254             -   0017.e049.c8d8  ARPA   FastEthernet0/0.64
-Internet  10.0.65.1              36   001e.f701.db00  ARPA   FastEthernet0/0.65
+Internet  10.0.65.1             193   001e.f701.db00  ARPA   FastEthernet0/0.65
 Internet  10.0.65.254             -   0017.e049.c8d8  ARPA   FastEthernet0/0.65
-Internet  74.106.15.1           145   40a6.7735.bfcd  ARPA   FastEthernet0/1
+Internet  74.106.15.1            52   40a6.7735.bfcd  ARPA   FastEthernet0/1
 Internet  74.106.15.9             -   0017.e049.c8d9  ARPA   FastEthernet0/1
 home-2811-sguilfoil#
 +++ home-2811-sguilfoil: executing command 'show vrf' +++

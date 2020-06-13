@@ -475,7 +475,7 @@
   "no ip domain-lookup": {},
   "no logging console": {},
   "no service pad": {},
-  "ntp clock-period 36029192": {},
+  "ntp clock-period 36029186": {},
   "ntp server 10.0.1.254": {},
   "ntp source Vlan1": {},
   "policy-map AUTOQOS-SRND4-CISCOPHONE-POLICY": {

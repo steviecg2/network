@@ -30,7 +30,7 @@ O       142.101.65.0 [110/13] via 157.100.101.6, 6w2d, Serial0/1/1
 O       142.101.64.0 [110/13] via 157.100.101.2, 6w2d, Serial0/1/0
 S    192.168.124.0/24 [1/0] via 10.0.2.253
      10.0.0.0/8 is variably subnetted, 6 subnets, 3 masks
-B       10.0.3.0/24 [20/100] via 169.254.162.29, 15:16:16
+B       10.0.3.0/24 [20/100] via 169.254.162.29, 1d02h
 C       10.255.255.1/32 is directly connected, Loopback0
 C       10.0.1.0/24 is directly connected, FastEthernet0/0.1
 C       10.0.64.0/24 is directly connected, FastEthernet0/0.64

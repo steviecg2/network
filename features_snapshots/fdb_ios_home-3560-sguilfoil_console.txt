@@ -61,12 +61,14 @@ Vlan    Mac Address       Type        Ports
    1    0025.64f8.ed85    DYNAMIC     Po1
    1    0025.64f8.ed87    DYNAMIC     Po1
    1    0025.64f8.ed8b    DYNAMIC     Fa0/1
-   1    0050.5650.5a35    DYNAMIC     Po2
-   1    0050.5658.c27e    DYNAMIC     Po2
+   1    0050.5650.99e7    DYNAMIC     Po1
+   1    0050.5657.e670    DYNAMIC     Po1
    1    0050.566a.34d3    DYNAMIC     Fa0/1
    1    0050.5695.0705    DYNAMIC     Po1
    1    0050.5695.2b98    DYNAMIC     Po1
+   1    0050.5695.318f    DYNAMIC     Po1
    1    0050.5695.48bd    DYNAMIC     Po1
+   1    0050.5695.5fbc    DYNAMIC     Po1
    1    0050.5695.9dbd    DYNAMIC     Po2
    1    0050.5695.a427    DYNAMIC     Po1
    1    0050.5695.aff5    DYNAMIC     Po1
@@ -108,7 +110,7 @@ Vlan    Mac Address       Type        Ports
 2200    0050.5695.2867    DYNAMIC     Po1
 2200    0050.5695.ff95    DYNAMIC     Po1
 2200    1c69.7a0d.7048    DYNAMIC     Fa0/22
-Total Mac Addresses for this criterion: 74
+Total Mac Addresses for this criterion: 76
 home-3560-sguilfoil#
 +====================================================================================================================================================+
 | Commands for learning feature 'Fdb'                                                                                                                |

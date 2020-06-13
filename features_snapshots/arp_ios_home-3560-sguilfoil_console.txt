@@ -1,8 +1,8 @@
 +++ home-3560-sguilfoil: executing command 'show ip arp' +++
 show ip arp
 Protocol  Address          Age (min)  Hardware Addr   Type   Interface
-Internet  10.0.1.65             204   001e.f701.db00  ARPA   Vlan1
-Internet  10.0.1.254            120   0017.e049.c8d8  ARPA   Vlan1
+Internet  10.0.1.65             151   001e.f701.db00  ARPA   Vlan1
+Internet  10.0.1.254             26   0017.e049.c8d8  ARPA   Vlan1
 Internet  10.0.1.253              -   0024.13ad.98c0  ARPA   Vlan1
 home-3560-sguilfoil#
 +++ home-3560-sguilfoil: executing command 'show vrf' +++
@@ -159,19 +159,19 @@ home-3560-sguilfoil#
 +++ home-3560-sguilfoil: executing command 'show ip traffic' +++
 show ip traffic
 IP statistics:
-  Rcvd:  500531 total, 124745 local destination
-         0 format errors, 0 checksum errors, 363963 bad hop count
-         0 unknown protocol, 11823 not a gateway
-         0 security failures, 0 bad options, 326203 with options
+  Rcvd:  509751 total, 129079 local destination
+         0 format errors, 0 checksum errors, 368728 bad hop count
+         0 unknown protocol, 11944 not a gateway
+         0 security failures, 0 bad options, 333301 with options
   Opts:  0 end, 0 nop, 0 basic security, 0 loose source route
          0 timestamp, 0 extended security, 0 record route
-         0 stream ID, 0 strict source route, 326203 alert, 0 cipso, 0 ump
+         0 stream ID, 0 strict source route, 333301 alert, 0 cipso, 0 ump
          0 other
   Frags: 0 reassembled, 0 timeouts, 0 couldn't reassemble
          0 fragmented, 0 couldn't fragment
-  Bcast: 94289 received, 0 sent
+  Bcast: 95541 received, 0 sent
   Mcast: 0 received, 0 sent
-  Sent:  31803 generated, 0 forwarded
+  Sent:  35027 generated, 0 forwarded
   Drop:  164 encapsulation failed, 0 unresolved, 0 no adjacency
          0 no route, 0 unicast RPF, 0 forced drop
          0 options denied, 0 source IP address zero
@@ -187,12 +187,12 @@ ICMP statistics:
         0 irdp solicitations, 0 irdp advertisements
 
 TCP statistics:
-  Rcvd: 12269 total, 0 checksum errors, 0 no port
-  Sent: 12668 total
+  Rcvd: 15182 total, 0 checksum errors, 0 no port
+  Sent: 15721 total
 
 UDP statistics:
-  Rcvd: 112473 total, 0 checksum errors, 16578 no port
-  Sent: 19136 total, 0 forwarded broadcasts
+  Rcvd: 113894 total, 0 checksum errors, 16634 no port
+  Sent: 19307 total, 0 forwarded broadcasts
 
 EIGRP-IPv4 statistics:
   Rcvd: 0 total
@@ -220,8 +220,8 @@ OSPF statistics:
   	0 link state updates, 0 link state acks
 
 ARP statistics:
-  Rcvd: 134384 requests, 278453 replies, 363 reverse, 0 other
-  Sent: 422 requests, 184 replies (0 proxy), 0 reverse
+  Rcvd: 134699 requests, 281051 replies, 363 reverse, 0 other
+  Sent: 427 requests, 185 replies (0 proxy), 0 reverse
   Drop due to input queue full: 0
 home-3560-sguilfoil#
 +====================================================================================================================================================+

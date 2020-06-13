@@ -7,7 +7,7 @@ Compiled Fri 07-Mar-14 08:19 by prod_rel_team
 
 ROM: System Bootstrap, Version 12.4(13r)T11, RELEASE SOFTWARE (fc1)
 
-home-2821a-sguilfoil uptime is 6 weeks, 2 days, 11 hours, 15 minutes
+home-2821a-sguilfoil uptime is 6 weeks, 2 days, 22 hours, 20 minutes
 System returned to ROM by power-on
 System image file is "flash:c2800nm-adventerprisek9-mz.151-4.M8.bin"
 Last reload type: Normal Reload

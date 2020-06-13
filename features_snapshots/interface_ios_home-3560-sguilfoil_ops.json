@@ -38,21 +38,21 @@
       "accounting": {
         "cdp": {
           "chars_in": 0,
-          "chars_out": 33702669,
+          "chars_out": 34017214,
           "pkts_in": 0,
-          "pkts_out": 71253
+          "pkts_out": 71918
         },
         "other": {
           "chars_in": 0,
-          "chars_out": 25622940,
+          "chars_out": 25861980,
           "pkts_in": 0,
-          "pkts_out": 427049
+          "pkts_out": 431033
         },
         "spanning tree": {
           "chars_in": 0,
-          "chars_out": 127766040,
+          "chars_out": 128958000,
           "pkts_in": 0,
-          "pkts_out": 2129434
+          "pkts_out": 2149300
         }
       },
       "bandwidth": 100000,
@@ -62,18 +62,18 @@
         "in_errors": 0,
         "in_mac_pause_frames": 0,
         "in_multicast_pkts": 15,
-        "in_octets": 6777384772,
-        "in_pkts": 6610061,
+        "in_octets": 6823357993,
+        "in_pkts": 6657875,
         "last_clear": "never",
         "out_errors": 0,
-        "out_octets": 525034184,
-        "out_pkts": 4795403,
+        "out_octets": 530148226,
+        "out_pkts": 4837995,
         "rate": {
-          "in_rate": 0,
-          "in_rate_pkts": 0,
+          "in_rate": 2000,
+          "in_rate_pkts": 1,
           "load_interval": 300,
-          "out_rate": 0,
-          "out_rate_pkts": 0
+          "out_rate": 1000,
+          "out_rate_pkts": 1
         }
       },
       "delay": 100,
@@ -144,22 +144,22 @@
     "FastEthernet0/11": {
       "accounting": {
         "cdp": {
-          "chars_in": 13037286,
-          "chars_out": 33052666,
-          "pkts_in": 71242,
-          "pkts_out": 71234
+          "chars_in": 13158981,
+          "chars_out": 33361226,
+          "pkts_in": 71907,
+          "pkts_out": 71899
         },
         "lacp": {
-          "chars_in": 17643712,
-          "chars_out": 19097364,
-          "pkts_in": 142288,
-          "pkts_out": 154011
+          "chars_in": 17808260,
+          "chars_out": 19275304,
+          "pkts_in": 143615,
+          "pkts_out": 155446
         },
         "other": {
           "chars_in": 0,
-          "chars_out": 34169100,
+          "chars_out": 34487880,
           "pkts_in": 0,
-          "pkts_out": 569485
+          "pkts_out": 574798
         },
         "spanning tree": {
           "chars_in": 0,
@@ -170,23 +170,23 @@
       },
       "bandwidth": 100000,
       "counters": {
-        "in_broadcast_pkts": 313126,
+        "in_broadcast_pkts": 316082,
         "in_crc_errors": 0,
         "in_errors": 0,
         "in_mac_pause_frames": 0,
-        "in_multicast_pkts": 313126,
-        "in_octets": 1914175633,
-        "in_pkts": 2766101,
+        "in_multicast_pkts": 316082,
+        "in_octets": 1931547050,
+        "in_pkts": 2791015,
         "last_clear": "never",
         "out_errors": 0,
-        "out_octets": 5754341578,
-        "out_pkts": 36022131,
+        "out_octets": 5783711285,
+        "out_pkts": 36347909,
         "rate": {
-          "in_rate": 0,
-          "in_rate_pkts": 0,
+          "in_rate": 1000,
+          "in_rate_pkts": 1,
           "load_interval": 300,
-          "out_rate": 3000,
-          "out_rate_pkts": 6
+          "out_rate": 4000,
+          "out_rate_pkts": 7
         }
       },
       "delay": 100,
@@ -258,22 +258,22 @@
     "FastEthernet0/13": {
       "accounting": {
         "cdp": {
-          "chars_in": 13037286,
-          "chars_out": 33052666,
-          "pkts_in": 71242,
-          "pkts_out": 71234
+          "chars_in": 13158981,
+          "chars_out": 33361226,
+          "pkts_in": 71907,
+          "pkts_out": 71899
         },
         "lacp": {
-          "chars_in": 17643712,
-          "chars_out": 19103688,
-          "pkts_in": 142288,
-          "pkts_out": 154062
+          "chars_in": 17808260,
+          "chars_out": 19282248,
+          "pkts_in": 143615,
+          "pkts_out": 155502
         },
         "other": {
           "chars_in": 0,
-          "chars_out": 34169100,
+          "chars_out": 34487880,
           "pkts_in": 0,
-          "pkts_out": 569485
+          "pkts_out": 574798
         },
         "spanning tree": {
           "chars_in": 0,
@@ -284,20 +284,20 @@
       },
       "bandwidth": 100000,
       "counters": {
-        "in_broadcast_pkts": 246377,
+        "in_broadcast_pkts": 248686,
         "in_crc_errors": 0,
         "in_errors": 0,
         "in_mac_pause_frames": 0,
-        "in_multicast_pkts": 246377,
-        "in_octets": 736831025,
-        "in_pkts": 3906396,
+        "in_multicast_pkts": 248686,
+        "in_octets": 741222861,
+        "in_pkts": 3928733,
         "last_clear": "never",
         "out_errors": 0,
-        "out_octets": 868334133,
-        "out_pkts": 5893403,
+        "out_octets": 881054650,
+        "out_pkts": 5950097,
         "rate": {
-          "in_rate": 0,
-          "in_rate_pkts": 0,
+          "in_rate": 2000,
+          "in_rate_pkts": 1,
           "load_interval": 300,
           "out_rate": 1000,
           "out_rate_pkts": 1
@@ -373,27 +373,27 @@
       "accounting": {
         "cdp": {
           "chars_in": 0,
-          "chars_out": 33764442,
+          "chars_out": 34079652,
           "pkts_in": 0,
-          "pkts_out": 71233
+          "pkts_out": 71898
         },
         "lacp": {
           "chars_in": 0,
-          "chars_out": 19096744,
+          "chars_out": 19274932,
           "pkts_in": 0,
-          "pkts_out": 154006
+          "pkts_out": 155443
         },
         "other": {
           "chars_in": 0,
-          "chars_out": 34168800,
+          "chars_out": 34487580,
           "pkts_in": 0,
-          "pkts_out": 569480
+          "pkts_out": 574793
         },
         "spanning tree": {
           "chars_in": 0,
-          "chars_out": 1626844028,
+          "chars_out": 1642021204,
           "pkts_in": 0,
-          "pkts_out": 25552524
+          "pkts_out": 25790909
         }
       },
       "bandwidth": 100000,
@@ -407,13 +407,13 @@
         "in_pkts": 0,
         "last_clear": "never",
         "out_errors": 0,
-        "out_octets": 3778189172,
-        "out_pkts": 39369181,
+        "out_octets": 3816585329,
+        "out_pkts": 39745093,
         "rate": {
           "in_rate": 0,
           "in_rate_pkts": 0,
           "load_interval": 300,
-          "out_rate": 5000,
+          "out_rate": 6000,
           "out_rate_pkts": 8
         }
       },
@@ -529,43 +529,43 @@
     "FastEthernet0/18": {
       "accounting": {
         "cdp": {
-          "chars_in": 7665628,
-          "chars_out": 23814395,
-          "pkts_in": 49457,
-          "pkts_out": 49511
+          "chars_in": 7768548,
+          "chars_out": 24134260,
+          "pkts_in": 50121,
+          "pkts_out": 50176
         },
         "other": {
           "chars_in": 0,
-          "chars_out": 17784360,
+          "chars_out": 18023400,
           "pkts_in": 0,
-          "pkts_out": 296406
+          "pkts_out": 300390
         },
         "spanning tree": {
           "chars_in": 0,
-          "chars_out": 189183232,
+          "chars_out": 191725952,
           "pkts_in": 0,
-          "pkts_out": 2955988
+          "pkts_out": 2995718
         }
       },
       "bandwidth": 100000,
       "counters": {
-        "in_broadcast_pkts": 49501,
+        "in_broadcast_pkts": 50165,
         "in_crc_errors": 0,
         "in_errors": 0,
         "in_mac_pause_frames": 0,
-        "in_multicast_pkts": 49501,
-        "in_octets": 25162261,
-        "in_pkts": 265076,
+        "in_multicast_pkts": 50165,
+        "in_octets": 25458167,
+        "in_pkts": 268414,
         "last_clear": "never",
         "out_errors": 0,
-        "out_octets": 548723475,
-        "out_pkts": 5040501,
+        "out_octets": 555956498,
+        "out_pkts": 5108284,
         "rate": {
           "in_rate": 0,
           "in_rate_pkts": 0,
           "load_interval": 300,
           "out_rate": 1000,
-          "out_rate_pkts": 1
+          "out_rate_pkts": 2
         }
       },
       "delay": 100,
@@ -768,42 +768,42 @@
       "accounting": {
         "cdp": {
           "chars_in": 0,
-          "chars_out": 33860481,
+          "chars_out": 34175691,
           "pkts_in": 0,
-          "pkts_out": 71443
+          "pkts_out": 72108
         },
         "other": {
           "chars_in": 0,
-          "chars_out": 34171800,
+          "chars_out": 34490580,
           "pkts_in": 0,
-          "pkts_out": 569530
+          "pkts_out": 574843
         },
         "spanning tree": {
           "chars_in": 0,
-          "chars_out": 1354061352,
+          "chars_out": 1366695680,
           "pkts_in": 0,
-          "pkts_out": 21290272
+          "pkts_out": 21488925
         }
       },
       "bandwidth": 100000,
       "counters": {
-        "in_broadcast_pkts": 796872,
+        "in_broadcast_pkts": 815322,
         "in_crc_errors": 0,
         "in_errors": 1,
         "in_mac_pause_frames": 0,
-        "in_multicast_pkts": 796872,
-        "in_octets": 7116679803,
-        "in_pkts": 53728894,
+        "in_multicast_pkts": 815322,
+        "in_octets": 7188927815,
+        "in_pkts": 54356868,
         "last_clear": "never",
         "out_errors": 0,
-        "out_octets": 90758845975,
-        "out_pkts": 113986675,
+        "out_octets": 91998828968,
+        "out_pkts": 115310309,
         "rate": {
-          "in_rate": 0,
-          "in_rate_pkts": 0,
+          "in_rate": 2000,
+          "in_rate_pkts": 3,
           "load_interval": 300,
-          "out_rate": 188000,
-          "out_rate_pkts": 7
+          "out_rate": 237000,
+          "out_rate_pkts": 13
         }
       },
       "delay": 100,
@@ -962,43 +962,43 @@
     "FastEthernet0/26": {
       "accounting": {
         "cdp": {
-          "chars_in": 7666144,
-          "chars_out": 23816319,
-          "pkts_in": 49459,
-          "pkts_out": 49515
+          "chars_in": 7769064,
+          "chars_out": 24136184,
+          "pkts_in": 50123,
+          "pkts_out": 50180
         },
         "other": {
           "chars_in": 0,
-          "chars_out": 17784000,
+          "chars_out": 18023040,
           "pkts_in": 0,
-          "pkts_out": 296400
+          "pkts_out": 300384
         },
         "spanning tree": {
           "chars_in": 0,
-          "chars_out": 189179520,
+          "chars_out": 191722240,
           "pkts_in": 0,
-          "pkts_out": 2955930
+          "pkts_out": 2995660
         }
       },
       "bandwidth": 100000,
       "counters": {
-        "in_broadcast_pkts": 49501,
+        "in_broadcast_pkts": 50165,
         "in_crc_errors": 0,
         "in_errors": 0,
         "in_mac_pause_frames": 0,
-        "in_multicast_pkts": 49501,
-        "in_octets": 25334983,
-        "in_pkts": 268167,
+        "in_multicast_pkts": 50165,
+        "in_octets": 25630889,
+        "in_pkts": 271505,
         "last_clear": "never",
         "out_errors": 0,
-        "out_octets": 582944534,
-        "out_pkts": 5222183,
+        "out_octets": 591862905,
+        "out_pkts": 5298530,
         "rate": {
           "in_rate": 0,
           "in_rate_pkts": 0,
           "load_interval": 300,
-          "out_rate": 0,
-          "out_rate_pkts": 0
+          "out_rate": 2000,
+          "out_rate_pkts": 2
         }
       },
       "delay": 100,
@@ -1156,22 +1156,22 @@
     "FastEthernet0/3": {
       "accounting": {
         "cdp": {
-          "chars_in": 22873792,
-          "chars_out": 32981895,
-          "pkts_in": 120672,
-          "pkts_out": 71235
+          "chars_in": 23127241,
+          "chars_out": 33289790,
+          "pkts_in": 121999,
+          "pkts_out": 71900
         },
         "lacp": {
-          "chars_in": 17645448,
-          "chars_out": 19103068,
-          "pkts_in": 142302,
-          "pkts_out": 154057
+          "chars_in": 17810120,
+          "chars_out": 19281256,
+          "pkts_in": 143630,
+          "pkts_out": 155494
         },
         "other": {
           "chars_in": 0,
-          "chars_out": 34169160,
+          "chars_out": 34487940,
           "pkts_in": 0,
-          "pkts_out": 569486
+          "pkts_out": 574799
         },
         "spanning tree": {
           "chars_in": 0,
@@ -1182,23 +1182,23 @@
       },
       "bandwidth": 100000,
       "counters": {
-        "in_broadcast_pkts": 1451717,
+        "in_broadcast_pkts": 1465991,
         "in_crc_errors": 0,
         "in_errors": 0,
         "in_mac_pause_frames": 0,
-        "in_multicast_pkts": 1451717,
-        "in_octets": 3913735770,
-        "in_pkts": 23788942,
+        "in_multicast_pkts": 1465991,
+        "in_octets": 3933457595,
+        "in_pkts": 23935826,
         "last_clear": "never",
         "out_errors": 0,
-        "out_octets": 55256674504,
-        "out_pkts": 85759596,
+        "out_octets": 55417344582,
+        "out_pkts": 86273645,
         "rate": {
-          "in_rate": 0,
-          "in_rate_pkts": 0,
+          "in_rate": 2000,
+          "in_rate_pkts": 1,
           "load_interval": 300,
-          "out_rate": 12000,
-          "out_rate_pkts": 9
+          "out_rate": 9000,
+          "out_rate_pkts": 10
         }
       },
       "delay": 100,
@@ -1446,42 +1446,42 @@
       "accounting": {
         "cdp": {
           "chars_in": 0,
-          "chars_out": 33798266,
+          "chars_out": 34113476,
           "pkts_in": 0,
-          "pkts_out": 71306
+          "pkts_out": 71971
         },
         "other": {
           "chars_in": 0,
-          "chars_out": 34171800,
+          "chars_out": 34490580,
           "pkts_in": 0,
-          "pkts_out": 569530
+          "pkts_out": 574843
         },
         "spanning tree": {
           "chars_in": 0,
-          "chars_out": 1354268836,
+          "chars_out": 1366903356,
           "pkts_in": 0,
-          "pkts_out": 21293535
+          "pkts_out": 21492191
         }
       },
       "bandwidth": 100000,
       "counters": {
-        "in_broadcast_pkts": 4992,
+        "in_broadcast_pkts": 5037,
         "in_crc_errors": 0,
         "in_errors": 0,
         "in_mac_pause_frames": 0,
-        "in_multicast_pkts": 4992,
-        "in_octets": 4274767438,
-        "in_pkts": 27039235,
+        "in_multicast_pkts": 5037,
+        "in_octets": 4292399903,
+        "in_pkts": 27154269,
         "last_clear": "never",
         "out_errors": 0,
-        "out_octets": 27869189078,
-        "out_pkts": 66908526,
+        "out_octets": 27950139442,
+        "out_pkts": 67356570,
         "rate": {
           "in_rate": 0,
           "in_rate_pkts": 0,
           "load_interval": 300,
-          "out_rate": 5000,
-          "out_rate_pkts": 7
+          "out_rate": 7000,
+          "out_rate_pkts": 8
         }
       },
       "delay": 100,
@@ -1960,43 +1960,43 @@
     "FastEthernet0/45": {
       "accounting": {
         "cdp": {
-          "chars_in": 31034630,
-          "chars_out": 33769656,
-          "pkts_in": 79170,
-          "pkts_out": 71244
+          "chars_in": 31323926,
+          "chars_out": 34084866,
+          "pkts_in": 79908,
+          "pkts_out": 71909
         },
         "other": {
           "chars_in": 0,
-          "chars_out": 34169640,
+          "chars_out": 34488420,
           "pkts_in": 0,
-          "pkts_out": 569494
+          "pkts_out": 574807
         },
         "spanning tree": {
           "chars_in": 0,
-          "chars_out": 945461476,
+          "chars_out": 954281980,
           "pkts_in": 0,
-          "pkts_out": 14905924
+          "pkts_out": 15044986
         }
       },
       "bandwidth": 100000,
       "counters": {
-        "in_broadcast_pkts": 3181049,
+        "in_broadcast_pkts": 3210677,
         "in_crc_errors": 0,
         "in_errors": 0,
         "in_mac_pause_frames": 0,
-        "in_multicast_pkts": 3181049,
-        "in_octets": 3480776881,
-        "in_pkts": 21963066,
+        "in_multicast_pkts": 3210677,
+        "in_octets": 3502739355,
+        "in_pkts": 22118821,
         "last_clear": "never",
         "out_errors": 0,
-        "out_octets": 5410008358,
-        "out_pkts": 41074955,
+        "out_octets": 5442076166,
+        "out_pkts": 41399708,
         "rate": {
-          "in_rate": 2000,
-          "in_rate_pkts": 3,
+          "in_rate": 3000,
+          "in_rate_pkts": 2,
           "load_interval": 300,
           "out_rate": 12000,
-          "out_rate_pkts": 14
+          "out_rate_pkts": 15
         }
       },
       "delay": 100,
@@ -2024,43 +2024,43 @@
     "FastEthernet0/46": {
       "accounting": {
         "cdp": {
-          "chars_in": 30957034,
-          "chars_out": 33769656,
-          "pkts_in": 79174,
-          "pkts_out": 71244
+          "chars_in": 31245592,
+          "chars_out": 34084866,
+          "pkts_in": 79912,
+          "pkts_out": 71909
         },
         "other": {
           "chars_in": 0,
-          "chars_out": 34169640,
+          "chars_out": 34488420,
           "pkts_in": 0,
-          "pkts_out": 569494
+          "pkts_out": 574807
         },
         "spanning tree": {
           "chars_in": 0,
-          "chars_out": 945461860,
+          "chars_out": 954282108,
           "pkts_in": 0,
-          "pkts_out": 14905930
+          "pkts_out": 15044988
         }
       },
       "bandwidth": 100000,
       "counters": {
-        "in_broadcast_pkts": 3439606,
+        "in_broadcast_pkts": 3471732,
         "in_crc_errors": 0,
         "in_errors": 1,
         "in_mac_pause_frames": 0,
-        "in_multicast_pkts": 3439606,
-        "in_octets": 3502148171,
-        "in_pkts": 20524805,
+        "in_multicast_pkts": 3471732,
+        "in_octets": 3514372607,
+        "in_pkts": 20611083,
         "last_clear": "never",
         "out_errors": 0,
-        "out_octets": 4034881550,
-        "out_pkts": 30655248,
+        "out_octets": 4057440956,
+        "out_pkts": 30867553,
         "rate": {
           "in_rate": 1000,
           "in_rate_pkts": 1,
           "load_interval": 300,
           "out_rate": 11000,
-          "out_rate_pkts": 12
+          "out_rate_pkts": 13
         }
       },
       "delay": 100,
@@ -2089,42 +2089,42 @@
       "accounting": {
         "cdp": {
           "chars_in": 0,
-          "chars_out": 33768708,
+          "chars_out": 34083918,
           "pkts_in": 0,
-          "pkts_out": 71242
+          "pkts_out": 71907
         },
         "other": {
           "chars_in": 0,
-          "chars_out": 25622940,
+          "chars_out": 25861980,
           "pkts_in": 0,
-          "pkts_out": 427049
+          "pkts_out": 431033
         },
         "spanning tree": {
           "chars_in": 0,
-          "chars_out": 127766100,
+          "chars_out": 128958000,
           "pkts_in": 0,
-          "pkts_out": 2129435
+          "pkts_out": 2149300
         }
       },
       "bandwidth": 100000,
       "counters": {
-        "in_broadcast_pkts": 3465,
+        "in_broadcast_pkts": 3493,
         "in_crc_errors": 1,
         "in_errors": 1,
         "in_mac_pause_frames": 0,
-        "in_multicast_pkts": 3465,
-        "in_octets": 63112439791,
-        "in_pkts": 417429083,
+        "in_multicast_pkts": 3493,
+        "in_octets": 63354745590,
+        "in_pkts": 419374532,
         "last_clear": "never",
         "out_errors": 0,
-        "out_octets": 1283205495420,
-        "out_pkts": 1000509245,
+        "out_octets": 1289406154817,
+        "out_pkts": 1005598773,
         "rate": {
-          "in_rate": 343000,
-          "in_rate_pkts": 447,
+          "in_rate": 388000,
+          "in_rate_pkts": 376,
           "load_interval": 300,
-          "out_rate": 6727000,
-          "out_rate_pkts": 719
+          "out_rate": 6785000,
+          "out_rate_pkts": 654
         }
       },
       "delay": 100,
@@ -2152,43 +2152,43 @@
     "FastEthernet0/48": {
       "accounting": {
         "cdp": {
-          "chars_in": 27357696,
-          "chars_out": 33768878,
-          "pkts_in": 71244,
-          "pkts_out": 71244
+          "chars_in": 27613056,
+          "chars_out": 34084088,
+          "pkts_in": 71909,
+          "pkts_out": 71909
         },
         "other": {
           "chars_in": 0,
-          "chars_out": 34169640,
+          "chars_out": 34488420,
           "pkts_in": 0,
-          "pkts_out": 569494
+          "pkts_out": 574807
         },
         "spanning tree": {
           "chars_in": 0,
-          "chars_out": 672897680,
+          "chars_out": 679175272,
           "pkts_in": 0,
-          "pkts_out": 10647115
+          "pkts_out": 10746444
         }
       },
       "bandwidth": 100000,
       "counters": {
-        "in_broadcast_pkts": 78357,
+        "in_broadcast_pkts": 79088,
         "in_crc_errors": 0,
         "in_errors": 0,
         "in_mac_pause_frames": 0,
-        "in_multicast_pkts": 78357,
-        "in_octets": 1440363326033,
-        "in_pkts": 1114135645,
+        "in_multicast_pkts": 79088,
+        "in_octets": 1447899465304,
+        "in_pkts": 1120302499,
         "last_clear": "never",
         "out_errors": 0,
-        "out_octets": 75572537013,
-        "out_pkts": 515037619,
+        "out_octets": 75916714529,
+        "out_pkts": 517890027,
         "rate": {
-          "in_rate": 6986000,
-          "in_rate_pkts": 698,
+          "in_rate": 7079000,
+          "in_rate_pkts": 681,
           "load_interval": 300,
-          "out_rate": 379000,
-          "out_rate_pkts": 471
+          "out_rate": 422000,
+          "out_rate_pkts": 402
         }
       },
       "delay": 100,
@@ -2216,22 +2216,22 @@
     "FastEthernet0/5": {
       "accounting": {
         "cdp": {
-          "chars_in": 13038018,
-          "chars_out": 32981432,
-          "pkts_in": 71246,
-          "pkts_out": 71234
+          "chars_in": 13159530,
+          "chars_out": 33289327,
+          "pkts_in": 71910,
+          "pkts_out": 71899
         },
         "lacp": {
-          "chars_in": 17645572,
-          "chars_out": 19101084,
-          "pkts_in": 142303,
-          "pkts_out": 154041
+          "chars_in": 17810244,
+          "chars_out": 19279272,
+          "pkts_in": 143631,
+          "pkts_out": 155478
         },
         "other": {
           "chars_in": 0,
-          "chars_out": 34169100,
+          "chars_out": 34487880,
           "pkts_in": 0,
-          "pkts_out": 569485
+          "pkts_out": 574798
         },
         "spanning tree": {
           "chars_in": 0,
@@ -2242,23 +2242,23 @@
       },
       "bandwidth": 100000,
       "counters": {
-        "in_broadcast_pkts": 797537,
+        "in_broadcast_pkts": 805046,
         "in_crc_errors": 0,
         "in_errors": 0,
         "in_mac_pause_frames": 0,
-        "in_multicast_pkts": 797537,
-        "in_octets": 3279510903,
-        "in_pkts": 22915252,
+        "in_multicast_pkts": 805046,
+        "in_octets": 3296999373,
+        "in_pkts": 23069008,
         "last_clear": "never",
         "out_errors": 0,
-        "out_octets": 3563845806,
-        "out_pkts": 16825170,
+        "out_octets": 3598339290,
+        "out_pkts": 17004125,
         "rate": {
           "in_rate": 1000,
           "in_rate_pkts": 3,
           "load_interval": 300,
-          "out_rate": 3000,
-          "out_rate_pkts": 4
+          "out_rate": 4000,
+          "out_rate_pkts": 6
         }
       },
       "delay": 100,
@@ -2331,27 +2331,27 @@
       "accounting": {
         "cdp": {
           "chars_in": 0,
-          "chars_out": 33693209,
+          "chars_out": 34007754,
           "pkts_in": 0,
-          "pkts_out": 71233
+          "pkts_out": 71898
         },
         "lacp": {
           "chars_in": 0,
-          "chars_out": 19097364,
+          "chars_out": 19275428,
           "pkts_in": 0,
-          "pkts_out": 154011
+          "pkts_out": 155447
         },
         "other": {
           "chars_in": 0,
-          "chars_out": 34168740,
+          "chars_out": 34487520,
           "pkts_in": 0,
-          "pkts_out": 569479
+          "pkts_out": 574792
         },
         "spanning tree": {
           "chars_in": 0,
-          "chars_out": 1626845428,
+          "chars_out": 1642022604,
           "pkts_in": 0,
-          "pkts_out": 25552546
+          "pkts_out": 25790931
         }
       },
       "bandwidth": 100000,
@@ -2365,13 +2365,13 @@
         "in_pkts": 0,
         "last_clear": "never",
         "out_errors": 0,
-        "out_octets": 3778121752,
-        "out_pkts": 39369216,
+        "out_octets": 3816516988,
+        "out_pkts": 39745126,
         "rate": {
           "in_rate": 0,
           "in_rate_pkts": 0,
           "load_interval": 300,
-          "out_rate": 5000,
+          "out_rate": 6000,
           "out_rate_pkts": 8
         }
       },
@@ -2444,21 +2444,21 @@
       "accounting": {
         "cdp": {
           "chars_in": 0,
-          "chars_out": 33703142,
+          "chars_out": 34017687,
           "pkts_in": 0,
-          "pkts_out": 71254
+          "pkts_out": 71919
         },
         "other": {
           "chars_in": 0,
-          "chars_out": 25623000,
+          "chars_out": 25862040,
           "pkts_in": 0,
-          "pkts_out": 427050
+          "pkts_out": 431034
         },
         "spanning tree": {
           "chars_in": 0,
-          "chars_out": 127765260,
+          "chars_out": 128957220,
           "pkts_in": 0,
-          "pkts_out": 2129421
+          "pkts_out": 2149287
         }
       },
       "bandwidth": 100000,
@@ -2468,18 +2468,18 @@
         "in_errors": 0,
         "in_mac_pause_frames": 0,
         "in_multicast_pkts": 16,
-        "in_octets": 8902458,
-        "in_pkts": 139053,
+        "in_octets": 8985466,
+        "in_pkts": 140350,
         "last_clear": "never",
         "out_errors": 0,
-        "out_octets": 523629037,
-        "out_pkts": 4773421,
+        "out_octets": 528676391,
+        "out_pkts": 4814971,
         "rate": {
           "in_rate": 0,
           "in_rate_pkts": 0,
           "load_interval": 300,
-          "out_rate": 0,
-          "out_rate_pkts": 0
+          "out_rate": 1000,
+          "out_rate_pkts": 1
         }
       },
       "delay": 100,
@@ -2684,31 +2684,31 @@
       "accounting": {
         "spanning tree": {
           "chars_in": 0,
-          "chars_out": 1626844792,
+          "chars_out": 1642022160,
           "pkts_in": 0,
-          "pkts_out": 25552536
+          "pkts_out": 25790924
         }
       },
       "auto_negotiate": true,
       "bandwidth": 200000,
       "counters": {
-        "in_broadcast_pkts": 2249239,
+        "in_broadcast_pkts": 2271022,
         "in_crc_errors": 0,
         "in_errors": 0,
         "in_mac_pause_frames": 0,
-        "in_multicast_pkts": 2249239,
-        "in_octets": 7193243809,
-        "in_pkts": 46704159,
+        "in_multicast_pkts": 2271022,
+        "in_octets": 7230454104,
+        "in_pkts": 47004799,
         "last_clear": "never",
         "out_errors": 0,
-        "out_octets": 58820435095,
-        "out_pkts": 102583772,
+        "out_octets": 59015598657,
+        "out_pkts": 103276776,
         "rate": {
-          "in_rate": 5000,
-          "in_rate_pkts": 6,
+          "in_rate": 6000,
+          "in_rate_pkts": 7,
           "load_interval": 300,
-          "out_rate": 21000,
-          "out_rate_pkts": 14
+          "out_rate": 15000,
+          "out_rate_pkts": 15
         }
       },
       "delay": 100,
@@ -2740,28 +2740,28 @@
       "accounting": {
         "spanning tree": {
           "chars_in": 0,
-          "chars_out": 1626839192,
+          "chars_out": 1642016560,
           "pkts_in": 0,
-          "pkts_out": 25552448
+          "pkts_out": 25790836
         }
       },
       "auto_negotiate": true,
       "bandwidth": 200000,
       "counters": {
-        "in_broadcast_pkts": 559487,
+        "in_broadcast_pkts": 564752,
         "in_crc_errors": 0,
         "in_errors": 0,
         "in_mac_pause_frames": 0,
-        "in_multicast_pkts": 559487,
-        "in_octets": 2651004102,
-        "in_pkts": 6672467,
+        "in_multicast_pkts": 564752,
+        "in_octets": 2672767355,
+        "in_pkts": 6719718,
         "last_clear": "never",
         "out_errors": 0,
-        "out_octets": 6622584249,
-        "out_pkts": 41914405,
+        "out_octets": 6664674473,
+        "out_pkts": 42296877,
         "rate": {
-          "in_rate": 0,
-          "in_rate_pkts": 0,
+          "in_rate": 2000,
+          "in_rate_pkts": 2,
           "load_interval": 300,
           "out_rate": 5000,
           "out_rate_pkts": 8
@@ -2795,16 +2795,16 @@
     "Vlan1": {
       "accounting": {
         "arp": {
-          "chars_in": 33136740,
-          "chars_out": 36360,
-          "pkts_in": 552279,
-          "pkts_out": 606
+          "chars_in": 33389340,
+          "chars_out": 36720,
+          "pkts_in": 556489,
+          "pkts_out": 612
         },
         "ip": {
-          "chars_in": 115964644,
-          "chars_out": 3532410,
-          "pkts_in": 501248,
-          "pkts_out": 32607
+          "chars_in": 117426074,
+          "chars_out": 3939614,
+          "pkts_in": 510491,
+          "pkts_out": 35831
         },
         "other": {
           "chars_in": 21780,
@@ -2815,22 +2815,22 @@
       },
       "bandwidth": 1000000,
       "counters": {
-        "in_broadcast_pkts": 11823,
+        "in_broadcast_pkts": 11944,
         "in_crc_errors": 0,
         "in_errors": 0,
         "in_multicast_pkts": 0,
-        "in_octets": 145985672,
-        "in_pkts": 1001603,
+        "in_octets": 147621049,
+        "in_pkts": 1013745,
         "last_clear": "never",
         "out_errors": 0,
-        "out_octets": 3616825,
-        "out_pkts": 33051,
+        "out_octets": 4037281,
+        "out_pkts": 36281,
         "rate": {
           "in_rate": 6000,
-          "in_rate_pkts": 7,
+          "in_rate_pkts": 8,
           "load_interval": 300,
           "out_rate": 6000,
-          "out_rate_pkts": 7
+          "out_rate_pkts": 8
         }
       },
       "delay": 10,

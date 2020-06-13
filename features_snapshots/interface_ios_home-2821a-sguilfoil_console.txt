@@ -12,19 +12,19 @@ GigabitEthernet0/0 is up, line protocol is up
   Full Duplex, 100Mbps, media type is T
   output flow-control is XON, input flow-control is XON
   ARP type: ARPA, ARP Timeout 04:00:00
-  Last input 00:00:00, output 00:00:02, output hang never
+  Last input 00:00:00, output 00:00:03, output hang never
   Last clearing of "show interface" counters never
-  Input queue: 0/75/0/0 (size/max/drops/flushes); Total output drops: 0
+  Input queue: 4/75/0/0 (size/max/drops/flushes); Total output drops: 0
   Queueing strategy: fifo
   Output queue: 0/40 (size/max)
-  5 minute input rate 8000 bits/sec, 9 packets/sec
-  5 minute output rate 4000 bits/sec, 3 packets/sec
-     20486307 packets input, 3133122041 bytes, 0 no buffer
-     Received 167170 broadcasts (0 IP multicasts)
+  5 minute input rate 9000 bits/sec, 13 packets/sec
+  5 minute output rate 4000 bits/sec, 4 packets/sec
+     20620435 packets input, 3145141468 bytes, 0 no buffer
+     Received 169280 broadcasts (0 IP multicasts)
      0 runts, 0 giants, 0 throttles
      0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored
      0 watchdog, 0 multicast, 0 pause input
-     21633143 packets output, 3327221689 bytes, 0 underruns
+     21791608 packets output, 3348544953 bytes, 0 underruns
      0 output errors, 0 collisions, 0 interface resets
      94 unknown protocol drops
      0 babbles, 0 late collision, 0 deferred
@@ -381,7 +381,7 @@ Serial0/0/0:23 is up, line protocol is up (spoofing)
      Received 0 broadcasts (0 IP multicasts)
      0 runts, 0 giants, 0 throttles
      0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
-     1707490 packets output, 5122470 bytes, 0 underruns
+     1725212 packets output, 5175636 bytes, 0 underruns
      0 output errors, 0 collisions, 0 interface resets
      0 unknown protocol drops
      0 output buffer failures, 0 output buffers swapped out
@@ -399,13 +399,13 @@ Serial0/1/0 is up, line protocol is up
   Input queue: 0/75/0/0 (size/max/drops/flushes); Total output drops: 340
   Queueing strategy: fifo
   Output queue: 0/40 (size/max)
-  5 minute input rate 1000 bits/sec, 1 packets/sec
-  5 minute output rate 7000 bits/sec, 7 packets/sec
-     11757110 packets input, 2255385720 bytes, 0 no buffer
-     Received 448159 broadcasts (0 IP multicasts)
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 7000 bits/sec, 9 packets/sec
+     11792211 packets input, 2264974788 bytes, 0 no buffer
+     Received 452811 broadcasts (0 IP multicasts)
      0 runts, 0 giants, 0 throttles
      0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
-     13981839 packets output, 2428802847 bytes, 0 underruns
+     14027346 packets output, 2433988476 bytes, 0 underruns
      0 output errors, 0 collisions, 7 interface resets
      2 unknown protocol drops
      0 output buffer failures, 0 output buffers swapped out
@@ -420,7 +420,7 @@ Serial0/1/1 is up, line protocol is up
   Encapsulation PPP, LCP Open
   Open: IPCP, CDPCP, loopback not set
   Keepalive set (10 sec)
-  Last input 00:00:05, output 00:00:05, output hang never
+  Last input 00:00:00, output 00:00:00, output hang never
   Last clearing of "show interface" counters 6w2d
   Input queue: 0/75/0/0 (size/max/drops/flushes); Total output drops: 58380
   Queueing strategy: weighted fair
@@ -430,11 +430,11 @@ Serial0/1/1 is up, line protocol is up
      Available Bandwidth 6144 kilobits/sec
   5 minute input rate 0 bits/sec, 0 packets/sec
   5 minute output rate 0 bits/sec, 0 packets/sec
-     1071087 packets input, 52477282 bytes, 0 no buffer
+     1082212 packets input, 53022936 bytes, 0 no buffer
      Received 0 broadcasts (0 IP multicasts)
      0 runts, 0 giants, 0 throttles
      0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
-     1129493 packets output, 64340055 bytes, 0 underruns
+     1140606 packets output, 64885249 bytes, 0 underruns
      0 output errors, 0 collisions, 4 interface resets
      0 unknown protocol drops
      0 output buffer failures, 0 output buffers swapped out
@@ -446,11 +446,11 @@ home-2821a-sguilfoil#
 show interfaces accounting
 GigabitEthernet0/0 
                 Protocol    Pkts In   Chars In   Pkts Out  Chars Out
-                   Other         94       5640     384176   23050560
-                      IP   20391590 3097729175   20975282 3262947129
-                 DEC MOP          0          0       6388     491876
-                     ARP      94763    5685780     196137   12552764
-                     CDP          0          0      71160   28179360
+                   Other         94       5640     388163   23289780
+                      IP   20524925 3109293598   21128416 3283699349
+                 DEC MOP          0          0       6454     496958
+                     ARP      95543    5732580     196680   12587516
+                     CDP          0          0      71898   28471608
 Interface GigabitEthernet0/1 is disabled
 
 Serial0/0/0:0 
@@ -485,17 +485,17 @@ Serial0/0/0:9
 No traffic sent or received on this interface.
 Serial0/0/0:23 
                 Protocol    Pkts In   Chars In   Pkts Out  Chars Out
-                   Other          0          0    1707490    5122470
+                   Other          0          0    1725212    5175636
 Serial0/1/0 
                 Protocol    Pkts In   Chars In   Pkts Out  Chars Out
-                   Other          2        710     384177    9220248
-                      IP   11308954 2223435277   13526547 2394047070
-                     CDP      64031   22731005      71151   25543209
+                   Other          2        710     388164    9315936
+                      IP   11339401 2232692342   13567329 2398871750
+                     CDP      64696   22967080      71890   25808510
 Serial0/1/1 
                 Protocol    Pkts In   Chars In   Pkts Out  Chars Out
-                   Other     767170   12274720     767177   12274800
-                      IP     232772   14664636     291179   26527072
-                     CDP      71136   25537824      71137   25538183
+                   Other     775134   12402144     775141   12402224
+                      IP     235194   14817222     293588   26678839
+                     CDP      71876   25803484      71878   25804202
 home-2821a-sguilfoil#
 +++ home-2821a-sguilfoil: executing command 'show ip interface' +++
 show ip interface

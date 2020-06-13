@@ -18,7 +18,7 @@ show ip ospf
  LSA group pacing timer 240 secs
  Interface flood pacing timer 33 msecs
  Retransmission pacing timer 66 msecs
- Number of external LSA 1. Checksum Sum 0x002D26
+ Number of external LSA 1. Checksum Sum 0x000739
  Number of opaque AS LSA 0. Checksum Sum 0x000000
  Number of DCbitless external and opaque AS LSA 0
  Number of DoNotAge external and opaque AS LSA 0
@@ -34,7 +34,7 @@ show ip ospf
 	SPF algorithm last executed 6w2d ago
 	SPF algorithm executed 2 times
 	Area ranges are
-	Number of LSA 3. Checksum Sum 0x012E21
+	Number of LSA 3. Checksum Sum 0x00B85C
 	Number of opaque link LSA 0. Checksum Sum 0x000000
 	Number of DCbitless LSA 0
 	Number of indication LSA 0
@@ -132,13 +132,13 @@ show ip ospf database router
 
 		Router Link States (Area 0)
 
-  LS age: 1371
+  LS age: 849
   Options: (No TOS-capability, DC)
   LS Type: Router Links
   Link State ID: 10.0.1.64
   Advertising Router: 10.0.1.64
-  LS Seq Number: 80000852
-  Checksum: 0x5A72
+  LS Seq Number: 80000866
+  Checksum: 0x3286
   Length: 96
   Number of Links: 6
 
@@ -179,13 +179,13 @@ show ip ospf database router
        TOS 0 Metrics: 1
 
 
-  LS age: 1223
+  LS age: 966
   Options: (No TOS-capability, DC)
   LS Type: Router Links
   Link State ID: 10.0.1.65
   Advertising Router: 10.0.1.65
-  LS Seq Number: 80000852
-  Checksum: 0x71E4
+  LS Seq Number: 80000866
+  Checksum: 0x49F8
   Length: 96
   Number of Links: 6
 
@@ -227,13 +227,13 @@ show ip ospf database router
 
 
   Routing Bit Set on this LSA in topology Base with MTID 0
-  LS age: 34
+  LS age: 1688
   Options: (No TOS-capability, DC)
   LS Type: Router Links
   Link State ID: 10.0.1.254
   Advertising Router: 10.0.1.254
-  LS Seq Number: 80000853
-  Checksum: 0x61CB
+  LS Seq Number: 80000866
+  Checksum: 0x3BDE
   Length: 72
   AS Boundary Router
   Number of Links: 4
@@ -277,13 +277,13 @@ show ip ospf database external
 		Type-5 AS External Link States
 
   Routing Bit Set on this LSA in topology Base with MTID 0
-  LS age: 35
+  LS age: 1689
   Options: (No TOS-capability, DC)
   LS Type: AS External Link
   Link State ID: 0.0.0.0 (External Network Number )
   Advertising Router: 10.0.1.254
-  LS Seq Number: 8000084E
-  Checksum: 0x2D26
+  LS Seq Number: 80000861
+  Checksum: 0x739
   Length: 36
   Network Mask: /0
 	Metric Type: 2 (Larger than any link state path)
@@ -316,7 +316,7 @@ Serial0/1/0 is up, line protocol is up
   Transmit Delay is 1 sec, State POINT_TO_POINT
   Timer intervals configured, Hello 10, Dead 40, Wait 40, Retransmit 5
     oob-resync timeout 40
-    Hello due in 00:00:01
+    Hello due in 00:00:08
   Supports Link-local Signaling (LLS)
   Cisco NSF helper support enabled
   IETF NSF helper support enabled
@@ -337,7 +337,7 @@ GigabitEthernet0/0.2200 is up, line protocol is up
   No backup designated router on this network
   Timer intervals configured, Hello 10, Dead 40, Wait 40, Retransmit 5
     oob-resync timeout 40
-    Hello due in 00:00:01
+    Hello due in 00:00:00
   Supports Link-local Signaling (LLS)
   Cisco NSF helper support enabled
   IETF NSF helper support enabled
@@ -357,7 +357,7 @@ GigabitEthernet0/0.2102 is up, line protocol is up
   No backup designated router on this network
   Timer intervals configured, Hello 10, Dead 40, Wait 40, Retransmit 5
     oob-resync timeout 40
-    Hello due in 00:00:00
+    Hello due in 00:00:04
   Supports Link-local Signaling (LLS)
   Cisco NSF helper support enabled
   IETF NSF helper support enabled
@@ -377,7 +377,7 @@ GigabitEthernet0/0.2101 is up, line protocol is up
   No backup designated router on this network
   Timer intervals configured, Hello 10, Dead 40, Wait 40, Retransmit 5
     oob-resync timeout 40
-    Hello due in 00:00:06
+    Hello due in 00:00:02
   Supports Link-local Signaling (LLS)
   Cisco NSF helper support enabled
   IETF NSF helper support enabled
@@ -467,7 +467,7 @@ show ip ospf neighbor detail
     Options is 0x12 in Hello (E-bit, L-bit)
     Options is 0x52 in DBD (E-bit, L-bit, O-bit)
     LLS Options is 0x1 (LR)
-    Dead timer due in 00:00:36
+    Dead timer due in 00:00:37
     Neighbor is up for 6w2d    
     Index 1/1, retransmission queue length 0, number of retransmission 3
     First 0x0(0)/0x0(0) Next 0x0(0)/0x0(0)
@@ -484,7 +484,7 @@ Serial0/1/0 is up, line protocol is up
   Transmit Delay is 1 sec, State POINT_TO_POINT
   Timer intervals configured, Hello 10, Dead 40, Wait 40, Retransmit 5
     oob-resync timeout 40
-    Hello due in 00:00:06
+    Hello due in 00:00:04
   Supports Link-local Signaling (LLS)
   Cisco NSF helper support enabled
   IETF NSF helper support enabled

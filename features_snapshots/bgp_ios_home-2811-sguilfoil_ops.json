@@ -71,13 +71,13 @@
                 "bgp_neighbor_counters": {
                   "messages": {
                     "received": {
-                      "keepalives": 427349,
+                      "keepalives": 431335,
                       "notifications": 0,
                       "opens": 4,
                       "updates": 9
                     },
                     "sent": {
-                      "keepalives": 417269,
+                      "keepalives": 421162,
                       "notifications": 3,
                       "opens": 4,
                       "updates": 18
@@ -86,7 +86,7 @@
                 },
                 "bgp_session_transport": {
                   "connection": {
-                    "last_reset": "15:15:33",
+                    "last_reset": "1d02h",
                     "reset_reason": "BGP Notification sent, hold time expired",
                     "state": "Established"
                   },
@@ -129,13 +129,13 @@
                 "bgp_neighbor_counters": {
                   "messages": {
                     "received": {
-                      "keepalives": 427350,
+                      "keepalives": 431336,
                       "notifications": 0,
                       "opens": 4,
                       "updates": 9
                     },
                     "sent": {
-                      "keepalives": 417267,
+                      "keepalives": 421160,
                       "notifications": 2,
                       "opens": 4,
                       "updates": 18
@@ -144,7 +144,7 @@
                 },
                 "bgp_session_transport": {
                   "connection": {
-                    "last_reset": "15:15:32",
+                    "last_reset": "1d02h",
                     "reset_reason": "BGP Notification sent, hold time expired",
                     "state": "Established"
                   },
@@ -235,8 +235,8 @@
                       }
                     },
                     "input_queue": 0,
-                    "msg_rcvd": 427361,
-                    "msg_sent": 417293,
+                    "msg_rcvd": 431347,
+                    "msg_sent": 421187,
                     "output_queue": 0,
                     "received_routes": {
                       "10.0.3.0/24": {
@@ -268,7 +268,7 @@
                     },
                     "state_pfxrcd": "1",
                     "tbl_ver": 25,
-                    "up_down": "15:14:50"
+                    "up_down": "1d02h"
                   }
                 },
                 "remote_as": 64512
@@ -335,8 +335,8 @@
                       }
                     },
                     "input_queue": 0,
-                    "msg_rcvd": 427362,
-                    "msg_sent": 417290,
+                    "msg_rcvd": 431349,
+                    "msg_sent": 421184,
                     "output_queue": 0,
                     "received_routes": {
                       "10.0.3.0/24": {
@@ -368,7 +368,7 @@
                     },
                     "state_pfxrcd": "1",
                     "tbl_ver": 25,
-                    "up_down": "15:14:32"
+                    "up_down": "1d02h"
                   }
                 },
                 "remote_as": 64512

@@ -15,7 +15,7 @@
         "clock_precision": "2**24",
         "clock_state": "unsynchronized",
         "reference_time": "00000000.00000000 (19:00:00.000 EST Thu Dec 31 1899)",
-        "root_dispersion": 57630.49
+        "root_dispersion": 58228.93
       }
     },
     "vrf": {

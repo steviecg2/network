@@ -37,34 +37,34 @@
     "GigabitEthernet0/0": {
       "accounting": {
         "arp": {
-          "chars_in": 33867060,
-          "chars_out": 28578688,
-          "pkts_in": 564451,
-          "pkts_out": 446606
+          "chars_in": 34149180,
+          "chars_out": 28853204,
+          "pkts_in": 569153,
+          "pkts_out": 450896
         },
         "cdp": {
-          "chars_in": 30340266,
-          "chars_out": 27827861,
-          "pkts_in": 64009,
-          "pkts_out": 71171
+          "chars_in": 30655476,
+          "chars_out": 28116419,
+          "pkts_in": 64674,
+          "pkts_out": 71909
         },
         "dec mop": {
           "chars_in": 0,
-          "chars_out": 492877,
+          "chars_out": 497959,
           "pkts_in": 0,
-          "pkts_out": 6401
+          "pkts_out": 6467
         },
         "ip": {
-          "chars_in": 2275720497,
-          "chars_out": 3281788901,
-          "pkts_in": 11871790,
-          "pkts_out": 19065246
+          "chars_in": 2280843174,
+          "chars_out": 3292860907,
+          "pkts_in": 11905681,
+          "pkts_out": 19142445
         },
         "other": {
-          "chars_in": 6157956,
-          "chars_out": 23050440,
-          "pkts_in": 128236,
-          "pkts_out": 384174
+          "chars_in": 6221748,
+          "chars_out": 23289720,
+          "pkts_in": 129565,
+          "pkts_out": 388162
         }
       },
       "bandwidth": 100000,
@@ -74,19 +74,19 @@
         "in_errors": 0,
         "in_mac_pause_frames": 0,
         "in_multicast_pkts": 0,
-        "in_octets": 2346820981,
-        "in_pkts": 12628222,
+        "in_octets": 2352627652,
+        "in_pkts": 12668810,
         "last_clear": "never",
         "out_errors": 0,
         "out_mac_pause_frames": 0,
-        "out_octets": 3361738767,
-        "out_pkts": 19973598,
+        "out_octets": 3373618085,
+        "out_pkts": 20059877,
         "rate": {
-          "in_rate": 8000,
-          "in_rate_pkts": 10,
+          "in_rate": 6000,
+          "in_rate_pkts": 8,
           "load_interval": 300,
-          "out_rate": 0,
-          "out_rate_pkts": 0
+          "out_rate": 1000,
+          "out_rate_pkts": 1
         }
       },
       "delay": 100,
@@ -273,8 +273,8 @@
         "last_clear": "never",
         "out_errors": 0,
         "out_mac_pause_frames": 0,
-        "out_octets": 5122404,
-        "out_pkts": 1707468,
+        "out_octets": 5175573,
+        "out_pkts": 1725191,
         "rate": {
           "in_rate": 0,
           "in_rate_pkts": 0,
@@ -308,9 +308,9 @@
       "accounting": {
         "other": {
           "chars_in": 0,
-          "chars_out": 5122404,
+          "chars_out": 5175576,
           "pkts_in": 0,
-          "pkts_out": 1707468
+          "pkts_out": 1725192
         }
       },
       "switchport_enable": false
@@ -318,22 +318,22 @@
     "Serial0/1/0": {
       "accounting": {
         "cdp": {
-          "chars_in": 22731005,
-          "chars_out": 25550389,
-          "pkts_in": 64031,
-          "pkts_out": 71171
+          "chars_in": 22967080,
+          "chars_out": 25816049,
+          "pkts_in": 64696,
+          "pkts_out": 71911
         },
         "ip": {
-          "chars_in": 1986584101,
-          "chars_out": 1331201457,
-          "pkts_in": 10839966,
-          "pkts_out": 7051061
+          "chars_in": 1990956595,
+          "chars_out": 1333018705,
+          "pkts_in": 10864831,
+          "pkts_out": 7067127
         },
         "other": {
           "chars_in": 1065,
-          "chars_out": 9220200,
+          "chars_out": 9315912,
           "pkts_in": 3,
-          "pkts_out": 384175
+          "pkts_out": 388163
         }
       },
       "bandwidth": 1544,
@@ -341,19 +341,19 @@
         "in_broadcast_pkts": 0,
         "in_crc_errors": 0,
         "in_errors": 0,
-        "in_multicast_pkts": 448160,
-        "in_octets": 2018535195,
-        "in_pkts": 11288126,
+        "in_multicast_pkts": 452812,
+        "in_octets": 2023239452,
+        "in_pkts": 11317643,
         "last_clear": "never",
         "out_errors": 0,
-        "out_octets": 1365964414,
-        "out_pkts": 7506371,
+        "out_octets": 1368142994,
+        "out_pkts": 7527164,
         "rate": {
-          "in_rate": 0,
-          "in_rate_pkts": 0,
+          "in_rate": 1000,
+          "in_rate_pkts": 1,
           "load_interval": 300,
-          "out_rate": 9000,
-          "out_rate_pkts": 9
+          "out_rate": 6000,
+          "out_rate_pkts": 7
         }
       },
       "delay": 20000,
@@ -379,22 +379,22 @@
     "Serial0/1/1": {
       "accounting": {
         "cdp": {
-          "chars_in": 25538183,
-          "chars_out": 25537824,
-          "pkts_in": 71137,
-          "pkts_out": 71136
+          "chars_in": 25804202,
+          "chars_out": 25803484,
+          "pkts_in": 71878,
+          "pkts_out": 71876
         },
         "ip": {
-          "chars_in": 26527072,
-          "chars_out": 19393996,
-          "pkts_in": 291179,
-          "pkts_out": 528357
+          "chars_in": 26678839,
+          "chars_out": 19610278,
+          "pkts_in": 293588,
+          "pkts_out": 534760
         },
         "other": {
-          "chars_in": 12274720,
-          "chars_out": 7545462,
-          "pkts_in": 767170,
-          "pkts_out": 471594
+          "chars_in": 12402112,
+          "chars_out": 7609158,
+          "pkts_in": 775132,
+          "pkts_out": 475575
         }
       },
       "bandwidth": 8192,
@@ -403,12 +403,12 @@
         "in_crc_errors": 0,
         "in_errors": 0,
         "in_multicast_pkts": 0,
-        "in_octets": 64340055,
-        "in_pkts": 1129493,
+        "in_octets": 64885233,
+        "in_pkts": 1140605,
         "last_clear": "6w2d",
         "out_errors": 0,
-        "out_octets": 52477282,
-        "out_pkts": 1071087,
+        "out_octets": 53022920,
+        "out_pkts": 1082211,
         "rate": {
           "in_rate": 0,
           "in_rate_pkts": 0,

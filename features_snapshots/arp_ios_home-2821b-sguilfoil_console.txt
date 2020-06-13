@@ -1,22 +1,21 @@
 +++ home-2821b-sguilfoil: executing command 'show ip arp' +++
 show ip arp
 Protocol  Address          Age (min)  Hardware Addr   Type   Interface
-Internet  10.0.1.1              172   1c69.7a06.9513  ARPA   GigabitEthernet0/0.1
-Internet  10.0.1.20             132   0050.5695.48bd  ARPA   GigabitEthernet0/0.1
+Internet  10.0.1.1               76   1c69.7a06.9513  ARPA   GigabitEthernet0/0.1
+Internet  10.0.1.20              22   0050.5695.48bd  ARPA   GigabitEthernet0/0.1
 Internet  10.0.1.65               -   001e.f701.db00  ARPA   GigabitEthernet0/0.1
-Internet  10.0.1.253            204   0024.13ad.98c0  ARPA   GigabitEthernet0/0.1
-Internet  10.0.1.254             38   0017.e049.c8d8  ARPA   GigabitEthernet0/0.1
+Internet  10.0.1.253            151   0024.13ad.98c0  ARPA   GigabitEthernet0/0.1
+Internet  10.0.1.254             26   0017.e049.c8d8  ARPA   GigabitEthernet0/0.1
 Internet  10.0.65.1               -   001e.f701.db00  ARPA   GigabitEthernet0/0.65
-Internet  10.0.65.254            36   0017.e049.c8d8  ARPA   GigabitEthernet0/0.65
-Internet  142.100.65.11           0   Incomplete      ARPA   
+Internet  10.0.65.254           193   0017.e049.c8d8  ARPA   GigabitEthernet0/0.65
 Internet  142.100.65.254          -   001e.f701.db00  ARPA   GigabitEthernet0/0.2100
 Internet  142.101.65.254          -   001e.f701.db00  ARPA   GigabitEthernet0/0.2101
-Internet  142.102.65.11          34   0021.5503.3dac  ARPA   GigabitEthernet0/0.2102
-Internet  142.102.65.14         145   1c69.7a0d.7048  ARPA   GigabitEthernet0/0.2102
-Internet  142.102.65.69          19   0242.8e66.4145  ARPA   GigabitEthernet0/0.2102
+Internet  142.102.65.11          29   0021.5503.3dac  ARPA   GigabitEthernet0/0.2102
+Internet  142.102.65.14          89   1c69.7a0d.7048  ARPA   GigabitEthernet0/0.2102
+Internet  142.102.65.69          24   0242.8e66.4145  ARPA   GigabitEthernet0/0.2102
 Internet  142.102.65.254          -   001e.f701.db00  ARPA   GigabitEthernet0/0.2102
-Internet  142.200.65.15           1   0050.5695.ff95  ARPA   GigabitEthernet0/0.2200
-Internet  142.200.65.50          12   0050.5695.2867  ARPA   GigabitEthernet0/0.2200
+Internet  142.200.65.15           5   0050.5695.ff95  ARPA   GigabitEthernet0/0.2200
+Internet  142.200.65.50           2   0050.5695.2867  ARPA   GigabitEthernet0/0.2200
 Internet  142.200.65.254          -   001e.f701.db00  ARPA   GigabitEthernet0/0.2200
 home-2821b-sguilfoil#
 +++ home-2821b-sguilfoil: executing command 'show vrf' +++
@@ -357,7 +356,7 @@ home-2821b-sguilfoil#
 +++ home-2821b-sguilfoil: executing command 'show ip traffic' +++
 show ip traffic
 IP statistics:
-  Rcvd:  634463 total, 634456 local destination
+  Rcvd:  645245 total, 645238 local destination
          0 format errors, 0 checksum errors, 3 bad hop count
          0 unknown protocol, 4 not a gateway
          0 security failures, 0 bad options, 0 with options
@@ -367,10 +366,10 @@ IP statistics:
          0 other
   Frags: 0 reassembled, 0 timeouts, 0 couldn't reassemble
          0 fragmented, 0 fragments, 0 couldn't fragment
-  Bcast: 218159 received, 57666 sent
-  Mcast: 411869 received, 3890294 sent
-  Sent:  4213395 generated, 22134914 forwarded
-  Drop:  1536756 encapsulation failed, 0 unresolved, 0 no adjacency
+  Bcast: 221323 received, 58994 sent
+  Mcast: 416145 received, 3930705 sent
+  Sent:  4261092 generated, 22182874 forwarded
+  Drop:  1552695 encapsulation failed, 0 unresolved, 0 no adjacency
          0 no route, 0 unicast RPF, 0 forced drop
          0 options denied
   Drop:  0 packets with source IP address zero
@@ -390,12 +389,12 @@ ICMP statistics:
         0 irdp solicitations, 0 irdp advertisements
 
 UDP statistics:
-  Rcvd: 207812 total, 0 checksum errors, 15952 no port
-  Sent: 2170874 total, 0 forwarded broadcasts
+  Rcvd: 210961 total, 0 checksum errors, 16008 no port
+  Sent: 2194169 total, 0 forwarded broadcasts
 
 TCP statistics:
-  Rcvd: 14747 total, 0 checksum errors, 1 no port
-  Sent: 14394 total
+  Rcvd: 18104 total, 0 checksum errors, 1 no port
+  Sent: 17753 total
 
 BGP statistics:
   Rcvd: 0 total, 0 opens, 0 notifications, 0 updates
@@ -424,17 +423,17 @@ IGMP statistics: Sent/Received
 OSPF statistics:
   Last clearing of OSPF traffic counters never
 
-  Rcvd: 411869 total, 0 checksum errors
-  	404218 hello, 2 database desc, 0 link state req
-  	5736 link state updates, 1913 link state acks
+  Rcvd: 416145 total, 0 checksum errors
+  	408414 hello, 2 database desc, 0 link state req
+  	5796 link state updates, 1933 link state acks
 
-  Sent: 2028118 total
-  	2021576 hello, 3 database desc, 1 link state req
-  	1915 link state updates, 4623 link state acks
+  Sent: 2049161 total
+  	2042559 hello, 3 database desc, 1 link state req
+  	1935 link state updates, 4663 link state acks
 
 ARP statistics:
-  Rcvd: 312246 requests, 250788 replies, 219 reverse, 0 other
-  Sent: 423555 requests, 23049 replies (84 proxy), 0 reverse
+  Rcvd: 314345 requests, 253392 replies, 219 reverse, 0 other
+  Sent: 427550 requests, 23341 replies (84 proxy), 0 reverse
   Drop due to input queue full: 0
 home-2821b-sguilfoil#
 +====================================================================================================================================================+

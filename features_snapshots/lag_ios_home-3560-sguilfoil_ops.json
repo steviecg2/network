@@ -11,12 +11,12 @@
         "members": {
           "FastEthernet0/3": {
             "activity": "active",
-            "age": 19,
+            "age": 15,
             "bundle_id": 1,
             "bundled": true,
             "counters": {
-              "lacp_in_pkts": 142302,
-              "lacp_out_pkts": 154057
+              "lacp_in_pkts": 143630,
+              "lacp_out_pkts": 155494
             },
             "interface": "FastEthernet0/3",
             "lacp_port_priority": 255,
@@ -26,12 +26,12 @@
           },
           "FastEthernet0/5": {
             "activity": "active",
-            "age": 19,
+            "age": 15,
             "bundle_id": 1,
             "bundled": true,
             "counters": {
-              "lacp_in_pkts": 142303,
-              "lacp_out_pkts": 154041
+              "lacp_in_pkts": 143631,
+              "lacp_out_pkts": 155478
             },
             "interface": "FastEthernet0/5",
             "lacp_port_priority": 255,
@@ -41,12 +41,12 @@
           },
           "FastEthernet0/7": {
             "activity": "passive",
-            "age": 4274832,
+            "age": 4294967,
             "bundle_id": 1,
             "bundled": false,
             "counters": {
               "lacp_in_pkts": 0,
-              "lacp_out_pkts": 154012
+              "lacp_out_pkts": 155447
             },
             "interface": "FastEthernet0/7",
             "lacp_port_priority": 0,
@@ -64,12 +64,12 @@
         "members": {
           "FastEthernet0/11": {
             "activity": "active",
-            "age": 18,
+            "age": 27,
             "bundle_id": 2,
             "bundled": true,
             "counters": {
-              "lacp_in_pkts": 142288,
-              "lacp_out_pkts": 154012
+              "lacp_in_pkts": 143615,
+              "lacp_out_pkts": 155447
             },
             "interface": "FastEthernet0/11",
             "lacp_port_priority": 255,
@@ -79,12 +79,12 @@
           },
           "FastEthernet0/13": {
             "activity": "active",
-            "age": 17,
+            "age": 26,
             "bundle_id": 2,
             "bundled": true,
             "counters": {
-              "lacp_in_pkts": 142288,
-              "lacp_out_pkts": 154063
+              "lacp_in_pkts": 143615,
+              "lacp_out_pkts": 155503
             },
             "interface": "FastEthernet0/13",
             "lacp_port_priority": 255,
@@ -94,12 +94,12 @@
           },
           "FastEthernet0/15": {
             "activity": "passive",
-            "age": 4274832,
+            "age": 4294967,
             "bundle_id": 2,
             "bundled": false,
             "counters": {
               "lacp_in_pkts": 0,
-              "lacp_out_pkts": 154006
+              "lacp_out_pkts": 155444
             },
             "interface": "FastEthernet0/15",
             "lacp_port_priority": 0,

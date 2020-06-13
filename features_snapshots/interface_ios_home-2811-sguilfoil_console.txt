@@ -7,26 +7,26 @@ show interfaces
 FastEthernet0/0 is up, line protocol is up 
   Hardware is MV96340 Ethernet, address is 0017.e049.c8d8 (bia 0017.e049.c8d8)
   MTU 1500 bytes, BW 100000 Kbit/sec, DLY 100 usec, 
-     reliability 255/255, txload 17/255, rxload 1/255
+     reliability 255/255, txload 18/255, rxload 1/255
   Encapsulation ARPA, loopback not set
   Keepalive set (10 sec)
   Full-duplex, 100Mb/s, 100BaseTX/FX
   ARP type: ARPA, ARP Timeout 04:00:00
   Last input 00:00:00, output 00:00:00, output hang never
   Last clearing of "show interface" counters never
-  Input queue: 1/75/5250/0 (size/max/drops/flushes); Total output drops: 0
+  Input queue: 11/75/5250/0 (size/max/drops/flushes); Total output drops: 0
   Queueing strategy: fifo
   Output queue: 0/40 (size/max)
-  5 minute input rate 361000 bits/sec, 468 packets/sec
-  5 minute output rate 6982000 bits/sec, 757 packets/sec
-     498476943 packets input, 3461656720 bytes
-     Received 836638 broadcasts, 0 runts, 0 giants, 200 throttles
-     3429210 input errors, 0 CRC, 0 frame, 0 overrun, 3429210 ignored
+  5 minute input rate 407000 bits/sec, 405 packets/sec
+  5 minute output rate 7069000 bits/sec, 696 packets/sec
+     501198147 packets input, 3783787016 bytes
+     Received 844012 broadcasts, 0 runts, 0 giants, 200 throttles
+     3439702 input errors, 0 CRC, 0 frame, 0 overrun, 3439702 ignored
      0 watchdog
      0 input packets with dribble condition detected
-     1127914254 packets output, 1312267904 bytes, 0 underruns
+     1134170228 packets output, 233261744 bytes, 0 underruns
      0 output errors, 0 collisions, 1 interface resets
-     142819 unknown protocol drops
+     144147 unknown protocol drops
      0 babbles, 0 late collision, 0 deferred
      0 lost carrier, 0 no carrier
      0 output buffer failures, 0 output buffers swapped out
@@ -34,7 +34,7 @@ FastEthernet0/0.1 is up, line protocol is up
   Hardware is MV96340 Ethernet, address is 0017.e049.c8d8 (bia 0017.e049.c8d8)
   Internet address is 10.0.1.254/24
   MTU 1500 bytes, BW 100000 Kbit/sec, DLY 100 usec, 
-     reliability 255/255, txload 17/255, rxload 1/255
+     reliability 255/255, txload 18/255, rxload 1/255
   Encapsulation 802.1Q Virtual LAN, Vlan ID  1.
   ARP type: ARPA, ARP Timeout 04:00:00
   Last clearing of "show interface" counters never
@@ -42,14 +42,14 @@ FastEthernet0/0.2 is up, line protocol is up
   Hardware is MV96340 Ethernet, address is 0017.e049.c8d8 (bia 0017.e049.c8d8)
   Internet address is 10.0.2.254/30
   MTU 1500 bytes, BW 100000 Kbit/sec, DLY 100 usec, 
-     reliability 255/255, txload 17/255, rxload 1/255
+     reliability 255/255, txload 18/255, rxload 1/255
   Encapsulation 802.1Q Virtual LAN, Vlan ID  2.
   ARP type: ARPA, ARP Timeout 04:00:00
   Last clearing of "show interface" counters never
 FastEthernet0/0.10 is up, line protocol is up 
   Hardware is MV96340 Ethernet, address is 0017.e049.c8d8 (bia 0017.e049.c8d8)
   MTU 1500 bytes, BW 100000 Kbit/sec, DLY 100 usec, 
-     reliability 255/255, txload 17/255, rxload 1/255
+     reliability 255/255, txload 18/255, rxload 1/255
   Encapsulation ARPA
   ARP type: ARPA, ARP Timeout 04:00:00
   Last clearing of "show interface" counters never
@@ -57,7 +57,7 @@ FastEthernet0/0.64 is up, line protocol is up
   Hardware is MV96340 Ethernet, address is 0017.e049.c8d8 (bia 0017.e049.c8d8)
   Internet address is 10.0.64.254/24
   MTU 1500 bytes, BW 100000 Kbit/sec, DLY 100 usec, 
-     reliability 255/255, txload 17/255, rxload 1/255
+     reliability 255/255, txload 18/255, rxload 1/255
   Encapsulation 802.1Q Virtual LAN, Vlan ID  64.
   ARP type: ARPA, ARP Timeout 04:00:00
   Last clearing of "show interface" counters never
@@ -65,7 +65,7 @@ FastEthernet0/0.65 is up, line protocol is up
   Hardware is MV96340 Ethernet, address is 0017.e049.c8d8 (bia 0017.e049.c8d8)
   Internet address is 10.0.65.254/24
   MTU 1500 bytes, BW 100000 Kbit/sec, DLY 100 usec, 
-     reliability 255/255, txload 17/255, rxload 1/255
+     reliability 255/255, txload 18/255, rxload 1/255
   Encapsulation 802.1Q Virtual LAN, Vlan ID  65.
   ARP type: ARPA, ARP Timeout 04:00:00
   Last clearing of "show interface" counters never
@@ -78,19 +78,19 @@ FastEthernet0/1 is up, line protocol is up
   Keepalive set (10 sec)
   Full-duplex, 100Mb/s, 100BaseTX/FX
   ARP type: ARPA, ARP Timeout 04:00:00
-  Last input 00:00:00, output 00:00:00, output hang never
+  Last input 00:00:01, output 00:00:00, output hang never
   Last clearing of "show interface" counters never
-  Input queue: 0/75/42071/0 (size/max/drops/flushes); Total output drops: 0
+  Input queue: 0/75/42079/0 (size/max/drops/flushes); Total output drops: 0
   Queueing strategy: fifo
   Output queue: 0/40 (size/max)
-  5 minute input rate 6940000 bits/sec, 731 packets/sec
-  5 minute output rate 328000 bits/sec, 446 packets/sec
-     1121793221 packets input, 729154815 bytes
-     Received 3 broadcasts, 0 runts, 0 giants, 1131 throttles
-     6009579 input errors, 1 CRC, 0 frame, 0 overrun, 6009578 ignored
+  5 minute input rate 7035000 bits/sec, 673 packets/sec
+  5 minute output rate 384000 bits/sec, 385 packets/sec
+     1128001294 packets input, 3928355689 bytes
+     Received 3 broadcasts, 0 runts, 0 giants, 1132 throttles
+     6033020 input errors, 1 CRC, 0 frame, 0 overrun, 6033019 ignored
      0 watchdog
      0 input packets with dribble condition detected
-     488866650 packets output, 3956249848 bytes, 0 underruns
+     491524219 packets output, 4262973086 bytes, 0 underruns
      0 output errors, 0 collisions, 0 interface resets
      0 unknown protocol drops
      0 babbles, 0 late collision, 0 deferred
@@ -104,7 +104,7 @@ Serial0/1/0 is up, line protocol is up
      reliability 255/255, txload 1/255, rxload 1/255
   Encapsulation HDLC, loopback not set
   Keepalive set (10 sec)
-  Last input 00:00:00, output 00:00:00, output hang never
+  Last input 00:00:04, output 00:00:06, output hang never
   Last clearing of "show interface" counters never
   Input queue: 0/75/0/0 (size/max/drops/flushes); Total output drops: 0
   Queueing strategy: weighted fair
@@ -112,12 +112,12 @@ Serial0/1/0 is up, line protocol is up
      Conversations  0/8/256 (active/max active/max total)
      Reserved Conversations 0/0 (allocated/max allocated)
      Available Bandwidth 6144 kilobits/sec
-  5 minute input rate 8000 bits/sec, 8 packets/sec
+  5 minute input rate 9000 bits/sec, 9 packets/sec
   5 minute output rate 0 bits/sec, 0 packets/sec
-     14394032 packets input, 2641387445 bytes, 0 no buffer
-     Received 506598 broadcasts, 0 runts, 0 giants, 0 throttles
+     14439538 packets input, 2646573030 bytes, 0 no buffer
+     Received 511324 broadcasts, 0 runts, 0 giants, 0 throttles
      0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
-     12000060 packets output, 2288629984 bytes, 0 underruns
+     12035160 packets output, 2298218968 bytes, 0 underruns
      0 output errors, 0 collisions, 12 interface resets
      3 unknown protocol drops
      0 output buffer failures, 0 output buffers swapped out
@@ -132,7 +132,7 @@ Serial0/1/1 is up, line protocol is up
      reliability 255/255, txload 1/255, rxload 1/255
   Encapsulation HDLC, loopback not set
   Keepalive set (10 sec)
-  Last input 00:00:00, output 00:00:00, output hang never
+  Last input 00:00:07, output 00:00:04, output hang never
   Last clearing of "show interface" counters never
   Input queue: 0/75/0/0 (size/max/drops/flushes); Total output drops: 366
   Queueing strategy: weighted fair
@@ -140,12 +140,12 @@ Serial0/1/1 is up, line protocol is up
      Conversations  0/7/256 (active/max active/max total)
      Reserved Conversations 0/0 (allocated/max allocated)
      Available Bandwidth 6144 kilobits/sec
-  5 minute input rate 8000 bits/sec, 8 packets/sec
+  5 minute input rate 9000 bits/sec, 9 packets/sec
   5 minute output rate 1000 bits/sec, 1 packets/sec
-     7695557 packets input, 1389597249 bytes, 0 no buffer
-     Received 506606 broadcasts, 0 runts, 0 giants, 0 throttles
+     7716407 packets input, 1391800317 bytes, 0 no buffer
+     Received 511333 broadcasts, 0 runts, 0 giants, 0 throttles
      0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
-     11451119 packets output, 2037827691 bytes, 0 underruns
+     11480638 packets output, 2042532160 bytes, 0 underruns
      0 output errors, 0 collisions, 12 interface resets
      3 unknown protocol drops
      0 output buffer failures, 0 output buffers swapped out
@@ -397,7 +397,7 @@ Serial0/2/0:23 is up, line protocol is up (spoofing)
   MTU 1500 bytes, BW 64 Kbit/sec, DLY 20000 usec, 
      reliability 255/255, txload 1/255, rxload 1/255
   Encapsulation HDLC, loopback not set
-  Last input 00:00:00, output never, output hang never
+  Last input 00:00:04, output never, output hang never
   Last clearing of "show interface" counters never
   Input queue: 0/75/0/0 (size/max/drops/flushes); Total output drops: 0
   Queueing strategy: weighted fair
@@ -407,7 +407,7 @@ Serial0/2/0:23 is up, line protocol is up (spoofing)
      Available Bandwidth 48 kilobits/sec
   5 minute input rate 0 bits/sec, 0 packets/sec
   5 minute output rate 0 bits/sec, 0 packets/sec
-     1899666 packets input, 5698998 bytes, 0 no buffer
+     1917388 packets input, 5752164 bytes, 0 no buffer
      Received 0 broadcasts, 2 runts, 0 giants, 0 throttles
      23 input errors, 23 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
      0 packets output, 0 bytes, 0 underruns
@@ -661,7 +661,7 @@ Serial0/2/1:23 is up, line protocol is up (spoofing)
   MTU 1500 bytes, BW 64 Kbit/sec, DLY 20000 usec, 
      reliability 255/255, txload 1/255, rxload 1/255
   Encapsulation HDLC, loopback not set
-  Last input 00:00:04, output never, output hang never
+  Last input 00:00:00, output never, output hang never
   Last clearing of "show interface" counters never
   Input queue: 0/75/0/0 (size/max/drops/flushes); Total output drops: 0
   Queueing strategy: weighted fair
@@ -671,9 +671,9 @@ Serial0/2/1:23 is up, line protocol is up (spoofing)
      Available Bandwidth 48 kilobits/sec
   5 minute input rate 0 bits/sec, 0 packets/sec
   5 minute output rate 0 bits/sec, 0 packets/sec
-     1898936 packets input, 5696808 bytes, 0 no buffer
-     Received 0 broadcasts, 56 runts, 0 giants, 0 throttles
-     731 input errors, 731 CRC, 0 frame, 0 overrun, 0 ignored, 23 abort
+     1916654 packets input, 5749962 bytes, 0 no buffer
+     Received 0 broadcasts, 57 runts, 0 giants, 0 throttles
+     736 input errors, 736 CRC, 0 frame, 0 overrun, 0 ignored, 23 abort
      0 packets output, 0 bytes, 0 underruns
      0 output errors, 0 collisions, 0 interface resets
      0 unknown protocol drops
@@ -787,7 +787,7 @@ Tunnel1 is up, line protocol is up
   Hardware is Tunnel
   Internet address is 169.254.162.30/30
   MTU 17859 bytes, BW 100 Kbit/sec, DLY 50000 usec, 
-     reliability 255/255, txload 1/255, rxload 1/255
+     reliability 255/255, txload 2/255, rxload 1/255
   Encapsulation TUNNEL, loopback not set
   Keepalive not set
   Tunnel source 74.106.15.9 (FastEthernet0/1), destination 52.86.83.11
@@ -803,11 +803,11 @@ Tunnel1 is up, line protocol is up
   Queueing strategy: fifo
   Output queue: 0/0 (size/max)
   5 minute input rate 0 bits/sec, 0 packets/sec
-  5 minute output rate 0 bits/sec, 0 packets/sec
-     2153788 packets input, 153335669 bytes, 0 no buffer
+  5 minute output rate 1000 bits/sec, 1 packets/sec
+     2161674 packets input, 153726957 bytes, 0 no buffer
      Received 0 broadcasts, 0 runts, 0 giants, 0 throttles
      0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
-     2136009 packets output, 260896328 bytes, 0 underruns
+     2176342 packets output, 266840624 bytes, 0 underruns
      0 output errors, 0 collisions, 0 interface resets
      0 unknown protocol drops
      0 output buffer failures, 0 output buffers swapped out
@@ -815,7 +815,7 @@ Tunnel2 is up, line protocol is up
   Hardware is Tunnel
   Internet address is 169.254.75.158/30
   MTU 17859 bytes, BW 100 Kbit/sec, DLY 50000 usec, 
-     reliability 255/255, txload 1/255, rxload 1/255
+     reliability 255/255, txload 1/255, rxload 2/255
   Encapsulation TUNNEL, loopback not set
   Keepalive not set
   Tunnel source 74.106.15.9 (FastEthernet0/1), destination 107.22.6.160
@@ -830,12 +830,12 @@ Tunnel2 is up, line protocol is up
   Input queue: 0/75/0/0 (size/max/drops/flushes); Total output drops: 0
   Queueing strategy: fifo
   Output queue: 0/0 (size/max)
-  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute input rate 1000 bits/sec, 1 packets/sec
   5 minute output rate 0 bits/sec, 0 packets/sec
-     1524685 packets input, 99182913 bytes, 0 no buffer
+     1551066 packets input, 101128275 bytes, 0 no buffer
      Received 0 broadcasts, 0 runts, 0 giants, 0 throttles
      0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
-     2993204 packets output, 409611577 bytes, 0 underruns
+     3001018 packets output, 409966763 bytes, 0 underruns
      0 output errors, 0 collisions, 0 interface resets
      0 unknown protocol drops
      0 output buffer failures, 0 output buffers swapped out
@@ -844,28 +844,28 @@ home-2811-sguilfoil#
 show interfaces accounting
 FastEthernet0/0 
                 Protocol    Pkts In   Chars In   Pkts Out  Chars Out
-                   Other     142819    6863827     427374   25642440
-                      IP  498186768 3394290756 1127257360 1250369454
-                 DEC MOP          0          0       7113     547701
-                     ARP     657443   39446580     152124    9132028
-                     CDP      71209   33753066      71244   27357696
+                   Other     144147    6927571     431362   25881720
+                      IP  500906460 3715886701 1133508518  172027278
+                 DEC MOP          0          0       7179     552783
+                     ARP     662446   39746760     153075    9189124
+                     CDP      71873   34067802      71909   27613056
 FastEthernet0/1 
                 Protocol    Pkts In   Chars In   Pkts Out  Chars Out
-                   Other          0          0     427374   25642440
-                      IP 1122025894  744264071  488360943 3902850270
-                 DEC MOP          0          0       7113     547701
-                     ARP        283      16980        315      18900
-                     CDP          0          0      71255   27218419
+                   Other          0          0     431362   25881720
+                      IP 1128237024 3944808107  491014200 4209107338
+                 DEC MOP          0          0       7179     552783
+                     ARP        286      17160        318      19080
+                     CDP          0          0      71919   27472067
 Serial0/1/0 Link to 2821a
                 Protocol    Pkts In   Chars In   Pkts Out  Chars Out
-                   Other          3       1077     427368   10256832
-                      IP   13896938 2603114724   11501451 2253081828
-                     CDP      79164   28419876      71244   25291620
+                   Other          3       1077     431355   10352520
+                      IP   13938292 2607962284   11531899 2262338937
+                     CDP      79903   28685177      71909   25527695
 Serial0/1/1 Link to 2821b
                 Protocol    Pkts In   Chars In   Pkts Out  Chars Out
-                   Other          3       1077     427368   10256832
-                      IP    7189031 1350939467   10952509 2002279451
-                     CDP      79175   28423825      71244   25291620
+                   Other          3       1077     431355   10352520
+                      IP    7205175 1352777323   10977382 2006653461
+                     CDP      79915   28689485      71909   25527695
 Serial0/2/0:0 
                 Protocol    Pkts In   Chars In   Pkts Out  Chars Out
 No traffic sent or received on this interface.
@@ -949,10 +949,10 @@ Loopback0
 No traffic sent or received on this interface.
 Tunnel1 
                 Protocol    Pkts In   Chars In   Pkts Out  Chars Out
-                      IP    2153805  153336349    2136009  264261363
+                      IP    2161692  153727696    2176343  270236968
 Tunnel2 
                 Protocol    Pkts In   Chars In   Pkts Out  Chars Out
-                      IP    1524686   99182953    2993204  412976968
+                      IP    1551067  101128315    3001018  413363514
 home-2811-sguilfoil#
 +++ home-2811-sguilfoil: executing command 'show ip interface' +++
 show ip interface

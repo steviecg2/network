@@ -45,11 +45,11 @@
     "statistics": {
       "entries_total": 3,
       "in_drops": 0,
-      "in_replies_pkts": 278453,
-      "in_requests_pkts": 134384,
+      "in_replies_pkts": 281051,
+      "in_requests_pkts": 134699,
       "incomplete_total": 0,
-      "out_replies_pkts": 184,
-      "out_requests_pkts": 422
+      "out_replies_pkts": 185,
+      "out_requests_pkts": 427
     }
   }
 }

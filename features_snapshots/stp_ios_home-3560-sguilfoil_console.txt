@@ -100,7 +100,7 @@ show spanning-tree detail
    Number of transitions to forwarding state: 1
    The port is in the portfast mode
    Link type is point-to-point by default
-   BPDU: sent 2129415, received 0
+   BPDU: sent 2149303, received 0
 
  Port 9 (FastEthernet0/7) of VLAN0001 is designated forwarding 
    Port path cost 19, Port priority 128, Port Identifier 128.9.
@@ -110,7 +110,7 @@ show spanning-tree detail
    Timers: message age 0, forward delay 0, hold 0
    Number of transitions to forwarding state: 1
    Link type is point-to-point by default
-   BPDU: sent 2129385, received 0
+   BPDU: sent 2149273, received 0
 
  Port 11 (FastEthernet0/9) of VLAN0001 is designated forwarding 
    Port path cost 19, Port priority 128, Port Identifier 128.11.
@@ -121,7 +121,7 @@ show spanning-tree detail
    Number of transitions to forwarding state: 1
    The port is in the portfast mode
    Link type is point-to-point by default
-   BPDU: sent 2129408, received 0
+   BPDU: sent 2149296, received 0
 
  Port 17 (FastEthernet0/15) of VLAN0001 is designated forwarding 
    Port path cost 19, Port priority 128, Port Identifier 128.17.
@@ -131,7 +131,7 @@ show spanning-tree detail
    Timers: message age 0, forward delay 0, hold 0
    Number of transitions to forwarding state: 1
    Link type is point-to-point by default
-   BPDU: sent 2129377, received 0
+   BPDU: sent 2149265, received 0
 
  Port 24 (FastEthernet0/22) of VLAN0001 is designated forwarding 
    Port path cost 19, Port priority 128, Port Identifier 128.24.
@@ -142,7 +142,7 @@ show spanning-tree detail
    Number of transitions to forwarding state: 1
    The port is in the portfast mode by portfast trunk configuration
    Link type is point-to-point by default
-   BPDU: sent 111986, received 0
+   BPDU: sent 131874, received 0
 
  Port 39 (FastEthernet0/35) of VLAN0001 is designated forwarding 
    Port path cost 19, Port priority 128, Port Identifier 128.39.
@@ -153,7 +153,7 @@ show spanning-tree detail
    Number of transitions to forwarding state: 1
    The port is in the portfast mode by portfast trunk configuration
    Link type is point-to-point by default
-   BPDU: sent 111819, received 0
+   BPDU: sent 131707, received 0
 
  Port 49 (FastEthernet0/45) of VLAN0001 is designated forwarding 
    Port path cost 19, Port priority 128, Port Identifier 128.49.
@@ -164,7 +164,7 @@ show spanning-tree detail
    Number of transitions to forwarding state: 1
    The port is in the portfast mode by portfast trunk configuration
    Link type is point-to-point by default
-   BPDU: sent 1913928, received 0
+   BPDU: sent 1933816, received 0
 
  Port 50 (FastEthernet0/46) of VLAN0001 is designated forwarding 
    Port path cost 19, Port priority 128, Port Identifier 128.50.
@@ -175,7 +175,7 @@ show spanning-tree detail
    Number of transitions to forwarding state: 1
    The port is in the portfast mode by portfast trunk configuration
    Link type is point-to-point by default
-   BPDU: sent 1913928, received 0
+   BPDU: sent 1933816, received 0
 
  Port 52 (FastEthernet0/48) of VLAN0001 is designated forwarding 
    Port path cost 19, Port priority 128, Port Identifier 128.52.
@@ -186,7 +186,7 @@ show spanning-tree detail
    Number of transitions to forwarding state: 1
    The port is in the portfast mode by portfast trunk configuration
    Link type is point-to-point by default
-   BPDU: sent 2129446, received 0
+   BPDU: sent 2149334, received 0
 
  Port 56 (Port-channel1) of VLAN0001 is designated forwarding 
    Port path cost 12, Port priority 128, Port Identifier 128.56.
@@ -196,7 +196,7 @@ show spanning-tree detail
    Timers: message age 0, forward delay 0, hold 0
    Number of transitions to forwarding state: 1
    Link type is point-to-point by default
-   BPDU: sent 2129412, received 0
+   BPDU: sent 2149300, received 0
 
  Port 64 (Port-channel2) of VLAN0001 is designated forwarding 
    Port path cost 12, Port priority 128, Port Identifier 128.64.
@@ -206,7 +206,7 @@ show spanning-tree detail
    Timers: message age 0, forward delay 0, hold 0
    Number of transitions to forwarding state: 1
    Link type is point-to-point by default
-   BPDU: sent 2129404, received 0
+   BPDU: sent 2149292, received 0
 
 
  VLAN0002 is executing the ieee compatible Spanning Tree protocol
@@ -217,7 +217,7 @@ show spanning-tree detail
   Number of topology changes 0 last change occurred 7w0d ago
   Times:  hold 1, topology change 35, notification 2
           hello 2, max age 20, forward delay 15 
-  Timers: hello 1, topology change 0, notification 0, aging 300
+  Timers: hello 0, topology change 0, notification 0, aging 300
 
  Port 51 (FastEthernet0/47) of VLAN0002 is designated forwarding 
    Port path cost 19, Port priority 128, Port Identifier 128.51.
@@ -228,7 +228,7 @@ show spanning-tree detail
    Number of transitions to forwarding state: 1
    The port is in the portfast mode by portfast trunk configuration
    Link type is point-to-point by default
-   BPDU: sent 27408, received 0
+   BPDU: sent 47295, received 0
 
  Port 52 (FastEthernet0/48) of VLAN0002 is designated forwarding 
    Port path cost 19, Port priority 128, Port Identifier 128.52.
@@ -239,7 +239,7 @@ show spanning-tree detail
    Number of transitions to forwarding state: 1
    The port is in the portfast mode by portfast trunk configuration
    Link type is point-to-point by default
-   BPDU: sent 2129447, received 0
+   BPDU: sent 2149334, received 0
 
 
  VLAN0064 is executing the ieee compatible Spanning Tree protocol
@@ -261,7 +261,7 @@ show spanning-tree detail
    Timers: message age 0, forward delay 0, hold 0
    Number of transitions to forwarding state: 1
    Link type is point-to-point by default
-   BPDU: sent 2129385, received 0
+   BPDU: sent 2149273, received 0
 
  Port 17 (FastEthernet0/15) of VLAN0064 is designated forwarding 
    Port path cost 19, Port priority 128, Port Identifier 128.17.
@@ -271,7 +271,7 @@ show spanning-tree detail
    Timers: message age 0, forward delay 0, hold 0
    Number of transitions to forwarding state: 1
    Link type is point-to-point by default
-   BPDU: sent 2129377, received 0
+   BPDU: sent 2149265, received 0
 
  Port 49 (FastEthernet0/45) of VLAN0064 is designated forwarding 
    Port path cost 19, Port priority 128, Port Identifier 128.49.
@@ -282,7 +282,7 @@ show spanning-tree detail
    Number of transitions to forwarding state: 1
    The port is in the portfast mode by portfast trunk configuration
    Link type is point-to-point by default
-   BPDU: sent 1913928, received 0
+   BPDU: sent 1933816, received 0
 
  Port 52 (FastEthernet0/48) of VLAN0064 is designated forwarding 
    Port path cost 19, Port priority 128, Port Identifier 128.52.
@@ -293,7 +293,7 @@ show spanning-tree detail
    Number of transitions to forwarding state: 1
    The port is in the portfast mode by portfast trunk configuration
    Link type is point-to-point by default
-   BPDU: sent 2129446, received 0
+   BPDU: sent 2149334, received 0
 
  Port 56 (Port-channel1) of VLAN0064 is designated forwarding 
    Port path cost 12, Port priority 128, Port Identifier 128.56.
@@ -303,7 +303,7 @@ show spanning-tree detail
    Timers: message age 0, forward delay 0, hold 0
    Number of transitions to forwarding state: 1
    Link type is point-to-point by default
-   BPDU: sent 2129412, received 0
+   BPDU: sent 2149300, received 0
 
  Port 64 (Port-channel2) of VLAN0064 is designated forwarding 
    Port path cost 12, Port priority 128, Port Identifier 128.64.
@@ -313,7 +313,7 @@ show spanning-tree detail
    Timers: message age 0, forward delay 0, hold 0
    Number of transitions to forwarding state: 1
    Link type is point-to-point by default
-   BPDU: sent 2129404, received 0
+   BPDU: sent 2149292, received 0
 
 
  VLAN0065 is executing the ieee compatible Spanning Tree protocol
@@ -335,7 +335,7 @@ show spanning-tree detail
    Timers: message age 0, forward delay 0, hold 0
    Number of transitions to forwarding state: 1
    Link type is point-to-point by default
-   BPDU: sent 2129385, received 0
+   BPDU: sent 2149273, received 0
 
  Port 17 (FastEthernet0/15) of VLAN0065 is designated forwarding 
    Port path cost 19, Port priority 128, Port Identifier 128.17.
@@ -345,7 +345,7 @@ show spanning-tree detail
    Timers: message age 0, forward delay 0, hold 0
    Number of transitions to forwarding state: 1
    Link type is point-to-point by default
-   BPDU: sent 2129377, received 0
+   BPDU: sent 2149265, received 0
 
  Port 50 (FastEthernet0/46) of VLAN0065 is designated forwarding 
    Port path cost 19, Port priority 128, Port Identifier 128.50.
@@ -356,7 +356,7 @@ show spanning-tree detail
    Number of transitions to forwarding state: 1
    The port is in the portfast mode by portfast trunk configuration
    Link type is point-to-point by default
-   BPDU: sent 1913928, received 0
+   BPDU: sent 1933816, received 0
 
  Port 52 (FastEthernet0/48) of VLAN0065 is designated forwarding 
    Port path cost 19, Port priority 128, Port Identifier 128.52.
@@ -367,7 +367,7 @@ show spanning-tree detail
    Number of transitions to forwarding state: 1
    The port is in the portfast mode by portfast trunk configuration
    Link type is point-to-point by default
-   BPDU: sent 2129446, received 0
+   BPDU: sent 2149334, received 0
 
  Port 56 (Port-channel1) of VLAN0065 is designated forwarding 
    Port path cost 12, Port priority 128, Port Identifier 128.56.
@@ -377,7 +377,7 @@ show spanning-tree detail
    Timers: message age 0, forward delay 0, hold 0
    Number of transitions to forwarding state: 1
    Link type is point-to-point by default
-   BPDU: sent 2129412, received 0
+   BPDU: sent 2149300, received 0
 
  Port 64 (Port-channel2) of VLAN0065 is designated forwarding 
    Port path cost 12, Port priority 128, Port Identifier 128.64.
@@ -387,7 +387,7 @@ show spanning-tree detail
    Timers: message age 0, forward delay 0, hold 0
    Number of transitions to forwarding state: 1
    Link type is point-to-point by default
-   BPDU: sent 2129404, received 0
+   BPDU: sent 2149292, received 0
 
 
  VLAN1100 is executing the ieee compatible Spanning Tree protocol
@@ -409,7 +409,7 @@ show spanning-tree detail
    Timers: message age 0, forward delay 0, hold 0
    Number of transitions to forwarding state: 1
    Link type is point-to-point by default
-   BPDU: sent 2129385, received 0
+   BPDU: sent 2149273, received 0
 
  Port 17 (FastEthernet0/15) of VLAN1100 is designated forwarding 
    Port path cost 19, Port priority 128, Port Identifier 128.17.
@@ -419,7 +419,7 @@ show spanning-tree detail
    Timers: message age 0, forward delay 0, hold 0
    Number of transitions to forwarding state: 1
    Link type is point-to-point by default
-   BPDU: sent 2129378, received 0
+   BPDU: sent 2149266, received 0
 
  Port 24 (FastEthernet0/22) of VLAN1100 is designated forwarding 
    Port path cost 19, Port priority 128, Port Identifier 128.24.
@@ -430,7 +430,7 @@ show spanning-tree detail
    Number of transitions to forwarding state: 1
    The port is in the portfast mode by portfast trunk configuration
    Link type is point-to-point by default
-   BPDU: sent 111986, received 0
+   BPDU: sent 131874, received 0
 
  Port 39 (FastEthernet0/35) of VLAN1100 is designated forwarding 
    Port path cost 19, Port priority 128, Port Identifier 128.39.
@@ -441,7 +441,7 @@ show spanning-tree detail
    Number of transitions to forwarding state: 1
    The port is in the portfast mode by portfast trunk configuration
    Link type is point-to-point by default
-   BPDU: sent 111819, received 0
+   BPDU: sent 131707, received 0
 
  Port 49 (FastEthernet0/45) of VLAN1100 is designated forwarding 
    Port path cost 19, Port priority 128, Port Identifier 128.49.
@@ -452,7 +452,7 @@ show spanning-tree detail
    Number of transitions to forwarding state: 1
    The port is in the portfast mode by portfast trunk configuration
    Link type is point-to-point by default
-   BPDU: sent 1913928, received 0
+   BPDU: sent 1933816, received 0
 
  Port 56 (Port-channel1) of VLAN1100 is designated forwarding 
    Port path cost 12, Port priority 128, Port Identifier 128.56.
@@ -462,7 +462,7 @@ show spanning-tree detail
    Timers: message age 0, forward delay 0, hold 0
    Number of transitions to forwarding state: 1
    Link type is point-to-point by default
-   BPDU: sent 2129412, received 0
+   BPDU: sent 2149300, received 0
 
  Port 64 (Port-channel2) of VLAN1100 is designated forwarding 
    Port path cost 12, Port priority 128, Port Identifier 128.64.
@@ -472,7 +472,7 @@ show spanning-tree detail
    Timers: message age 0, forward delay 0, hold 0
    Number of transitions to forwarding state: 1
    Link type is point-to-point by default
-   BPDU: sent 2129405, received 0
+   BPDU: sent 2149293, received 0
 
 
  VLAN1101 is executing the ieee compatible Spanning Tree protocol
@@ -494,7 +494,7 @@ show spanning-tree detail
    Timers: message age 0, forward delay 0, hold 0
    Number of transitions to forwarding state: 1
    Link type is point-to-point by default
-   BPDU: sent 2129385, received 0
+   BPDU: sent 2149273, received 0
 
  Port 17 (FastEthernet0/15) of VLAN1101 is designated forwarding 
    Port path cost 19, Port priority 128, Port Identifier 128.17.
@@ -504,7 +504,7 @@ show spanning-tree detail
    Timers: message age 0, forward delay 0, hold 0
    Number of transitions to forwarding state: 1
    Link type is point-to-point by default
-   BPDU: sent 2129378, received 0
+   BPDU: sent 2149266, received 0
 
  Port 24 (FastEthernet0/22) of VLAN1101 is designated forwarding 
    Port path cost 19, Port priority 128, Port Identifier 128.24.
@@ -515,7 +515,7 @@ show spanning-tree detail
    Number of transitions to forwarding state: 1
    The port is in the portfast mode by portfast trunk configuration
    Link type is point-to-point by default
-   BPDU: sent 111986, received 0
+   BPDU: sent 131874, received 0
 
  Port 39 (FastEthernet0/35) of VLAN1101 is designated forwarding 
    Port path cost 19, Port priority 128, Port Identifier 128.39.
@@ -526,7 +526,7 @@ show spanning-tree detail
    Number of transitions to forwarding state: 1
    The port is in the portfast mode by portfast trunk configuration
    Link type is point-to-point by default
-   BPDU: sent 111819, received 0
+   BPDU: sent 131707, received 0
 
  Port 49 (FastEthernet0/45) of VLAN1101 is designated forwarding 
    Port path cost 19, Port priority 128, Port Identifier 128.49.
@@ -537,7 +537,7 @@ show spanning-tree detail
    Number of transitions to forwarding state: 1
    The port is in the portfast mode by portfast trunk configuration
    Link type is point-to-point by default
-   BPDU: sent 1913928, received 0
+   BPDU: sent 1933816, received 0
 
  Port 56 (Port-channel1) of VLAN1101 is designated forwarding 
    Port path cost 12, Port priority 128, Port Identifier 128.56.
@@ -547,7 +547,7 @@ show spanning-tree detail
    Timers: message age 0, forward delay 0, hold 0
    Number of transitions to forwarding state: 1
    Link type is point-to-point by default
-   BPDU: sent 2129412, received 0
+   BPDU: sent 2149300, received 0
 
  Port 64 (Port-channel2) of VLAN1101 is designated forwarding 
    Port path cost 12, Port priority 128, Port Identifier 128.64.
@@ -557,7 +557,7 @@ show spanning-tree detail
    Timers: message age 0, forward delay 0, hold 0
    Number of transitions to forwarding state: 1
    Link type is point-to-point by default
-   BPDU: sent 2129405, received 0
+   BPDU: sent 2149293, received 0
 
 
  VLAN1102 is executing the ieee compatible Spanning Tree protocol
@@ -579,7 +579,7 @@ show spanning-tree detail
    Timers: message age 0, forward delay 0, hold 0
    Number of transitions to forwarding state: 1
    Link type is point-to-point by default
-   BPDU: sent 2129385, received 0
+   BPDU: sent 2149273, received 0
 
  Port 17 (FastEthernet0/15) of VLAN1102 is designated forwarding 
    Port path cost 19, Port priority 128, Port Identifier 128.17.
@@ -589,7 +589,7 @@ show spanning-tree detail
    Timers: message age 0, forward delay 0, hold 0
    Number of transitions to forwarding state: 1
    Link type is point-to-point by default
-   BPDU: sent 2129378, received 0
+   BPDU: sent 2149266, received 0
 
  Port 20 (FastEthernet0/18) of VLAN1102 is designated forwarding 
    Port path cost 19, Port priority 128, Port Identifier 128.20.
@@ -600,7 +600,7 @@ show spanning-tree detail
    Number of transitions to forwarding state: 1
    The port is in the portfast mode
    Link type is point-to-point by default
-   BPDU: sent 1477340, received 0
+   BPDU: sent 1497228, received 0
 
  Port 24 (FastEthernet0/22) of VLAN1102 is designated forwarding 
    Port path cost 19, Port priority 128, Port Identifier 128.24.
@@ -611,7 +611,7 @@ show spanning-tree detail
    Number of transitions to forwarding state: 1
    The port is in the portfast mode by portfast trunk configuration
    Link type is point-to-point by default
-   BPDU: sent 111986, received 0
+   BPDU: sent 131874, received 0
 
  Port 39 (FastEthernet0/35) of VLAN1102 is designated forwarding 
    Port path cost 19, Port priority 128, Port Identifier 128.39.
@@ -622,7 +622,7 @@ show spanning-tree detail
    Number of transitions to forwarding state: 1
    The port is in the portfast mode by portfast trunk configuration
    Link type is point-to-point by default
-   BPDU: sent 111819, received 0
+   BPDU: sent 131707, received 0
 
  Port 49 (FastEthernet0/45) of VLAN1102 is designated forwarding 
    Port path cost 19, Port priority 128, Port Identifier 128.49.
@@ -633,7 +633,7 @@ show spanning-tree detail
    Number of transitions to forwarding state: 1
    The port is in the portfast mode by portfast trunk configuration
    Link type is point-to-point by default
-   BPDU: sent 1913928, received 0
+   BPDU: sent 1933816, received 0
 
  Port 56 (Port-channel1) of VLAN1102 is designated forwarding 
    Port path cost 12, Port priority 128, Port Identifier 128.56.
@@ -643,7 +643,7 @@ show spanning-tree detail
    Timers: message age 0, forward delay 0, hold 0
    Number of transitions to forwarding state: 1
    Link type is point-to-point by default
-   BPDU: sent 2129412, received 0
+   BPDU: sent 2149300, received 0
 
  Port 64 (Port-channel2) of VLAN1102 is designated forwarding 
    Port path cost 12, Port priority 128, Port Identifier 128.64.
@@ -653,7 +653,7 @@ show spanning-tree detail
    Timers: message age 0, forward delay 0, hold 0
    Number of transitions to forwarding state: 1
    Link type is point-to-point by default
-   BPDU: sent 2129405, received 0
+   BPDU: sent 2149293, received 0
 
 
  VLAN1200 is executing the ieee compatible Spanning Tree protocol
@@ -675,7 +675,7 @@ show spanning-tree detail
    Timers: message age 0, forward delay 0, hold 0
    Number of transitions to forwarding state: 1
    Link type is point-to-point by default
-   BPDU: sent 2129385, received 0
+   BPDU: sent 2149273, received 0
 
  Port 17 (FastEthernet0/15) of VLAN1200 is designated forwarding 
    Port path cost 19, Port priority 128, Port Identifier 128.17.
@@ -685,7 +685,7 @@ show spanning-tree detail
    Timers: message age 0, forward delay 0, hold 0
    Number of transitions to forwarding state: 1
    Link type is point-to-point by default
-   BPDU: sent 2129378, received 0
+   BPDU: sent 2149266, received 0
 
  Port 20 (FastEthernet0/18) of VLAN1200 is designated forwarding 
    Port path cost 19, Port priority 128, Port Identifier 128.20.
@@ -696,7 +696,7 @@ show spanning-tree detail
    Number of transitions to forwarding state: 1
    The port is in the portfast mode
    Link type is point-to-point by default
-   BPDU: sent 1477340, received 0
+   BPDU: sent 1497228, received 0
 
  Port 24 (FastEthernet0/22) of VLAN1200 is designated forwarding 
    Port path cost 19, Port priority 128, Port Identifier 128.24.
@@ -707,7 +707,7 @@ show spanning-tree detail
    Number of transitions to forwarding state: 1
    The port is in the portfast mode by portfast trunk configuration
    Link type is point-to-point by default
-   BPDU: sent 111986, received 0
+   BPDU: sent 131874, received 0
 
  Port 39 (FastEthernet0/35) of VLAN1200 is designated forwarding 
    Port path cost 19, Port priority 128, Port Identifier 128.39.
@@ -718,7 +718,7 @@ show spanning-tree detail
    Number of transitions to forwarding state: 1
    The port is in the portfast mode by portfast trunk configuration
    Link type is point-to-point by default
-   BPDU: sent 111819, received 0
+   BPDU: sent 131707, received 0
 
  Port 49 (FastEthernet0/45) of VLAN1200 is designated forwarding 
    Port path cost 19, Port priority 128, Port Identifier 128.49.
@@ -729,7 +729,7 @@ show spanning-tree detail
    Number of transitions to forwarding state: 1
    The port is in the portfast mode by portfast trunk configuration
    Link type is point-to-point by default
-   BPDU: sent 1913928, received 0
+   BPDU: sent 1933816, received 0
 
  Port 56 (Port-channel1) of VLAN1200 is designated forwarding 
    Port path cost 12, Port priority 128, Port Identifier 128.56.
@@ -739,7 +739,7 @@ show spanning-tree detail
    Timers: message age 0, forward delay 0, hold 0
    Number of transitions to forwarding state: 1
    Link type is point-to-point by default
-   BPDU: sent 2129412, received 0
+   BPDU: sent 2149300, received 0
 
  Port 64 (Port-channel2) of VLAN1200 is designated forwarding 
    Port path cost 12, Port priority 128, Port Identifier 128.64.
@@ -749,7 +749,7 @@ show spanning-tree detail
    Timers: message age 0, forward delay 0, hold 0
    Number of transitions to forwarding state: 1
    Link type is point-to-point by default
-   BPDU: sent 2129405, received 0
+   BPDU: sent 2149293, received 0
 
 
  VLAN2100 is executing the ieee compatible Spanning Tree protocol
@@ -771,7 +771,7 @@ show spanning-tree detail
    Timers: message age 0, forward delay 0, hold 0
    Number of transitions to forwarding state: 1
    Link type is point-to-point by default
-   BPDU: sent 2129385, received 0
+   BPDU: sent 2149273, received 0
 
  Port 17 (FastEthernet0/15) of VLAN2100 is designated forwarding 
    Port path cost 19, Port priority 128, Port Identifier 128.17.
@@ -781,7 +781,7 @@ show spanning-tree detail
    Timers: message age 0, forward delay 0, hold 0
    Number of transitions to forwarding state: 1
    Link type is point-to-point by default
-   BPDU: sent 2129378, received 0
+   BPDU: sent 2149266, received 0
 
  Port 24 (FastEthernet0/22) of VLAN2100 is designated forwarding 
    Port path cost 19, Port priority 128, Port Identifier 128.24.
@@ -792,7 +792,7 @@ show spanning-tree detail
    Number of transitions to forwarding state: 1
    The port is in the portfast mode by portfast trunk configuration
    Link type is point-to-point by default
-   BPDU: sent 111986, received 0
+   BPDU: sent 131874, received 0
 
  Port 39 (FastEthernet0/35) of VLAN2100 is designated forwarding 
    Port path cost 19, Port priority 128, Port Identifier 128.39.
@@ -803,7 +803,7 @@ show spanning-tree detail
    Number of transitions to forwarding state: 1
    The port is in the portfast mode by portfast trunk configuration
    Link type is point-to-point by default
-   BPDU: sent 111819, received 0
+   BPDU: sent 131707, received 0
 
  Port 50 (FastEthernet0/46) of VLAN2100 is designated forwarding 
    Port path cost 19, Port priority 128, Port Identifier 128.50.
@@ -814,7 +814,7 @@ show spanning-tree detail
    Number of transitions to forwarding state: 1
    The port is in the portfast mode by portfast trunk configuration
    Link type is point-to-point by default
-   BPDU: sent 1913928, received 0
+   BPDU: sent 1933816, received 0
 
  Port 56 (Port-channel1) of VLAN2100 is designated forwarding 
    Port path cost 12, Port priority 128, Port Identifier 128.56.
@@ -824,7 +824,7 @@ show spanning-tree detail
    Timers: message age 0, forward delay 0, hold 0
    Number of transitions to forwarding state: 1
    Link type is point-to-point by default
-   BPDU: sent 2129412, received 0
+   BPDU: sent 2149300, received 0
 
  Port 64 (Port-channel2) of VLAN2100 is designated forwarding 
    Port path cost 12, Port priority 128, Port Identifier 128.64.
@@ -834,7 +834,7 @@ show spanning-tree detail
    Timers: message age 0, forward delay 0, hold 0
    Number of transitions to forwarding state: 1
    Link type is point-to-point by default
-   BPDU: sent 2129405, received 0
+   BPDU: sent 2149293, received 0
 
 
  VLAN2101 is executing the ieee compatible Spanning Tree protocol
@@ -856,7 +856,7 @@ show spanning-tree detail
    Timers: message age 0, forward delay 0, hold 0
    Number of transitions to forwarding state: 1
    Link type is point-to-point by default
-   BPDU: sent 2129385, received 0
+   BPDU: sent 2149273, received 0
 
  Port 17 (FastEthernet0/15) of VLAN2101 is designated forwarding 
    Port path cost 19, Port priority 128, Port Identifier 128.17.
@@ -866,7 +866,7 @@ show spanning-tree detail
    Timers: message age 0, forward delay 0, hold 0
    Number of transitions to forwarding state: 1
    Link type is point-to-point by default
-   BPDU: sent 2129378, received 0
+   BPDU: sent 2149266, received 0
 
  Port 24 (FastEthernet0/22) of VLAN2101 is designated forwarding 
    Port path cost 19, Port priority 128, Port Identifier 128.24.
@@ -877,7 +877,7 @@ show spanning-tree detail
    Number of transitions to forwarding state: 1
    The port is in the portfast mode by portfast trunk configuration
    Link type is point-to-point by default
-   BPDU: sent 111986, received 0
+   BPDU: sent 131874, received 0
 
  Port 39 (FastEthernet0/35) of VLAN2101 is designated forwarding 
    Port path cost 19, Port priority 128, Port Identifier 128.39.
@@ -888,7 +888,7 @@ show spanning-tree detail
    Number of transitions to forwarding state: 1
    The port is in the portfast mode by portfast trunk configuration
    Link type is point-to-point by default
-   BPDU: sent 111819, received 0
+   BPDU: sent 131707, received 0
 
  Port 50 (FastEthernet0/46) of VLAN2101 is designated forwarding 
    Port path cost 19, Port priority 128, Port Identifier 128.50.
@@ -899,7 +899,7 @@ show spanning-tree detail
    Number of transitions to forwarding state: 1
    The port is in the portfast mode by portfast trunk configuration
    Link type is point-to-point by default
-   BPDU: sent 1913928, received 0
+   BPDU: sent 1933816, received 0
 
  Port 56 (Port-channel1) of VLAN2101 is designated forwarding 
    Port path cost 12, Port priority 128, Port Identifier 128.56.
@@ -909,7 +909,7 @@ show spanning-tree detail
    Timers: message age 0, forward delay 0, hold 0
    Number of transitions to forwarding state: 1
    Link type is point-to-point by default
-   BPDU: sent 2129412, received 0
+   BPDU: sent 2149300, received 0
 
  Port 64 (Port-channel2) of VLAN2101 is designated forwarding 
    Port path cost 12, Port priority 128, Port Identifier 128.64.
@@ -919,7 +919,7 @@ show spanning-tree detail
    Timers: message age 0, forward delay 0, hold 0
    Number of transitions to forwarding state: 1
    Link type is point-to-point by default
-   BPDU: sent 2129405, received 0
+   BPDU: sent 2149293, received 0
 
 
  VLAN2102 is executing the ieee compatible Spanning Tree protocol
@@ -941,7 +941,7 @@ show spanning-tree detail
    Timers: message age 0, forward delay 0, hold 0
    Number of transitions to forwarding state: 1
    Link type is point-to-point by default
-   BPDU: sent 2129385, received 0
+   BPDU: sent 2149273, received 0
 
  Port 17 (FastEthernet0/15) of VLAN2102 is designated forwarding 
    Port path cost 19, Port priority 128, Port Identifier 128.17.
@@ -951,7 +951,7 @@ show spanning-tree detail
    Timers: message age 0, forward delay 0, hold 0
    Number of transitions to forwarding state: 1
    Link type is point-to-point by default
-   BPDU: sent 2129378, received 0
+   BPDU: sent 2149266, received 0
 
  Port 24 (FastEthernet0/22) of VLAN2102 is designated forwarding 
    Port path cost 19, Port priority 128, Port Identifier 128.24.
@@ -962,7 +962,7 @@ show spanning-tree detail
    Number of transitions to forwarding state: 1
    The port is in the portfast mode by portfast trunk configuration
    Link type is point-to-point by default
-   BPDU: sent 111986, received 0
+   BPDU: sent 131874, received 0
 
  Port 30 (FastEthernet0/26) of VLAN2102 is designated forwarding 
    Port path cost 19, Port priority 128, Port Identifier 128.30.
@@ -973,7 +973,7 @@ show spanning-tree detail
    Number of transitions to forwarding state: 1
    The port is in the portfast mode
    Link type is point-to-point by default
-   BPDU: sent 1476953, received 0
+   BPDU: sent 1496841, received 0
 
  Port 39 (FastEthernet0/35) of VLAN2102 is designated forwarding 
    Port path cost 19, Port priority 128, Port Identifier 128.39.
@@ -984,7 +984,7 @@ show spanning-tree detail
    Number of transitions to forwarding state: 1
    The port is in the portfast mode by portfast trunk configuration
    Link type is point-to-point by default
-   BPDU: sent 111819, received 0
+   BPDU: sent 131707, received 0
 
  Port 50 (FastEthernet0/46) of VLAN2102 is designated forwarding 
    Port path cost 19, Port priority 128, Port Identifier 128.50.
@@ -995,7 +995,7 @@ show spanning-tree detail
    Number of transitions to forwarding state: 1
    The port is in the portfast mode by portfast trunk configuration
    Link type is point-to-point by default
-   BPDU: sent 1913928, received 0
+   BPDU: sent 1933816, received 0
 
  Port 56 (Port-channel1) of VLAN2102 is designated forwarding 
    Port path cost 12, Port priority 128, Port Identifier 128.56.
@@ -1005,7 +1005,7 @@ show spanning-tree detail
    Timers: message age 0, forward delay 0, hold 0
    Number of transitions to forwarding state: 1
    Link type is point-to-point by default
-   BPDU: sent 2129412, received 0
+   BPDU: sent 2149300, received 0
 
  Port 64 (Port-channel2) of VLAN2102 is designated forwarding 
    Port path cost 12, Port priority 128, Port Identifier 128.64.
@@ -1015,7 +1015,7 @@ show spanning-tree detail
    Timers: message age 0, forward delay 0, hold 0
    Number of transitions to forwarding state: 1
    Link type is point-to-point by default
-   BPDU: sent 2129405, received 0
+   BPDU: sent 2149293, received 0
 
 
  VLAN2200 is executing the ieee compatible Spanning Tree protocol
@@ -1037,7 +1037,7 @@ show spanning-tree detail
    Timers: message age 0, forward delay 0, hold 0
    Number of transitions to forwarding state: 1
    Link type is point-to-point by default
-   BPDU: sent 2129385, received 0
+   BPDU: sent 2149273, received 0
 
  Port 17 (FastEthernet0/15) of VLAN2200 is designated forwarding 
    Port path cost 19, Port priority 128, Port Identifier 128.17.
@@ -1047,7 +1047,7 @@ show spanning-tree detail
    Timers: message age 0, forward delay 0, hold 0
    Number of transitions to forwarding state: 1
    Link type is point-to-point by default
-   BPDU: sent 2129378, received 0
+   BPDU: sent 2149266, received 0
 
  Port 24 (FastEthernet0/22) of VLAN2200 is designated forwarding 
    Port path cost 19, Port priority 128, Port Identifier 128.24.
@@ -1058,7 +1058,7 @@ show spanning-tree detail
    Number of transitions to forwarding state: 1
    The port is in the portfast mode by portfast trunk configuration
    Link type is point-to-point by default
-   BPDU: sent 111986, received 0
+   BPDU: sent 131874, received 0
 
  Port 30 (FastEthernet0/26) of VLAN2200 is designated forwarding 
    Port path cost 19, Port priority 128, Port Identifier 128.30.
@@ -1069,7 +1069,7 @@ show spanning-tree detail
    Number of transitions to forwarding state: 1
    The port is in the portfast mode
    Link type is point-to-point by default
-   BPDU: sent 1476953, received 0
+   BPDU: sent 1496841, received 0
 
  Port 39 (FastEthernet0/35) of VLAN2200 is designated forwarding 
    Port path cost 19, Port priority 128, Port Identifier 128.39.
@@ -1080,7 +1080,7 @@ show spanning-tree detail
    Number of transitions to forwarding state: 1
    The port is in the portfast mode by portfast trunk configuration
    Link type is point-to-point by default
-   BPDU: sent 111819, received 0
+   BPDU: sent 131707, received 0
 
  Port 50 (FastEthernet0/46) of VLAN2200 is designated forwarding 
    Port path cost 19, Port priority 128, Port Identifier 128.50.
@@ -1091,7 +1091,7 @@ show spanning-tree detail
    Number of transitions to forwarding state: 1
    The port is in the portfast mode by portfast trunk configuration
    Link type is point-to-point by default
-   BPDU: sent 1913928, received 0
+   BPDU: sent 1933816, received 0
 
  Port 56 (Port-channel1) of VLAN2200 is designated forwarding 
    Port path cost 12, Port priority 128, Port Identifier 128.56.
@@ -1101,7 +1101,7 @@ show spanning-tree detail
    Timers: message age 0, forward delay 0, hold 0
    Number of transitions to forwarding state: 1
    Link type is point-to-point by default
-   BPDU: sent 2129412, received 0
+   BPDU: sent 2149300, received 0
 
  Port 64 (Port-channel2) of VLAN2200 is designated forwarding 
    Port path cost 12, Port priority 128, Port Identifier 128.64.
@@ -1111,7 +1111,7 @@ show spanning-tree detail
    Timers: message age 0, forward delay 0, hold 0
    Number of transitions to forwarding state: 1
    Link type is point-to-point by default
-   BPDU: sent 2129405, received 0
+   BPDU: sent 2149293, received 0
 
 home-3560-sguilfoil#
 +++ home-3560-sguilfoil: executing command 'show spanning-tree' +++

@@ -9,7 +9,7 @@ Image text-base: 0x01000000, data-base: 0x02D00000
 ROM: Bootstrap program is C3560 boot loader
 BOOTLDR: C3560 Boot Loader (C3560-HBOOT-M) Version 12.2(44)SE5, RELEASE SOFTWARE (fc1)
 
-home-3560-sguilfoil uptime is 7 weeks, 11 hours, 27 minutes
+home-3560-sguilfoil uptime is 7 weeks, 22 hours, 33 minutes
 System returned to ROM by power-on
 System restarted at 12:48:34 EST Thu Apr 23 2020
 System image file is "flash:c3560-ipbasek9-mz.122-55.SE5/c3560-ipbasek9-mz.122-55.SE5.bin"

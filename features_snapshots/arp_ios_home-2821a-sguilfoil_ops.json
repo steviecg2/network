@@ -177,10 +177,10 @@
     },
     "statistics": {
       "in_drops": 0,
-      "in_replies_pkts": 1020,
-      "in_requests_pkts": 92929,
-      "out_replies_pkts": 57055,
-      "out_requests_pkts": 139081
+      "in_replies_pkts": 1034,
+      "in_requests_pkts": 93654,
+      "out_replies_pkts": 57585,
+      "out_requests_pkts": 139095
     }
   }
 }

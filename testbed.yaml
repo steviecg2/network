@@ -14,6 +14,14 @@ devices:
                 protocol: ssh
                 ip: 10.0.1.254
                 port: 22
+    home-3560-sguilfoil:
+        os: ios
+        type: ios
+        connections:
+            a:
+                protocol: telnet
+                ip: 10.0.1.253
+                port: 23
     home-2821a-sguilfoil:
         os: ios
         type: ios
@@ -30,12 +38,3 @@ devices:
                 protocol: ssh
                 ip: 10.0.65.1
                 port: 22
-    home-3560-sguilfoil:
-        os: ios
-        type: ios
-        connections:
-            a:
-                protocol: telnet
-                ip: 10.0.1.253
-                port: 23
-

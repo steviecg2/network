@@ -96,12 +96,12 @@
                                 },
                                 "header": {
                                   "adv_router": "10.0.1.254",
-                                  "age": 34,
-                                  "checksum": "0x61CB",
+                                  "age": 1688,
+                                  "checksum": "0x3BDE",
                                   "length": 72,
                                   "lsa_id": "10.0.1.254",
                                   "option": "None",
-                                  "seq_num": "80000853",
+                                  "seq_num": "80000866",
                                   "type": 1
                                 }
                               }
@@ -185,12 +185,12 @@
                                 },
                                 "header": {
                                   "adv_router": "10.0.1.64",
-                                  "age": 1371,
-                                  "checksum": "0x5A72",
+                                  "age": 849,
+                                  "checksum": "0x3286",
                                   "length": 96,
                                   "lsa_id": "10.0.1.64",
                                   "option": "None",
-                                  "seq_num": "80000852",
+                                  "seq_num": "80000866",
                                   "type": 1
                                 }
                               }
@@ -274,12 +274,12 @@
                                 },
                                 "header": {
                                   "adv_router": "10.0.1.65",
-                                  "age": 1223,
-                                  "checksum": "0x71E4",
+                                  "age": 966,
+                                  "checksum": "0x49F8",
                                   "length": 96,
                                   "lsa_id": "10.0.1.65",
                                   "option": "None",
-                                  "seq_num": "80000852",
+                                  "seq_num": "80000866",
                                   "type": 1
                                 }
                               }
@@ -309,12 +309,12 @@
                                 },
                                 "header": {
                                   "adv_router": "10.0.1.254",
-                                  "age": 35,
-                                  "checksum": "0x2D26",
+                                  "age": 1689,
+                                  "checksum": "0x739",
                                   "length": 36,
                                   "lsa_id": "0.0.0.0",
                                   "option": "None",
-                                  "seq_num": "8000084E",
+                                  "seq_num": "80000861",
                                   "type": 5
                                 }
                               }
@@ -356,7 +356,7 @@
                         "dr_router_id": "10.0.1.65",
                         "enable": true,
                         "hello_interval": 10,
-                        "hello_timer": "00:00:06",
+                        "hello_timer": "00:00:02",
                         "interface_type": "broadcast",
                         "lls": true,
                         "name": "GigabitEthernet0/0.2101",
@@ -377,7 +377,7 @@
                         "dr_router_id": "10.0.1.65",
                         "enable": true,
                         "hello_interval": 10,
-                        "hello_timer": "00:00:00",
+                        "hello_timer": "00:00:04",
                         "interface_type": "broadcast",
                         "lls": true,
                         "name": "GigabitEthernet0/0.2102",
@@ -398,7 +398,7 @@
                         "dr_router_id": "10.0.1.65",
                         "enable": true,
                         "hello_interval": 10,
-                        "hello_timer": "00:00:01",
+                        "hello_timer": "00:00:00",
                         "interface_type": "broadcast",
                         "lls": true,
                         "name": "GigabitEthernet0/0.2200",
@@ -417,7 +417,7 @@
                         "demand_circuit": false,
                         "enable": true,
                         "hello_interval": 10,
-                        "hello_timer": "00:00:01",
+                        "hello_timer": "00:00:08",
                         "interface_type": "point-to-point",
                         "lls": true,
                         "name": "Serial0/1/0",
@@ -425,7 +425,7 @@
                           "10.0.1.254": {
                             "address": "157.100.101.5",
                             "bdr_ip_addr": "0.0.0.0",
-                            "dead_timer": "00:00:36",
+                            "dead_timer": "00:00:37",
                             "dr_ip_addr": "0.0.0.0",
                             "neighbor_router_id": "10.0.1.254",
                             "state": "full",
@@ -447,7 +447,7 @@
                       }
                     },
                     "statistics": {
-                      "area_scope_lsa_cksum_sum": "0x012E21",
+                      "area_scope_lsa_cksum_sum": "0x00B85C",
                       "area_scope_lsa_count": 3,
                       "spf_runs_count": 2
                     }

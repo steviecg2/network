@@ -1,0 +1,8 @@
+---
+provider:
+  username: "{{ vault_username }}"
+  password: "{{ vault_password }}"
+  authorize: true
+  auth_pass: "{{ vault_password }}"
+  host: "{{ ansible_host }}"
+  timeout: 120

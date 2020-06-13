@@ -2,18 +2,18 @@
 show ntp associations
 
   address         ref clock       st   when   poll reach  delay  offset   disp
-*~10.0.1.254      127.127.1.1      2    834   1024   377  1.997  -0.038 14.819
+*~10.0.1.254      127.127.1.1      2    784   1024   377  2.188  -0.087 14.838
  * sys.peer, # selected, + candidate, - outlyer, x falseticker, ~ configured
 home-2821b-sguilfoil#
 +++ home-2821b-sguilfoil: executing command 'show ntp status' +++
 show ntp status
 Clock is synchronized, stratum 3, reference is 10.0.1.254    
 nominal freq is 250.0000 Hz, actual freq is 249.9947 Hz, precision is 2**24
-reference time is E28D7CF4.71267754 (00:03:00.441 EDT Fri Jun 12 2020)
-clock offset is -0.0389 msec, root delay is 1.99 msec
-root dispersion is 31.12 msec, peer dispersion is 14.81 msec
-loopfilter state is 'CTRL' (Normal Controlled Loop), drift is 0.000021056 s/s
-system poll interval is 1024, last update was 834 sec ago.
+reference time is E28E18FE.479A437F (11:08:46.279 EDT Fri Jun 12 2020)
+clock offset is -0.0879 msec, root delay is 2.18 msec
+root dispersion is 27.06 msec, peer dispersion is 14.83 msec
+loopfilter state is 'CTRL' (Normal Controlled Loop), drift is 0.000021039 s/s
+system poll interval is 1024, last update was 785 sec ago.
 home-2821b-sguilfoil#
 +++ home-2821b-sguilfoil: executing command 'show ntp config' +++
 show ntp config

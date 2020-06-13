@@ -11,7 +11,7 @@ Clock is unsynchronized, stratum 16, no reference clock
 nominal freq is 250.0000 Hz, actual freq is 249.9963 Hz, precision is 2**24
 reference time is 00000000.00000000 (19:00:00.000 EST Thu Dec 31 1899)
 clock offset is 0.0000 msec, root delay is 0.00 msec
-root dispersion is 57630.49 msec, peer dispersion is 0.00 msec
+root dispersion is 58228.93 msec, peer dispersion is 0.00 msec
 loopfilter state is 'FSET' (Drift set from file), drift is 0.000014650 s/s
 system poll interval is 64, never updated.
 home-2821a-sguilfoil#

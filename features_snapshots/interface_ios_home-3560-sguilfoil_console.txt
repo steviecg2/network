@@ -14,16 +14,16 @@ Vlan1 is up, line protocol is up
   ARP type: ARPA, ARP Timeout 04:00:00
   Last input 00:00:00, output 00:00:00, output hang never
   Last clearing of "show interface" counters never
-  Input queue: 16/75/0/0 (size/max/drops/flushes); Total output drops: 0
+  Input queue: 15/75/0/0 (size/max/drops/flushes); Total output drops: 0
   Queueing strategy: fifo
   Output queue: 0/40 (size/max)
-  5 minute input rate 6000 bits/sec, 7 packets/sec
-  5 minute output rate 6000 bits/sec, 7 packets/sec
-     1001603 packets input, 145985672 bytes, 0 no buffer
-     Received 0 broadcasts (11823 IP multicasts)
+  5 minute input rate 6000 bits/sec, 8 packets/sec
+  5 minute output rate 6000 bits/sec, 8 packets/sec
+     1013745 packets input, 147621049 bytes, 0 no buffer
+     Received 0 broadcasts (11944 IP multicasts)
      0 runts, 0 giants, 0 throttles
      0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored
-     33051 packets output, 3616825 bytes, 0 underruns
+     36281 packets output, 4037281 bytes, 0 underruns
      0 output errors, 2 interface resets
      0 output buffer failures, 0 output buffers swapped out
 FastEthernet0/1 is up, line protocol is up (connected) 
@@ -41,15 +41,15 @@ FastEthernet0/1 is up, line protocol is up (connected)
   Input queue: 0/75/0/0 (size/max/drops/flushes); Total output drops: 0
   Queueing strategy: fifo
   Output queue: 0/40 (size/max)
-  5 minute input rate 0 bits/sec, 0 packets/sec
-  5 minute output rate 0 bits/sec, 0 packets/sec
-     6610061 packets input, 6777384772 bytes, 0 no buffer
-     Received 225410 broadcasts (15 multicasts)
+  5 minute input rate 2000 bits/sec, 1 packets/sec
+  5 minute output rate 1000 bits/sec, 1 packets/sec
+     6657875 packets input, 6823357993 bytes, 0 no buffer
+     Received 226744 broadcasts (15 multicasts)
      0 runts, 0 giants, 0 throttles
      0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored
      0 watchdog, 15 multicast, 0 pause input
      0 input packets with dribble condition detected
-     4795403 packets output, 525034184 bytes, 0 underruns
+     4837995 packets output, 530148226 bytes, 0 underruns
      0 output errors, 0 collisions, 1 interface resets
      0 babbles, 0 late collision, 0 deferred
      0 lost carrier, 0 no carrier, 0 PAUSE output
@@ -91,20 +91,20 @@ FastEthernet0/3 is up, line protocol is up (connected)
   Full-duplex, 100Mb/s, media type is 10/100BaseTX
   input flow-control is off, output flow-control is unsupported 
   ARP type: ARPA, ARP Timeout 04:00:00
-  Last input 00:00:11, output 00:00:03, output hang never
+  Last input 00:00:01, output 00:00:03, output hang never
   Last clearing of "show interface" counters never
   Input queue: 0/75/0/0 (size/max/drops/flushes); Total output drops: 19
   Queueing strategy: fifo
   Output queue: 0/40 (size/max)
-  5 minute input rate 0 bits/sec, 0 packets/sec
-  5 minute output rate 12000 bits/sec, 9 packets/sec
-     23788942 packets input, 3913735770 bytes, 0 no buffer
-     Received 1557730 broadcasts (1451717 multicasts)
+  5 minute input rate 2000 bits/sec, 1 packets/sec
+  5 minute output rate 9000 bits/sec, 10 packets/sec
+     23935826 packets input, 3933457595 bytes, 0 no buffer
+     Received 1572992 broadcasts (1465991 multicasts)
      0 runts, 0 giants, 0 throttles
      0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored
-     0 watchdog, 1451717 multicast, 0 pause input
+     0 watchdog, 1465991 multicast, 0 pause input
      0 input packets with dribble condition detected
-     85759596 packets output, 55256674504 bytes, 0 underruns
+     86273645 packets output, 55417344582 bytes, 0 underruns
      0 output errors, 0 collisions, 1 interface resets
      0 babbles, 0 late collision, 0 deferred
      0 lost carrier, 0 no carrier, 0 PAUSE output
@@ -146,20 +146,20 @@ FastEthernet0/5 is up, line protocol is up (connected)
   Full-duplex, 100Mb/s, media type is 10/100BaseTX
   input flow-control is off, output flow-control is unsupported 
   ARP type: ARPA, ARP Timeout 04:00:00
-  Last input 00:00:11, output 00:00:06, output hang never
+  Last input 00:00:01, output 00:00:00, output hang never
   Last clearing of "show interface" counters never
   Input queue: 0/75/0/0 (size/max/drops/flushes); Total output drops: 0
   Queueing strategy: fifo
   Output queue: 0/40 (size/max)
   5 minute input rate 1000 bits/sec, 3 packets/sec
-  5 minute output rate 3000 bits/sec, 4 packets/sec
-     22915252 packets input, 3279510903 bytes, 0 no buffer
-     Received 933985 broadcasts (797537 multicasts)
+  5 minute output rate 4000 bits/sec, 6 packets/sec
+     23069008 packets input, 3296999373 bytes, 0 no buffer
+     Received 942783 broadcasts (805046 multicasts)
      0 runts, 0 giants, 0 throttles
      0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored
-     0 watchdog, 797537 multicast, 0 pause input
+     0 watchdog, 805046 multicast, 0 pause input
      0 input packets with dribble condition detected
-     16825170 packets output, 3563845806 bytes, 0 underruns
+     17004125 packets output, 3598339290 bytes, 0 underruns
      0 output errors, 0 collisions, 1 interface resets
      0 babbles, 0 late collision, 0 deferred
      0 lost carrier, 0 no carrier, 0 PAUSE output
@@ -207,14 +207,14 @@ FastEthernet0/7 is up, line protocol is up (connected)
   Queueing strategy: fifo
   Output queue: 0/40 (size/max)
   5 minute input rate 0 bits/sec, 0 packets/sec
-  5 minute output rate 5000 bits/sec, 8 packets/sec
+  5 minute output rate 6000 bits/sec, 8 packets/sec
      0 packets input, 0 bytes, 0 no buffer
      Received 0 broadcasts (0 multicasts)
      0 runts, 0 giants, 0 throttles
      0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored
      0 watchdog, 0 multicast, 0 pause input
      0 input packets with dribble condition detected
-     39369216 packets output, 3778121752 bytes, 0 underruns
+     39745126 packets output, 3816516988 bytes, 0 underruns
      0 output errors, 0 collisions, 1 interface resets
      0 babbles, 0 late collision, 0 deferred
      0 lost carrier, 0 no carrier, 0 PAUSE output
@@ -262,14 +262,14 @@ FastEthernet0/9 is up, line protocol is up (connected)
   Queueing strategy: fifo
   Output queue: 0/40 (size/max)
   5 minute input rate 0 bits/sec, 0 packets/sec
-  5 minute output rate 0 bits/sec, 0 packets/sec
-     139053 packets input, 8902458 bytes, 0 no buffer
-     Received 139053 broadcasts (16 multicasts)
+  5 minute output rate 1000 bits/sec, 1 packets/sec
+     140350 packets input, 8985466 bytes, 0 no buffer
+     Received 140350 broadcasts (16 multicasts)
      0 runts, 0 giants, 0 throttles
      0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored
      0 watchdog, 16 multicast, 0 pause input
      0 input packets with dribble condition detected
-     4773421 packets output, 523629037 bytes, 0 underruns
+     4814971 packets output, 528676391 bytes, 0 underruns
      0 output errors, 0 collisions, 1 interface resets
      0 babbles, 0 late collision, 0 deferred
      0 lost carrier, 0 no carrier, 0 PAUSE output
@@ -311,20 +311,20 @@ FastEthernet0/11 is up, line protocol is up (connected)
   Full-duplex, 100Mb/s, media type is 10/100BaseTX
   input flow-control is off, output flow-control is unsupported 
   ARP type: ARPA, ARP Timeout 04:00:00
-  Last input 00:00:10, output 00:00:06, output hang never
+  Last input 00:00:14, output 00:00:03, output hang never
   Last clearing of "show interface" counters never
   Input queue: 0/75/0/0 (size/max/drops/flushes); Total output drops: 0
   Queueing strategy: fifo
   Output queue: 0/40 (size/max)
-  5 minute input rate 0 bits/sec, 0 packets/sec
-  5 minute output rate 3000 bits/sec, 6 packets/sec
-     2766101 packets input, 1914175633 bytes, 0 no buffer
-     Received 315541 broadcasts (313126 multicasts)
+  5 minute input rate 1000 bits/sec, 1 packets/sec
+  5 minute output rate 4000 bits/sec, 7 packets/sec
+     2791015 packets input, 1931547050 bytes, 0 no buffer
+     Received 318497 broadcasts (316082 multicasts)
      0 runts, 0 giants, 0 throttles
      0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored
-     0 watchdog, 313126 multicast, 0 pause input
+     0 watchdog, 316082 multicast, 0 pause input
      0 input packets with dribble condition detected
-     36022131 packets output, 5754341578 bytes, 0 underruns
+     36347909 packets output, 5783711285 bytes, 0 underruns
      0 output errors, 0 collisions, 1 interface resets
      0 babbles, 0 late collision, 0 deferred
      0 lost carrier, 0 no carrier, 0 PAUSE output
@@ -366,20 +366,20 @@ FastEthernet0/13 is up, line protocol is up (connected)
   Full-duplex, 100Mb/s, media type is 10/100BaseTX
   input flow-control is off, output flow-control is unsupported 
   ARP type: ARPA, ARP Timeout 04:00:00
-  Last input 00:00:09, output 00:00:06, output hang never
+  Last input 00:00:12, output 00:00:03, output hang never
   Last clearing of "show interface" counters never
   Input queue: 0/75/0/0 (size/max/drops/flushes); Total output drops: 0
   Queueing strategy: fifo
   Output queue: 0/40 (size/max)
-  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute input rate 2000 bits/sec, 1 packets/sec
   5 minute output rate 1000 bits/sec, 1 packets/sec
-     3906396 packets input, 736831025 bytes, 0 no buffer
-     Received 411474 broadcasts (246377 multicasts)
+     3928733 packets input, 741222861 bytes, 0 no buffer
+     Received 415081 broadcasts (248686 multicasts)
      0 runts, 0 giants, 0 throttles
      0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored
-     0 watchdog, 246377 multicast, 0 pause input
+     0 watchdog, 248686 multicast, 0 pause input
      0 input packets with dribble condition detected
-     5893403 packets output, 868334133 bytes, 0 underruns
+     5950097 packets output, 881054650 bytes, 0 underruns
      0 output errors, 0 collisions, 1 interface resets
      0 babbles, 0 late collision, 0 deferred
      0 lost carrier, 0 no carrier, 0 PAUSE output
@@ -427,14 +427,14 @@ FastEthernet0/15 is up, line protocol is up (connected)
   Queueing strategy: fifo
   Output queue: 0/40 (size/max)
   5 minute input rate 0 bits/sec, 0 packets/sec
-  5 minute output rate 5000 bits/sec, 8 packets/sec
+  5 minute output rate 6000 bits/sec, 8 packets/sec
      0 packets input, 0 bytes, 0 no buffer
      Received 0 broadcasts (0 multicasts)
      0 runts, 0 giants, 0 throttles
      0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored
      0 watchdog, 0 multicast, 0 pause input
      0 input packets with dribble condition detected
-     39369181 packets output, 3778189172 bytes, 0 underruns
+     39745093 packets output, 3816585329 bytes, 0 underruns
      0 output errors, 0 collisions, 1 interface resets
      0 babbles, 0 late collision, 0 deferred
      0 lost carrier, 0 no carrier, 0 PAUSE output
@@ -504,20 +504,20 @@ FastEthernet0/18 is up, line protocol is up (connected)
   Full-duplex, 100Mb/s, media type is 10/100BaseTX
   input flow-control is off, output flow-control is unsupported 
   ARP type: ARPA, ARP Timeout 04:00:00
-  Last input 00:00:11, output 00:00:01, output hang never
+  Last input 00:00:47, output 00:00:01, output hang never
   Last clearing of "show interface" counters never
   Input queue: 0/75/0/0 (size/max/drops/flushes); Total output drops: 0
   Queueing strategy: fifo
   Output queue: 0/40 (size/max)
   5 minute input rate 0 bits/sec, 0 packets/sec
-  5 minute output rate 1000 bits/sec, 1 packets/sec
-     265076 packets input, 25162261 bytes, 0 no buffer
-     Received 50947 broadcasts (49501 multicasts)
+  5 minute output rate 1000 bits/sec, 2 packets/sec
+     268414 packets input, 25458167 bytes, 0 no buffer
+     Received 51628 broadcasts (50165 multicasts)
      0 runts, 0 giants, 0 throttles
      0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored
-     0 watchdog, 49501 multicast, 0 pause input
+     0 watchdog, 50165 multicast, 0 pause input
      0 input packets with dribble condition detected
-     5040501 packets output, 548723475 bytes, 0 underruns
+     5108284 packets output, 555956498 bytes, 0 underruns
      0 output errors, 0 collisions, 2 interface resets
      0 babbles, 0 late collision, 0 deferred
      0 lost carrier, 0 no carrier, 0 PAUSE output
@@ -620,15 +620,15 @@ FastEthernet0/22 is up, line protocol is up (connected)
   Input queue: 0/75/0/0 (size/max/drops/flushes); Total output drops: 0
   Queueing strategy: fifo
   Output queue: 0/40 (size/max)
-  5 minute input rate 0 bits/sec, 0 packets/sec
-  5 minute output rate 188000 bits/sec, 7 packets/sec
-     53728894 packets input, 7116679803 bytes, 0 no buffer
-     Received 872462 broadcasts (796872 multicasts)
+  5 minute input rate 2000 bits/sec, 3 packets/sec
+  5 minute output rate 237000 bits/sec, 13 packets/sec
+     54356868 packets input, 7188927815 bytes, 0 no buffer
+     Received 892574 broadcasts (815322 multicasts)
      0 runts, 0 giants, 0 throttles
      1 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored
-     0 watchdog, 796872 multicast, 0 pause input
+     0 watchdog, 815322 multicast, 0 pause input
      0 input packets with dribble condition detected
-     113986675 packets output, 90758845975 bytes, 0 underruns
+     115310309 packets output, 91998828968 bytes, 0 underruns
      0 output errors, 0 collisions, 1 interface resets
      0 babbles, 0 late collision, 0 deferred
      0 lost carrier, 0 no carrier, 0 PAUSE output
@@ -726,20 +726,20 @@ FastEthernet0/26 is up, line protocol is up (connected)
   Full-duplex, 100Mb/s, media type is 10/100BaseTX
   input flow-control is off, output flow-control is unsupported 
   ARP type: ARPA, ARP Timeout 04:00:00
-  Last input 00:00:07, output 00:00:01, output hang never
+  Last input 00:00:43, output 00:00:01, output hang never
   Last clearing of "show interface" counters never
   Input queue: 0/75/0/0 (size/max/drops/flushes); Total output drops: 0
   Queueing strategy: fifo
   Output queue: 0/40 (size/max)
   5 minute input rate 0 bits/sec, 0 packets/sec
-  5 minute output rate 0 bits/sec, 0 packets/sec
-     268167 packets input, 25334983 bytes, 0 no buffer
-     Received 51047 broadcasts (49501 multicasts)
+  5 minute output rate 2000 bits/sec, 2 packets/sec
+     271505 packets input, 25630889 bytes, 0 no buffer
+     Received 51728 broadcasts (50165 multicasts)
      0 runts, 0 giants, 0 throttles
      0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored
-     0 watchdog, 49501 multicast, 0 pause input
+     0 watchdog, 50165 multicast, 0 pause input
      0 input packets with dribble condition detected
-     5222183 packets output, 582944534 bytes, 0 underruns
+     5298530 packets output, 591862905 bytes, 0 underruns
      0 output errors, 0 collisions, 2 interface resets
      0 babbles, 0 late collision, 0 deferred
      0 lost carrier, 0 no carrier, 0 PAUSE output
@@ -980,14 +980,14 @@ FastEthernet0/35 is up, line protocol is up (connected)
   Queueing strategy: fifo
   Output queue: 0/40 (size/max)
   5 minute input rate 0 bits/sec, 0 packets/sec
-  5 minute output rate 5000 bits/sec, 7 packets/sec
-     27039235 packets input, 4274767438 bytes, 0 no buffer
-     Received 96681 broadcasts (4992 multicasts)
+  5 minute output rate 7000 bits/sec, 8 packets/sec
+     27154269 packets input, 4292399903 bytes, 0 no buffer
+     Received 98386 broadcasts (5037 multicasts)
      0 runts, 0 giants, 0 throttles
      0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored
-     0 watchdog, 4992 multicast, 0 pause input
+     0 watchdog, 5037 multicast, 0 pause input
      0 input packets with dribble condition detected
-     66908526 packets output, 27869189078 bytes, 0 underruns
+     67356570 packets output, 27950139442 bytes, 0 underruns
      0 output errors, 0 collisions, 1 interface resets
      0 babbles, 0 late collision, 0 deferred
      0 lost carrier, 0 no carrier, 0 PAUSE output
@@ -1218,7 +1218,7 @@ FastEthernet0/44 is down, line protocol is down (notconnect)
   Full-duplex, 100Mb/s, media type is 10/100BaseTX
   input flow-control is off, output flow-control is unsupported 
   ARP type: ARPA, ARP Timeout 04:00:00
-  Last input never, output 10:47:22, output hang never
+  Last input never, output 21:51:59, output hang never
   Last clearing of "show interface" counters never
   Input queue: 0/75/0/0 (size/max/drops/flushes); Total output drops: 0
   Queueing strategy: fifo
@@ -1246,20 +1246,20 @@ FastEthernet0/45 is up, line protocol is up (connected)
   Full-duplex, 100Mb/s, media type is 10/100BaseTX
   input flow-control is off, output flow-control is unsupported 
   ARP type: ARPA, ARP Timeout 04:00:00
-  Last input 00:00:30, output 00:00:01, output hang never
+  Last input 00:00:10, output 00:00:01, output hang never
   Last clearing of "show interface" counters never
   Input queue: 0/75/0/0 (size/max/drops/flushes); Total output drops: 0
   Queueing strategy: fifo
   Output queue: 0/40 (size/max)
-  5 minute input rate 2000 bits/sec, 3 packets/sec
-  5 minute output rate 12000 bits/sec, 14 packets/sec
-     21963066 packets input, 3480776881 bytes, 0 no buffer
-     Received 3467178 broadcasts (3181049 multicasts)
+  5 minute input rate 3000 bits/sec, 2 packets/sec
+  5 minute output rate 12000 bits/sec, 15 packets/sec
+     22118821 packets input, 3502739355 bytes, 0 no buffer
+     Received 3498134 broadcasts (3210677 multicasts)
      0 runts, 0 giants, 0 throttles
      0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored
-     0 watchdog, 3181049 multicast, 0 pause input
+     0 watchdog, 3210677 multicast, 0 pause input
      0 input packets with dribble condition detected
-     41074955 packets output, 5410008358 bytes, 0 underruns
+     41399708 packets output, 5442076166 bytes, 0 underruns
      0 output errors, 0 collisions, 1 interface resets
      0 babbles, 0 late collision, 0 deferred
      0 lost carrier, 0 no carrier, 0 PAUSE output
@@ -1274,20 +1274,20 @@ FastEthernet0/46 is up, line protocol is up (connected)
   Full-duplex, 100Mb/s, media type is 10/100BaseTX
   input flow-control is off, output flow-control is unsupported 
   ARP type: ARPA, ARP Timeout 04:00:00
-  Last input 00:00:01, output 00:00:01, output hang never
+  Last input 00:00:04, output 00:00:01, output hang never
   Last clearing of "show interface" counters never
   Input queue: 0/75/0/0 (size/max/drops/flushes); Total output drops: 0
   Queueing strategy: fifo
   Output queue: 0/40 (size/max)
   5 minute input rate 1000 bits/sec, 1 packets/sec
-  5 minute output rate 11000 bits/sec, 12 packets/sec
-     20524805 packets input, 3502148171 bytes, 0 no buffer
-     Received 3963194 broadcasts (3439606 multicasts)
+  5 minute output rate 11000 bits/sec, 13 packets/sec
+     20611083 packets input, 3514372607 bytes, 0 no buffer
+     Received 4000635 broadcasts (3471732 multicasts)
      0 runts, 0 giants, 0 throttles
      1 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored
-     0 watchdog, 3439606 multicast, 0 pause input
+     0 watchdog, 3471732 multicast, 0 pause input
      0 input packets with dribble condition detected
-     30655248 packets output, 4034881550 bytes, 0 underruns
+     30867553 packets output, 4057440956 bytes, 0 underruns
      0 output errors, 0 collisions, 1 interface resets
      0 babbles, 0 late collision, 0 deferred
      0 lost carrier, 0 no carrier, 0 PAUSE output
@@ -1307,15 +1307,15 @@ FastEthernet0/47 is up, line protocol is up (connected)
   Input queue: 0/75/0/0 (size/max/drops/flushes); Total output drops: 0
   Queueing strategy: fifo
   Output queue: 0/40 (size/max)
-  5 minute input rate 343000 bits/sec, 447 packets/sec
-  5 minute output rate 6727000 bits/sec, 719 packets/sec
-     417429083 packets input, 63112439791 bytes, 0 no buffer
-     Received 3536 broadcasts (3465 multicasts)
+  5 minute input rate 388000 bits/sec, 376 packets/sec
+  5 minute output rate 6785000 bits/sec, 654 packets/sec
+     419374532 packets input, 63354745590 bytes, 0 no buffer
+     Received 3564 broadcasts (3493 multicasts)
      0 runts, 0 giants, 0 throttles
      1 input errors, 1 CRC, 0 frame, 0 overrun, 0 ignored
-     0 watchdog, 3465 multicast, 0 pause input
+     0 watchdog, 3493 multicast, 0 pause input
      0 input packets with dribble condition detected
-     1000509245 packets output, 1283205495420 bytes, 0 underruns
+     1005598773 packets output, 1289406154817 bytes, 0 underruns
      0 output errors, 0 collisions, 1 interface resets
      0 babbles, 0 late collision, 0 deferred
      0 lost carrier, 0 no carrier, 0 PAUSE output
@@ -1324,26 +1324,26 @@ FastEthernet0/48 is up, line protocol is up (connected)
   Hardware is Fast Ethernet, address is 0024.13ad.98b4 (bia 0024.13ad.98b4)
   Description: ### Link to PSTNWAN ###
   MTU 1500 bytes, BW 100000 Kbit, DLY 100 usec, 
-     reliability 255/255, txload 1/255, rxload 17/255
+     reliability 255/255, txload 1/255, rxload 18/255
   Encapsulation ARPA, loopback not set
   Keepalive set (10 sec)
   Full-duplex, 100Mb/s, media type is 10/100BaseTX
   input flow-control is off, output flow-control is unsupported 
   ARP type: ARPA, ARP Timeout 04:00:00
-  Last input 00:00:34, output 00:00:01, output hang never
+  Last input 00:00:12, output 00:00:01, output hang never
   Last clearing of "show interface" counters never
   Input queue: 0/75/0/0 (size/max/drops/flushes); Total output drops: 47
   Queueing strategy: fifo
   Output queue: 0/40 (size/max)
-  5 minute input rate 6986000 bits/sec, 698 packets/sec
-  5 minute output rate 379000 bits/sec, 471 packets/sec
-     1114135645 packets input, 1440363326033 bytes, 0 no buffer
-     Received 101373 broadcasts (78357 multicasts)
+  5 minute input rate 7079000 bits/sec, 681 packets/sec
+  5 minute output rate 422000 bits/sec, 402 packets/sec
+     1120302499 packets input, 1447899465304 bytes, 0 no buffer
+     Received 102178 broadcasts (79088 multicasts)
      0 runts, 0 giants, 0 throttles
      0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored
-     0 watchdog, 78357 multicast, 0 pause input
+     0 watchdog, 79088 multicast, 0 pause input
      0 input packets with dribble condition detected
-     515037619 packets output, 75572537013 bytes, 0 underruns
+     517890027 packets output, 75916714529 bytes, 0 underruns
      0 output errors, 0 collisions, 1 interface resets
      0 babbles, 0 late collision, 0 deferred
      0 lost carrier, 0 no carrier, 0 PAUSE output
@@ -1466,20 +1466,20 @@ Port-channel1 is up, line protocol is up (connected)
   input flow-control is off, output flow-control is unsupported 
   Members in this channel: Fa0/3 Fa0/5 
   ARP type: ARPA, ARP Timeout 04:00:00
-  Last input never, output 00:00:00, output hang never
+  Last input never, output 00:00:01, output hang never
   Last clearing of "show interface" counters never
   Input queue: 0/75/0/0 (size/max/drops/flushes); Total output drops: 19
   Queueing strategy: fifo
   Output queue: 0/40 (size/max)
-  5 minute input rate 5000 bits/sec, 6 packets/sec
-  5 minute output rate 21000 bits/sec, 14 packets/sec
-     46704159 packets input, 7193243809 bytes, 0 no buffer
-     Received 2491680 broadcasts (2249239 multicasts)
+  5 minute input rate 6000 bits/sec, 7 packets/sec
+  5 minute output rate 15000 bits/sec, 15 packets/sec
+     47004799 packets input, 7230454104 bytes, 0 no buffer
+     Received 2515740 broadcasts (2271022 multicasts)
      0 runts, 0 giants, 0 throttles
      0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored
-     0 watchdog, 2249239 multicast, 0 pause input
+     0 watchdog, 2271022 multicast, 0 pause input
      0 input packets with dribble condition detected
-     102583772 packets output, 58820435095 bytes, 0 underruns
+     103276776 packets output, 59015598657 bytes, 0 underruns
      0 output errors, 0 collisions, 1 interface resets
      0 babbles, 0 late collision, 0 deferred
      0 lost carrier, 0 no carrier, 0 PAUSE output
@@ -1494,20 +1494,20 @@ Port-channel2 is up, line protocol is up (connected)
   input flow-control is off, output flow-control is unsupported 
   Members in this channel: Fa0/11 Fa0/13 
   ARP type: ARPA, ARP Timeout 04:00:00
-  Last input never, output 00:00:00, output hang never
+  Last input never, output 00:00:01, output hang never
   Last clearing of "show interface" counters never
   Input queue: 0/75/0/0 (size/max/drops/flushes); Total output drops: 0
   Queueing strategy: fifo
   Output queue: 0/40 (size/max)
-  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute input rate 2000 bits/sec, 2 packets/sec
   5 minute output rate 5000 bits/sec, 8 packets/sec
-     6672467 packets input, 2651004102 bytes, 0 no buffer
-     Received 726985 broadcasts (559487 multicasts)
+     6719718 packets input, 2672767355 bytes, 0 no buffer
+     Received 733548 broadcasts (564752 multicasts)
      0 runts, 0 giants, 0 throttles
      0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored
-     0 watchdog, 559487 multicast, 0 pause input
+     0 watchdog, 564752 multicast, 0 pause input
      0 input packets with dribble condition detected
-     41914405 packets output, 6622584249 bytes, 0 underruns
+     42296877 packets output, 6664674473 bytes, 0 underruns
      0 output errors, 0 collisions, 1 interface resets
      0 babbles, 0 late collision, 0 deferred
      0 lost carrier, 0 no carrier, 0 PAUSE output
@@ -1518,75 +1518,75 @@ show interfaces accounting
 Vlan1 
                 Protocol    Pkts In   Chars In   Pkts Out  Chars Out
                    Other        363      21780          0          0
-                      IP     501248  115964644      32607    3532410
-                     ARP     552279   33136740        606      36360
+                      IP     510491  117426074      35831    3939614
+                     ARP     556489   33389340        612      36720
 FastEthernet0/1 ESXI01 - vmnic0
                 Protocol    Pkts In   Chars In   Pkts Out  Chars Out
-                   Other          0          0     427049   25622940
-           Spanning Tree          0          0    2129434  127766040
-                     CDP          0          0      71253   33702669
+                   Other          0          0     431033   25861980
+           Spanning Tree          0          0    2149300  128958000
+                     CDP          0          0      71918   34017214
 FastEthernet0/2 
                 Protocol    Pkts In   Chars In   Pkts Out  Chars Out
 No traffic sent or received on this interface.
 FastEthernet0/3 ESXI01 - vmnic1
                 Protocol    Pkts In   Chars In   Pkts Out  Chars Out
-                   Other          0          0     569486   34169160
+                   Other          0          0     574799   34487940
            Spanning Tree          0          0        336      21392
-                     CDP     120672   22873792      71235   32981895
-                    LACP     142302   17645448     154057   19103068
+                     CDP     121999   23127241      71900   33289790
+                    LACP     143630   17810120     155494   19281256
 FastEthernet0/4 
                 Protocol    Pkts In   Chars In   Pkts Out  Chars Out
 No traffic sent or received on this interface.
 FastEthernet0/5 ESXI01 - vmnic2
                 Protocol    Pkts In   Chars In   Pkts Out  Chars Out
-                   Other          0          0     569485   34169100
+                   Other          0          0     574798   34487880
            Spanning Tree          0          0        312      19864
-                     CDP      71246   13038018      71234   32981432
-                    LACP     142303   17645572     154041   19101084
+                     CDP      71910   13159530      71899   33289327
+                    LACP     143631   17810244     155478   19279272
 FastEthernet0/6 
                 Protocol    Pkts In   Chars In   Pkts Out  Chars Out
 No traffic sent or received on this interface.
 FastEthernet0/7 ESXI01 - vmnic3
                 Protocol    Pkts In   Chars In   Pkts Out  Chars Out
-                   Other          0          0     569479   34168740
-           Spanning Tree          0          0   25552546 1626845428
-                     CDP          0          0      71233   33693209
-                    LACP          0          0     154011   19097364
+                   Other          0          0     574792   34487520
+           Spanning Tree          0          0   25790931 1642022604
+                     CDP          0          0      71898   34007754
+                    LACP          0          0     155447   19275428
 FastEthernet0/8 
                 Protocol    Pkts In   Chars In   Pkts Out  Chars Out
 No traffic sent or received on this interface.
 FastEthernet0/9 ESXI02 - vmnic0
                 Protocol    Pkts In   Chars In   Pkts Out  Chars Out
-                   Other          0          0     427050   25623000
-           Spanning Tree          0          0    2129421  127765260
-                     CDP          0          0      71254   33703142
+                   Other          0          0     431034   25862040
+           Spanning Tree          0          0    2149287  128957220
+                     CDP          0          0      71919   34017687
 FastEthernet0/10 
                 Protocol    Pkts In   Chars In   Pkts Out  Chars Out
 No traffic sent or received on this interface.
 FastEthernet0/11 ESXI02 - vmnic1
                 Protocol    Pkts In   Chars In   Pkts Out  Chars Out
-                   Other          0          0     569485   34169100
+                   Other          0          0     574798   34487880
            Spanning Tree          0          0        376      23936
-                     CDP      71242   13037286      71234   33052666
-                    LACP     142288   17643712     154011   19097364
+                     CDP      71907   13158981      71899   33361226
+                    LACP     143615   17808260     155446   19275304
 FastEthernet0/12 
                 Protocol    Pkts In   Chars In   Pkts Out  Chars Out
 No traffic sent or received on this interface.
 FastEthernet0/13 ESXI02 - vmnic2
                 Protocol    Pkts In   Chars In   Pkts Out  Chars Out
-                   Other          0          0     569485   34169100
+                   Other          0          0     574798   34487880
            Spanning Tree          0          0        384      24448
-                     CDP      71242   13037286      71234   33052666
-                    LACP     142288   17643712     154062   19103688
+                     CDP      71907   13158981      71899   33361226
+                    LACP     143615   17808260     155502   19282248
 FastEthernet0/14 
                 Protocol    Pkts In   Chars In   Pkts Out  Chars Out
 No traffic sent or received on this interface.
 FastEthernet0/15 ESXI02 - vmnic3
                 Protocol    Pkts In   Chars In   Pkts Out  Chars Out
-                   Other          0          0     569480   34168800
-           Spanning Tree          0          0   25552524 1626844028
-                     CDP          0          0      71233   33764442
-                    LACP          0          0     154006   19096744
+                   Other          0          0     574793   34487580
+           Spanning Tree          0          0   25790909 1642021204
+                     CDP          0          0      71898   34079652
+                    LACP          0          0     155443   19274932
 FastEthernet0/16 
                 Protocol    Pkts In   Chars In   Pkts Out  Chars Out
 No traffic sent or received on this interface.
@@ -1595,9 +1595,9 @@ FastEthernet0/17 Link to SA-PHN1
 No traffic sent or received on this interface.
 FastEthernet0/18 Link to SA-PHN1
                 Protocol    Pkts In   Chars In   Pkts Out  Chars Out
-                   Other          0          0     296406   17784360
-           Spanning Tree          0          0    2955988  189183232
-                     CDP      49457    7665628      49511   23814395
+                   Other          0          0     300390   18023400
+           Spanning Tree          0          0    2995718  191725952
+                     CDP      50121    7768548      50176   24134260
 FastEthernet0/19 
                 Protocol    Pkts In   Chars In   Pkts Out  Chars Out
 No traffic sent or received on this interface.
@@ -1609,9 +1609,9 @@ FastEthernet0/21 Link to SA-PHN3
 No traffic sent or received on this interface.
 FastEthernet0/22 ### Link to SENSOR ###
                 Protocol    Pkts In   Chars In   Pkts Out  Chars Out
-                   Other          0          0     569530   34171800
-           Spanning Tree          0          0   21290272 1354061352
-                     CDP          0          0      71443   33860481
+                   Other          0          0     574843   34490580
+           Spanning Tree          0          0   21488925 1366695680
+                     CDP          0          0      72108   34175691
 FastEthernet0/23 Link to SB-PHN1
                 Protocol    Pkts In   Chars In   Pkts Out  Chars Out
 No traffic sent or received on this interface.
@@ -1623,9 +1623,9 @@ FastEthernet0/25
 No traffic sent or received on this interface.
 FastEthernet0/26 Link to SB-PHN2
                 Protocol    Pkts In   Chars In   Pkts Out  Chars Out
-                   Other          0          0     296400   17784000
-           Spanning Tree          0          0    2955930  189179520
-                     CDP      49459    7666144      49515   23816319
+                   Other          0          0     300384   18023040
+           Spanning Tree          0          0    2995660  191722240
+                     CDP      50123    7769064      50180   24136184
 FastEthernet0/27 Link to SC-PHN1
                 Protocol    Pkts In   Chars In   Pkts Out  Chars Out
 No traffic sent or received on this interface.
@@ -1652,9 +1652,9 @@ FastEthernet0/34 Link to HOMEPC1
 No traffic sent or received on this interface.
 FastEthernet0/35 ### Link to SENSOR ###
                 Protocol    Pkts In   Chars In   Pkts Out  Chars Out
-                   Other          0          0     569530   34171800
-           Spanning Tree          0          0   21293535 1354268836
-                     CDP          0          0      71306   33798266
+                   Other          0          0     574843   34490580
+           Spanning Tree          0          0   21492191 1366903356
+                     CDP          0          0      71971   34113476
 FastEthernet0/36 Link to LR1
                 Protocol    Pkts In   Chars In   Pkts Out  Chars Out
 No traffic sent or received on this interface.
@@ -1686,24 +1686,24 @@ FastEthernet0/44
                      CDP          0          0       5456    2586144
 FastEthernet0/45 Link to sguilfoil-2821a-home
                 Protocol    Pkts In   Chars In   Pkts Out  Chars Out
-                   Other          0          0     569494   34169640
-           Spanning Tree          0          0   14905924  945461476
-                     CDP      79170   31034630      71244   33769656
+                   Other          0          0     574807   34488420
+           Spanning Tree          0          0   15044986  954281980
+                     CDP      79908   31323926      71909   34084866
 FastEthernet0/46 Link to sguilfoil-2821b-home
                 Protocol    Pkts In   Chars In   Pkts Out  Chars Out
-                   Other          0          0     569494   34169640
-           Spanning Tree          0          0   14905930  945461860
-                     CDP      79174   30957034      71244   33769656
+                   Other          0          0     574807   34488420
+           Spanning Tree          0          0   15044988  954282108
+                     CDP      79912   31245592      71909   34084866
 FastEthernet0/47 ### Link to Amplify ###
                 Protocol    Pkts In   Chars In   Pkts Out  Chars Out
-                   Other          0          0     427049   25622940
-           Spanning Tree          0          0    2129435  127766100
-                     CDP          0          0      71242   33768708
+                   Other          0          0     431033   25861980
+           Spanning Tree          0          0    2149300  128958000
+                     CDP          0          0      71907   34083918
 FastEthernet0/48 ### Link to PSTNWAN ###
                 Protocol    Pkts In   Chars In   Pkts Out  Chars Out
-                   Other          0          0     569494   34169640
-           Spanning Tree          0          0   10647115  672897680
-                     CDP      71244   27357696      71244   33768878
+                   Other          0          0     574807   34488420
+           Spanning Tree          0          0   10746444  679175272
+                     CDP      71909   27613056      71909   34084088
 GigabitEthernet0/1 
                 Protocol    Pkts In   Chars In   Pkts Out  Chars Out
 No traffic sent or received on this interface.
@@ -1718,10 +1718,10 @@ GigabitEthernet0/4
 No traffic sent or received on this interface.
 Port-channel1 
                 Protocol    Pkts In   Chars In   Pkts Out  Chars Out
-           Spanning Tree          0          0   25552536 1626844792
+           Spanning Tree          0          0   25790924 1642022160
 Port-channel2 
                 Protocol    Pkts In   Chars In   Pkts Out  Chars Out
-           Spanning Tree          0          0   25552448 1626839192
+           Spanning Tree          0          0   25790836 1642016560
 home-3560-sguilfoil#
 +++ home-3560-sguilfoil: executing command 'show ip interface' +++
 show ip interface
