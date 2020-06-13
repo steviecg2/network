@@ -1,4 +1,7 @@
 ---
+ansible_python_interpreter: python
+username: "{{ vault_username }}"
+password: "{{ vault_password }}"
 provider:
   username: "{{ vault_username }}"
   password: "{{ vault_password }}"

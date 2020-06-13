@@ -1,0 +1,24 @@
+[
+    {
+        "action": "deny",
+        "destination": "host 142.100.65.254",
+        "modifier": "(13 matches)",
+        "name": "automation",
+        "port": "",
+        "protocol": "icmp",
+        "range": "",
+        "sn": "10",
+        "source": "host 142.100.64.169"
+    },
+    {
+        "action": "permit",
+        "destination": "any",
+        "modifier": "(156260 matches)",
+        "name": "automation",
+        "port": "",
+        "protocol": "ip",
+        "range": "",
+        "sn": "20",
+        "source": "any"
+    }
+]
