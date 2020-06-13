@@ -8,4 +8,4 @@ RUN apt-get update \
     && git clone https://github.com/networktocode/ntc-ansible --recursive \
     && python -m pip install --requirement requirements.txt --no-cache \
     && python ntc-ansible/setup.py install \
-    && ansible-galaxy install -r requirements.yml
+    && ansible-galaxy install -r requirements.yaml
