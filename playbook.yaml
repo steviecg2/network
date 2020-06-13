@@ -1,8 +1,7 @@
 ---
 - name: test
   hosts: ios
-  gather_facts: no
-  connection: local
+  connection: network_cli
 
   tasks:
     - name: parse show access-list command using ntc templates
@@ -12,9 +11,12 @@
         command: show access-list
         template_dir: "/opt/network/ntc-ansible/ntc-templates/templates/"
         host: "{{ ansible_host }}"
-        username: "{{ username }}"
-        password: "{{ password }}"
+        username: "{{ ansible_user }}"
+        password: "{{ ansible_password }}"
       register: result
+    - name: print parsed command output
+      debug:
+        msg: "{{ result.response }}"
     - name: save parsed command output to file
       copy:
         content: "{{ result.response|to_nice_json }}"
