@@ -6,3 +6,4 @@ ansible_network_os: ios
 ansible_password: "{{ vault_password }}"
 ansible_python_interpreter: python
 ansible_user: "{{ vault_username }}"
+platform: cisco_ios_ssh

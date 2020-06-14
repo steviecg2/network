@@ -1,0 +1,51 @@
+---
+- name: test
+  connection: network_cli
+  hosts: ios
+  roles:
+    - ansible-pyats
+    - parse_genie
+  vars:
+    commands: 
+      - show version
+      - show access-list
+
+  tasks:
+
+    # TODO: 
+    #   Save command output to file.
+    #   Update ntc_show_command module to read command output rather than gathering the data a second time.
+    #   Cleanup Ansible loop output: https://oznetnerd.com/2017/05/20/cleaning-ansible-loop-outputs/
+    #   Save parsed results to files.
+
+    - name: utilize pyats/genie for cisco devices
+      block: 
+        - name: run commands
+          ios_command:
+            commands: "{{ item }}"
+          register: results
+          loop: "{{ commands }}"
+        - name: print parsed output of commands using pyats/genie
+          debug:
+            msg: "{{ item['stdout'][0] | parse_genie(command=commands[index], os=ansible_network_os) }}" 
+          ignore_errors: yes
+          loop: "{{ results.results }}"
+          loop_control:
+            index_var: index
+      when: ansible_network_os in ['asa', 'ios', 'iosxr', 'nxos']
+
+    - name: run/parse commands using ntc templates
+      ntc_show_command:
+        connection: ssh
+        platform: "{{ platform }}"
+        command: "{{ item }}"
+        template_dir: "/opt/network/ntc-ansible/ntc-templates/templates/"
+        host: "{{ ansible_host }}"
+        username: "{{ ansible_user }}"
+        password: "{{ ansible_password }}"
+      register: results
+      loop: "{{ commands }}"
+    - name: print parsed output of commands using ntc templates
+      debug:
+        msg: "{{ item.response }}" 
+      loop: "{{ results.results }}"

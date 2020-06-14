@@ -15,5 +15,3 @@ all:
                 home-2811-sguilfoil:
                 home-2821a-sguilfoil:
                 home-2821b-sguilfoil:
-            vars:
-                platform: cisco_ios_ssh
