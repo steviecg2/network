@@ -1,6 +1,7 @@
 ---
 - name: test
   connection: network_cli
+  gather_facts: no
   hosts: home-2821a-sguilfoil
 
   tasks:
@@ -10,5 +11,5 @@
           delegate_to: localhost
           template:
             src: acl.j2
-            dest: "{{ inventory_hostname }}"_acl.conf
+            dest: "{{ inventory_hostname }}_acl.conf"
       when: ansible_network_os in ['ios']

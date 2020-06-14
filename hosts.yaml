@@ -1,6 +1,8 @@
 ---
 all:
     hosts:
+        localhost:
+            ansible_host: 127.0.0.1
         home-2811-sguilfoil:
             ansible_host: 10.0.1.254
         home-3560-sguilfoil:

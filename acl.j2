@@ -1,10 +1,19 @@
 #jinja2: lstrip_blocks: True
-{% for acl in access-lists %}
+{% for acl in access_lists %}
     {% set type = 'extended' %}
     {% if acl['name'] in range(1, 99) or acl['name'] in range(1300, 1999) %}
         {% set type = 'standard' %}
-    {% end %}
-ip access-list type acl['name']
+    {% endif %}
+ip access-list {{ type }} {{ acl['name'] }}
     {% for line in acl['lines'] %}
-    {% end %}
+        {% set logging = '' %}
+        {% set established = '' %}
+        {% if line['logging'] %}
+           {% set logging = 'log' %}
+        {% endif %}
+        {% if line['l4_established'] %}
+           {% set established = 'established' %}
+        {% endif %}
+  {{ line['sequence'] }} {{ line['action'] }} {{ line['protocol'] }} {{ line['source']['statement'] }} {{ line['source']['operator'] }} {{ line['source']['port'] }} {{ line['destination']['statement'] }} {{ line['destination']['operator'] }} {{ line['destination']['port'] }} {{ established }} {{ logging }}
+    {% endfor %}
 {% endfor %}
