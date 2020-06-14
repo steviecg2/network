@@ -37,7 +37,7 @@
     - name: run/parse commands using ntc templates
       ntc_show_command:
         connection: ssh
-        platform: "{{ platform }}"
+        platform: "{{ platform_ntc }}"
         command: "{{ item }}"
         template_dir: "/opt/network/ntc-ansible/ntc-templates/templates/"
         host: "{{ ansible_host }}"
