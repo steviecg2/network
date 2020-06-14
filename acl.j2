@@ -1,0 +1,10 @@
+#jinja2: lstrip_blocks: True
+{% for acl in access-lists %}
+    {% set type = 'extended' %}
+    {% if acl['name'] in range(1, 99) or acl['name'] in range(1300, 1999) %}
+        {% set type = 'standard' %}
+    {% end %}
+ip access-list type acl['name']
+    {% for line in acl['lines'] %}
+    {% end %}
+{% endfor %}

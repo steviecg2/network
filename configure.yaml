@@ -1,0 +1,14 @@
+---
+- name: test
+  connection: network_cli
+  hosts: home-2821a-sguilfoil
+
+  tasks:
+    - name: configure access-lists on cisco ??? devices
+      block:
+        - name: render config
+          delegate_to: localhost
+          template:
+            src: acl.j2
+            dest: "{{ inventory_hostname }}"_acl.conf
+      when: ansible_network_os in ['ios']

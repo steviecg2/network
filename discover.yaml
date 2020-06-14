@@ -8,7 +8,7 @@
   vars:
     commands: 
       - show version
-      - show access-list
+      - show ip access-lists
 
   tasks:
 
