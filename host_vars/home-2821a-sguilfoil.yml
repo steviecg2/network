@@ -1,0 +1,31 @@
+---
+access_lists:
+  - name: outside_acl
+    type: ipv4
+    lines:
+      - sequence: 10 
+        action: permit
+        protocol: tcp
+        source:
+          statement: any
+          operator:
+          port:
+        destination:
+          statement: host 10.1.1.1
+          operator: eq
+          port: 80
+        l4_established: true
+        logging: false
+      - sequence: 20
+        action: permit
+        protocol: udp
+        source:
+          statement: 8.8.8.0 0.0.0.255
+          operator: range
+          port: 80 90
+        destination:
+          statement: 10.0.0.0 0.0.255.255
+          operator:
+          port:
+        l4_established: false
+        logging: true
