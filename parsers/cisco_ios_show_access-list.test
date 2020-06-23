@@ -1,0 +1,28 @@
+# IOS ACL structure is quite complex.
+# 
+# Extended IP ACL:
+# 	SEQUENCE_NUMBER ACTION PROTOCOL SOURCE_STATEMENT [PORT id] [RANGE start finish] DESTINATION_STATEMENT [MODIFIER]
+#
+# Standard ACL:
+#	SEQUENCE_NUMBER ACTION SOURCE_STATEMENT DESTINATION_STATEMENT [MODIFIER]
+#	 
+#
+Value Filldown NAME (\S+)
+Value Required SEQUENCE_NUMBER (\d+)
+Value ACTION (\w+)
+Value PROTOCOL (\w+)
+Value SOURCE_STATEMENT (any|host\s+(?:[0-9]{1,3}\.){3}[0-9]{1,3}|(?:[0-9]{1,3}\.){3}[0-9]{1,3}\s+(?:[0-9]{1,3}\.){3}[0-9]{1,3})
+Value SOURCE_OPERATOR (eq|gt|lt|neq|range)
+Value SOURCE_PORTS (.*)
+Value DESTINATION_STATEMENT (any|host\s+(?:[0-9]{1,3}\.){3}[0-9]{1,3}|(?:[0-9]{1,3}\.){3}[0-9]{1,3}\s+(?:[0-9]{1,3}\.){3}[0-9]{1,3}|(?:[0-9]{1,3}\.){3}[0-9]{1,3},\s+wildcard\s+bits\s+(?:[0-9]{1,3}\.){3}[0-9]{1,3})
+Value DESTINATION_OPERATOR (eq|gt|lt|neq|range)
+Value DESTINATION_PORTS (.*)
+Value ESTABLISHED (established)
+
+Start
+  ^(Standard|Extended) IP access list ${NAME}
+  ^\s+${SEQUENCE_NUMBER} ${ACTION} ${PROTOCOL} ${SOURCE_STATEMENT}\s*${SOURCE_OPERATOR}?\s*${SOURCE_PORTS}?\s+${DESTINATION_STATEMENT}\s*${DESTINATION_OPERATOR}? -> Continue
+#  ^.*?\s*(eq|gt|lt|neq|range)?\s*${DESTINATION_PORTS}?\s*${ESTABLISHED}?$$ -> Record
+#  ^.*?\s*${DESTINATION_PORTS}?$$ -> Continue
+  ^.*?
+  ^.*?${ESTABLISHED}?$$ -> Record

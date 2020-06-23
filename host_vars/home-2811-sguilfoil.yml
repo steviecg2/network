@@ -31,4 +31,16 @@ access-lists:
           operator:
           port:
         l4_established: false
-
+      # - sequence: 10
+        # action:
+        # protocol: tcp
+        # source:
+          # statement: any
+          # operator:
+          # port:
+        # destination:
+          # statement: host 10.1.1.1
+          # operator: eq
+          # port: 80
+        # l4_established: false
+        # logging: false
